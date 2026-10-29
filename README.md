@@ -1,5 +1,7 @@
 # VšĮ „Pelkių fondas“ svetainės dizaino maketas
 
+**Gyva peržiūra:** https://arvydastry.github.io/pelkiufondas/
+
 Naujo [pelkiufondas.lt](https://www.pelkiufondas.lt/) dizaino maketas pasiūlymui. Svetainė bus programuojama su
 **WordPress + Salient** (ThemeNectar 18.4, WPBakery), todėl makete naudojami tik tokie išdėstymai ir efektai,
 kuriuos Salient atkartoja savo elementais; prie kiekvienos sekcijos HTML komentare nurodytas Salient atitikmuo
