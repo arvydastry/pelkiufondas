@@ -942,3 +942,8 @@ ol.steps, ul.steps, ol.numbered, ul.icon-list, ol.check-list, ul.check-list { li
   .cta__shape { width: 240px; right: -90px; top: -140px; }
   .cta { padding: 28px 22px; }
 }
+
+/* Partnerių logotipai bėgančioje eilutėje (Salient: Clients carousel) */
+.marquee__item--logo img { height: 48px; width: auto; max-width: 180px; object-fit: contain; }
+.marquee__item--logo { padding: 4px 0; }
+@media (max-width: 640px) { .marquee__item--logo img { height: 36px; } }
