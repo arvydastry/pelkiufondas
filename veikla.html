@@ -1,0 +1,847 @@
+<!doctype html>
+<html lang="lt">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mūsų veikla | Pelkių fondas</title>
+  <meta name="description" content="Keturios Pelkių fondo veiklos kryptys – biologinės įvairovės apsauga, pelkių ekosistemų atkūrimas, CO₂ emisijų mažinimas, žemės ūkis ir pelkininkystė – su susijusiais projektais, leidiniais, paslaugomis ir forma „Susisiekime“.">
+  <!-- Bendra <head> dalis: įklijuoti į kiekvieną puslapį po <title> ir <meta name="description"> -->
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/Fraunces.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/Manrope.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>document.documentElement.classList.add('js');</script>
+  <link rel="stylesheet" href="assets/css/pages/veikla.css">
+</head>
+<body class="has-transparent-header" data-nav="veikla">
+  <a class="skip-link" href="#turinys">Pereiti prie turinio</a>
+
+  <!-- Maketo juosta: į WordPress nekeliama -->
+  <div class="mockbar" role="region" aria-label="Maketo juosta">
+    <div class="container">
+      <strong>Dizaino maketas <span>·</span> Pelkių fondas</strong>
+      <span>WordPress + Salient</span>
+      <label class="mockbar__toggle" title="Žymekliai rodo, kas makete yra nauja, palyginti su dabartine svetaine"><input type="checkbox" id="toggle-newfn" checked> <span class="new-fn__badge">Nauja</span> rodyti naujas funkcijas</label>
+      <nav class="mockbar__pages" aria-label="Maketo puslapiai">
+        <a href="index.html">Pradinis</a><a href="pelkes.html">Pelkės</a><a href="apie-mus.html">Apie mus</a><a href="veikla.html">Veikla</a><a href="naujienos.html">Naujienos</a><a href="kontaktai.html">Kontaktai</a><a href="prisidek.html">Prisidėk</a>
+      </nav>
+    </div>
+  </div>
+
+  <!-- Antraštė (Salient: Header layout „Standard“, logotipas kairėje, meniu dešinėje, „Prisidėk“ mygtukas, paieška, kalbos) -->
+  <header class="site-header">
+    <div class="container container--wide site-header__inner">
+      <a class="logo" href="index.html" aria-label="Pelkių fondas, pradžia">
+        <img class="logo__mark" src="assets/img/logo-240.png" alt="" width="52" height="52">
+        <span class="logo__word">Pelkių fondas<small>Pelkių atkūrimas ir apsauga</small></span>
+      </a>
+      <nav class="nav" aria-label="Pagrindinis meniu">
+        <a class="nav__link" href="index.html" data-nav-key="pradinis">Pradinis</a>
+        <div class="nav__item" data-drop data-nav-key="pelkes">
+          <button class="nav__link" type="button" aria-expanded="false" aria-haspopup="true">Pelkės <i class="ph ph-caret-down" aria-hidden="true"></i></button>
+          <div class="nav__drop">
+            <a class="drop-link" href="pelkes.html"><span class="drop-link__icon"><i class="ph ph-leaf"></i></span><span class="drop-link__text"><strong>Kas yra pelkės</strong><span>Apibrėžimai, reikšmė, būklė Lietuvoje</span></span></a>
+            <a class="drop-link" href="pelkes.html#tipai"><span class="drop-link__icon"><i class="ph ph-tree-evergreen"></i></span><span class="drop-link__text"><strong>Pelkių tipai ir buveinės</strong><span>Žemapelkės, tarpinės, aukštapelkės, EB buveinės</span></span></a>
+            <a class="drop-link" href="pelkes.html#gresmes"><span class="drop-link__icon"><i class="ph ph-warning"></i></span><span class="drop-link__text"><strong>Grėsmės ir atkūrimas</strong><span>Kodėl pelkės nyksta ir kaip jas atkuriame</span></span></a>
+            <a class="drop-link" href="terminu-zodynas.html"><span class="drop-link__icon"><i class="ph ph-book-open"></i></span><span class="drop-link__text"><strong>Terminų žodynas</strong><span>Pelkių ir durpynų sąvokos su paieška</span></span></a>
+            <a class="drop-link" href="galerija.html"><span class="drop-link__icon"><i class="ph ph-images"></i></span><span class="drop-link__text"><strong>Galerija</strong><span>Pelkių ir mūsų darbų nuotraukos</span></span></a>
+          </div>
+        </div>
+        <a class="nav__link" href="apie-mus.html" data-nav-key="apie-mus">Apie mus</a>
+        <div class="nav__item" data-drop data-nav-key="veikla">
+          <button class="nav__link" type="button" aria-expanded="false" aria-haspopup="true">Veikla <i class="ph ph-caret-down" aria-hidden="true"></i></button>
+          <div class="nav__drop nav__drop--wide">
+            <a class="drop-link" href="veikla.html"><span class="drop-link__icon"><i class="ph ph-compass"></i></span><span class="drop-link__text"><strong>Veiklos kryptys</strong><span>Biologinė įvairovė, atkūrimas, klimatas, pelkininkystė</span></span></a>
+            <a class="drop-link" href="co2.html"><span class="drop-link__icon"><i class="ph ph-cloud"></i></span><span class="drop-link__text"><strong>CO₂ emisijų mažinimas</strong><span>Verslui: atkurkite pelkes, mažinkite anglies pėdsaką</span></span></a>
+            <a class="drop-link" href="projektai.html"><span class="drop-link__icon"><i class="ph ph-map-pin"></i></span><span class="drop-link__text"><strong>Projektai</strong><span>Vykdomi ir įgyvendinti projektai žemėlapyje</span></span></a>
+            <a class="drop-link" href="paslaugos.html"><span class="drop-link__icon"><i class="ph ph-briefcase"></i></span><span class="drop-link__text"><strong>Paslaugos</strong><span>Konsultacijos, tyrimai, švietimas</span></span></a>
+            <a class="drop-link" href="publikacijos.html"><span class="drop-link__icon"><i class="ph ph-books"></i></span><span class="drop-link__text"><strong>Publikacijos</strong><span>Straipsniai, knygos, lankstinukai</span></span></a>
+            <a class="drop-link" href="videoteka.html"><span class="drop-link__icon"><i class="ph ph-play-circle"></i></span><span class="drop-link__text"><strong>Videoteka</strong><span>Filmai apie pelkes ir mūsų darbus</span></span></a>
+            <a class="drop-link" href="veiklos-ataskaitos.html"><span class="drop-link__icon"><i class="ph ph-file-text"></i></span><span class="drop-link__text"><strong>Veiklos ataskaitos</strong><span>Metinės veiklos ir finansinės ataskaitos</span></span></a>
+            <div class="nav__drop-foot"><span class="muted">Norite prisidėti prie veiklų?</span><a class="link-u" href="prisidek.html#savanoriauk">Savanoriauk</a></div>
+          </div>
+        </div>
+        <a class="nav__link" href="naujienos.html" data-nav-key="naujienos">Naujienos</a>
+        <a class="nav__link" href="kontaktai.html" data-nav-key="kontaktai">Kontaktai</a>
+      </nav>
+      <div class="header-actions">
+        <div class="lang" aria-label="Kalba"><span aria-current="true" lang="lt">LT</span><a href="#" data-lang="en" hreflang="en">EN</a></div>
+        <button class="icon-btn icon-btn--search" type="button" data-search-open aria-label="Paieška svetainėje"><i class="ph ph-magnifying-glass" aria-hidden="true"></i></button>
+        <a class="btn btn--sun btn--sm" href="prisidek.html">Prisidėk</a>
+        <button class="burger icon-btn" type="button" aria-label="Atidaryti meniu" aria-expanded="false" aria-controls="mobile-menu"><i class="ph ph-list" aria-hidden="true"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobilus meniu (Salient: Off Canvas Menu) -->
+  <div class="mobile-menu" id="mobile-menu" role="dialog" aria-modal="true" aria-label="Meniu" tabindex="-1">
+    <div class="container">
+      <div class="mobile-menu__top">
+        <a class="logo" href="index.html" aria-label="Pelkių fondas, pradžia"><img class="logo__mark" src="assets/img/logo-240.png" alt="" width="52" height="52"><span class="logo__word">Pelkių fondas<small>Pelkių atkūrimas ir apsauga</small></span></a>
+        <button class="mobile-menu__close" type="button" aria-label="Uždaryti meniu"><i class="ph ph-x" aria-hidden="true"></i></button>
+      </div>
+      <nav class="mobile-menu__links" aria-label="Meniu mobiliesiems">
+        <a href="index.html">Pradinis <i class="ph ph-arrow-right" aria-hidden="true"></i></a>
+        <details><summary>Pelkės <i class="ph ph-caret-down" aria-hidden="true"></i></summary><div><a href="pelkes.html">Kas yra pelkės</a><a href="pelkes.html#tipai">Pelkių tipai ir buveinės</a><a href="pelkes.html#gresmes">Grėsmės ir atkūrimas</a><a href="terminu-zodynas.html">Terminų žodynas</a><a href="galerija.html">Galerija</a></div></details>
+        <a href="apie-mus.html">Apie mus <i class="ph ph-arrow-right" aria-hidden="true"></i></a>
+        <details><summary>Veikla <i class="ph ph-caret-down" aria-hidden="true"></i></summary><div><a href="veikla.html">Veiklos kryptys</a><a href="co2.html">CO₂ emisijų mažinimas</a><a href="projektai.html">Projektai</a><a href="paslaugos.html">Paslaugos</a><a href="publikacijos.html">Publikacijos</a><a href="videoteka.html">Videoteka</a><a href="veiklos-ataskaitos.html">Veiklos ataskaitos</a></div></details>
+        <a href="naujienos.html">Naujienos <i class="ph ph-arrow-right" aria-hidden="true"></i></a>
+        <a href="kontaktai.html">Kontaktai <i class="ph ph-arrow-right" aria-hidden="true"></i></a>
+        <a href="prisidek.html">Prisidėk <i class="ph ph-arrow-right" aria-hidden="true"></i></a>
+      </nav>
+      <div class="mobile-menu__foot">
+        <a class="btn btn--sun" href="prisidek.html">Paremk pelkes</a>
+        <button class="btn btn--ghost-light" type="button" data-search-open><i class="ph ph-magnifying-glass" aria-hidden="true"></i> Paieška</button>
+        <div class="lang" aria-label="Kalba"><span aria-current="true">LT</span><a href="#" data-lang="en" hreflang="en">EN</a></div>
+      </div>
+    </div>
+  </div>
+  <main id="turinys">
+
+    <!-- Salient: Page Header – Row su „Row BG video“ (Pexels HD mp4 + poster, Overlay gradient), Yoast Breadcrumbs, Split Line Heading, Text Block (lead), Nectar Button ×2, Nectar Video Background „pause“ mygtukas -->
+    <section class="page-header page-header--tall" id="virsus" aria-labelledby="veikla-h">
+      <div class="video-bg video-bg--soft">
+        <img src="https://images.pexels.com/videos/12094808/dji-drone-point-of-view-nature-12094808.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=630&w=1200" alt="">
+        <video data-src="https://videos.pexels.com/video-files/12094808/12094808-hd_1920_1080_30fps.mp4" data-src-sd="https://videos.pexels.com/video-files/12094808/12094808-sd_960_540_30fps.mp4" muted loop playsinline poster="https://images.pexels.com/videos/12094808/dji-drone-point-of-view-nature-12094808.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=630&w=1200"></video>
+      </div>
+      <div class="container">
+        <ol class="breadcrumb"><li><a href="index.html">Pradinis</a></li><li>Veikla</li></ol>
+        <p class="kicker" data-reveal>Keturios veiklos kryptys</p>
+        <h1 id="veikla-h" data-split>Mūsų <em>veikla</em></h1>
+        <p class="lead" data-reveal style="--d:200ms">Mūsų misija – efektyvių ir inovatyvių sprendimų paieška ir taikymas derinant juos su tradiciniais metodais: saugome natūralias pelkes ir jų biologinę įvairovę, atkuriame pažeistas pelkes ir didiname gamtinių ekosistemų atsparumą pokyčiams.</p>
+        <div class="page-header__actions" data-reveal style="--d:320ms">
+          <a class="btn btn--sun" href="#kryptys">Keturios kryptys <span class="btn__icon"><i class="ph ph-arrow-down" aria-hidden="true"></i><i class="ph ph-arrow-down" aria-hidden="true"></i></span></a>
+          <a class="btn btn--ghost-light" href="#susisiekime">Susisiekime</a>
+        </div>
+      </div>
+      <span class="video-caption">Atkurtos pelkės vandens telkiniai <span>· iš drono, pavasaris</span></span>
+      <button class="video-toggle" type="button"></button>
+      <span class="video-credit">Video: Pexels / jelle van brenk</span>
+    </section>
+
+    <!-- Salient: Page Submenu (prilipęs vidinis meniu su aktyvia sekcija, Smooth Scroll) + Nectar Button „Paremk“ -->
+    <nav class="subnav" aria-label="Puslapio skyriai"><div class="container"><span class="subnav__label">Šiame puslapyje</span><a href="#kryptys">Kryptys</a><a href="#biologine-ivairove">Biologinė įvairovė</a><a href="#atkurimas">Atkūrimas</a><a href="#klimatas">Klimatas</a><a href="#pelkininkyste">Pelkininkystė</a><a href="#paslaugos">Paslaugos</a><a href="#projektai">Projektai</a><a class="btn btn--sun btn--sm subnav__cta" href="prisidek.html">Paremk</a></div></nav>
+
+    <!-- Salient: Row (popieriaus fonas) + Split Line Heading + 4 × Fancy Box / Icon With Text (numeruotos kryptys, nuorodos į sekcijas, Column animation fade-up paeiliui) + Highlighted Text blokas „Trumpai“ -->
+    <section class="section" id="kryptys" aria-labelledby="kryptys-h">
+      <div class="container">
+        <div class="section-head section-head--row">
+          <div>
+            <p class="kicker">Keturios kryptys</p>
+            <h2 id="kryptys-h" data-split>Nuo rūšių apsaugos <em>iki ūkininkavimo</em> šlapiose žemėse</h2>
+            <p class="lead">Visa fondo veikla sutelkta į keturias kryptis. Kiekviena turi savo projektus, leidinius ir partnerius – pasirinkite, nuo ko pradėti.</p>
+          </div>
+          <a class="link-arrow" href="projektai.html">Visi projektai <i class="ph ph-arrow-right" aria-hidden="true"></i></a>
+        </div>
+        <div class="grid grid--4 dir-grid new-fn" data-reveal-group>
+          <span class="new-fn__badge" data-tip="Nauja: visos keturios kryptys viename puslapyje su prilipusiu vidiniu meniu (Salient Page Submenu) ir inkarais. Dabartinėje svetainėje – 4 atskiri puslapiai be navigacijos tarp jų, pasiekiami tik per korteles." tabindex="0">Nauja</span>
+          <a class="icon-card dir-card" href="#biologine-ivairove" data-reveal>
+            <span class="dir-card__nr">01</span>
+            <span class="icon-card__icon"><i class="ph ph-flower-lotus" aria-hidden="true"></i></span>
+            <h3>Biologinės įvairovės apsauga</h3>
+            <p>Saugome ir atkuriame EB svarbos pelkių buveines, istorinių parkų ir šlapynių biologinę įvairovę – nuo gegužraibių iki varliagyvių.</p>
+            <span class="link-arrow">Skaityti <i class="ph ph-arrow-down" aria-hidden="true"></i></span>
+          </a>
+          <a class="icon-card dir-card" href="#atkurimas" data-reveal style="--d:100ms">
+            <span class="dir-card__nr">02</span>
+            <span class="icon-card__icon"><i class="ph ph-drop" aria-hidden="true"></i></span>
+            <h3>Pelkių ekosistemų atkūrimas</h3>
+            <p>Grąžiname vandenį į nusausintas pelkes ir išeksploatuotus durpynus: užtūros, pylimai, kiminų ir pelkinių augalų įkurdinimas.</p>
+            <span class="link-arrow">Skaityti <i class="ph ph-arrow-down" aria-hidden="true"></i></span>
+          </a>
+          <a class="icon-card dir-card" href="#klimatas" data-reveal style="--d:200ms">
+            <span class="dir-card__nr">03</span>
+            <span class="icon-card__icon"><i class="ph ph-cloud" aria-hidden="true"></i></span>
+            <h3>CO₂ emisijų mažinimas</h3>
+            <p>Padedame įmonėms mažinti anglies pėdsaką investuojant į Lietuvos pelkių atkūrimą – skaidriai, pagal MoorFutures standartą.</p>
+            <span class="link-arrow">Skaityti <i class="ph ph-arrow-down" aria-hidden="true"></i></span>
+          </a>
+          <a class="icon-card dir-card" href="#pelkininkyste" data-reveal style="--d:300ms">
+            <span class="dir-card__nr">04</span>
+            <span class="icon-card__icon"><i class="ph ph-plant" aria-hidden="true"></i></span>
+            <h3>Žemės ūkis ir pelkininkystė</h3>
+            <p>Siūlome ūkininkams klimatui palankią alternatyvą sausinimui – pelkininkystę šlapiuose durpiniuose dirvožemiuose.</p>
+            <span class="link-arrow">Skaityti <i class="ph ph-arrow-down" aria-hidden="true"></i></span>
+          </a>
+        </div>
+        <div class="brief-box mt-40" data-reveal>
+          <span class="brief-box__label"><i class="ph ph-list-checks" aria-hidden="true"></i> Trumpai</span>
+          <ul>
+            <li>Kartu su partneriais atkūrėme apie 110 ha pažeistų Lietuvos pelkių – ŠESD emisijos kasmet sumažėjo 580 t CO₂.</li>
+            <li>15 vykdomų ir įgyvendintų projektų Lietuvoje, Baltijos šalyse ir Europos Sąjungoje – nuo Aukštumalos iki LIFE SUPER EU.</li>
+            <li>Teikiame konsultacijas, atliekame tyrimus ir inventorizacijas, rengiame seminarus ir leidinius savivaldybėms, ūkininkams, verslui ir mokykloms.</li>
+            <li>Verslui siūlome CO₂ emisijų kompensavimą atkuriant pelkes – apskaita pagal MoorFutures (Vokietija) standartą ir GEST metodiką.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Salient: Row 2 kolonos (balta) + Split Line Heading + Testimonial / Nectar Quote (citata) + Text Block + Nectar Icon List + Image Element su Mask reveal, „float“ paveikslu ir Milestone ženkleliu; žemiau Post Loop Builder (2 projektai pagal taksonomiją „Kryptis“) + Icon With Text (leidinys) -->
+    <section class="section section--white" id="biologine-ivairove" aria-labelledby="bio-h">
+      <div class="container">
+        <div class="split">
+          <div class="split__text">
+            <p class="kicker" data-nr="01">Biologinės įvairovės apsauga</p>
+            <h2 id="bio-h" data-split>Kad gamta <em>vėl taptų sveika</em></h2>
+            <p class="lead">Saugome ir atkuriame EB svarbos pelkių buveines, istorinių parkų ir šlapynių biologinę įvairovę – nuo gegužraibių iki varliagyvių.</p>
+            <blockquote class="quote" data-reveal>
+              <p>Mūsų fizinei ir psichinei gerovei labai svarbu, kad gamta vėl taptų sveika, tai taip pat padės mums kovoti su klimato kaita ir ligų protrūkiais…</p>
+              <cite><strong>Ursula von der Leyen</strong> Europos Komisijos Pirmininkė, 2020 m.</cite>
+            </blockquote>
+            <p>2030 m. ES biologinės įvairovės strategijoje pažymima, kad šlapynių ir durpynų apsauga ir atkūrimas yra ypatingos priemonės biologinės įvairovės, klimato ir žmonių krizių sprendimui.</p>
+            <ul class="icon-list mt-24" data-reveal-group>
+              <li data-reveal><i class="ph ph-flower-lotus" aria-hidden="true"></i><div><strong>EB svarbos pelkių buveinės</strong><p>11 iš 53 Lietuvoje saugomų Europos Bendrijos svarbos buveinių tipų susiję su pelkėmis – jų būklę geriname atkurdami hidrologinį režimą. <a class="link-u" href="pelkes.html#tipai">Pelkių tipai ir buveinės</a></p></div></li>
+              <li data-reveal style="--d:100ms"><i class="ph ph-butterfly" aria-hidden="true"></i><div><strong>Rūšių ir buveinių tyrimai</strong><p>Atliekame biologinės įvairovės tyrimus, įrengiame varliagyvių apsaugos sistemas, konsultuojame miškininkystės klausimais, kad ūkinė veikla nekenktų rūšims.</p></div></li>
+              <li data-reveal style="--d:200ms"><i class="ph ph-tree" aria-hidden="true"></i><div><strong>Istoriniai parkai ir jų vandens telkiniai</strong><p>Latvijos ir Lietuvos pasienyje padėjome gerinti istorinių parkų vandens telkinių ekologines sąlygas derinant istorines, gamtos ir kraštovaizdžio vertybes.</p></div></li>
+            </ul>
+          </div>
+          <div class="media-stack" data-reveal="scale">
+            <div class="media-stack__main" data-mask><img src="https://images.pexels.com/photos/17846952/pexels-photo-17846952.png?auto=compress&cs=tinysrgb&w=1600" alt="Violetinė laukinė gegužraibė tamsiame žaliame fone" loading="lazy"></div>
+            <div class="media-stack__float"><img src="https://images.pexels.com/photos/12393834/pexels-photo-12393834.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Kūdrinė varlė ant vandens lelijų lapų" loading="lazy"></div>
+            <div class="media-stack__badge"><span><strong>11</strong>iš 53 EB buveinių</span></div>
+          </div>
+        </div>
+
+        <div class="related mt-64">
+          <div class="section-head section-head--row">
+            <div>
+              <p class="kicker">Susiję projektai ir leidiniai</p>
+              <h3>Ką darome dėl biologinės įvairovės</h3>
+            </div>
+            <a class="link-arrow" href="projektai.html?f=biologine-ivairove">Visi krypties projektai <i class="ph ph-arrow-right" aria-hidden="true"></i></a>
+          </div>
+          <div class="grid grid--3 related__grid new-fn" data-reveal-group>
+            <span class="new-fn__badge" data-tip="Nauja: prie kiekvienos krypties automatiškai rodomi susiję projektai ir leidiniai. WordPress'e projektai ir publikacijos – atskiri įrašų tipai su bendra taksonomija „Veiklos kryptis“, o Salient Post Loop Builder ištraukia 2 naujausius projektus ir leidinius. Dabar – po vieną statinę kortelę be datos, vietos ir statuso." tabindex="0">Nauja</span>
+            <article class="card" data-reveal>
+              <div class="card__media"><img src="https://images.pexels.com/photos/32394820/pexels-photo-32394820.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Ežeras lapuočių miške iš oro po debesuotu dangumi" loading="lazy"><span class="tag tag--done">Įgyvendintas</span></div>
+              <div class="card__body">
+                <div class="card__meta"><span><i class="ph ph-map-pin" aria-hidden="true"></i>Zarasų kraštas ir Latgala</span><span><i class="ph ph-flag" aria-hidden="true"></i>Interreg LV–LT</span></div>
+                <h3><a href="projektas.html">Išsaugok praeitį ateičiai (LLI-476)</a></h3>
+                <p>Vandens telkinių Latvijoje ir Lietuvoje ekologinių sąlygų pagerinimas: istorinių parkų atkūrimas ir priežiūra derinant istorines, gamtos ir biologinės įvairovės vertybes.</p>
+                <div class="card__foot"><span class="tag">Biologinė įvairovė</span><span class="small muted">Skaityti daugiau</span></div>
+                <span class="card__go"><i class="ph ph-arrow-up-right" aria-hidden="true"></i></span>
+              </div>
+            </article>
+            <article class="card" data-reveal style="--d:100ms">
+              <div class="card__media"><img src="https://images.pexels.com/photos/8698113/pexels-photo-8698113.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Pelkinis pušynas su takais ir ežerėliais rudenį" loading="lazy"><span class="tag tag--live">Vykdomas</span></div>
+              <div class="card__body">
+                <div class="card__meta"><span><i class="ph ph-map-pin" aria-hidden="true"></i>4 BAST teritorijos</span><span><i class="ph ph-flag" aria-hidden="true"></i>LIFE programa</span><span><i class="ph ph-calendar-blank" aria-hidden="true"></i>nuo 2024 m.</span></div>
+                <h3><a href="projektas.html">LIFE ForestHabitatLT</a></h3>
+                <p>Artimesnės gamtai miškininkystės praktikos EB svarbos miško ir pelkių buveinėms Šimonių girioje, Buktos miške, Praviršulio tyrelyje ir Dabravolės durpyne.</p>
+                <div class="card__foot"><span class="tag">Biologinė įvairovė</span><span class="small muted">Skaityti daugiau</span></div>
+                <span class="card__go"><i class="ph ph-arrow-up-right" aria-hidden="true"></i></span>
+              </div>
+            </article>
+            <div class="related__docs" data-reveal style="--d:200ms">
+              <h4>Leidiniai</h4>
+              <a class="doc" href="#" title="PDF (makete neįkeltas)"><span class="doc__icon"><i class="ph ph-file-pdf" aria-hidden="true"></i></span><span class="doc__text"><strong>Istorinių parkų priežiūros vadovas biologinei įvairovei išsaugoti</strong><span>PDF · knyga · 2022 · projektas LLI-476</span></span><span class="doc__meta"><span class="tag">LT/LV</span></span><span class="doc__dl" aria-hidden="true"><i class="ph ph-download-simple"></i></span></a>
+              <a class="doc" href="#" title="PDF (makete neįkeltas)"><span class="doc__icon doc__icon--green"><i class="ph ph-file-pdf" aria-hidden="true"></i></span><span class="doc__text"><strong>Hidrologinio režimo atkūrimas pažeistose Lietuvos pelkėse. Studija</strong><span>PDF · studija · 2026 · LIFE ForestHabitatLT</span></span><span class="doc__meta"><span class="tag">LT</span></span><span class="doc__dl" aria-hidden="true"><i class="ph ph-download-simple"></i></span></a>
+              <a class="link-arrow" href="publikacijos.html">Visos publikacijos <i class="ph ph-arrow-right" aria-hidden="true"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Salient: Row 2 kolonos (popierius, medija kairėje) + Split Line Heading + Text Block + Callout (Highlighted Text su ikona) + Video kortelė (self-hosted mp4 SD su poster, Video Lightbox) + Milestone ×4 + Post Loop Builder (2 projektai) + Icon With Text (3 leidiniai) -->
+    <section class="section" id="atkurimas" aria-labelledby="atkurimas-h">
+      <div class="container">
+        <div class="split split--media-first">
+          <div class="split__text">
+            <p class="kicker" data-nr="02">Pelkių ekosistemų atkūrimas</p>
+            <h2 id="atkurimas-h" data-split>Grąžiname vandenį <em>į nusausintas pelkes</em></h2>
+            <p class="lead">Grąžiname vandenį į nusausintas pelkes ir išeksploatuotus durpynus: užtūros, pylimai, kiminų ir pelkinių augalų įkurdinimas.</p>
+            <p><strong>Ekologinis atkūrimas</strong> – tiesioginės ar netiesioginės žmogaus veiklos pertvarkytų, pažeistų, degradavusių arba sunaikintų ekosistemų atkūrimo procesas, siekiant susigrąžinti artimas natūralioms, save palaikančias ir atsparias trikdymui ekosistemas.</p>
+            <p>Ekosistema laikoma atkurta, kai susiformuoja etaloninei ekosistemai būdingi rūšių deriniai ir tipinga bendrijų struktūra, ji gali savarankiškai funkcionuoti be papildomos žmogaus paramos.</p>
+            <div class="callout callout--green" data-reveal>
+              <i class="ph ph-flag" aria-hidden="true"></i>
+              <p><strong>EB politikos kontekstas.</strong> Nusausintų ir kitaip žmogaus veiklos pažeistų pelkių atkūrimas yra dalis Europos Žaliojo kurso politikos, ekologinio atkūrimo veiklos yra numatytos nacionaliniuose teisės aktuose, siekiant įgyvendinti biologinės įvairovės ir klimato kaitos politikų tikslus.</p>
+            </div>
+            <div class="cluster mt-24">
+              <a class="btn" href="pelkes.html#atkurimas">Kaip atkuriame pelkę <span class="btn__icon"><i class="ph ph-arrow-right" aria-hidden="true"></i><i class="ph ph-arrow-right" aria-hidden="true"></i></span></a>
+              <a class="link-arrow" href="terminu-zodynas.html">Terminų žodynas <i class="ph ph-arrow-right" aria-hidden="true"></i></a>
+            </div>
+          </div>
+          <a class="video-card video-card--tall" href="videoteka.html" data-reveal="scale">
+            <img src="https://images.pexels.com/videos/35647503/pexels-photo-35647503.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=630&w=1200" alt="Ekskavatorius kasa durpingą dirvą atkuriamoje pelkėje">
+            <video data-src="https://videos.pexels.com/video-files/35647503/15106476_960_540_50fps.mp4" muted loop playsinline></video>
+            <span class="video-card__play"><i class="ph ph-play" aria-hidden="true"></i></span>
+            <div class="video-card__body">
+              <h3>Atkūrimo darbai</h3>
+              <p>Užtūros ir pylimai sulaiko vandenį sausinimo grioviuose – filmai apie mūsų darbus videotekoje.</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="stats mt-64" data-reveal-group>
+          <div class="stat" data-reveal>
+            <span class="stat__num"><span data-count-to="110" data-prefix="~">~110</span><small>ha</small></span>
+            <span class="stat__label">atkurta pažeistų pelkių kartu su partneriais</span>
+          </div>
+          <div class="stat" data-reveal style="--d:100ms">
+            <span class="stat__num"><span data-count-to="580">580</span><small>t CO₂ / metus</small></span>
+            <span class="stat__label">sumažinta ŠESD emisijų kasmet</span>
+          </div>
+          <div class="stat" data-reveal style="--d:200ms">
+            <span class="stat__num"><span data-count-to="242">242</span><small>užtūros</small></span>
+            <span class="stat__label">įrengtos Aukštumaloje 2021 m. (197 durpių ir 45 OSB plokščių)</span>
+          </div>
+          <div class="stat" data-reveal style="--d:300ms">
+            <span class="stat__num"><span data-count-to="100" data-prefix="~">~100</span><small>ha</small></span>
+            <span class="stat__label">atkuriama Guodžių durpyne (Biržų r.)</span>
+            <span class="stat__src">Šaltinis: fondo projektų aprašymai</span>
+          </div>
+        </div>
+
+        <div class="related mt-64">
+          <div class="section-head section-head--row">
+            <div>
+              <p class="kicker">Susiję projektai ir leidiniai</p>
+              <h3>Nuo Aukštumalos iki Guodžių</h3>
+            </div>
+            <a class="link-arrow" href="projektai.html?f=atkurimas">Visi atkūrimo projektai <i class="ph ph-arrow-right" aria-hidden="true"></i></a>
+          </div>
+          <div class="grid grid--3 related__grid" data-reveal-group>
+            <article class="card" data-reveal>
+              <div class="card__media"><img src="https://images.pexels.com/photos/36553239/pexels-photo-36553239.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Atkuriama šlapynė: vandens vagos pievoje, ekskavatorius tolumoje" loading="lazy"><span class="tag tag--live">Vykdomas</span></div>
+              <div class="card__body">
+                <div class="card__meta"><span><i class="ph ph-map-pin" aria-hidden="true"></i>Biržų r.</span><span><i class="ph ph-calendar-blank" aria-hidden="true"></i>nuo 2026 m.</span><span><i class="ph ph-ruler" aria-hidden="true"></i>~100 ha</span></div>
+                <h3><a href="projektas.html">Guodžių durpyno atkūrimas ir apsauga</a></h3>
+                <p>Atkursime degradavusio durpyno hidrologinį režimą apleisto durpių gavybos karjero teritorijoje – kartu su Michaelio Zukovo fondu ir Greifsvaldo pelkių centru.</p>
+                <div class="card__foot"><span class="tag">Atkūrimas</span><span class="small muted">Skaityti daugiau</span></div>
+                <span class="card__go"><i class="ph ph-arrow-up-right" aria-hidden="true"></i></span>
+              </div>
+            </article>
+            <article class="card" data-reveal style="--d:100ms">
+              <div class="card__media"><img src="https://images.pexels.com/photos/11519304/pexels-photo-11519304.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Rudeninė aukštapelkė su ežerėliais iš drono" loading="lazy"><span class="tag tag--done">Įgyvendintas</span></div>
+              <div class="card__body">
+                <div class="card__meta"><span><i class="ph ph-map-pin" aria-hidden="true"></i>Šilutės r.</span><span><i class="ph ph-calendar-blank" aria-hidden="true"></i>2021</span><span><i class="ph ph-wall" aria-hidden="true"></i>242 užtūros</span></div>
+                <h3><a href="projektas.html">Aukštumalos aukštapelkės pietvakarinės dalies atkūrimas</a></h3>
+                <p>Telmologiniame draustinyje įrengtos 197 durpių ir 45 OSB plokščių užtūros bei 3 durpių su geomembrana pylimai (130 m) vandeniui sulaikyti sausinimo pažeistoje aukštapelkėje.</p>
+                <div class="card__foot"><span class="tag">Atkūrimas</span><span class="small muted">Skaityti daugiau</span></div>
+                <span class="card__go"><i class="ph ph-arrow-up-right" aria-hidden="true"></i></span>
+              </div>
+            </article>
+            <div class="related__docs" data-reveal style="--d:200ms">
+              <h4>Leidiniai</h4>
+              <a class="doc" href="#" title="PDF (makete neįkeltas)"><span class="doc__icon"><i class="ph ph-file-pdf" aria-hidden="true"></i></span><span class="doc__text"><strong>Hidrologinio režimo atkūrimas pelkėse ir kituose durpynuose. Metodinė priemonė</strong><span>PDF · knyga · 2025 · SavePeatLands</span></span><span class="doc__meta"><span class="tag">LT</span></span><span class="doc__dl" aria-hidden="true"><i class="ph ph-download-simple"></i></span></a>
+              <a class="doc" href="#" title="PDF (makete neįkeltas)"><span class="doc__icon doc__icon--green"><i class="ph ph-file-pdf" aria-hidden="true"></i></span><span class="doc__text"><strong>Kaip atkurti pelkę savo sklype? Pelkių atkūrimo gairės ūkininkams</strong><span>PDF · brošiūra · 2025 · SavePeatLands</span></span><span class="doc__meta"><span class="tag">LT</span></span><span class="doc__dl" aria-hidden="true"><i class="ph ph-download-simple"></i></span></a>
+              <a class="doc" href="#" title="PDF (makete neįkeltas)"><span class="doc__icon doc__icon--green"><i class="ph ph-file-pdf" aria-hidden="true"></i></span><span class="doc__text"><strong>Hidrologinio režimo atkūrimas pažeistose Lietuvos pelkėse. Studija</strong><span>PDF · studija · 2026 · LIFE ForestHabitatLT</span></span><span class="doc__meta"><span class="tag">LT</span></span><span class="doc__dl" aria-hidden="true"><i class="ph ph-download-simple"></i></span></a>
+            </div>
+          </div>
+          <p class="sr-note mt-24">Dalis projektų metų įvertinti pagal leidinius ir naujienas – patikslinami su fondu prieš keliant į WordPress.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Salient: Row (Full width, Row BG video HD + tamsus Overlay, Parallax) + Split Line Heading + Text Block + Milestone ×3 + Fancy Box (stiklo kortelė „Verslui“ su Icon List) + Nectar Button → co2.html -->
+    <section class="band band--klimatas" id="klimatas" aria-labelledby="klimatas-h">
+      <div class="video-bg video-bg--flat">
+        <img src="https://images.pexels.com/videos/16572180/drenthe-early-hoogeveen-landscape-16572180.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=630&w=1200" alt="">
+        <video data-src="https://videos.pexels.com/video-files/16572180/16572180-hd_1920_1080_30fps.mp4" data-src-sd="https://videos.pexels.com/video-files/16572180/16572180-sd_960_540_30fps.mp4" muted loop playsinline poster="https://images.pexels.com/videos/16572180/drenthe-early-hoogeveen-landscape-16572180.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=630&w=1200"></video>
+      </div>
+      <div class="container">
+        <div class="band-split">
+          <div class="band-split__text">
+            <p class="kicker" data-nr="03">CO₂ emisijų mažinimas</p>
+            <h2 id="klimatas-h" data-split>Mums reikia pelkių. <em>Pelkėms reikia jūsų.</em></h2>
+            <p class="lead">Padedame įmonėms mažinti anglies pėdsaką investuojant į Lietuvos pelkių atkūrimą – skaidriai, pagal MoorFutures standartą.</p>
+            <p>Nusausintų pelkių atkūrimas – tai neįkainojamas indėlis į jūsų įmonės pastangas mažinti CO₂ emisijas bei prisidėti prie visuomenės gerovės kūrimo. Šiandien Lietuvoje yra sunaikinta arba stipriai pažeista apie tris ketvirtadalius visų pelkių, šlapių ir pelkėtų pievų bei pelkinių miškų.</p>
+            <p>Ar jūs siekiate mažinti savo įmonės veiklos anglies pėdsaką ir norite bendradarbiauti su patikima ir efektyvia gamtos atkūrimo iniciatyva? Sumažinkite savo įmonės CO₂ emisijas atgaivindami Lietuvos pelkes.</p>
+            <div class="stats stats--3 band-stats" data-reveal-group>
+              <div class="stat" data-reveal>
+                <span class="stat__num"><span data-count-to="110" data-prefix="~">~110</span><small>ha</small></span>
+                <span class="stat__label">atkurta pažeistų pelkių</span>
+              </div>
+              <div class="stat" data-reveal style="--d:100ms">
+                <span class="stat__num"><span data-count-to="580">580</span><small>t CO₂ / metus</small></span>
+                <span class="stat__label">sumažinta ŠESD emisijų</span>
+              </div>
+              <div class="stat" data-reveal style="--d:200ms">
+                <span class="stat__num"><span data-count-to="15.5" data-decimals="1">15,5</span><small>tūkst. t CO₂</small></span>
+                <span class="stat__label">išvengta emisijų iki 2050 m.</span>
+              </div>
+            </div>
+          </div>
+          <aside class="co2-teaser" data-reveal="right" aria-labelledby="co2-teaser-h">
+            <span class="tag tag--sun">Verslui</span>
+            <h3 id="co2-teaser-h">Kompensuokite CO₂ atkurdami Lietuvos pelkes</h3>
+            <p>Mūsų daugiametė pelkėtyros mokslininkų patirtis padės jūsų įmonei užtikrinti:</p>
+            <ul class="check-list">
+              <li>nusausintų pelkių atkūrimą ir apsaugą;</li>
+              <li>patikimą CO₂ sutaupymo apskaičiavimą, paremtą MoorFutures (Vokietija) standartu ir jo metodika;</li>
+              <li>proceso skaidrumą bei abipusį bendradarbiavimą;</li>
+              <li>kokybišką darbą pagal papildomumo, pastovumo, išmatuojamumo ir patikrinamumo principus.</li>
+            </ul>
+            <div class="co2-teaser__actions">
+              <a class="btn btn--sun" href="co2.html">Nemokama konsultacija <span class="btn__icon"><i class="ph ph-arrow-right" aria-hidden="true"></i><i class="ph ph-arrow-right" aria-hidden="true"></i></span></a>
+              <a class="link-arrow" href="co2.html">Daugiau apie CO₂ kompensavimą <i class="ph ph-arrow-right" aria-hidden="true"></i></a>
+            </div>
+          </aside>
+        </div>
+      </div>
+      <span class="video-credit">Video: Pexels / Matthias Groeneveld</span>
+    </section>
+
+    <!-- Salient: Row (balta) + Heading + Post Loop Builder (2 klimato krypties projektai) + Icon With Text (brošiūra verslui) + Nectar Button → co2.html -->
+    <section class="section section--white" id="klimatas-projektai" aria-labelledby="klimatas-p-h">
+      <div class="container">
+        <div class="related">
+          <div class="section-head section-head--row">
+            <div>
+              <p class="kicker">Susiję projektai ir leidiniai</p>
+              <h3 id="klimatas-p-h">Klimatui – nuo standartų iki atkurtų hektarų</h3>
+            </div>
+            <a class="link-arrow" href="projektai.html?f=klimatas">Visi klimato projektai <i class="ph ph-arrow-right" aria-hidden="true"></i></a>
+          </div>
+          <div class="grid grid--3 related__grid" data-reveal-group>
+            <article class="card" data-reveal>
+              <div class="card__media"><img src="https://images.pexels.com/photos/15141493/pexels-photo-15141493.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Seminaras šviesioje salėje, pranešėjas iš nugaros" loading="lazy"><span class="tag tag--done">Įgyvendintas</span></div>
+              <div class="card__body">
+                <div class="card__meta"><span><i class="ph ph-map-pin" aria-hidden="true"></i>Visa Lietuva</span><span><i class="ph ph-seal-check" aria-hidden="true"></i>Standartas 2022, metodika 2023</span></div>
+                <h3><a href="projektas.html">NVO pajėgumai CO₂ kompensavimui</a></h3>
+                <p>Sustiprinome Lietuvos aplinkosauginių NVO gebėjimus dalyvauti anglies pėdsako kompensavimo mechanizmų diegimo ir taikymo procesuose – parengtas ŠESD savanoriško mažinimo kokybės standartas ir metodika.</p>
+                <div class="card__foot"><span class="tag">Klimatas</span><span class="small muted">Skaityti daugiau</span></div>
+                <span class="card__go"><i class="ph ph-arrow-up-right" aria-hidden="true"></i></span>
+              </div>
+            </article>
+            <article class="card" data-reveal style="--d:100ms">
+              <div class="card__media"><img src="https://images.pexels.com/photos/34428744/pexels-photo-34428744.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Šlapynė su ežerėliu ir pušimis vakaro saulėje" loading="lazy"><span class="tag tag--done">Įgyvendintas</span></div>
+              <div class="card__body">
+                <div class="card__meta"><span><i class="ph ph-map-pin" aria-hidden="true"></i>Prienų r.</span><span><i class="ph ph-ruler" aria-hidden="true"></i>38 ha</span><span><i class="ph ph-tree-evergreen" aria-hidden="true"></i>Nemuno kilpų RP</span></div>
+                <h3><a href="projektas.html">Tartoko pelkės hidrologinio režimo atkūrimas</a></h3>
+                <p>Sudarytos sąlygos Tartoko pelkės hidrologinio režimo atsikūrimui, taip sumažinant ŠESD emisijas ir palaikant palankią atkurtų buveinių bei saugomų rūšių būklę.</p>
+                <div class="card__foot"><span class="tag">Atkūrimas</span><span class="small muted">Skaityti daugiau</span></div>
+                <span class="card__go"><i class="ph ph-arrow-up-right" aria-hidden="true"></i></span>
+              </div>
+            </article>
+            <div class="related__docs" data-reveal style="--d:200ms">
+              <h4>Leidiniai</h4>
+              <a class="doc" href="#" title="PDF (makete neįkeltas)"><span class="doc__icon"><i class="ph ph-file-pdf" aria-hidden="true"></i></span><span class="doc__text"><strong>Pelkių fondo ir verslo partnerystė: atkurdami pelkes saugokime klimatą</strong><span>PDF · brošiūra verslui · 2022</span></span><span class="doc__meta"><span class="tag">LT</span></span><span class="doc__dl" aria-hidden="true"><i class="ph ph-download-simple"></i></span></a>
+              <p class="related__note">ŠESD savanoriško mažinimo kokybės standartas (2022), metodika (2023) ir MoorFutures aprašas – CO₂ puslapyje.</p>
+              <a class="link-arrow" href="co2.html">Standartai ir metodika <i class="ph ph-arrow-right" aria-hidden="true"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Salient: Row (šviesiai žalia) + Split Line Heading + Text Block + Icon List (apibrėžimo 4 punktai) + Image Element (Mask reveal) su „float“ paveikslu ir Milestone ženkleliu; Toggle Panels (2 ilgos pastraipos); 2 stulpelių Icon List (augalai su lotyniškais pavadinimais) + Image Element; Highlighted Text; Post Loop Builder (3 projektai); Icon With Text (6 leidiniai, 3 grupės) -->
+    <section class="section section--green" id="pelkininkyste" aria-labelledby="pelkininkyste-h">
+      <div class="container">
+        <div class="split">
+          <div class="split__text">
+            <p class="kicker" data-nr="04">Žemės ūkis ir pelkininkystė</p>
+            <h2 id="pelkininkyste-h" data-split>Ūkininkauti <em>šlapiose</em> žemėse</h2>
+            <p class="lead">Siūlome ūkininkams klimatui palankią alternatyvą sausinimui – pelkininkystę šlapiuose durpiniuose dirvožemiuose.</p>
+            <p>Lietuvoje daugiau nei pusė nusausintų durpinių dirvožemių naudojama žemės ūkio reikmėms. Iš šių plotų į atmosferą išmetama apie 7–8 mln. t CO₂ ekv. per metus, t. y. beveik pusė visų šalies šiltnamio efektą sukeliančių dujų (ŠESD) emisijų. Siekiant sumažinti žemės ūkio sukeliamas ŠESD emisijas iš žemdirbystei naudojamų durpžemių, siūloma alternatyva – pelkininkystė (angl. <em lang="en">paludiculture</em>, vok. <em lang="de">Paludikultur</em>).</p>
+            <p><strong>Pelkininkystė</strong> – klimatui palankus natūralių ir atkurtų pelkių ūkinis naudojimas, apimantis:</p>
+            <ul class="check-list" data-reveal-group>
+              <li data-reveal>pelkinių augalų produkcijos paruošą;</li>
+              <li data-reveal style="--d:80ms">natūralioms pelkių buveinėms būdingo hidrologinio režimo palaikymą ir (ar) atkūrimą;</li>
+              <li data-reveal style="--d:160ms">durpėdaros skatinimą;</li>
+              <li data-reveal style="--d:240ms">pelkių biologinės įvairovės apsaugą siekiant užtikrinti pelkių ekologinį stabilumą.</li>
+            </ul>
+            <p class="mt-24">Tvarus pelkininkystės principais pagrįstas pelkių naudojimas leistų ne tik įgyvendinti klimato kaitos švelninimo siekius, bet ir užtikrintų vertingų buveinių būklės gerinimo perspektyvas.</p>
+          </div>
+          <div class="media-stack" data-reveal="scale">
+            <div class="media-stack__main" data-mask><img src="https://images.pexels.com/photos/36553238/pexels-photo-36553238.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Atkurta šlapia pieva su vingiuojančiu vandens kanalu po giedru dangumi" loading="lazy"></div>
+            <div class="media-stack__float"><img src="https://images.pexels.com/photos/26873596/pexels-photo-26873596.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Saulašarių kilimas tarp kiminų, makro iš viršaus" loading="lazy"></div>
+            <div class="media-stack__badge"><span><strong>~½</strong>šalies ŠESD emisijų</span></div>
+          </div>
+        </div>
+
+        <div class="grid grid--2 palu-grid mt-64">
+          <div data-accordion data-reveal>
+            <h3 class="palu-h3">Kodėl pelkininkystė?</h3>
+            <div class="toggle toggle--card">
+              <button class="toggle__btn" type="button" aria-expanded="true">Kuo pelkininkystė skiriasi nuo tradicinės žemdirbystės durpžemiuose? <i class="ph ph-plus" aria-hidden="true"></i></button>
+              <div class="toggle__panel"><div>
+                <p>Tai tradicinės žemdirbystės, paprastai neatsiejamos nuo žemių sausinimo (melioracijos), alternatyva durpiniuose dirvožemiuose. Tradicinė žemdirbystė nusausintuose durpynuose skatina biologinės įvairovės nykimą, ŠESD emisijas ir paviršinio vandens užterštumą azoto bei fosforo junginiais. Pelkininkystė gali padėti atkurti sausinimo, intensyvios žemdirbystės ar durpių kasybos pažeistas pelkes. Kad jose būtų galima užsiimti pelkininkyste, būtina atkurti artimą natūraliam hidrologinį režimą.</p>
+                <p>Tvariai ūkininkaujant natūraliose ir (arba) atkurtose pelkėtose buveinėse ne tik surenkama pelkininkystės produkcija (antžeminė biomasė), išsaugoma durpių klodo storymė, bet ir sudaromos palankios sąlygos durpėdarai. Tai yra svarbus klimato kaitos švelninimo aspektas.</p>
+              </div></div>
+            </div>
+            <div class="toggle toggle--card">
+              <button class="toggle__btn" type="button" aria-expanded="false">Kam naudojama pelkinių augalų biomasė? <i class="ph ph-plus" aria-hidden="true"></i></button>
+              <div class="toggle__panel"><div>
+                <p>Užsienio šalyse nendrių, viksvų, alksnių, kiminų ir kitų pelkinių augalų biomasė vertinama kaip atsinaujinantys ištekliai, kuriuos galima naudoti ruošiant pašarus, energetinėms reikmėms (žaliava gaminant biodujas arba biokuras tiesiogiai deginant šildymo katiluose), gaminant statybines medžiagas, maisto ir farmacijos pramonėse, amatininkystės srityje ir kt.</p>
+              </div></div>
+            </div>
+            <div class="toggle toggle--card">
+              <button class="toggle__btn" type="button" aria-expanded="false">Kokie augalai tinka pelkininkystei? <i class="ph ph-plus" aria-hidden="true"></i></button>
+              <div class="toggle__panel"><div>
+                <p>Pelkininkystei tinkami drėgnų augaviečių augalai, kurių tik antžeminė biomasė skirta ūkiniam naudojimui, o nunykusios požeminės augalų dalys (šaknys, šakniastiebiai) bedeguonėje aplinkoje ilgainiui formuoja durpes. Lietuvos gamtinėmis sąlygomis tinkamų augalų pavyzdžiai – sąraše dešinėje.</p>
+              </div></div>
+            </div>
+          </div>
+          <div class="plants" data-reveal="right">
+            <h3 class="palu-h3">Pelkininkystei tinkami augalai Lietuvoje</h3>
+            <div class="plant-group">
+              <h4><i class="ph ph-waves" aria-hidden="true"></i> Žemapelkėse</h4>
+              <ul class="plant-list">
+                <li><span>pelkinis dryžutis</span><em lang="la">Phalaris arundinacea</em></li>
+                <li><span>paprastoji nendrė</span><em lang="la">Phragmites australis</em></li>
+                <li><span>švendrai</span><em lang="la">Typha spp.</em></li>
+                <li><span>vandeninė monažolė</span><em lang="la">Glyceria maxima</em></li>
+                <li><span>aukštosios viksvos</span><em lang="la">Carex spp.</em></li>
+                <li><span>juodalksnis</span><em lang="la">Alnus glutinosa</em></li>
+                <li><span>paprastasis šaltekšnis</span><em lang="la">Frangula alnus</em></li>
+                <li><span>trilapis pupalaiškis</span><em lang="la">Menyanthes trifoliata</em></li>
+                <li><span>pelkinė vingiorykštė</span><em lang="la">Filipendula ulmaria</em></li>
+                <li><span>pajūrinis sotvaras</span><em lang="la">Myrica gale</em></li>
+              </ul>
+              <p class="plant-group__more">ir kt.</p>
+            </div>
+            <div class="plant-group">
+              <h4><i class="ph ph-tree-evergreen" aria-hidden="true"></i> Aukštapelkėse</h4>
+              <ul class="plant-list">
+                <li><span>kiminai</span><em lang="la">Sphagnum spp.</em></li>
+                <li><span>apskritalapė saulašarė</span><em lang="la">Drosera rotundifolia</em></li>
+                <li><span>paprastoji spanguolė</span><em lang="la">Vaccinium oxycoccos</em></li>
+                <li><span>vaivoras</span><em lang="la">Vaccinium uliginosum</em></li>
+              </ul>
+              <p class="plant-group__more">ir kt.</p>
+            </div>
+            <figure class="figure figure--wide plant-figure" data-mask>
+              <img src="https://images.pexels.com/photos/38448147/pexels-photo-38448147.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Apskritalapė saulašarė su lipniais lašeliais, makro" loading="lazy">
+              <figcaption class="figure__cap">Apskritalapė saulašarė (<em lang="la">Drosera rotundifolia</em>) – aukštapelkių augalas, tinkamas pelkininkystei</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <div class="callout callout--green mt-40" data-reveal>
+          <i class="ph ph-handshake" aria-hidden="true"></i>
+          <p>Pelkininkystė – puiki galimybė suderinti gana prieštaringus dalykus: išsaugoti šlapias pelkes (su jose slypinčia biologine įvairove) ir, tvariai jas naudojant, gauti ekonominę naudą.</p>
+        </div>
+
+        <div class="related mt-64">
+          <div class="section-head section-head--row">
+            <div>
+              <p class="kicker">Susiję projektai</p>
+              <h3>Pelkininkystė praktikoje</h3>
+            </div>
+            <a class="link-arrow" href="projektai.html?f=pelkininkyste">Visi pelkininkystės projektai <i class="ph ph-arrow-right" aria-hidden="true"></i></a>
+          </div>
+          <div class="grid grid--3" data-reveal-group>
+            <article class="card" data-reveal>
+              <div class="card__media"><img src="https://images.pexels.com/photos/15112967/pexels-photo-15112967.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Nusausinta šlapia pieva su grioviu ir beržais ankstyvą pavasarį" loading="lazy"><span class="tag tag--done">Įgyvendintas</span></div>
+              <div class="card__body">
+                <div class="card__meta"><span><i class="ph ph-globe-hemisphere-east" aria-hidden="true"></i>Baltijos šalys</span><span><i class="ph ph-calendar-blank" aria-hidden="true"></i>2021–2024</span><span><i class="ph ph-flag" aria-hidden="true"></i>EUKI</span></div>
+                <h3><a href="projektas.html">EUKI – pelkininkystės plėtra žemės ūkyje Baltijos šalyse</a></h3>
+                <p>Sukauptas žinias apie klimatui neutralų durpynų naudojimą ir praktinę pelkininkystės patirtį perdavėme Lietuvos, Latvijos ir Estijos ūkininkams.</p>
+                <div class="card__foot"><span class="tag">Pelkininkystė</span><span class="small muted">Skaityti daugiau</span></div>
+                <span class="card__go"><i class="ph ph-arrow-up-right" aria-hidden="true"></i></span>
+              </div>
+            </article>
+            <article class="card" data-reveal style="--d:100ms">
+              <div class="card__media"><img src="https://images.pexels.com/photos/36553240/pexels-photo-36553240.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Ekskavatorius dirba užlietoje pievoje, atspindys balose" loading="lazy"><span class="tag tag--soon">Tęstinis</span></div>
+              <div class="card__body">
+                <div class="card__meta"><span><i class="ph ph-map-pin" aria-hidden="true"></i>Ežerėlis, Kauno r.</span><span><i class="ph ph-calendar-blank" aria-hidden="true"></i>nuo 2020 m.</span></div>
+                <h3><a href="projektas.html">Išeksploatuotų durpynų atkūrimas derinant pelkininkystę ir pelkinių ekosistemų atkūrimą</a></h3>
+                <p>Durpių karjerai Lietuvoje užima 20 tūkst. ha, daugiau nei pusė jų apleisti. Ežerėlio durpyne įrengti eksperimentiniai laukai su kiminų, spanguolių, nendrių ir švendrų pradmenimis.</p>
+                <div class="card__foot"><span class="tag">Pelkininkystė</span><span class="small muted">Skaityti daugiau</span></div>
+                <span class="card__go"><i class="ph ph-arrow-up-right" aria-hidden="true"></i></span>
+              </div>
+            </article>
+            <article class="card" data-reveal style="--d:200ms">
+              <div class="card__media"><img src="https://images.pexels.com/photos/38831467/pexels-photo-38831467.png?auto=compress&cs=tinysrgb&w=900" alt="Rūkas virš šlapios pievos su vingiuojančiu upeliu" loading="lazy"><span class="tag tag--done">Įgyvendintas</span></div>
+              <div class="card__body">
+                <div class="card__meta"><span><i class="ph ph-map-pin" aria-hidden="true"></i>Kemerai, Radviliškio r.</span><span><i class="ph ph-calendar-blank" aria-hidden="true"></i>2020–2021</span><span><i class="ph ph-ruler" aria-hidden="true"></i>~6 ha</span></div>
+                <h3><a href="projektas.html">Parodomasis žemapelkės atkūrimas Baisogaloje</a></h3>
+                <p>Sėtinės pievos vietoje atkurtas hidrologinis režimas ir įsėtas nendrinis dryžutis, skatinsiantis šlapių pievų ir žemapelkių buveinių formavimąsi – derinant gamtosaugos, mokslo ir žemės naudotojo interesus.</p>
+                <div class="card__foot"><span class="tag">Pelkininkystė</span><span class="small muted">Skaityti daugiau</span></div>
+                <span class="card__go"><i class="ph ph-arrow-up-right" aria-hidden="true"></i></span>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="related mt-64">
+          <div class="section-head section-head--row">
+            <div>
+              <p class="kicker">Leidiniai pelkininkystės tema</p>
+              <h3>Knyga, lankstinukai ir informaciniai biuleteniai</h3>
+            </div>
+            <a class="link-arrow" href="publikacijos.html">Visos publikacijos <i class="ph ph-arrow-right" aria-hidden="true"></i></a>
+          </div>
+          <div class="grid grid--3 docs-grid" data-reveal-group>
+            <div class="related__docs" data-reveal>
+              <h4>Knyga</h4>
+              <a class="doc" href="#" title="PDF (makete neįkeltas)"><span class="doc__icon"><i class="ph ph-book-open" aria-hidden="true"></i></span><span class="doc__text"><strong>Pelkininkystė. Klimatui palankus ūkininkavimas šlapiuose durpiniuose dirvožemiuose</strong><span>PDF · knyga · 2024 · Sendžikaitė J., Jarašius L., Zableckis N.</span></span><span class="doc__meta"><span class="tag">LT</span></span><span class="doc__dl" aria-hidden="true"><i class="ph ph-download-simple"></i></span></a>
+            </div>
+            <div class="related__docs" data-reveal style="--d:100ms">
+              <h4>Lankstinukai</h4>
+              <a class="doc" href="#" title="PDF (makete neįkeltas)"><span class="doc__icon doc__icon--green"><i class="ph ph-file-pdf" aria-hidden="true"></i></span><span class="doc__text"><strong>Pelkininkystė, arba ūkininkavimas šlapiose žemėse</strong><span>PDF · 2020 · projektas DESIRE – Lietuvos gamtos fondas ir kt.</span></span><span class="doc__meta"><span class="tag">LT</span></span><span class="doc__dl" aria-hidden="true"><i class="ph ph-download-simple"></i></span></a>
+              <a class="doc" href="#" title="PDF (makete neįkeltas)"><span class="doc__icon doc__icon--green"><i class="ph ph-file-pdf" aria-hidden="true"></i></span><span class="doc__text"><strong>Pelkininkystė</strong><span>PDF · 2018 · projektas EUKI – Pelkininkystė Baltijos šalyse – Lietuvos gamtos fondas ir kt.</span></span><span class="doc__meta"><span class="tag">LT</span></span><span class="doc__dl" aria-hidden="true"><i class="ph ph-download-simple"></i></span></a>
+            </div>
+            <div class="related__docs" data-reveal style="--d:200ms">
+              <h4>Informaciniai biuleteniai</h4>
+              <a class="doc" href="#" title="PDF (makete neįkeltas)"><span class="doc__icon doc__icon--green"><i class="ph ph-file-pdf" aria-hidden="true"></i></span><span class="doc__text"><strong>Pelkininkystė</strong><span>PDF · 2021 · projektas DESIRE – Lietuvos gamtos fondas ir kt.</span></span><span class="doc__meta"><span class="tag">LT</span></span><span class="doc__dl" aria-hidden="true"><i class="ph ph-download-simple"></i></span></a>
+              <a class="doc" href="#" title="PDF (makete neįkeltas)"><span class="doc__icon doc__icon--green"><i class="ph ph-file-pdf" aria-hidden="true"></i></span><span class="doc__text"><strong>Pelkininkystės biomasės panaudojimo galimybės</strong><span>PDF · 2021 · projektas DESIRE – Lietuvos gamtos fondas ir kt.</span></span><span class="doc__meta"><span class="tag">LT</span></span><span class="doc__dl" aria-hidden="true"><i class="ph ph-download-simple"></i></span></a>
+              <a class="doc" href="#" title="PDF (makete neįkeltas)"><span class="doc__icon doc__icon--green"><i class="ph ph-file-pdf" aria-hidden="true"></i></span><span class="doc__text"><strong>Šlapynių buferinės zonos – natūralios vandens valymo sistemos</strong><span>PDF · 2021 · projektas DESIRE – Lietuvos gamtos fondas ir kt.</span></span><span class="doc__meta"><span class="tag">LT</span></span><span class="doc__dl" aria-hidden="true"><i class="ph ph-download-simple"></i></span></a>
+            </div>
+          </div>
+          <div class="action-row" data-reveal>
+            <span class="action-row__text"><span class="sun-dot"><i class="ph ph-tractor" aria-hidden="true"></i></span>Ūkininkaujate durpžemiuose? Padėsime įvertinti, ar jūsų sklype galima pelkininkystė.</span>
+            <a class="btn btn--sun btn--sm" href="#susisiekime">Susisiekime</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Salient: Row (balta) + Split Line Heading + 3 × Fancy Box / Icon With Text su Icon List (paslaugų punktai) + Nectar Button → paslaugos.html -->
+    <section class="section section--white" id="paslaugos" aria-labelledby="paslaugos-h">
+      <div class="container">
+        <div class="section-head section-head--row">
+          <div>
+            <p class="kicker">Paslaugos</p>
+            <h2 id="paslaugos-h" data-split>Ekspertų pagalba <em>savivaldybėms, ūkininkams ir verslui</em></h2>
+            <p class="lead">Konsultuojame, atliekame tyrimus ir inventorizacijas, organizuojame konferencijas, seminarus ir išvykas į pelkes – nuo pažeistų durpynų atkūrimo iki žalinimo planų.</p>
+          </div>
+          <a class="link-arrow" href="paslaugos.html">Visos paslaugos <i class="ph ph-arrow-right" aria-hidden="true"></i></a>
+        </div>
+        <div class="grid grid--3" data-reveal-group>
+          <article class="icon-card service-card" data-reveal>
+            <span class="icon-card__icon"><i class="ph ph-chats-circle" aria-hidden="true"></i></span>
+            <h3>Mūsų ekspertų konsultacijos</h3>
+            <ul class="check-list service-list">
+              <li>Pažeistų pelkių ir durpynų atkūrimo klausimais</li>
+              <li>Varliagyvių apsaugos sistemų įrengimo klausimais</li>
+              <li>Miškininkystės konsultacijos biologinės įvairovės išsaugojimo klausimais</li>
+              <li>Žalinimo planų rengimas (2023 m. parengtas Telšių miesto žalinimo planas)</li>
+              <li>CO₂ pėdsako mažinimas</li>
+            </ul>
+            <a class="link-arrow" href="paslaugos.html">Konsultacijos <i class="ph ph-arrow-right" aria-hidden="true"></i></a>
+          </article>
+          <article class="icon-card service-card" data-reveal style="--d:100ms">
+            <span class="icon-card__icon"><i class="ph ph-binoculars" aria-hidden="true"></i></span>
+            <h3>Inventorizacijos ir tyrimai</h3>
+            <ul class="check-list service-list">
+              <li>Biologinės įvairovės tyrimai</li>
+              <li>Ūkinės veiklos poveikio vertinimas</li>
+              <li>Gamtotvarkos planų rengimas</li>
+              <li>Poveikio aplinkai vertinimas</li>
+              <li>Želdinių ir želdynų inventorizacija</li>
+            </ul>
+            <a class="link-arrow" href="paslaugos.html">Tyrimai <i class="ph ph-arrow-right" aria-hidden="true"></i></a>
+          </article>
+          <article class="icon-card service-card" data-reveal style="--d:200ms">
+            <span class="icon-card__icon"><i class="ph ph-chalkboard-teacher" aria-hidden="true"></i></span>
+            <h3>Švietimas</h3>
+            <p>Organizuojame konferencijas ir praktinius seminarus, skatiname dalyvauti teminėse išvykose į pelkes ir kitas ekosistemas, lankomės mokyklose, leidžiame pažintinius ir informacinius leidinius.</p>
+            <ul class="check-list service-list">
+              <li>Konferencijos ir praktiniai seminarai</li>
+              <li>Teminės išvykos į pelkes ir kitas ekosistemas</li>
+              <li>Pamokos ir apsilankymai mokyklose</li>
+              <li>Pažintiniai ir informaciniai leidiniai</li>
+            </ul>
+            <a class="link-arrow" href="prisidek.html#renginiai">Renginiai ir talkos <i class="ph ph-arrow-right" aria-hidden="true"></i></a>
+          </article>
+        </div>
+        <div class="action-row" data-reveal>
+          <span class="action-row__text"><span class="sun-dot"><i class="ph ph-briefcase" aria-hidden="true"></i></span>Reikia konsultacijos, tyrimo ar mokymų? Aprašykite poreikį – atsakysime ir pasiūlysime sprendimą.</span>
+          <a class="btn btn--sm" href="#susisiekime">Rašyti užklausą <i class="ph ph-arrow-right" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Salient: Row (popierius) + Split Line Heading + Post Loop Builder (3 projektai, kortelės su statuso žyma, Column animation) + Nectar Button → projektai.html (Interactive Map su filtrais) -->
+    <section class="section" id="projektai" aria-labelledby="projektai-h">
+      <div class="container">
+        <div class="section-head section-head--row">
+          <div>
+            <p class="kicker">Projektai</p>
+            <h2 id="projektai-h" data-split>15 projektų <em>Lietuvoje ir Europoje</em></h2>
+            <p class="lead">Vykdomi ir įgyvendinti projektai pagal visas keturias kryptis. Kiekvienas turi savo puslapį su tikslu, teritorija, rezultatais ir naujienomis.</p>
+          </div>
+          <a class="link-arrow" href="projektai.html">Visi projektai žemėlapyje <i class="ph ph-arrow-right" aria-hidden="true"></i></a>
+        </div>
+        <div class="grid grid--3" data-reveal-group>
+          <article class="card" data-reveal>
+            <div class="card__media"><img src="https://images.pexels.com/photos/35386554/pexels-photo-35386554.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Aukštapelkė su ežerokšniais iš oro saulėlydyje" loading="lazy"><span class="tag tag--live">Vykdomas</span></div>
+            <div class="card__body">
+              <div class="card__meta"><span><i class="ph ph-globe-hemisphere-east" aria-hidden="true"></i>7 ES šalys</span><span><i class="ph ph-flag" aria-hidden="true"></i>LIFE programa</span><span><i class="ph ph-ruler" aria-hidden="true"></i>1 285 ha</span></div>
+              <h3><a href="projektas.html">Daugiau atkurtų pelkių Europoje (LIFE SUPER EU)</a></h3>
+              <p>Padedame įveikti kliūtis, trukdančias ES šalims atkurti pelkes: 1 285 ha atkurto ploto leis išvengti 12 496 t CO₂ ekv. emisijų kasmet.</p>
+              <div class="card__foot"><span class="tag">Klimatas</span><span class="small muted">Skaityti daugiau</span></div>
+              <span class="card__go"><i class="ph ph-arrow-up-right" aria-hidden="true"></i></span>
+            </div>
+          </article>
+          <article class="card" data-reveal style="--d:100ms">
+            <div class="card__media"><img src="https://images.pexels.com/photos/22944077/pexels-photo-22944077.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Beržai ir švyliai užlietoje pelkėje pavasarį" loading="lazy"><span class="tag tag--live">Vykdomas</span></div>
+            <div class="card__body">
+              <div class="card__meta"><span><i class="ph ph-map-pin" aria-hidden="true"></i>Jonavos r.</span><span><i class="ph ph-calendar-blank" aria-hidden="true"></i>nuo 2024 m.</span></div>
+              <h3><a href="projektas.html">Paąžuolynės durpyno hidrologinio režimo atkūrimas</a></h3>
+              <p>Sudarome sąlygas Paąžuolynės durpyno hidrologinio režimo atsikūrimui, mažiname ŠESD emisijas ir palaikome palankią saugomų rūšių ir atkurtų EB svarbos buveinių būklę.</p>
+              <div class="card__foot"><span class="tag">Atkūrimas</span><span class="small muted">Skaityti daugiau</span></div>
+              <span class="card__go"><i class="ph ph-arrow-up-right" aria-hidden="true"></i></span>
+            </div>
+          </article>
+          <article class="card" data-reveal style="--d:200ms">
+            <div class="card__media"><img src="https://images.pexels.com/photos/11264997/pexels-photo-11264997.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Vingiuojanti upės kilpa per šlapią pievą iš drono" loading="lazy"><span class="tag tag--done">Įgyvendintas</span></div>
+            <div class="card__body">
+              <div class="card__meta"><span><i class="ph ph-map-pin" aria-hidden="true"></i>LT–PL pasienis</span><span><i class="ph ph-flag" aria-hidden="true"></i>Interreg</span><span><i class="ph ph-calendar-blank" aria-hidden="true"></i>baigtas 2025-11</span></div>
+              <h3><a href="projektas.html">SavePeatLands – žemės ūkio durpynų atkūrimo skatinimas</a></h3>
+              <p>Skatinome nusausintų žemės ūkyje naudojamų pelkių atkūrimą Lietuvos ir Lenkijos pasienyje, didindami institucijų, žemės savininkų ir ūkininkų informuotumą ir įsitraukimą.</p>
+              <div class="card__foot"><span class="tag">Švietimas</span><span class="small muted">Skaityti daugiau</span></div>
+              <span class="card__go"><i class="ph ph-arrow-up-right" aria-hidden="true"></i></span>
+            </div>
+          </article>
+        </div>
+        <div class="action-row" data-reveal>
+          <span class="action-row__text"><span class="sun-dot"><i class="ph ph-map-trifold" aria-hidden="true"></i></span>Visi 15 projektų – interaktyviame žemėlapyje su filtrais pagal statusą ir kryptį.</span>
+          <a class="btn btn--sm" href="projektai.html">Atidaryti žemėlapį <i class="ph ph-arrow-right" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Salient: Row 2 kolonos (balta) + Split Line Heading + Nectar Icon List (kontaktai) + Fluent Forms (Vardas, Pavardė, El. paštas, Tema, Žinutė, BDAR sutikimas; hCaptcha; pranešimas el. paštu į info@pelkiufondas.lt) – esama forma „Susisiekime“ -->
+    <section class="section section--white" id="susisiekime" aria-labelledby="susisiekime-h">
+      <div class="container">
+        <div class="split contact-split">
+          <div class="split__text">
+            <p class="kicker">Susisiekime</p>
+            <h2 id="susisiekime-h" data-split>Turite klausimą? <em>Parašykite mums</em></h2>
+            <p class="lead">Turite klausimą? Galėtume jums padėti? Parašykite mums!</p>
+            <p>Atsakome į klausimus apie pelkių atkūrimą, pelkininkystę, CO₂ kompensavimą verslui, paslaugas ir bendradarbiavimą. Žurnalistams ir partneriams – kontaktai puslapyje „Kontaktai“.</p>
+            <ul class="icon-list mt-24">
+              <li><i class="ph ph-envelope" aria-hidden="true"></i><div><strong>El. paštas</strong><p><a class="link-u" href="mailto:info@pelkiufondas.lt">info@pelkiufondas.lt</a></p></div></li>
+              <li><i class="ph ph-phone" aria-hidden="true"></i><div><strong>Telefonas</strong><p><a class="link-u" href="tel:+37065620426">+370 656 20426</a></p></div></li>
+              <li><i class="ph ph-map-pin" aria-hidden="true"></i><div><strong>Biuras</strong><p>Gedimino pr. 1, 4 a. (NVO „Avilys“), LT-01103 Vilnius</p></div></li>
+            </ul>
+            <a class="link-arrow mt-24" href="kontaktai.html">Kontaktai ir žemėlapis <i class="ph ph-arrow-right" aria-hidden="true"></i></a>
+          </div>
+          <form class="form form--2 contact-form new-fn" data-demo="Ačiū, jūsų žinutę gavome. Atsakysime per 2–3 darbo dienas." novalidate data-reveal="right">
+            <span class="new-fn__badge new-fn__badge--improved" data-tip="Patobulinta esama forma „Susisiekime“: pridėtas temos pasirinkimas, BDAR sutikimas ir apsauga nuo šlamšto. WordPress'e – Fluent Forms su hCaptcha, pranešimai el. paštu į info@pelkiufondas.lt ir užklausų žurnalas administravimo skydelyje." tabindex="0">Patobulinta</span>
+            <div class="field">
+              <label for="cf-vardas">Vardas</label>
+              <input id="cf-vardas" type="text" name="vardas" required autocomplete="given-name" placeholder="Jūsų vardas">
+              <span class="field__error">Įrašykite vardą.</span>
+            </div>
+            <div class="field">
+              <label for="cf-pavarde">Pavardė</label>
+              <input id="cf-pavarde" type="text" name="pavarde" required autocomplete="family-name" placeholder="Jūsų pavardė">
+              <span class="field__error">Įrašykite pavardę.</span>
+            </div>
+            <div class="field">
+              <label for="cf-email">El. paštas</label>
+              <input id="cf-email" type="email" name="email" required autocomplete="email" placeholder="vardas@pastas.lt">
+              <span class="field__error">Įrašykite teisingą el. pašto adresą.</span>
+            </div>
+            <div class="field">
+              <label for="cf-tema">Tema <small>(nebūtina)</small></label>
+              <select id="cf-tema" name="tema">
+                <option value="">Pasirinkite temą</option>
+                <option value="atkurimas">Pelkių atkūrimas</option>
+                <option value="pelkininkyste">Pelkininkystė ir žemės ūkis</option>
+                <option value="co2">CO₂ kompensavimas verslui</option>
+                <option value="paslaugos">Paslaugos: konsultacijos, tyrimai</option>
+                <option value="svietimas">Švietimas, renginiai, mokyklos</option>
+                <option value="kita">Kita</option>
+              </select>
+            </div>
+            <div class="field full">
+              <label for="cf-zinute">Žinutė</label>
+              <textarea id="cf-zinute" name="zinute" rows="5" required placeholder="Trumpai aprašykite klausimą ar poreikį"></textarea>
+              <span class="field__error">Įrašykite žinutę.</span>
+            </div>
+            <label class="check full"><input type="checkbox" name="sutikimas" required> <span>Sutinku, kad mano duomenys būtų naudojami atsakymui pateikti – <a class="link-u" href="kontaktai.html#privatumas">privatumo politika</a>.</span></label>
+            <div class="full contact-form__actions">
+              <button class="btn btn--sun" type="submit">Siųsti <span class="btn__icon"><i class="ph ph-paper-plane-tilt" aria-hidden="true"></i><i class="ph ph-paper-plane-tilt" aria-hidden="true"></i></span></button>
+              <span class="form__note">Maketo forma duomenų nesiunčia.</span>
+            </div>
+            <p class="form__msg full" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Naujienlaiškis (esama funkcija; WP: MailerLite / Mailchimp forma per Salient „Nectar Form“ arba įskiepio shortcode) -->
+    <section class="section section--s" id="naujienlaiskis" aria-labelledby="naujienlaiskis-h">
+      <div class="container">
+        <div class="newsletter" data-reveal>
+          <div>
+            <p class="kicker">Naujienlaiškis</p>
+            <h3 id="naujienlaiskis-h">Prisijunk prie pelkių atkūrimo bendruomenės</h3>
+            <p>Kiekvieną mėnesį dalinamės renginių, aplinkosaugos ir mūsų veiklos naujienomis. Jokio šlamšto, atsisakyti galima vienu paspaudimu.</p>
+          </div>
+          <form class="form" data-demo="Ačiū! Patikrinkite el. paštą ir patvirtinkite prenumeratą." novalidate>
+            <div class="input-group">
+              <label class="visually-hidden" for="nl-email">El. paštas</label>
+              <input id="nl-email" type="email" name="email" placeholder="jusu@pastas.lt" autocomplete="email" required>
+              <button class="btn" type="submit">Prenumeruoti</button>
+            </div>
+            <label class="check"><input type="checkbox" name="sutikimas" required> <span>Sutinku gauti Pelkių fondo naujienlaiškį ir susipažinau su <a class="link-u" href="kontaktai.html#privatumas">privatumo politika</a>.</span></label>
+            <p class="form__msg" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- Poraštė (Salient: Footer – 4 kolonos, tamsus fonas, Copyright juosta) -->
+  <footer class="footer" id="poraste">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a class="logo" href="index.html" aria-label="Pelkių fondas, pradžia"><img class="logo__mark" src="assets/img/logo-240.png" alt="" width="52" height="52"><span class="logo__word">Pelkių fondas<small>Pelkių atkūrimas ir apsauga</small></span></a>
+          <p>VšĮ „Pelkių fondas“ – ne pelno siekianti nevyriausybinė gamtosauginė organizacija, kuri rūpinasi pelkių ir kitų ekosistemų apsauga, atkūrimu, tvariu naudojimu ir visuomenės švietimu.</p>
+          <div class="footer__social">
+            <a href="https://www.facebook.com/pelkiufondas" aria-label="Facebook"><i class="ph ph-facebook-logo" aria-hidden="true"></i></a>
+            <a href="#" aria-label="YouTube"><i class="ph ph-youtube-logo" aria-hidden="true"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="ph ph-linkedin-logo" aria-hidden="true"></i></a>
+            <a href="#" aria-label="Instagram"><i class="ph ph-instagram-logo" aria-hidden="true"></i></a>
+          </div>
+        </div>
+        <div>
+          <h4>Svetainė</h4>
+          <ul>
+            <li><a href="pelkes.html">Pelkės</a></li>
+            <li><a href="terminu-zodynas.html">Terminų žodynas</a></li>
+            <li><a href="apie-mus.html">Apie mus</a></li>
+            <li><a href="veikla.html">Veikla</a></li>
+            <li><a href="projektai.html">Projektai</a></li>
+            <li><a href="publikacijos.html">Publikacijos</a></li>
+            <li><a href="naujienos.html">Naujienos</a></li>
+            <li><a href="kontaktai.html">Kontaktai</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Prisidėk</h4>
+          <ul>
+            <li><a href="prisidek.html#paremk">Paremk pelkes</a></li>
+            <li><a href="prisidek.html#gpm">Skirk 1,2 % GPM</a></li>
+            <li><a href="prisidek.html#savanoriauk">Savanoriauk</a></li>
+            <li><a href="prisidek.html#renginiai">Talkos ir renginiai</a></li>
+            <li><a href="prisidek.html#naujienlaiskis">Naujienlaiškis</a></li>
+            <li><a href="co2.html">Verslui: CO₂ kompensavimas</a></li>
+            <li><a href="veiklos-ataskaitos.html">Veiklos ataskaitos</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Kontaktai</h4>
+          <div class="footer__contact">
+            <div><i class="ph ph-map-pin" aria-hidden="true"></i><span>Gedimino pr. 1, 4 a. (NVO Avilys)<br>LT-01103 Vilnius, Lietuva</span></div>
+            <div><i class="ph ph-phone" aria-hidden="true"></i><a href="tel:+37065620426">+370 656 20426</a></div>
+            <div><i class="ph ph-envelope" aria-hidden="true"></i><a href="mailto:info@pelkiufondas.lt">info@pelkiufondas.lt</a></div>
+            <div><i class="ph ph-identification-card" aria-hidden="true"></i><span>Įmonės kodas 302822289<br>PVM kodas LT100017689218</span></div>
+            <div><i class="ph ph-bank" aria-hidden="true"></i><span>LT24 7044 0600 0784 1146<br>AB SEB bankas</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span><span class="footer__sun" aria-hidden="true"></span>© <span data-year>2026</span> VšĮ „Pelkių fondas“. Nuotraukos ir video makete – Pexels (nemokama licencija).</span>
+        <div class="footer__legal">
+          <a href="kontaktai.html#privatumas">Privatumo politika</a>
+          <a href="apie-mus.html#dokumentai">Įstatai</a>
+          <a href="galerija.html">Galerija</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

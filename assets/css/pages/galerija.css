@@ -1,0 +1,36 @@
+/* Galerija – puslapio stiliai. Papildo assets/css/style.css, bendrų klasių nekeičia.
+   Salient: Portfolio (masonry + sortable) / Image Gallery; čia tik maketo smulkmenos. */
+
+/* Masonry: tuščios vietos užpildomos (tall/wide elementai), filtruoti elementai paslepiami.
+   Pastaba: style.css neturi bendros [hidden] taisyklės, todėl .gallery__item { display:block } nugalėtų UA [hidden]. */
+#galerija .gallery { grid-auto-flow: dense; }
+#galerija .gallery__item[hidden] { display: none; }
+
+/* Aprašas ant nuotraukos: pavadinimas + smulki eilutė su vieta ir autoriumi */
+#galerija .gallery__cap small { display: block; margin-top: 3px; font-size: 11.5px; font-weight: 500; line-height: 1.35; opacity: .85; }
+#galerija .gallery__item:focus-visible .gallery__cap { opacity: 1; }
+/* Liečiamuose ekranuose aprašas visada matomas, bet tik pavadinimas – vieta ir autorius lieka peržiūroje */
+@media (hover: none) {
+  #galerija .gallery__cap { opacity: 1; padding-top: 28px; }
+  #galerija .gallery__cap small { display: none; }
+}
+
+/* Filtrų juosta: pill'ai kairėje, skaitiklis ir žyma dešinėje */
+.galerija-toolbar { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px 24px; margin-bottom: 24px; padding-top: 6px; }
+.galerija-toolbar__meta { display: inline-flex; flex-wrap: wrap; align-items: center; gap: 10px; margin: 0; font-size: 14px; font-weight: 600; color: var(--muted); }
+#galerija .callout { margin-bottom: 24px; }
+#galerija [data-filter-empty] .link-u { background: none; border: 0; padding: 0; font: inherit; color: inherit; cursor: pointer; }
+
+/* Spaudai skirtas blokas: kicker ant tamsaus fono – geltonas (kontrastas) */
+#spaudai .cta .kicker { color: var(--sun); }
+/* Permatomas mygtukas gali užeiti ant geltonos dekoratyvinės formos – tamsus pagrindas išlaiko kontrastą */
+#spaudai .cta .btn--ghost-light { background: rgba(8, 43, 34, .72); backdrop-filter: blur(4px); }
+/* Siauruose ekranuose geltona forma uždengtų tekstą – paliekame tik kampo akcentą */
+@media (max-width: 640px) { #spaudai .cta__shape { width: 180px; right: -100px; top: -110px; } }
+.galerija-more { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 28px; }
+
+/* Judėjimo tausojimas */
+@media (prefers-reduced-motion: reduce) {
+  #galerija .gallery__item img { transition: none; }
+  #galerija .gallery__item:hover img { transform: none; }
+}

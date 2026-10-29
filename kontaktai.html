@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="lt">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kontaktai | Pelkių fondas</title>
+  <meta name="description" content="VšĮ „Pelkių fondas“ kontaktai: Gedimino pr. 1, Vilnius, +370 656 20426, info@pelkiufondas.lt. Užklausos forma, rekvizitai, komanda ir privatumo politika.">
+  <!-- Bendra <head> dalis: įklijuoti į kiekvieną puslapį po <title> ir <meta name="description"> -->
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/Fraunces.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/Manrope.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>document.documentElement.classList.add('js');</script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css">
+</head>
+<body class="" data-nav="kontaktai">
+  <a class="skip-link" href="#turinys">Pereiti prie turinio</a>
+
+  <!-- Maketo juosta: į WordPress nekeliama -->
+  <div class="mockbar" role="region" aria-label="Maketo juosta">
+    <div class="container">
+      <strong>Dizaino maketas <span>·</span> Pelkių fondas</strong>
+      <span>WordPress + Salient</span>
+      <label class="mockbar__toggle" title="Žymekliai rodo, kas makete yra nauja, palyginti su dabartine svetaine"><input type="checkbox" id="toggle-newfn" checked> <span class="new-fn__badge">Nauja</span> rodyti naujas funkcijas</label>
+      <nav class="mockbar__pages" aria-label="Maketo puslapiai">
+        <a href="index.html">Pradinis</a><a href="pelkes.html">Pelkės</a><a href="apie-mus.html">Apie mus</a><a href="veikla.html">Veikla</a><a href="naujienos.html">Naujienos</a><a href="kontaktai.html">Kontaktai</a><a href="prisidek.html">Prisidėk</a>
+      </nav>
+    </div>
+  </div>
+
+  <!-- Antraštė (Salient: Header layout „Standard“, logotipas kairėje, meniu dešinėje, „Prisidėk“ mygtukas, paieška, kalbos) -->
+  <header class="site-header">
+    <div class="container container--wide site-header__inner">
+      <a class="logo" href="index.html" aria-label="Pelkių fondas, pradžia">
+        <img class="logo__mark" src="assets/img/logo-240.png" alt="" width="52" height="52">
+        <span class="logo__word">Pelkių fondas<small>Pelkių atkūrimas ir apsauga</small></span>
+      </a>
+      <nav class="nav" aria-label="Pagrindinis meniu">
+        <a class="nav__link" href="index.html" data-nav-key="pradinis">Pradinis</a>
+        <div class="nav__item" data-drop data-nav-key="pelkes">
+          <button class="nav__link" type="button" aria-expanded="false" aria-haspopup="true">Pelkės <i class="ph ph-caret-down" aria-hidden="true"></i></button>
+          <div class="nav__drop">
+            <a class="drop-link" href="pelkes.html"><span class="drop-link__icon"><i class="ph ph-leaf"></i></span><span class="drop-link__text"><strong>Kas yra pelkės</strong><span>Apibrėžimai, reikšmė, būklė Lietuvoje</span></span></a>
+            <a class="drop-link" href="pelkes.html#tipai"><span class="drop-link__icon"><i class="ph ph-tree-evergreen"></i></span><span class="drop-link__text"><strong>Pelkių tipai ir buveinės</strong><span>Žemapelkės, tarpinės, aukštapelkės, EB buveinės</span></span></a>
+            <a class="drop-link" href="pelkes.html#gresmes"><span class="drop-link__icon"><i class="ph ph-warning"></i></span><span class="drop-link__text"><strong>Grėsmės ir atkūrimas</strong><span>Kodėl pelkės nyksta ir kaip jas atkuriame</span></span></a>
+            <a class="drop-link" href="terminu-zodynas.html"><span class="drop-link__icon"><i class="ph ph-book-open"></i></span><span class="drop-link__text"><strong>Terminų žodynas</strong><span>Pelkių ir durpynų sąvokos su paieška</span></span></a>
+            <a class="drop-link" href="galerija.html"><span class="drop-link__icon"><i class="ph ph-images"></i></span><span class="drop-link__text"><strong>Galerija</strong><span>Pelkių ir mūsų darbų nuotraukos</span></span></a>
+          </div>
+        </div>
+        <a class="nav__link" href="apie-mus.html" data-nav-key="apie-mus">Apie mus</a>
+        <div class="nav__item" data-drop data-nav-key="veikla">
+          <button class="nav__link" type="button" aria-expanded="false" aria-haspopup="true">Veikla <i class="ph ph-caret-down" aria-hidden="true"></i></button>
+          <div class="nav__drop nav__drop--wide">
+            <a class="drop-link" href="veikla.html"><span class="drop-link__icon"><i class="ph ph-compass"></i></span><span class="drop-link__text"><strong>Veiklos kryptys</strong><span>Biologinė įvairovė, atkūrimas, klimatas, pelkininkystė</span></span></a>
+            <a class="drop-link" href="co2.html"><span class="drop-link__icon"><i class="ph ph-cloud"></i></span><span class="drop-link__text"><strong>CO₂ emisijų mažinimas</strong><span>Verslui: atkurkite pelkes, mažinkite anglies pėdsaką</span></span></a>
+            <a class="drop-link" href="projektai.html"><span class="drop-link__icon"><i class="ph ph-map-pin"></i></span><span class="drop-link__text"><strong>Projektai</strong><span>Vykdomi ir įgyvendinti projektai žemėlapyje</span></span></a>
+            <a class="drop-link" href="paslaugos.html"><span class="drop-link__icon"><i class="ph ph-briefcase"></i></span><span class="drop-link__text"><strong>Paslaugos</strong><span>Konsultacijos, tyrimai, švietimas</span></span></a>
+            <a class="drop-link" href="publikacijos.html"><span class="drop-link__icon"><i class="ph ph-books"></i></span><span class="drop-link__text"><strong>Publikacijos</strong><span>Straipsniai, knygos, lankstinukai</span></span></a>
+            <a class="drop-link" href="videoteka.html"><span class="drop-link__icon"><i class="ph ph-play-circle"></i></span><span class="drop-link__text"><strong>Videoteka</strong><span>Filmai apie pelkes ir mūsų darbus</span></span></a>
+            <a class="drop-link" href="veiklos-ataskaitos.html"><span class="drop-link__icon"><i class="ph ph-file-text"></i></span><span class="drop-link__text"><strong>Veiklos ataskaitos</strong><span>Metinės veiklos ir finansinės ataskaitos</span></span></a>
+            <div class="nav__drop-foot"><span class="muted">Norite prisidėti prie veiklų?</span><a class="link-u" href="prisidek.html#savanoriauk">Savanoriauk</a></div>
+          </div>
+        </div>
+        <a class="nav__link" href="naujienos.html" data-nav-key="naujienos">Naujienos</a>
+        <a class="nav__link" href="kontaktai.html" data-nav-key="kontaktai">Kontaktai</a>
+      </nav>
+      <div class="header-actions">
+        <div class="lang" aria-label="Kalba"><span aria-current="true" lang="lt">LT</span><a href="#" data-lang="en" hreflang="en">EN</a></div>
+        <button class="icon-btn icon-btn--search" type="button" data-search-open aria-label="Paieška svetainėje"><i class="ph ph-magnifying-glass" aria-hidden="true"></i></button>
+        <a class="btn btn--sun btn--sm" href="prisidek.html">Prisidėk</a>
+        <button class="burger icon-btn" type="button" aria-label="Atidaryti meniu" aria-expanded="false" aria-controls="mobile-menu"><i class="ph ph-list" aria-hidden="true"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobilus meniu (Salient: Off Canvas Menu) -->
+  <div class="mobile-menu" id="mobile-menu" role="dialog" aria-modal="true" aria-label="Meniu" tabindex="-1">
+    <div class="container">
+      <div class="mobile-menu__top">
+        <a class="logo" href="index.html" aria-label="Pelkių fondas, pradžia"><img class="logo__mark" src="assets/img/logo-240.png" alt="" width="52" height="52"><span class="logo__word">Pelkių fondas<small>Pelkių atkūrimas ir apsauga</small></span></a>
+        <button class="mobile-menu__close" type="button" aria-label="Uždaryti meniu"><i class="ph ph-x" aria-hidden="true"></i></button>
+      </div>
+      <nav class="mobile-menu__links" aria-label="Meniu mobiliesiems">
+        <a href="index.html">Pradinis <i class="ph ph-arrow-right" aria-hidden="true"></i></a>
+        <details><summary>Pelkės <i class="ph ph-caret-down" aria-hidden="true"></i></summary><div><a href="pelkes.html">Kas yra pelkės</a><a href="pelkes.html#tipai">Pelkių tipai ir buveinės</a><a href="pelkes.html#gresmes">Grėsmės ir atkūrimas</a><a href="terminu-zodynas.html">Terminų žodynas</a><a href="galerija.html">Galerija</a></div></details>
+        <a href="apie-mus.html">Apie mus <i class="ph ph-arrow-right" aria-hidden="true"></i></a>
+        <details><summary>Veikla <i class="ph ph-caret-down" aria-hidden="true"></i></summary><div><a href="veikla.html">Veiklos kryptys</a><a href="co2.html">CO₂ emisijų mažinimas</a><a href="projektai.html">Projektai</a><a href="paslaugos.html">Paslaugos</a><a href="publikacijos.html">Publikacijos</a><a href="videoteka.html">Videoteka</a><a href="veiklos-ataskaitos.html">Veiklos ataskaitos</a></div></details>
+        <a href="naujienos.html">Naujienos <i class="ph ph-arrow-right" aria-hidden="true"></i></a>
+        <a href="kontaktai.html">Kontaktai <i class="ph ph-arrow-right" aria-hidden="true"></i></a>
+        <a href="prisidek.html">Prisidėk <i class="ph ph-arrow-right" aria-hidden="true"></i></a>
+      </nav>
+      <div class="mobile-menu__foot">
+        <a class="btn btn--sun" href="prisidek.html">Paremk pelkes</a>
+        <button class="btn btn--ghost-light" type="button" data-search-open><i class="ph ph-magnifying-glass" aria-hidden="true"></i> Paieška</button>
+        <div class="lang" aria-label="Kalba"><span aria-current="true">LT</span><a href="#" data-lang="en" hreflang="en">EN</a></div>
+      </div>
+    </div>
+  </div>
+  <main id="turinys">
+<!-- Salient: Page Header (plain, be medijos) + Breadcrumbs -->
+    <section class="page-header page-header--plain">
+      <div class="container">
+        <ol class="breadcrumb"><li><a href="index.html">Pradinis</a></li><li>Kontaktai</li></ol>
+        <p class="kicker">Kontaktai</p>
+        <h1 data-split>Turite klausimų? <em>Parašykite mums</em></h1>
+        <p class="lead" data-reveal>Atsakome į klausimus apie pelkių atkūrimą, bendradarbiavimą, paramą, savanorystę ir žiniasklaidos užklausas. Paprastai atsakome per 1–2 darbo dienas.</p>
+      </div>
+    </section>
+
+    <!-- Salient: Row 2 kolonos – Icon List (rekvizitai) + Interactive Map (Leaflet, be API rakto) -->
+    <section class="section section--s" id="rekvizitai">
+      <div class="container">
+        <div class="split split--text-first" style="align-items:start">
+          <div class="split__text" data-reveal>
+            <p class="kicker">VšĮ „Pelkių fondas“</p>
+            <h2>Kur mus rasti</h2>
+            <ul class="icon-list mt-24">
+              <li><i class="ph ph-map-pin"></i><div><strong>Adresas</strong><p>Gedimino pr. 1, 4 a. (NVO „Avilys“), LT-01103 Vilnius, Lietuva</p></div></li>
+              <li><i class="ph ph-phone"></i><div><strong>Telefonas</strong><p><a class="link-u" href="tel:+37065620426">+370 656 20426</a></p></div></li>
+              <li><i class="ph ph-envelope"></i><div><strong>El. paštas</strong><p><a class="link-u" href="mailto:info@pelkiufondas.lt">info@pelkiufondas.lt</a></p></div></li>
+              <li><i class="ph ph-clock"></i><div><strong>Darbo laikas</strong><p>I–V 9.00–17.00; susitikimą biure geriausia suderinti iš anksto – dažnai dirbame pelkėse.</p></div></li>
+              <li><i class="ph ph-facebook-logo"></i><div><strong>Socialiniai tinklai</strong><p><a class="link-u" href="https://www.facebook.com/pelkiufondas">facebook.com/pelkiufondas</a></p></div></li>
+            </ul>
+            <h3 class="mt-40">Rekvizitai</h3>
+            <div class="stack" style="--stack:10px">
+              <div class="copy-field"><span>Įmonės kodas: <code>302822289</code></span><button class="copy-btn" type="button" data-copy="302822289"><i class="ph ph-copy"></i> Kopijuoti</button></div>
+              <div class="copy-field"><span>PVM mokėtojo kodas: <code>LT100017689218</code></span><button class="copy-btn" type="button" data-copy="LT100017689218"><i class="ph ph-copy"></i> Kopijuoti</button></div>
+              <div class="copy-field"><span>Sąskaita (AB SEB bankas): <code>LT24 7044 0600 0784 1146</code></span><button class="copy-btn" type="button" data-copy="LT247044060007841146"><i class="ph ph-copy"></i> Kopijuoti</button></div>
+            </div>
+          </div>
+          <div data-reveal="fade">
+            <div class="map" id="map" aria-label="Žemėlapis: Gedimino pr. 1, Vilnius"></div>
+            <p class="src">Žemėlapis: OpenStreetMap. WordPress’e – Salient „Interactive Map“ elementas (Leaflet, nereikia Google API rakto).</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Salient: Row su Fluent Forms (laukai: vardas, el. paštas, telefonas, tema, žinutė, BDAR sutikimas) -->
+    <section class="section section--white" id="forma">
+      <div class="container">
+        <div class="split split--text-first" style="align-items:start">
+          <div data-reveal>
+            <p class="kicker">Užklausa</p>
+            <h2>Parašykite mums</h2>
+            <p class="lead">Pasirinkite temą – užklausa iškart pasieks atsakingą komandos narį.</p>
+            <ul class="check-list mt-24">
+              <li><strong>Parama ir partnerystė</strong> – atsakome apie paramą, 1,2 % GPM ir verslo bendradarbiavimą.</li>
+              <li><strong>Savanorystė</strong> – kviečiame į talkas ir renginius.</li>
+              <li><strong>Žiniasklaida</strong> – komentarai, interviu, nuotraukos spaudai.</li>
+              <li><strong>Paslaugos</strong> – konsultacijos, tyrimai, žalinimo planai.</li>
+            </ul>
+          </div>
+          <form class="form form--2 new-fn" data-demo="Ačiū už jūsų žinutę! Netrukus su jumis susisieksime." novalidate data-reveal="fade">
+            <span class="new-fn__badge new-fn__badge--improved" data-tip="Esama forma papildyta temos pasirinkimu ir BDAR sutikimu; WordPress’e – Fluent Forms su sąlyginiu nukreipimu pagal temą ir pranešimu el. paštu." tabindex="0">Patobulinta</span>
+            <div class="field"><label for="k-vardas">Vardas, pavardė</label><input id="k-vardas" name="vardas" autocomplete="name" required placeholder="Jūsų vardas"><span class="field__error">Įrašykite vardą.</span></div>
+            <div class="field"><label for="k-el">El. paštas</label><input id="k-el" type="email" name="email" autocomplete="email" required placeholder="vardas@pastas.lt"><span class="field__error">Įrašykite teisingą el. pašto adresą.</span></div>
+            <div class="field"><label for="k-tel">Telefonas <small>(neprivaloma)</small></label><input id="k-tel" type="tel" name="tel" autocomplete="tel" placeholder="+370"></div>
+            <div class="field"><label for="k-tema">Tema</label><select id="k-tema" name="tema"><option>Bendras klausimas</option><option>Parama ir partnerystė</option><option>Savanorystė</option><option>Žiniasklaida</option><option>Paslaugos</option><option>Verslui: CO₂ kompensavimas</option></select></div>
+            <div class="field full"><label for="k-zinute">Žinutė</label><textarea id="k-zinute" name="zinute" required placeholder="Kuo galime padėti?"></textarea><span class="field__error">Įrašykite žinutę.</span></div>
+            <div class="full"><label class="check"><input type="checkbox" name="sutikimas" required> <span>Sutinku, kad mano duomenys būtų naudojami atsakant į užklausą (<a class="link-u" href="#privatumas">privatumo politika</a>).</span></label></div>
+            <div class="full cluster"><button class="btn" type="submit">Siųsti žinutę <span class="btn__icon"><i class="ph ph-paper-plane-tilt"></i><i class="ph ph-paper-plane-tilt"></i></span></button><span class="form__note">Maketas duomenų nesiunčia.</span></div>
+            <p class="form__msg full" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Salient: Team Member (kompaktiškas stilius) -->
+    <section class="section" id="komanda">
+      <div class="container">
+        <div class="section-head section-head--row"><div><p class="kicker">Kam rašyti</p><h2>Komandos kontaktai</h2></div><a class="link-arrow" href="apie-mus.html#komanda">Apie komandą <i class="ph ph-arrow-right"></i></a></div>
+        <div class="grid grid--3" data-reveal-group>
+          <div class="person person--compact"><div class="person__photo" style="display:grid;place-items:center;background:var(--green-50);color:var(--green);font:600 22px var(--f-display)">NZ</div><div><h3>Nerijus Zableckis</h3><span class="person__role">Direktorius</span><p><a class="link-u" href="mailto:nerijus@pelkiufondas.lt">nerijus@pelkiufondas.lt</a></p></div></div>
+          <div class="person person--compact"><div class="person__photo" style="display:grid;place-items:center;background:var(--green-50);color:var(--green);font:600 22px var(--f-display)">JS</div><div><h3>Dr. Jūratė Sendžikaitė</h3><span class="person__role">Pelkių atkūrimas, edukacija</span><p><a class="link-u" href="mailto:jurate@pelkiufondas.lt">jurate@pelkiufondas.lt</a></p></div></div>
+          <div class="person person--compact"><div class="person__photo" style="display:grid;place-items:center;background:var(--green-50);color:var(--green);font:600 22px var(--f-display)">LJ</div><div><h3>Dr. Leonas Jarašius</h3><span class="person__role">Ekosistemų atkūrimas, stebėsena</span><p><a class="link-u" href="mailto:leonas@pelkiufondas.lt">leonas@pelkiufondas.lt</a></p></div></div>
+          <div class="person person--compact"><div class="person__photo" style="display:grid;place-items:center;background:var(--green-50);color:var(--green);font:600 22px var(--f-display)">KD</div><div><h3>Kristina Dapkūnienė</h3><span class="person__role">Projektų vadovė</span><p><a class="link-u" href="mailto:kristina@pelkiufondas.lt">kristina@pelkiufondas.lt</a></p></div></div>
+          <div class="person person--compact"><div class="person__photo" style="display:grid;place-items:center;background:var(--sun-100);color:var(--ink);font:600 22px var(--f-display)">MD</div><div><h3>Morgana Danielė</h3><span class="person__role">Žiniasklaidai ir advokacijai</span><p><a class="link-u" href="mailto:morgana@pelkiufondas.lt">morgana@pelkiufondas.lt</a></p></div></div>
+          <div class="person person--compact"><div class="person__photo" style="display:grid;place-items:center;background:var(--green-50);color:var(--green);font:600 22px var(--f-display)">DK</div><div><h3>Darius Kavšinas</h3><span class="person__role">Pelkininkystė, ūkininkams</span><p><a class="link-u" href="mailto:darius@pelkiufondas.lt">darius@pelkiufondas.lt</a></p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Salient: Row su video fonu + Call to Action -->
+    <section class="section section--s">
+      <div class="container">
+        <div class="cta cta--video" data-reveal="fade">
+          <div class="video-bg video-bg--flat"><img src="https://images.pexels.com/videos/8928434/adult-beach-bird-boardwalk-8928434.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=630&w=1200" alt=""><video data-src="https://videos.pexels.com/video-files/8928434/8928434-hd_1920_1080_25fps.mp4" data-src-sd="https://videos.pexels.com/video-files/8928434/8928434-sd_960_540_25fps.mp4" muted loop playsinline poster="https://images.pexels.com/videos/8928434/adult-beach-bird-boardwalk-8928434.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=630&w=1200"></video></div>
+          <div class="cta__grid"><div><p class="kicker">Paremk mūsų veiklą</p><h2>Kiekvienas indėlis <em>grąžina vandenį</em> pelkėms</h2><p class="lead">Parama, 1,2 % GPM ar diena talkoje – visa tai padeda atkurti Lietuvos pelkes.</p></div><div class="cta__actions"><a class="btn btn--sun" href="prisidek.html#paremk">Paremk</a><a class="btn btn--ghost-light" href="prisidek.html#savanoriauk">Savanoriauk</a></div></div>
+          <span class="video-credit">Video: Pexels / SHVETS production</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Salient: Toggle Panels (privatumo politikos santrauka); pilnas tekstas – atskiras WP puslapis -->
+    <section class="section section--white" id="privatumas">
+      <div class="container container--narrow">
+        <div class="section-head"><p class="kicker">Asmens duomenys</p><h2>Privatumo politika trumpai</h2><p class="lead">Duomenų valdytojas – VšĮ „Pelkių fondas“, Gedimino pr. 1, Vilnius, info@pelkiufondas.lt. Atnaujinta 2023-01-01; pilnas tekstas bus atskirame puslapyje.</p></div>
+        <div data-accordion data-reveal="fade">
+          <div class="toggle"><button class="toggle__btn" type="button" aria-expanded="true">Kokius duomenis renkame <i class="ph ph-plus"></i></button><div class="toggle__panel"><div><p>Asmens duomenis (vardas, el. paštas, telefonas, žinutė), kai pateikiate juos per užklausų ar prenumeratos formą; naudojimo duomenis (IP adresas, naršyklė, įrenginys) lankomumo statistikai ir slapukų duomenis.</p></div></div></div>
+          <div class="toggle"><button class="toggle__btn" type="button" aria-expanded="false">Kokiais tikslais ir pagrindais <i class="ph ph-plus"></i></button><div class="toggle__panel"><div><p>Atsakyti į jūsų užklausas (BDAR 6 str. 1 d. b p.) ir siųsti naujienlaiškį jūsų sutikimo pagrindu (BDAR 6 str. 1 d. a p.).</p></div></div></div>
+          <div class="toggle"><button class="toggle__btn" type="button" aria-expanded="false">Kiek laiko saugome <i class="ph ph-plus"></i></button><div class="toggle__panel"><div><p>Naujienlaiškio duomenis – 5 metus nuo sutikimo arba iki jo atšaukimo; užklausų duomenis – 3 metus nuo paskutinės korespondencijos.</p></div></div></div>
+          <div class="toggle"><button class="toggle__btn" type="button" aria-expanded="false">Kam perduodame <i class="ph ph-plus"></i></button><div class="toggle__panel"><div><p>Tik paslaugų teikėjams (debesijos, serverių, IT priežiūros įmonėms), veikiantiems pagal fondo nurodymus, arba kai to reikalauja teisės aktai. Už ES ribų duomenys neperduodami.</p></div></div></div>
+          <div class="toggle"><button class="toggle__btn" type="button" aria-expanded="false">Jūsų teisės <i class="ph ph-plus"></i></button><div class="toggle__panel"><div><p>Susipažinti su duomenimis, juos ištaisyti, ištrinti, apriboti tvarkymą, perkelti, nesutikti su tvarkymu ir bet kada atšaukti sutikimą el. paštu info@pelkiufondas.lt. Prašymai nagrinėjami ne ilgiau kaip 1 mėnesį.</p></div></div></div>
+          <div class="toggle"><button class="toggle__btn" type="button" aria-expanded="false">Slapukai <i class="ph ph-plus"></i></button><div class="toggle__panel"><div><p>Būtinieji slapukai veikia visada; statistikos ir video (YouTube) slapukai įjungiami tik su jūsų sutikimu slapukų juostoje (WordPress’e – Complianz įskiepis).</p></div></div></div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- Poraštė (Salient: Footer – 4 kolonos, tamsus fonas, Copyright juosta) -->
+  <footer class="footer" id="poraste">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a class="logo" href="index.html" aria-label="Pelkių fondas, pradžia"><img class="logo__mark" src="assets/img/logo-240.png" alt="" width="52" height="52"><span class="logo__word">Pelkių fondas<small>Pelkių atkūrimas ir apsauga</small></span></a>
+          <p>VšĮ „Pelkių fondas“ – ne pelno siekianti nevyriausybinė gamtosauginė organizacija, kuri rūpinasi pelkių ir kitų ekosistemų apsauga, atkūrimu, tvariu naudojimu ir visuomenės švietimu.</p>
+          <div class="footer__social">
+            <a href="https://www.facebook.com/pelkiufondas" aria-label="Facebook"><i class="ph ph-facebook-logo" aria-hidden="true"></i></a>
+            <a href="#" aria-label="YouTube"><i class="ph ph-youtube-logo" aria-hidden="true"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="ph ph-linkedin-logo" aria-hidden="true"></i></a>
+            <a href="#" aria-label="Instagram"><i class="ph ph-instagram-logo" aria-hidden="true"></i></a>
+          </div>
+        </div>
+        <div>
+          <h4>Svetainė</h4>
+          <ul>
+            <li><a href="pelkes.html">Pelkės</a></li>
+            <li><a href="terminu-zodynas.html">Terminų žodynas</a></li>
+            <li><a href="apie-mus.html">Apie mus</a></li>
+            <li><a href="veikla.html">Veikla</a></li>
+            <li><a href="projektai.html">Projektai</a></li>
+            <li><a href="publikacijos.html">Publikacijos</a></li>
+            <li><a href="naujienos.html">Naujienos</a></li>
+            <li><a href="kontaktai.html">Kontaktai</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Prisidėk</h4>
+          <ul>
+            <li><a href="prisidek.html#paremk">Paremk pelkes</a></li>
+            <li><a href="prisidek.html#gpm">Skirk 1,2 % GPM</a></li>
+            <li><a href="prisidek.html#savanoriauk">Savanoriauk</a></li>
+            <li><a href="prisidek.html#renginiai">Talkos ir renginiai</a></li>
+            <li><a href="prisidek.html#naujienlaiskis">Naujienlaiškis</a></li>
+            <li><a href="co2.html">Verslui: CO₂ kompensavimas</a></li>
+            <li><a href="veiklos-ataskaitos.html">Veiklos ataskaitos</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Kontaktai</h4>
+          <div class="footer__contact">
+            <div><i class="ph ph-map-pin" aria-hidden="true"></i><span>Gedimino pr. 1, 4 a. (NVO Avilys)<br>LT-01103 Vilnius, Lietuva</span></div>
+            <div><i class="ph ph-phone" aria-hidden="true"></i><a href="tel:+37065620426">+370 656 20426</a></div>
+            <div><i class="ph ph-envelope" aria-hidden="true"></i><a href="mailto:info@pelkiufondas.lt">info@pelkiufondas.lt</a></div>
+            <div><i class="ph ph-identification-card" aria-hidden="true"></i><span>Įmonės kodas 302822289<br>PVM kodas LT100017689218</span></div>
+            <div><i class="ph ph-bank" aria-hidden="true"></i><span>LT24 7044 0600 0784 1146<br>AB SEB bankas</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span><span class="footer__sun" aria-hidden="true"></span>© <span data-year>2026</span> VšĮ „Pelkių fondas“. Nuotraukos ir video makete – Pexels (nemokama licencija).</span>
+        <div class="footer__legal">
+          <a href="kontaktai.html#privatumas">Privatumo politika</a>
+          <a href="apie-mus.html#dokumentai">Įstatai</a>
+          <a href="galerija.html">Galerija</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js" defer></script>
+  <script src="assets/js/pages/kontaktai.js" defer></script>
+</body>
+</html>

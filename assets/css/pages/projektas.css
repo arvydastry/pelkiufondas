@@ -1,0 +1,116 @@
+/* =====================================================================
+   Projektas (vieno projekto šablonas) – puslapio stiliai (papildo
+   assets/css/style.css). Salient: Row su 2 kolonomis (turinys + prilipusi
+   šoninė kolona „Sticky column“), Image Comparison elementas („prieš / po“),
+   Interactive Map (Leaflet), Post Loop Builder (naujienos, susiję projektai).
+   ===================================================================== */
+
+/* ---------- Antraštės žymos ---------- */
+.page-header .project-tags { margin-bottom: 18px; --cluster: 8px; }
+.page-header .project-tags .tag--outline { border-color: rgba(255, 255, 255, .45); color: rgba(255, 255, 255, .85); }
+.page-header .project-tags .tag--water { background: rgba(255, 255, 255, .14); color: #fff; }
+
+/* ---------- Dvi kolonos: turinys + prilipusi faktų kortelė ---------- */
+.project-layout { display: grid; grid-template-columns: minmax(0, 1fr) 372px; gap: clamp(32px, 5vw, 80px); align-items: start; }
+.project-main { min-width: 0; }
+.project-section + .project-section { margin-top: clamp(56px, 7vw, 96px); padding-top: clamp(40px, 5vw, 64px); border-top: 1px solid var(--line); }
+.project-section .section-head { margin-bottom: clamp(24px, 3vw, 36px); }
+.project-section .section-head h2 { font-size: clamp(28px, 3vw, 40px); }
+.project-main .steps { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.project-main .gallery { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.project-main .stats { gap: 20px; }
+.project-main .stat__num { font-size: clamp(36px, 3.6vw, 52px); }
+.project-main .grid--2 { gap: 20px; }
+.project-main .brief-box { margin-bottom: 28px; }
+.project-main .figure--wide { aspect-ratio: 16 / 9; }
+.project-main .doc + .doc { margin-top: 10px; }
+.steps-note { margin: 18px 0 0; font-size: 14px; color: var(--muted); }
+
+/* ---------- Teritorija: mažas žemėlapis + faktai ---------- */
+.territory { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); gap: 24px; align-items: stretch; }
+.map--small { min-height: 320px; height: 100%; }
+.map__fallback { position: absolute; inset: 0; display: grid; place-items: center; padding: 24px; text-align: center; font-size: 14.5px; color: var(--muted); }
+.map .leaflet-popup-content-wrapper { border-radius: 14px; font-family: var(--f-body); box-shadow: var(--shadow); }
+.map .leaflet-popup-content { margin: 14px 16px; font-size: 14.5px; line-height: 1.45; }
+.map .leaflet-popup-content strong { display: block; color: var(--ink); margin-bottom: 4px; }
+.map .leaflet-popup-content a { font-weight: 700; color: var(--green-700); }
+.map .leaflet-control-attribution { font-size: 10.5px; }
+.territory__facts { display: grid; gap: 10px; align-content: start; }
+.territory__facts .icon-card { padding: 18px 20px; gap: 12px; }
+.territory__facts .icon-card__icon { width: 44px; height: 44px; font-size: 22px; border-radius: 12px; }
+.territory__facts .icon-card h3 { font-size: 17px; }
+.territory__facts .icon-card p { font-size: 14.5px; }
+
+/* ---------- Rezultatai: progresas su žyma „Pavyzdys“ ---------- */
+.progress-head { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px; margin-bottom: 12px; }
+.progress-head strong { font-size: 16px; }
+.progress-box { padding: 22px 24px; border-radius: var(--r); background: var(--surface); border: 1px solid var(--line-2); }
+
+/* ---------- Prieš / po palyginimas (Salient: Image Comparison) ---------- */
+.compare { position: relative; --pos: 50%; aspect-ratio: 16 / 10; border-radius: var(--r-lg); overflow: hidden; background: var(--water); isolation: isolate; user-select: none; -webkit-user-select: none; }
+.compare img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.compare__after { position: absolute; inset: 0; clip-path: inset(0 0 0 var(--pos)); }
+.compare__label { position: absolute; z-index: 3; top: 16px; display: inline-flex; align-items: center; gap: 8px; height: 32px; padding: 0 14px; border-radius: var(--pill); background: rgba(8, 43, 34, .72); color: #fff; font: 700 12.5px/1 var(--f-body); letter-spacing: .06em; text-transform: uppercase; backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); pointer-events: none; }
+.compare__label--before { left: 16px; }
+.compare__label--after { right: 16px; background: var(--sun); color: var(--ink); }
+.compare__line { position: absolute; z-index: 3; top: 0; bottom: 0; left: var(--pos); width: 2px; margin-left: -1px; background: #fff; box-shadow: 0 0 0 1px rgba(8, 43, 34, .25); pointer-events: none; }
+.compare__handle { position: absolute; z-index: 4; top: 50%; left: var(--pos); display: grid; place-items: center; width: 48px; height: 48px; border-radius: 50%; background: #fff; color: var(--ink); font-size: 22px; box-shadow: var(--shadow); transform: translate(-50%, -50%); pointer-events: none; transition: background .25s, color .25s; }
+.compare:hover .compare__handle, .compare:has(.compare__range:focus-visible) .compare__handle { background: var(--sun); }
+.compare:has(.compare__range:focus-visible) { outline: 3px solid var(--green); outline-offset: 3px; }
+.compare__range { position: absolute; z-index: 5; inset: 0; width: 100%; height: 100%; margin: 0; opacity: 0; cursor: ew-resize; -webkit-appearance: none; appearance: none; touch-action: pan-y; }
+.compare__range::-webkit-slider-thumb { -webkit-appearance: none; width: 48px; height: 100%; }
+.compare__range::-moz-range-thumb { width: 48px; height: 100%; border: 0; }
+.compare__caps { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 24px; margin-top: 14px; font-size: 14px; color: var(--muted); }
+.compare__caps span strong { color: var(--ink); }
+
+/* ---------- Prilipusi faktų kortelė ---------- */
+.fact-card { position: relative; padding: 28px; border-radius: var(--r-lg); background: var(--surface); border: 1px solid var(--line-2); box-shadow: var(--shadow-sm); }
+.fact-card__head { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 18px; }
+.fact-card__head h2 { margin: 0; font-size: 22px; }
+.fact-card__list { margin: 0; display: grid; }
+.fact-card__row { display: grid; grid-template-columns: 112px minmax(0, 1fr); gap: 12px; padding: 12px 0; border-top: 1px solid var(--line-2); font-size: 14.5px; }
+.fact-card__row:first-child { border-top: 0; padding-top: 0; }
+.fact-card__row dt { margin: 0; color: var(--muted); font-weight: 600; }
+.fact-card__row dd { margin: 0; color: var(--ink); }
+.fact-card__row dd .tag { vertical-align: middle; }
+.fact-card__row dd .tag + .tag { margin-left: 4px; }
+.fact-card__row dd small { display: block; color: var(--muted); font-size: 13px; margin-top: 2px; }
+.fact-card__row dd ul { margin: 0; padding: 0; list-style: none; }
+.fact-card__row dd li + li { margin-top: 6px; }
+.fact-card__row dd a { color: var(--green-700); font-weight: 600; }
+.fact-card__actions { display: grid; gap: 10px; margin-top: 20px; padding-top: 20px; border-top: 1px solid var(--line-2); }
+.fact-card__share { margin-top: 20px; padding-top: 18px; border-top: 1px solid var(--line-2); }
+.fact-card__share-label { display: block; margin-bottom: 10px; font: 700 12.5px/1 var(--f-body); letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+.share { display: flex; flex-wrap: wrap; gap: 8px; }
+.share__btn { display: inline-flex; align-items: center; gap: 8px; height: 40px; padding: 0 14px; border: 1.5px solid var(--line); border-radius: var(--pill); background: var(--surface); color: var(--ink); font: 700 13.5px/1 var(--f-body); cursor: pointer; transition: border-color .25s, background .25s, color .25s; }
+.share__btn i { font-size: 18px; color: var(--green); }
+.share__btn:hover { border-color: var(--ink); background: var(--ink); color: #fff; }
+.share__btn:hover i { color: var(--sun); }
+
+/* ---------- Susiję projektai: pavyzdiniai metai ---------- */
+.card__foot .tag--outline { height: 24px; font-size: 11.5px; }
+
+/* ---------- Partneriai ---------- */
+.partner-cards .icon-card h3 { font-size: 20px; }
+.partner-cards .icon-card p small { display: block; margin-top: 6px; color: var(--muted); }
+
+/* ---------- Pritaikymas ---------- */
+@media (max-width: 1100px) {
+  .project-layout { grid-template-columns: 1fr; }
+  .project-aside .sticky-col { position: static; }
+}
+@media (max-width: 900px) {
+  .territory { grid-template-columns: 1fr; }
+  .map--small { height: auto; min-height: 300px; }
+}
+@media (max-width: 640px) {
+  .project-main .steps { grid-template-columns: 1fr; }
+  .project-main .gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .fact-card { padding: 22px; }
+  .fact-card__row { grid-template-columns: 1fr; gap: 4px; }
+  .compare__label { top: 12px; height: 28px; padding: 0 10px; font-size: 11.5px; }
+  .compare__handle { width: 40px; height: 40px; font-size: 18px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .compare__handle, .share__btn { transition: none; }
+}

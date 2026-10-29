@@ -1,0 +1,69 @@
+/* Pelkės (pelkes.html) – puslapio stiliai. Naudoja style.css kintamuosius ir komponentus;
+   Salient'e atkartojama WPBakery eilučių / stulpelių nustatymais ir nedideliu Custom CSS. */
+
+/* Apibrėžimų kortelės */
+.def-card .card__media { aspect-ratio: 4 / 3; }
+.def-card .card__body h3 { font-size: 22px; }
+.def-card .card__body ul { margin: 4px 0 0; padding-left: 18px; display: grid; gap: 4px; font-size: 14.5px; color: var(--text); }
+.def-card .card__body ul li::marker { color: var(--green); }
+
+/* Pelkių tipai: skirtukai + faktai */
+.tabs--line .tabs__panel { padding-top: clamp(28px, 4vw, 44px); }
+.type-facts { margin-top: 22px; }
+.type-facts li p { font-size: 14.5px; }
+.type-panel .tag { margin-bottom: 14px; }
+
+/* Palyginimo lentelė */
+.table-compare th[scope="row"] { background: var(--paper); white-space: nowrap; width: 1%; }
+.table-compare td { line-height: 1.45; }
+.table-compare thead th:first-child { width: 1%; }
+.note { margin: 14px 0 0; font-size: 13.5px; color: var(--muted); }
+
+/* EB buveinių tinklelis */
+.habitat-tools { justify-content: space-between; margin-bottom: 22px; }
+.habitat-tools .muted { font-size: 14px; font-weight: 600; }
+.habitat-grid { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 12px; }
+.habitat { display: flex; align-items: center; gap: 14px; padding: 16px 18px; border-radius: var(--r); background: var(--surface); border: 1px solid var(--line-2); box-shadow: var(--shadow-sm); transition: transform .25s var(--ease), box-shadow .25s var(--ease); }
+.habitat:hover { transform: translateY(-2px); box-shadow: var(--shadow); }
+.habitat[hidden] { display: none; }
+.habitat__code { flex-shrink: 0; min-width: 76px; font: 500 24px/1 var(--f-display); letter-spacing: -.02em; color: var(--green-700); font-variant-numeric: tabular-nums; }
+.habitat__code sup { color: var(--sun-700); font-size: .62em; }
+.habitat__name { flex: 1; font-weight: 600; font-size: 15px; line-height: 1.3; color: var(--ink); }
+.habitat--priority { border-color: var(--sun-100); background: linear-gradient(135deg, var(--surface) 40%, var(--sun-50)); }
+.habitat .tag { flex-shrink: 0; height: 24px; font-size: 11.5px; }
+.habitat-legend { display: flex; align-items: center; gap: 8px; margin: 18px 0 0; font-size: 14px; color: var(--muted); }
+.habitat-legend i { color: var(--sun-700); font-size: 18px; }
+.habitat-foot { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px 24px; margin-top: 28px; }
+
+/* Grėsmės ir pasekmės */
+.check-list--2col { grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 32px; }
+.check-list--2col li { font-size: 15.5px; }
+.threats-head { margin-bottom: 18px; }
+.consequences { margin-top: clamp(44px, 6vw, 72px); align-items: start; }
+
+/* Tamsi video juosta */
+.band__inner { max-width: 820px; }
+.band h2 em, .cta h2 em { color: var(--sun); }
+
+/* Būklė: skaičiai, juostos, laiko juosta */
+.bukle-grid { align-items: start; }
+.use-bars { display: grid; gap: 18px; margin-top: 18px; }
+.use-bars .progress__meta strong { font-size: 15.5px; }
+.timeline { list-style: none; margin: 0; padding: 0; display: grid; }
+.timeline li { display: grid; grid-template-columns: 160px 1fr; gap: 18px; padding: 18px 0; border-top: 1px solid var(--peat-100); }
+.timeline li:last-child { border-bottom: 1px solid var(--peat-100); }
+.timeline__when { font: 700 14.5px/1.4 var(--f-body); color: var(--peat); }
+.timeline li p { margin: 0; font-size: 15px; }
+
+/* Atkūrimas: žingsniai, žodynas */
+.steps-note { margin-top: 18px; }
+.zodynas-split { align-items: start; }
+.toggle__title { display: inline-flex; align-items: center; gap: 10px; flex-wrap: wrap; text-align: left; }
+.toggle__title .tag { height: 22px; font-size: 11px; }
+.term-related { margin-top: 12px; }
+.term-related .tag { height: 24px; font-size: 12px; }
+
+@media (max-width: 900px) {
+  .check-list--2col { grid-template-columns: 1fr; }
+  .timeline li { grid-template-columns: 1fr; gap: 4px; }
+}

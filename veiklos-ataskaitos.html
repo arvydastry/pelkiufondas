@@ -1,0 +1,590 @@
+<!doctype html>
+<html lang="lt">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Veiklos ataskaitos | Pelkių fondas</title>
+  <meta name="description" content="VšĮ „Pelkių fondas“ metinės veiklos ir finansinių ataskaitų rinkiniai 2020–2025 m. (LT / EN), audito ataskaitos ir auditoriaus išvados – visi dokumentai PDF formatu su filtrais pagal metus, tipą ir kalbą.">
+  <!-- Bendra <head> dalis: įklijuoti į kiekvieną puslapį po <title> ir <meta name="description"> -->
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/Fraunces.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/Manrope.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>document.documentElement.classList.add('js');</script>
+  <link rel="stylesheet" href="assets/css/pages/veiklos-ataskaitos.css">
+</head>
+<body data-nav="apie-mus">
+  <a class="skip-link" href="#turinys">Pereiti prie turinio</a>
+
+  <!-- Maketo juosta: į WordPress nekeliama -->
+  <div class="mockbar" role="region" aria-label="Maketo juosta">
+    <div class="container">
+      <strong>Dizaino maketas <span>·</span> Pelkių fondas</strong>
+      <span>WordPress + Salient</span>
+      <label class="mockbar__toggle" title="Žymekliai rodo, kas makete yra nauja, palyginti su dabartine svetaine"><input type="checkbox" id="toggle-newfn" checked> <span class="new-fn__badge">Nauja</span> rodyti naujas funkcijas</label>
+      <nav class="mockbar__pages" aria-label="Maketo puslapiai">
+        <a href="index.html">Pradinis</a><a href="pelkes.html">Pelkės</a><a href="apie-mus.html">Apie mus</a><a href="veikla.html">Veikla</a><a href="naujienos.html">Naujienos</a><a href="kontaktai.html">Kontaktai</a><a href="prisidek.html">Prisidėk</a>
+      </nav>
+    </div>
+  </div>
+
+  <!-- Antraštė (Salient: Header layout „Standard“, logotipas kairėje, meniu dešinėje, „Prisidėk“ mygtukas, paieška, kalbos) -->
+  <header class="site-header">
+    <div class="container container--wide site-header__inner">
+      <a class="logo" href="index.html" aria-label="Pelkių fondas, pradžia">
+        <img class="logo__mark" src="assets/img/logo-240.png" alt="" width="52" height="52">
+        <span class="logo__word">Pelkių fondas<small>Pelkių atkūrimas ir apsauga</small></span>
+      </a>
+      <nav class="nav" aria-label="Pagrindinis meniu">
+        <a class="nav__link" href="index.html" data-nav-key="pradinis">Pradinis</a>
+        <div class="nav__item" data-drop data-nav-key="pelkes">
+          <button class="nav__link" type="button" aria-expanded="false" aria-haspopup="true">Pelkės <i class="ph ph-caret-down" aria-hidden="true"></i></button>
+          <div class="nav__drop">
+            <a class="drop-link" href="pelkes.html"><span class="drop-link__icon"><i class="ph ph-leaf"></i></span><span class="drop-link__text"><strong>Kas yra pelkės</strong><span>Apibrėžimai, reikšmė, būklė Lietuvoje</span></span></a>
+            <a class="drop-link" href="pelkes.html#tipai"><span class="drop-link__icon"><i class="ph ph-tree-evergreen"></i></span><span class="drop-link__text"><strong>Pelkių tipai ir buveinės</strong><span>Žemapelkės, tarpinės, aukštapelkės, EB buveinės</span></span></a>
+            <a class="drop-link" href="pelkes.html#gresmes"><span class="drop-link__icon"><i class="ph ph-warning"></i></span><span class="drop-link__text"><strong>Grėsmės ir atkūrimas</strong><span>Kodėl pelkės nyksta ir kaip jas atkuriame</span></span></a>
+            <a class="drop-link" href="terminu-zodynas.html"><span class="drop-link__icon"><i class="ph ph-book-open"></i></span><span class="drop-link__text"><strong>Terminų žodynas</strong><span>Pelkių ir durpynų sąvokos su paieška</span></span></a>
+            <a class="drop-link" href="galerija.html"><span class="drop-link__icon"><i class="ph ph-images"></i></span><span class="drop-link__text"><strong>Galerija</strong><span>Pelkių ir mūsų darbų nuotraukos</span></span></a>
+          </div>
+        </div>
+        <a class="nav__link" href="apie-mus.html" data-nav-key="apie-mus">Apie mus</a>
+        <div class="nav__item" data-drop data-nav-key="veikla">
+          <button class="nav__link" type="button" aria-expanded="false" aria-haspopup="true">Veikla <i class="ph ph-caret-down" aria-hidden="true"></i></button>
+          <div class="nav__drop nav__drop--wide">
+            <a class="drop-link" href="veikla.html"><span class="drop-link__icon"><i class="ph ph-compass"></i></span><span class="drop-link__text"><strong>Veiklos kryptys</strong><span>Biologinė įvairovė, atkūrimas, klimatas, pelkininkystė</span></span></a>
+            <a class="drop-link" href="co2.html"><span class="drop-link__icon"><i class="ph ph-cloud"></i></span><span class="drop-link__text"><strong>CO₂ emisijų mažinimas</strong><span>Verslui: atkurkite pelkes, mažinkite anglies pėdsaką</span></span></a>
+            <a class="drop-link" href="projektai.html"><span class="drop-link__icon"><i class="ph ph-map-pin"></i></span><span class="drop-link__text"><strong>Projektai</strong><span>Vykdomi ir įgyvendinti projektai žemėlapyje</span></span></a>
+            <a class="drop-link" href="paslaugos.html"><span class="drop-link__icon"><i class="ph ph-briefcase"></i></span><span class="drop-link__text"><strong>Paslaugos</strong><span>Konsultacijos, tyrimai, švietimas</span></span></a>
+            <a class="drop-link" href="publikacijos.html"><span class="drop-link__icon"><i class="ph ph-books"></i></span><span class="drop-link__text"><strong>Publikacijos</strong><span>Straipsniai, knygos, lankstinukai</span></span></a>
+            <a class="drop-link" href="videoteka.html"><span class="drop-link__icon"><i class="ph ph-play-circle"></i></span><span class="drop-link__text"><strong>Videoteka</strong><span>Filmai apie pelkes ir mūsų darbus</span></span></a>
+            <a class="drop-link" href="veiklos-ataskaitos.html"><span class="drop-link__icon"><i class="ph ph-file-text"></i></span><span class="drop-link__text"><strong>Veiklos ataskaitos</strong><span>Metinės veiklos ir finansinės ataskaitos</span></span></a>
+            <div class="nav__drop-foot"><span class="muted">Norite prisidėti prie veiklų?</span><a class="link-u" href="prisidek.html#savanoriauk">Savanoriauk</a></div>
+          </div>
+        </div>
+        <a class="nav__link" href="naujienos.html" data-nav-key="naujienos">Naujienos</a>
+        <a class="nav__link" href="kontaktai.html" data-nav-key="kontaktai">Kontaktai</a>
+      </nav>
+      <div class="header-actions">
+        <div class="lang" aria-label="Kalba"><span aria-current="true" lang="lt">LT</span><a href="#" data-lang="en" hreflang="en">EN</a></div>
+        <button class="icon-btn icon-btn--search" type="button" data-search-open aria-label="Paieška svetainėje"><i class="ph ph-magnifying-glass" aria-hidden="true"></i></button>
+        <a class="btn btn--sun btn--sm" href="prisidek.html">Prisidėk</a>
+        <button class="burger icon-btn" type="button" aria-label="Atidaryti meniu" aria-expanded="false" aria-controls="mobile-menu"><i class="ph ph-list" aria-hidden="true"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobilus meniu (Salient: Off Canvas Menu) -->
+  <div class="mobile-menu" id="mobile-menu" role="dialog" aria-modal="true" aria-label="Meniu" tabindex="-1">
+    <div class="container">
+      <div class="mobile-menu__top">
+        <a class="logo" href="index.html" aria-label="Pelkių fondas, pradžia"><img class="logo__mark" src="assets/img/logo-240.png" alt="" width="52" height="52"><span class="logo__word">Pelkių fondas<small>Pelkių atkūrimas ir apsauga</small></span></a>
+        <button class="mobile-menu__close" type="button" aria-label="Uždaryti meniu"><i class="ph ph-x" aria-hidden="true"></i></button>
+      </div>
+      <nav class="mobile-menu__links" aria-label="Meniu mobiliesiems">
+        <a href="index.html">Pradinis <i class="ph ph-arrow-right" aria-hidden="true"></i></a>
+        <details><summary>Pelkės <i class="ph ph-caret-down" aria-hidden="true"></i></summary><div><a href="pelkes.html">Kas yra pelkės</a><a href="pelkes.html#tipai">Pelkių tipai ir buveinės</a><a href="pelkes.html#gresmes">Grėsmės ir atkūrimas</a><a href="terminu-zodynas.html">Terminų žodynas</a><a href="galerija.html">Galerija</a></div></details>
+        <a href="apie-mus.html">Apie mus <i class="ph ph-arrow-right" aria-hidden="true"></i></a>
+        <details><summary>Veikla <i class="ph ph-caret-down" aria-hidden="true"></i></summary><div><a href="veikla.html">Veiklos kryptys</a><a href="co2.html">CO₂ emisijų mažinimas</a><a href="projektai.html">Projektai</a><a href="paslaugos.html">Paslaugos</a><a href="publikacijos.html">Publikacijos</a><a href="videoteka.html">Videoteka</a><a href="veiklos-ataskaitos.html">Veiklos ataskaitos</a></div></details>
+        <a href="naujienos.html">Naujienos <i class="ph ph-arrow-right" aria-hidden="true"></i></a>
+        <a href="kontaktai.html">Kontaktai <i class="ph ph-arrow-right" aria-hidden="true"></i></a>
+        <a href="prisidek.html">Prisidėk <i class="ph ph-arrow-right" aria-hidden="true"></i></a>
+      </nav>
+      <div class="mobile-menu__foot">
+        <a class="btn btn--sun" href="prisidek.html">Paremk pelkes</a>
+        <button class="btn btn--ghost-light" type="button" data-search-open><i class="ph ph-magnifying-glass" aria-hidden="true"></i> Paieška</button>
+        <div class="lang" aria-label="Kalba"><span aria-current="true">LT</span><a href="#" data-lang="en" hreflang="en">EN</a></div>
+      </div>
+    </div>
+  </div>
+  <main id="turinys">
+
+    <!-- Salient: Page Header (Nectar „Page Header“ be fono, breadcrumb – Yoast / Rank Math shortcode), Split Line Heading, Button, Icon With Text (žymos) -->
+    <section class="page-header page-header--plain" id="antraste">
+      <div class="container">
+        <ol class="breadcrumb" aria-label="Naršymo kelias">
+          <li><a href="index.html">Pradinis</a></li>
+          <li><a href="apie-mus.html">Apie mus</a></li>
+          <li aria-current="page">Veiklos ataskaitos</li>
+        </ol>
+        <p class="kicker" data-reveal>Apie mus</p>
+        <h1 data-split>Veiklos <em>ataskaitos</em></h1>
+        <p class="lead" data-reveal style="--d:160ms">Kasmet viešai skelbiame metinę veiklos ataskaitą ir finansinių ataskaitų rinkinį. Čia rasite visus 2020–2025 m. dokumentus – dalį jų ir anglų kalba.</p>
+        <div class="page-header__actions" data-reveal style="--d:280ms">
+          <a class="btn" href="#" title="PDF (makete neįkeltas)"><i class="ph ph-file-pdf" aria-hidden="true"></i> Naujausia ataskaita (2025 m.)</a>
+          <a class="link-arrow" href="apie-mus.html#dokumentai">Įstatai ir kiti dokumentai <i class="ph ph-arrow-right" aria-hidden="true"></i></a>
+        </div>
+        <ul class="cluster rf-facts" aria-label="Archyvo apžvalga" data-reveal style="--d:380ms">
+          <li><span class="tag tag--outline"><i class="ph ph-files" aria-hidden="true"></i> 18 PDF dokumentų</span></li>
+          <li><span class="tag tag--outline"><i class="ph ph-calendar-blank" aria-hidden="true"></i> 2020–2025 m.</span></li>
+          <li><span class="tag tag--outline"><i class="ph ph-translate" aria-hidden="true"></i> Lietuvių ir anglų kalba</span></li>
+          <li><span class="tag tag--outline"><i class="ph ph-seal-check" aria-hidden="true"></i> Auditoriaus išvados už 2020–2021 m.</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Salient: Row su video fonu (self-hosted mp4 + poster, tamsus overlay), Milestone ×4 (Column animation), Split Line Heading, Button ×2 -->
+    <section class="band" id="skaiciai" aria-labelledby="skaiciai-h">
+      <div class="video-bg video-bg--flat">
+        <img src="https://images.pexels.com/videos/6338335/pexels-photo-6338335.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=630&w=1200" alt="">
+        <video data-src="https://videos.pexels.com/video-files/6338335/6338335-hd_1920_1080_24fps.mp4" data-src-sd="https://videos.pexels.com/video-files/6338335/6338335-sd_960_540_24fps.mp4" muted loop playsinline poster="https://images.pexels.com/videos/6338335/pexels-photo-6338335.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=630&w=1200"></video>
+      </div>
+      <div class="container">
+        <div class="section-head">
+          <p class="kicker" data-reveal>2025 m. veiklos ataskaita</p>
+          <h2 id="skaiciai-h" data-split>Praėję metai <em>skaičiais</em></h2>
+          <p class="lead" data-reveal style="--d:160ms">Keli skaičiai iš naujausios ataskaitos ir mūsų veiklos puslapių. Visą vaizdą – projektus, renginius, leidinius ir finansus – rasite pačiuose dokumentuose.</p>
+        </div>
+        <div class="stats" data-reveal-group>
+          <div class="stat">
+            <span class="stat__num"><span data-count-to="100" data-prefix="~">~100</span><small>val.</small></span>
+            <span class="stat__label">edukacijos apie pelkes 2025 m.</span>
+          </div>
+          <div class="stat">
+            <span class="stat__num"><span data-count-to="10">10</span><small>leidinių</small></span>
+            <span class="stat__label">parengta 2025 m.</span>
+          </div>
+          <div class="stat">
+            <span class="stat__num"><span data-count-to="100" data-suffix="+">100+</span><small>dalyvių</small></span>
+            <span class="stat__label">mokymuose savivaldybėms 2025 m. lapkritį</span>
+          </div>
+          <div class="stat">
+            <span class="stat__num"><span data-count-to="110" data-prefix="~">~110</span><small>ha</small></span>
+            <span class="stat__label">pažeistų pelkių atkurta kartu su partneriais</span>
+          </div>
+        </div>
+        <div class="rf-band__actions" data-reveal>
+          <a class="btn btn--sun" href="#" title="PDF (makete neįkeltas)">Atsisiųsti 2025 m. ataskaitą <span class="btn__icon"><i class="ph ph-arrow-right"></i><i class="ph ph-arrow-right"></i></span></a>
+          <a class="btn btn--ghost-light" href="#ataskaitos">Visos ataskaitos</a>
+        </div>
+        <p class="rf-band__src">Šaltiniai: 2025 m. veiklos ataskaita (trumpoji santrauka paskelbta naujienose 2026-04-08) ir svetainės veiklos puslapiai. Skaičiai apvalinti.</p>
+      </div>
+      <span class="video-credit">Video: Pexels / Matthias Groeneveld</span>
+    </section>
+
+    <!-- Salient: Document Library Lite (įrašų tipas „Dokumentas“ + taksonomijos metai / tipas / kalba; filtrų juosta ir paieška – įskiepio shortcode) arba Post Loop Builder su Custom Post Type; metų blokai – Toggle Panels; dokumentai – Icon With Text / Fancy Box su Media Library PDF nuorodomis -->
+    <section class="section" id="ataskaitos" aria-labelledby="ataskaitos-h">
+      <div class="container">
+        <div class="section-head section-head--row">
+          <div>
+            <p class="kicker" data-reveal>Dokumentų archyvas</p>
+            <h2 id="ataskaitos-h" data-split>Visos ataskaitos <em>vienoje vietoje</em></h2>
+            <p class="lead" data-reveal style="--d:160ms">Pasirinkite metus, dokumento tipą ar kalbą – arba įveskite paieškos žodį. Kiekvienas dokumentas atsidaro kaip PDF.</p>
+          </div>
+          <p class="sr-note" data-reveal>Naujausi metai – viršuje. Senesnių metų blokus išskleiskite paspaudę antraštę.</p>
+        </div>
+
+        <div class="rf-list" data-rf>
+          <div class="rf-panel new-fn" data-reveal>
+            <span class="new-fn__badge" data-tip="Nauja: ataskaitų katalogas su filtrais pagal metus, tipą ir kalbą bei paieška. WordPress'e – Document Library Lite (dokumentų įrašų tipas su taksonomijomis) arba Salient Post Loop Builder su filtrų juosta; dabartinėje svetainėje – tik statinis sąrašas pagal metus." tabindex="0">Nauja</span>
+
+            <div class="rf-row">
+              <span class="rf-row__label" id="rf-y-label">Metai</span>
+              <div class="pill-group" role="group" aria-labelledby="rf-y-label">
+                <button class="pill" type="button" data-rf-group="y" data-rf="all" aria-pressed="true">Visi metai <span class="pill__count">18</span></button>
+                <button class="pill" type="button" data-rf-group="y" data-rf="2025" aria-pressed="false">2025 <span class="pill__count">3</span></button>
+                <button class="pill" type="button" data-rf-group="y" data-rf="2024" aria-pressed="false">2024 <span class="pill__count">3</span></button>
+                <button class="pill" type="button" data-rf-group="y" data-rf="2023" aria-pressed="false">2023 <span class="pill__count">3</span></button>
+                <button class="pill" type="button" data-rf-group="y" data-rf="2022" aria-pressed="false">2022 <span class="pill__count">2</span></button>
+                <button class="pill" type="button" data-rf-group="y" data-rf="2021" aria-pressed="false">2021 <span class="pill__count">4</span></button>
+                <button class="pill" type="button" data-rf-group="y" data-rf="2020" aria-pressed="false">2020 <span class="pill__count">3</span></button>
+              </div>
+            </div>
+
+            <div class="rf-row">
+              <span class="rf-row__label" id="rf-t-label">Tipas</span>
+              <div class="pill-group" role="group" aria-labelledby="rf-t-label">
+                <button class="pill" type="button" data-rf-group="t" data-rf="all" aria-pressed="true">Visi tipai <span class="pill__count">18</span></button>
+                <button class="pill" type="button" data-rf-group="t" data-rf="veiklos" aria-pressed="false">Veiklos ataskaitos <span class="pill__count">10</span></button>
+                <button class="pill" type="button" data-rf-group="t" data-rf="finansine" aria-pressed="false">Finansinių ataskaitų rinkiniai <span class="pill__count">6</span></button>
+                <button class="pill" type="button" data-rf-group="t" data-rf="audito" aria-pressed="false">Audito ataskaitos <span class="pill__count">2</span></button>
+              </div>
+            </div>
+
+            <div class="rf-row">
+              <span class="rf-row__label" id="rf-l-label">Kalba</span>
+              <div class="pill-group" role="group" aria-labelledby="rf-l-label">
+                <button class="pill" type="button" data-rf-group="l" data-rf="all" aria-pressed="true">Visos kalbos <span class="pill__count">18</span></button>
+                <button class="pill" type="button" data-rf-group="l" data-rf="lt" aria-pressed="false">Lietuvių (LT) <span class="pill__count">14</span></button>
+                <button class="pill" type="button" data-rf-group="l" data-rf="en" aria-pressed="false">Anglų (EN) <span class="pill__count">4</span></button>
+              </div>
+            </div>
+
+            <div class="rf-row rf-row--top">
+              <label class="rf-row__label" for="rf-search">Paieška</label>
+              <form class="rf-search" role="search" aria-label="Paieška dokumentuose">
+                <div class="rf-search__field">
+                  <i class="ph ph-magnifying-glass" aria-hidden="true"></i>
+                  <input id="rf-search" type="search" name="q" data-rf-search placeholder="pvz., auditas, 2023, annual report" autocomplete="off">
+                </div>
+                <p class="rf-search__hint">Ieškoma dokumentų pavadinimuose ir aprašymuose; lietuviškos raidės nebūtinos.</p>
+              </form>
+            </div>
+          </div>
+
+          <div class="rf-bar">
+            <p class="rf-bar__count" data-rf-count aria-live="polite"><b>18</b> dokumentų iš viso</p>
+            <div class="rf-tools">
+              <button class="btn btn--ghost btn--sm" type="button" data-rf-clear hidden><i class="ph ph-x" aria-hidden="true"></i> Išvalyti filtrus</button>
+              <button class="btn btn--ghost btn--sm" type="button" data-rf-expand="1"><i class="ph ph-arrows-out-line-vertical" aria-hidden="true"></i> Išskleisti visus</button>
+              <button class="btn btn--ghost btn--sm" type="button" data-rf-expand="0"><i class="ph ph-arrows-in-line-vertical" aria-hidden="true"></i> Suskleisti visus</button>
+            </div>
+          </div>
+
+          <!-- 2025 -->
+          <div class="toggle toggle--card rf-year" id="m-2025" data-rf-year="2025" data-reveal>
+              <button class="toggle__btn" type="button" aria-expanded="true" aria-controls="m-2025-panel">
+                <span class="rf-year__title">Metinės veiklos ir finansinės ataskaitos 2025<small>Naujausi dokumentai · veiklos ataskaita lietuvių ir anglų kalba, finansinių ataskaitų rinkinys</small></span>
+                <span class="rf-year__meta"><span class="tag tag--outline" data-rf-year-count>3 dokumentai</span><span class="tag tag--water">LT · EN</span></span>
+                <i class="ph ph-plus" aria-hidden="true"></i>
+              </button>
+            <div class="toggle__panel" id="m-2025-panel"><div>
+              <div class="rf-docs">
+                <a class="doc" href="#" title="PDF (makete neįkeltas)" data-tags="y-2025 t-veiklos lang-lt" data-keywords="metinė veiklos ataskaita 2025 lietuvių lt pdf">
+                  <span class="doc__icon doc__icon--green"><i class="ph ph-file-text" aria-hidden="true"></i></span>
+                  <span class="doc__text"><strong>Metinė veiklos ataskaita 2025 m.</strong><span>PDF · Metinė veiklos ataskaita · lietuvių k.</span></span>
+                  <span class="doc__meta"><span class="tag">LT</span></span>
+                  <span class="doc__dl" aria-hidden="true"><i class="ph ph-download-simple"></i></span>
+                </a>
+                <a class="doc" href="#" title="PDF (makete neįkeltas)" data-tags="y-2025 t-veiklos lang-en" data-keywords="annual activity report 2025 english anglų en veiklos ataskaita pdf">
+                  <span class="doc__icon doc__icon--green"><i class="ph ph-file-text" aria-hidden="true"></i></span>
+                  <span class="doc__text"><strong lang="en">Annual activity report 2025</strong><span>PDF · Metinė veiklos ataskaita · anglų k.</span></span>
+                  <span class="doc__meta"><span class="tag tag--water">EN</span></span>
+                  <span class="doc__dl" aria-hidden="true"><i class="ph ph-download-simple"></i></span>
+                </a>
+                <a class="doc" href="#" title="PDF (makete neįkeltas)" data-tags="y-2025 t-finansine lang-lt" data-keywords="finansinių ataskaitų rinkinys 2025 finansinė finansai balansas lt pdf">
+                  <span class="doc__icon"><i class="ph ph-chart-bar" aria-hidden="true"></i></span>
+                  <span class="doc__text"><strong>Finansinių ataskaitų rinkinys 2025 m.</strong><span>PDF · Finansinių ataskaitų rinkinys · lietuvių k.</span></span>
+                  <span class="doc__meta"><span class="tag">LT</span></span>
+                  <span class="doc__dl" aria-hidden="true"><i class="ph ph-download-simple"></i></span>
+                </a>
+              </div>
+            </div></div>
+          </div>
+
+          <!-- 2024 -->
+          <div class="toggle toggle--card rf-year" id="m-2024" data-rf-year="2024" data-reveal>
+              <button class="toggle__btn" type="button" aria-expanded="false" aria-controls="m-2024-panel">
+                <span class="rf-year__title">Metinės veiklos ir finansinės ataskaitos 2024<small>Veiklos ataskaita lietuvių ir anglų kalba, finansinių ataskaitų rinkinys</small></span>
+                <span class="rf-year__meta"><span class="tag tag--outline" data-rf-year-count>3 dokumentai</span><span class="tag tag--water">LT · EN</span></span>
+                <i class="ph ph-plus" aria-hidden="true"></i>
+              </button>
+            <div class="toggle__panel" id="m-2024-panel"><div>
+              <div class="rf-docs">
+                <a class="doc" href="#" title="PDF (makete neįkeltas)" data-tags="y-2024 t-veiklos lang-lt" data-keywords="metinė veiklos ataskaita 2024 lietuvių lt pdf">
+                  <span class="doc__icon doc__icon--green"><i class="ph ph-file-text" aria-hidden="true"></i></span>
+                  <span class="doc__text"><strong>Metinė veiklos ataskaita 2024 m.</strong><span>PDF · Metinė veiklos ataskaita · lietuvių k.</span></span>
+                  <span class="doc__meta"><span class="tag">LT</span></span>
+                  <span class="doc__dl" aria-hidden="true"><i class="ph ph-download-simple"></i></span>
+                </a>
+                <a class="doc" href="#" title="PDF (makete neįkeltas)" data-tags="y-2024 t-veiklos lang-en" data-keywords="annual activity report 2024 english anglų en veiklos ataskaita pdf">
+                  <span class="doc__icon doc__icon--green"><i class="ph ph-file-text" aria-hidden="true"></i></span>
+                  <span class="doc__text"><strong lang="en">Annual activity report 2024</strong><span>PDF · Metinė veiklos ataskaita · anglų k.</span></span>
+                  <span class="doc__meta"><span class="tag tag--water">EN</span></span>
+                  <span class="doc__dl" aria-hidden="true"><i class="ph ph-download-simple"></i></span>
+                </a>
+                <a class="doc" href="#" title="PDF (makete neįkeltas)" data-tags="y-2024 t-finansine lang-lt" data-keywords="finansinių ataskaitų rinkinys 2024 finansinė finansai balansas lt pdf">
+                  <span class="doc__icon"><i class="ph ph-chart-bar" aria-hidden="true"></i></span>
+                  <span class="doc__text"><strong>Finansinių ataskaitų rinkinys 2024 m.</strong><span>PDF · Finansinių ataskaitų rinkinys · lietuvių k.</span></span>
+                  <span class="doc__meta"><span class="tag">LT</span></span>
+                  <span class="doc__dl" aria-hidden="true"><i class="ph ph-download-simple"></i></span>
+                </a>
+              </div>
+            </div></div>
+          </div>
+
+          <!-- 2023 -->
+          <div class="toggle toggle--card rf-year" id="m-2023" data-rf-year="2023" data-reveal>
+              <button class="toggle__btn" type="button" aria-expanded="false" aria-controls="m-2023-panel">
+                <span class="rf-year__title">Metinės veiklos ir finansinės ataskaitos 2023<small>Veiklos ataskaita lietuvių ir anglų kalba, finansinių ataskaitų rinkinys</small></span>
+                <span class="rf-year__meta"><span class="tag tag--outline" data-rf-year-count>3 dokumentai</span><span class="tag tag--water">LT · EN</span></span>
+                <i class="ph ph-plus" aria-hidden="true"></i>
+              </button>
+            <div class="toggle__panel" id="m-2023-panel"><div>
+              <div class="rf-docs">
+                <a class="doc" href="#" title="PDF (makete neįkeltas)" data-tags="y-2023 t-veiklos lang-lt" data-keywords="metinė veiklos ataskaita 2023 lietuvių lt pdf">
+                  <span class="doc__icon doc__icon--green"><i class="ph ph-file-text" aria-hidden="true"></i></span>
+                  <span class="doc__text"><strong>Metinė veiklos ataskaita 2023 m.</strong><span>PDF · Metinė veiklos ataskaita · lietuvių k.</span></span>
+                  <span class="doc__meta"><span class="tag">LT</span></span>
+                  <span class="doc__dl" aria-hidden="true"><i class="ph ph-download-simple"></i></span>
+                </a>
+                <a class="doc" href="#" title="PDF (makete neįkeltas)" data-tags="y-2023 t-veiklos lang-en" data-keywords="annual activity report 2023 english anglų en veiklos ataskaita pdf">
+                  <span class="doc__icon doc__icon--green"><i class="ph ph-file-text" aria-hidden="true"></i></span>
+                  <span class="doc__text"><strong lang="en">Annual activity report 2023</strong><span>PDF · Metinė veiklos ataskaita · anglų k.</span></span>
+                  <span class="doc__meta"><span class="tag tag--water">EN</span></span>
+                  <span class="doc__dl" aria-hidden="true"><i class="ph ph-download-simple"></i></span>
+                </a>
+                <a class="doc" href="#" title="PDF (makete neįkeltas)" data-tags="y-2023 t-finansine lang-lt" data-keywords="finansinių ataskaitų rinkinys 2023 finansinė finansai balansas lt pdf">
+                  <span class="doc__icon"><i class="ph ph-chart-bar" aria-hidden="true"></i></span>
+                  <span class="doc__text"><strong>Finansinių ataskaitų rinkinys 2023 m.</strong><span>PDF · Finansinių ataskaitų rinkinys · lietuvių k.</span></span>
+                  <span class="doc__meta"><span class="tag">LT</span></span>
+                  <span class="doc__dl" aria-hidden="true"><i class="ph ph-download-simple"></i></span>
+                </a>
+              </div>
+            </div></div>
+          </div>
+
+          <!-- 2022 -->
+          <div class="toggle toggle--card rf-year" id="m-2022" data-rf-year="2022" data-reveal>
+              <button class="toggle__btn" type="button" aria-expanded="false" aria-controls="m-2022-panel">
+                <span class="rf-year__title">Metinės veiklos ir finansinės ataskaitos 2022<small>Veiklos ataskaita ir finansinių ataskaitų rinkinys</small></span>
+                <span class="rf-year__meta"><span class="tag tag--outline" data-rf-year-count>2 dokumentai</span><span class="tag tag--water">LT</span></span>
+                <i class="ph ph-plus" aria-hidden="true"></i>
+              </button>
+            <div class="toggle__panel" id="m-2022-panel"><div>
+              <div class="rf-docs">
+                <a class="doc" href="#" title="PDF (makete neįkeltas)" data-tags="y-2022 t-veiklos lang-lt" data-keywords="metinė veiklos ataskaita 2022 lietuvių lt pdf">
+                  <span class="doc__icon doc__icon--green"><i class="ph ph-file-text" aria-hidden="true"></i></span>
+                  <span class="doc__text"><strong>Metinė veiklos ataskaita 2022 m.</strong><span>PDF · Metinė veiklos ataskaita · lietuvių k.</span></span>
+                  <span class="doc__meta"><span class="tag">LT</span></span>
+                  <span class="doc__dl" aria-hidden="true"><i class="ph ph-download-simple"></i></span>
+                </a>
+                <a class="doc" href="#" title="PDF (makete neįkeltas)" data-tags="y-2022 t-finansine lang-lt" data-keywords="finansinių ataskaitų rinkinys 2022 finansinė finansai balansas lt pdf">
+                  <span class="doc__icon"><i class="ph ph-chart-bar" aria-hidden="true"></i></span>
+                  <span class="doc__text"><strong>Finansinių ataskaitų rinkinys 2022 m.</strong><span>PDF · Finansinių ataskaitų rinkinys · lietuvių k.</span></span>
+                  <span class="doc__meta"><span class="tag">LT</span></span>
+                  <span class="doc__dl" aria-hidden="true"><i class="ph ph-download-simple"></i></span>
+                </a>
+              </div>
+            </div></div>
+          </div>
+
+          <!-- 2021 -->
+          <div class="toggle toggle--card rf-year" id="m-2021" data-rf-year="2021" data-reveal>
+              <button class="toggle__btn" type="button" aria-expanded="false" aria-controls="m-2021-panel">
+                <span class="rf-year__title">Metinės veiklos ir finansinės ataskaitos 2021<small>Veiklos ataskaita lietuvių ir anglų kalba, audito ataskaita, auditoriaus išvada ir finansinių ataskaitų rinkinys</small></span>
+                <span class="rf-year__meta"><span class="tag tag--outline" data-rf-year-count>4 dokumentai</span><span class="tag tag--water">LT · EN</span><span class="tag tag--peat">Audituota</span></span>
+                <i class="ph ph-plus" aria-hidden="true"></i>
+              </button>
+            <div class="toggle__panel" id="m-2021-panel"><div>
+              <div class="rf-docs">
+                <a class="doc" href="#" title="PDF (makete neįkeltas)" data-tags="y-2021 t-veiklos lang-lt" data-keywords="metinė veiklos ataskaita 2021 lietuvių lt pdf">
+                  <span class="doc__icon doc__icon--green"><i class="ph ph-file-text" aria-hidden="true"></i></span>
+                  <span class="doc__text"><strong>Metinė veiklos ataskaita 2021 m.</strong><span>PDF · Metinė veiklos ataskaita · lietuvių k.</span></span>
+                  <span class="doc__meta"><span class="tag">LT</span></span>
+                  <span class="doc__dl" aria-hidden="true"><i class="ph ph-download-simple"></i></span>
+                </a>
+                <a class="doc" href="#" title="PDF (makete neįkeltas)" data-tags="y-2021 t-veiklos lang-en" data-keywords="annual activity report 2021 english anglų en veiklos ataskaita pdf">
+                  <span class="doc__icon doc__icon--green"><i class="ph ph-file-text" aria-hidden="true"></i></span>
+                  <span class="doc__text"><strong lang="en">Annual activity report 2021</strong><span>PDF · Metinė veiklos ataskaita · anglų k.</span></span>
+                  <span class="doc__meta"><span class="tag tag--water">EN</span></span>
+                  <span class="doc__dl" aria-hidden="true"><i class="ph ph-download-simple"></i></span>
+                </a>
+                <a class="doc" href="#" title="PDF (makete neįkeltas)" data-tags="y-2021 t-audito lang-lt" data-keywords="audito ataskaita 2021 auditas auditorius lt pdf">
+                  <span class="doc__icon"><i class="ph ph-seal-check" aria-hidden="true"></i></span>
+                  <span class="doc__text"><strong>Audito ataskaita 2021 m.</strong><span>PDF · Audito ataskaita · lietuvių k.</span></span>
+                  <span class="doc__meta"><span class="tag">LT</span></span>
+                  <span class="doc__dl" aria-hidden="true"><i class="ph ph-download-simple"></i></span>
+                </a>
+                <a class="doc" href="#" title="PDF (makete neįkeltas)" data-tags="y-2021 t-finansine lang-lt" data-keywords="auditoriaus išvada finansinių ataskaitų rinkinys 2021 finansinė finansai balansas auditas lt pdf">
+                  <span class="doc__icon"><i class="ph ph-chart-bar" aria-hidden="true"></i></span>
+                  <span class="doc__text"><strong>Auditoriaus išvada ir finansinių ataskaitų rinkinys 2021 m.</strong><span>PDF · Finansinių ataskaitų rinkinys su auditoriaus išvada · lietuvių k.</span></span>
+                  <span class="doc__meta"><span class="tag">LT</span></span>
+                  <span class="doc__dl" aria-hidden="true"><i class="ph ph-download-simple"></i></span>
+                </a>
+              </div>
+            </div></div>
+          </div>
+
+          <!-- 2020 -->
+          <div class="toggle toggle--card rf-year" id="m-2020" data-rf-year="2020" data-reveal>
+              <button class="toggle__btn" type="button" aria-expanded="false" aria-controls="m-2020-panel">
+                <span class="rf-year__title">Metinės veiklos ir finansinės ataskaitos 2020<small>Veiklos ataskaita, audito ataskaita, auditoriaus išvada ir finansinių ataskaitų rinkinys</small></span>
+                <span class="rf-year__meta"><span class="tag tag--outline" data-rf-year-count>3 dokumentai</span><span class="tag tag--water">LT</span><span class="tag tag--peat">Audituota</span></span>
+                <i class="ph ph-plus" aria-hidden="true"></i>
+              </button>
+            <div class="toggle__panel" id="m-2020-panel"><div>
+              <div class="rf-docs">
+                <a class="doc" href="#" title="PDF (makete neįkeltas)" data-tags="y-2020 t-veiklos lang-lt" data-keywords="metinė veiklos ataskaita 2020 lietuvių lt pdf">
+                  <span class="doc__icon doc__icon--green"><i class="ph ph-file-text" aria-hidden="true"></i></span>
+                  <span class="doc__text"><strong>Metinė veiklos ataskaita 2020 m.</strong><span>PDF · Metinė veiklos ataskaita · lietuvių k.</span></span>
+                  <span class="doc__meta"><span class="tag">LT</span></span>
+                  <span class="doc__dl" aria-hidden="true"><i class="ph ph-download-simple"></i></span>
+                </a>
+                <a class="doc" href="#" title="PDF (makete neįkeltas)" data-tags="y-2020 t-audito lang-lt" data-keywords="audito ataskaita 2020 auditas auditorius lt pdf">
+                  <span class="doc__icon"><i class="ph ph-seal-check" aria-hidden="true"></i></span>
+                  <span class="doc__text"><strong>Audito ataskaita 2020 m.</strong><span>PDF · Audito ataskaita · lietuvių k.</span></span>
+                  <span class="doc__meta"><span class="tag">LT</span></span>
+                  <span class="doc__dl" aria-hidden="true"><i class="ph ph-download-simple"></i></span>
+                </a>
+                <a class="doc" href="#" title="PDF (makete neįkeltas)" data-tags="y-2020 t-finansine lang-lt" data-keywords="auditoriaus išvada finansinių ataskaitų rinkinys 2020 finansinė finansai balansas auditas lt pdf">
+                  <span class="doc__icon"><i class="ph ph-chart-bar" aria-hidden="true"></i></span>
+                  <span class="doc__text"><strong>Auditoriaus išvada ir finansinių ataskaitų rinkinys 2020 m.</strong><span>PDF · Finansinių ataskaitų rinkinys su auditoriaus išvada · lietuvių k.</span></span>
+                  <span class="doc__meta"><span class="tag">LT</span></span>
+                  <span class="doc__dl" aria-hidden="true"><i class="ph ph-download-simple"></i></span>
+                </a>
+              </div>
+            </div></div>
+          </div>
+
+          <div class="rf-empty" data-rf-empty hidden>
+            <i class="ph ph-folder-open" aria-hidden="true"></i>
+            <h3>Pagal pasirinktus filtrus dokumentų nėra</h3>
+            <p>Pabandykite kitą paieškos žodį, pavyzdžiui, „finansinių“ arba „annual“, arba išvalykite filtrus.</p>
+            <button class="btn btn--sm" type="button" data-rf-clear>Išvalyti filtrus</button>
+          </div>
+        </div>
+
+        <p class="sr-note rf-note" data-reveal>Makete PDF failai neįkelti. Naujoje svetainėje kiekviena nuoroda ves į WordPress medijos biblioteką – dokumentą bus galima peržiūrėti naršyklėje arba atsisiųsti.</p>
+      </div>
+    </section>
+
+    <!-- Salient: Split Line Heading, Icon List (Icon With Text ×3), Image su Mask Reveal (Column animation), Button -->
+    <section class="section section--green" id="skaidrumas" aria-labelledby="skaidrumas-h">
+      <div class="container">
+        <div class="split split--text-first">
+          <div class="split__text">
+            <p class="kicker" data-reveal>Skaidrumas</p>
+            <h2 id="skaidrumas-h" data-split>Kaip <em>atsiskaitome</em> už savo veiklą</h2>
+            <p class="lead" data-reveal style="--d:140ms">Esame ne pelno siekianti viešoji įstaiga – mūsų veiklą padeda vykdyti struktūrinė parama bei fizinių ir juridinių asmenų aukos. Todėl kasmet viešai skelbiame, ką nuveikėme ir kaip panaudojome lėšas.</p>
+            <ul class="icon-list mt-24" data-reveal-group>
+              <li>
+                <i class="ph ph-calendar-check" aria-hidden="true"></i>
+                <div><strong>Kasmet – veiklos ir finansinė ataskaita</strong><p>Už kiekvienus metus nuo 2020 m. skelbiame metinę veiklos ataskaitą ir finansinių ataskaitų rinkinį.</p></div>
+              </li>
+              <li>
+                <i class="ph ph-translate" aria-hidden="true"></i>
+                <div><strong>Dalis ataskaitų – ir anglų kalba</strong><p>2021 m. bei 2023–2025 m. veiklos ataskaitos pateikiamos ir anglų kalba („Annual activity report“).</p></div>
+              </li>
+              <li>
+                <i class="ph ph-seal-check" aria-hidden="true"></i>
+                <div><strong>Audituotos finansinės ataskaitos</strong><p>Už 2020 ir 2021 m. skelbiame audito ataskaitas ir auditoriaus išvadas kartu su finansinių ataskaitų rinkiniais.</p></div>
+              </li>
+            </ul>
+            <div class="cluster mt-40" data-reveal>
+              <a class="btn btn--ghost" href="apie-mus.html">Apie organizaciją</a>
+              <a class="link-arrow" href="kontaktai.html">Rekvizitai ir kontaktai <i class="ph ph-arrow-right" aria-hidden="true"></i></a>
+            </div>
+          </div>
+          <div class="rf-mask" data-mask>
+            <div class="figure figure--tall">
+              <img src="https://images.pexels.com/photos/36553239/pexels-photo-36553239.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Atkuriama šlapynė: vandens vagos pievoje, tolumoje dirba ekskavatorius" loading="lazy">
+              <span class="figure__cap">Pelkės atkūrimo darbai · Pexels / Theo Felten</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Salient: Alert / Highlighted Text (callout ×2), Fancy Box arba Icon With Text (dokumentai), Button -->
+    <section class="section section--white" id="pastabos" aria-labelledby="pastabos-h">
+      <div class="container container--narrow">
+        <div class="section-head">
+          <p class="kicker" data-reveal>Gera žinoti</p>
+          <h2 id="pastabos-h" data-split>Pastabos apie auditą ir <em>kitus dokumentus</em></h2>
+        </div>
+        <div class="stack" style="--stack:14px">
+          <div class="callout callout--green" data-reveal>
+            <i class="ph ph-info" aria-hidden="true"></i>
+            <p><strong>Apie auditą.</strong> Audito ataskaitos ir auditoriaus išvados šiuo metu skelbiamos už 2020 ir 2021 m. Jei jums reikia kitų metų audito dokumentų ar papildomų finansinių duomenų, parašykite <a class="link-u" href="mailto:info@pelkiufondas.lt">info@pelkiufondas.lt</a>.</p>
+          </div>
+          <div class="callout" data-reveal style="--d:120ms">
+            <i class="ph ph-file-pdf" aria-hidden="true"></i>
+            <p><strong>Apie failus.</strong> Visi dokumentai pateikiami PDF formatu. Jei failo nepavyksta atidaryti arba reikia prieinamesnio formato, susisiekite su mumis – pateiksime kitu būdu.</p>
+          </div>
+        </div>
+        <div class="grid grid--2 mt-40" data-reveal-group>
+          <a class="doc" href="#" title="PDF (makete neįkeltas)">
+            <span class="doc__icon"><i class="ph ph-scroll" aria-hidden="true"></i></span>
+            <span class="doc__text"><strong>Pelkių fondo įstatai, 2026</strong><span>PDF · Steigimo dokumentas · lietuvių k.</span></span>
+            <span class="doc__meta"><span class="tag">LT</span></span>
+            <span class="doc__dl" aria-hidden="true"><i class="ph ph-download-simple"></i></span>
+          </a>
+          <a class="doc" href="kontaktai.html#privatumas">
+            <span class="doc__icon doc__icon--green"><i class="ph ph-shield-check" aria-hidden="true"></i></span>
+            <span class="doc__text"><strong>Privatumo politika</strong><span>Puslapis · kaip tvarkome jūsų asmens duomenis</span></span>
+            <span class="doc__dl" aria-hidden="true"><i class="ph ph-arrow-right"></i></span>
+          </a>
+        </div>
+        <p class="sr-note mt-24" data-reveal>Įstatai ir komanda – puslapyje <a class="link-u" href="apie-mus.html#dokumentai">Apie mus → Dokumentai</a>. Paramos rekvizitai – <a class="link-u" href="prisidek.html#paremk">Prisidėk → Paremk</a>.</p>
+      </div>
+    </section>
+
+    <!-- Salient: Call to Action (Nectar CTA) – tamsi eilutė su dekoratyvine forma, Button ×2 -->
+    <section class="section section--s" id="parama" aria-labelledby="parama-h">
+      <div class="container">
+        <div class="cta" data-reveal>
+          <span class="cta__shape" aria-hidden="true"></span>
+          <div class="cta__grid">
+            <div>
+              <p class="kicker">Prisidėk</p>
+              <h2 id="parama-h">Kitų metų ataskaitoje – ir jūsų indėlis</h2>
+              <p class="lead">Parama, 1,2 % GPM ar savanorystė talkose – kiekvienas indėlis virsta atkurtais pelkių hektarais, apie kuriuos atsiskaitome kasmet.</p>
+            </div>
+            <div class="cta__actions">
+              <a class="btn btn--sun" href="prisidek.html#paremk">Paremk pelkes <span class="btn__icon"><i class="ph ph-arrow-right"></i><i class="ph ph-arrow-right"></i></span></a>
+              <a class="btn btn--ghost-light" href="prisidek.html#gpm">Skirk 1,2 % GPM</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <!-- Poraštė (Salient: Footer – 4 kolonos, tamsus fonas, Copyright juosta) -->
+  <footer class="footer" id="poraste">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a class="logo" href="index.html" aria-label="Pelkių fondas, pradžia"><img class="logo__mark" src="assets/img/logo-240.png" alt="" width="52" height="52"><span class="logo__word">Pelkių fondas<small>Pelkių atkūrimas ir apsauga</small></span></a>
+          <p>VšĮ „Pelkių fondas“ – ne pelno siekianti nevyriausybinė gamtosauginė organizacija, kuri rūpinasi pelkių ir kitų ekosistemų apsauga, atkūrimu, tvariu naudojimu ir visuomenės švietimu.</p>
+          <div class="footer__social">
+            <a href="https://www.facebook.com/pelkiufondas" aria-label="Facebook"><i class="ph ph-facebook-logo" aria-hidden="true"></i></a>
+            <a href="#" aria-label="YouTube"><i class="ph ph-youtube-logo" aria-hidden="true"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="ph ph-linkedin-logo" aria-hidden="true"></i></a>
+            <a href="#" aria-label="Instagram"><i class="ph ph-instagram-logo" aria-hidden="true"></i></a>
+          </div>
+        </div>
+        <div>
+          <h4>Svetainė</h4>
+          <ul>
+            <li><a href="pelkes.html">Pelkės</a></li>
+            <li><a href="terminu-zodynas.html">Terminų žodynas</a></li>
+            <li><a href="apie-mus.html">Apie mus</a></li>
+            <li><a href="veikla.html">Veikla</a></li>
+            <li><a href="projektai.html">Projektai</a></li>
+            <li><a href="publikacijos.html">Publikacijos</a></li>
+            <li><a href="naujienos.html">Naujienos</a></li>
+            <li><a href="kontaktai.html">Kontaktai</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Prisidėk</h4>
+          <ul>
+            <li><a href="prisidek.html#paremk">Paremk pelkes</a></li>
+            <li><a href="prisidek.html#gpm">Skirk 1,2 % GPM</a></li>
+            <li><a href="prisidek.html#savanoriauk">Savanoriauk</a></li>
+            <li><a href="prisidek.html#renginiai">Talkos ir renginiai</a></li>
+            <li><a href="prisidek.html#naujienlaiskis">Naujienlaiškis</a></li>
+            <li><a href="co2.html">Verslui: CO₂ kompensavimas</a></li>
+            <li><a href="veiklos-ataskaitos.html">Veiklos ataskaitos</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Kontaktai</h4>
+          <div class="footer__contact">
+            <div><i class="ph ph-map-pin" aria-hidden="true"></i><span>Gedimino pr. 1, 4 a. (NVO Avilys)<br>LT-01103 Vilnius, Lietuva</span></div>
+            <div><i class="ph ph-phone" aria-hidden="true"></i><a href="tel:+37065620426">+370 656 20426</a></div>
+            <div><i class="ph ph-envelope" aria-hidden="true"></i><a href="mailto:info@pelkiufondas.lt">info@pelkiufondas.lt</a></div>
+            <div><i class="ph ph-identification-card" aria-hidden="true"></i><span>Įmonės kodas 302822289<br>PVM kodas LT100017689218</span></div>
+            <div><i class="ph ph-bank" aria-hidden="true"></i><span>LT24 7044 0600 0784 1146<br>AB SEB bankas</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span><span class="footer__sun" aria-hidden="true"></span>© <span data-year>2026</span> VšĮ „Pelkių fondas“. Nuotraukos ir video makete – Pexels (nemokama licencija).</span>
+        <div class="footer__legal">
+          <a href="kontaktai.html#privatumas">Privatumo politika</a>
+          <a href="apie-mus.html#dokumentai">Įstatai</a>
+          <a href="galerija.html">Galerija</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/pages/veiklos-ataskaitos.js" defer></script>
+</body>
+</html>

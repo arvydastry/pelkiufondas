@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="lt">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Naujienos | Pelkių fondas</title>
+  <meta name="description" content="Pelkių fondo naujienos: projektai, renginiai, leidiniai, mokymai ir pozicijos pelkių apsaugos klausimais.">
+  <!-- Bendra <head> dalis: įklijuoti į kiekvieną puslapį po <title> ir <meta name="description"> -->
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/Fraunces.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/Manrope.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body class="has-transparent-header" data-nav="naujienos">
+  <a class="skip-link" href="#turinys">Pereiti prie turinio</a>
+
+  <!-- Maketo juosta: į WordPress nekeliama -->
+  <div class="mockbar" role="region" aria-label="Maketo juosta">
+    <div class="container">
+      <strong>Dizaino maketas <span>·</span> Pelkių fondas</strong>
+      <span>WordPress + Salient</span>
+      <label class="mockbar__toggle" title="Žymekliai rodo, kas makete yra nauja, palyginti su dabartine svetaine"><input type="checkbox" id="toggle-newfn" checked> <span class="new-fn__badge">Nauja</span> rodyti naujas funkcijas</label>
+      <nav class="mockbar__pages" aria-label="Maketo puslapiai">
+        <a href="index.html">Pradinis</a><a href="pelkes.html">Pelkės</a><a href="apie-mus.html">Apie mus</a><a href="veikla.html">Veikla</a><a href="naujienos.html">Naujienos</a><a href="kontaktai.html">Kontaktai</a><a href="prisidek.html">Prisidėk</a>
+      </nav>
+    </div>
+  </div>
+
+  <!-- Antraštė (Salient: Header layout „Standard“, logotipas kairėje, meniu dešinėje, „Prisidėk“ mygtukas, paieška, kalbos) -->
+  <header class="site-header">
+    <div class="container container--wide site-header__inner">
+      <a class="logo" href="index.html" aria-label="Pelkių fondas, pradžia">
+        <img class="logo__mark" src="assets/img/logo-240.png" alt="" width="52" height="52">
+        <span class="logo__word">Pelkių fondas<small>Pelkių atkūrimas ir apsauga</small></span>
+      </a>
+      <nav class="nav" aria-label="Pagrindinis meniu">
+        <a class="nav__link" href="index.html" data-nav-key="pradinis">Pradinis</a>
+        <div class="nav__item" data-drop data-nav-key="pelkes">
+          <button class="nav__link" type="button" aria-expanded="false" aria-haspopup="true">Pelkės <i class="ph ph-caret-down" aria-hidden="true"></i></button>
+          <div class="nav__drop">
+            <a class="drop-link" href="pelkes.html"><span class="drop-link__icon"><i class="ph ph-leaf"></i></span><span class="drop-link__text"><strong>Kas yra pelkės</strong><span>Apibrėžimai, reikšmė, būklė Lietuvoje</span></span></a>
+            <a class="drop-link" href="pelkes.html#tipai"><span class="drop-link__icon"><i class="ph ph-tree-evergreen"></i></span><span class="drop-link__text"><strong>Pelkių tipai ir buveinės</strong><span>Žemapelkės, tarpinės, aukštapelkės, EB buveinės</span></span></a>
+            <a class="drop-link" href="pelkes.html#gresmes"><span class="drop-link__icon"><i class="ph ph-warning"></i></span><span class="drop-link__text"><strong>Grėsmės ir atkūrimas</strong><span>Kodėl pelkės nyksta ir kaip jas atkuriame</span></span></a>
+            <a class="drop-link" href="terminu-zodynas.html"><span class="drop-link__icon"><i class="ph ph-book-open"></i></span><span class="drop-link__text"><strong>Terminų žodynas</strong><span>Pelkių ir durpynų sąvokos su paieška</span></span></a>
+            <a class="drop-link" href="galerija.html"><span class="drop-link__icon"><i class="ph ph-images"></i></span><span class="drop-link__text"><strong>Galerija</strong><span>Pelkių ir mūsų darbų nuotraukos</span></span></a>
+          </div>
+        </div>
+        <a class="nav__link" href="apie-mus.html" data-nav-key="apie-mus">Apie mus</a>
+        <div class="nav__item" data-drop data-nav-key="veikla">
+          <button class="nav__link" type="button" aria-expanded="false" aria-haspopup="true">Veikla <i class="ph ph-caret-down" aria-hidden="true"></i></button>
+          <div class="nav__drop nav__drop--wide">
+            <a class="drop-link" href="veikla.html"><span class="drop-link__icon"><i class="ph ph-compass"></i></span><span class="drop-link__text"><strong>Veiklos kryptys</strong><span>Biologinė įvairovė, atkūrimas, klimatas, pelkininkystė</span></span></a>
+            <a class="drop-link" href="co2.html"><span class="drop-link__icon"><i class="ph ph-cloud"></i></span><span class="drop-link__text"><strong>CO₂ emisijų mažinimas</strong><span>Verslui: atkurkite pelkes, mažinkite anglies pėdsaką</span></span></a>
+            <a class="drop-link" href="projektai.html"><span class="drop-link__icon"><i class="ph ph-map-pin"></i></span><span class="drop-link__text"><strong>Projektai</strong><span>Vykdomi ir įgyvendinti projektai žemėlapyje</span></span></a>
+            <a class="drop-link" href="paslaugos.html"><span class="drop-link__icon"><i class="ph ph-briefcase"></i></span><span class="drop-link__text"><strong>Paslaugos</strong><span>Konsultacijos, tyrimai, švietimas</span></span></a>
+            <a class="drop-link" href="publikacijos.html"><span class="drop-link__icon"><i class="ph ph-books"></i></span><span class="drop-link__text"><strong>Publikacijos</strong><span>Straipsniai, knygos, lankstinukai</span></span></a>
+            <a class="drop-link" href="videoteka.html"><span class="drop-link__icon"><i class="ph ph-play-circle"></i></span><span class="drop-link__text"><strong>Videoteka</strong><span>Filmai apie pelkes ir mūsų darbus</span></span></a>
+            <a class="drop-link" href="veiklos-ataskaitos.html"><span class="drop-link__icon"><i class="ph ph-file-text"></i></span><span class="drop-link__text"><strong>Veiklos ataskaitos</strong><span>Metinės veiklos ir finansinės ataskaitos</span></span></a>
+            <div class="nav__drop-foot"><span class="muted">Norite prisidėti prie veiklų?</span><a class="link-u" href="prisidek.html#savanoriauk">Savanoriauk</a></div>
+          </div>
+        </div>
+        <a class="nav__link" href="naujienos.html" data-nav-key="naujienos">Naujienos</a>
+        <a class="nav__link" href="kontaktai.html" data-nav-key="kontaktai">Kontaktai</a>
+      </nav>
+      <div class="header-actions">
+        <div class="lang" aria-label="Kalba"><span aria-current="true" lang="lt">LT</span><a href="#" data-lang="en" hreflang="en">EN</a></div>
+        <button class="icon-btn icon-btn--search" type="button" data-search-open aria-label="Paieška svetainėje"><i class="ph ph-magnifying-glass" aria-hidden="true"></i></button>
+        <a class="btn btn--sun btn--sm" href="prisidek.html">Prisidėk</a>
+        <button class="burger icon-btn" type="button" aria-label="Atidaryti meniu" aria-expanded="false" aria-controls="mobile-menu"><i class="ph ph-list" aria-hidden="true"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobilus meniu (Salient: Off Canvas Menu) -->
+  <div class="mobile-menu" id="mobile-menu" role="dialog" aria-modal="true" aria-label="Meniu" tabindex="-1">
+    <div class="container">
+      <div class="mobile-menu__top">
+        <a class="logo" href="index.html" aria-label="Pelkių fondas, pradžia"><img class="logo__mark" src="assets/img/logo-240.png" alt="" width="52" height="52"><span class="logo__word">Pelkių fondas<small>Pelkių atkūrimas ir apsauga</small></span></a>
+        <button class="mobile-menu__close" type="button" aria-label="Uždaryti meniu"><i class="ph ph-x" aria-hidden="true"></i></button>
+      </div>
+      <nav class="mobile-menu__links" aria-label="Meniu mobiliesiems">
+        <a href="index.html">Pradinis <i class="ph ph-arrow-right" aria-hidden="true"></i></a>
+        <details><summary>Pelkės <i class="ph ph-caret-down" aria-hidden="true"></i></summary><div><a href="pelkes.html">Kas yra pelkės</a><a href="pelkes.html#tipai">Pelkių tipai ir buveinės</a><a href="pelkes.html#gresmes">Grėsmės ir atkūrimas</a><a href="terminu-zodynas.html">Terminų žodynas</a><a href="galerija.html">Galerija</a></div></details>
+        <a href="apie-mus.html">Apie mus <i class="ph ph-arrow-right" aria-hidden="true"></i></a>
+        <details><summary>Veikla <i class="ph ph-caret-down" aria-hidden="true"></i></summary><div><a href="veikla.html">Veiklos kryptys</a><a href="co2.html">CO₂ emisijų mažinimas</a><a href="projektai.html">Projektai</a><a href="paslaugos.html">Paslaugos</a><a href="publikacijos.html">Publikacijos</a><a href="videoteka.html">Videoteka</a><a href="veiklos-ataskaitos.html">Veiklos ataskaitos</a></div></details>
+        <a href="naujienos.html">Naujienos <i class="ph ph-arrow-right" aria-hidden="true"></i></a>
+        <a href="kontaktai.html">Kontaktai <i class="ph ph-arrow-right" aria-hidden="true"></i></a>
+        <a href="prisidek.html">Prisidėk <i class="ph ph-arrow-right" aria-hidden="true"></i></a>
+      </nav>
+      <div class="mobile-menu__foot">
+        <a class="btn btn--sun" href="prisidek.html">Paremk pelkes</a>
+        <button class="btn btn--ghost-light" type="button" data-search-open><i class="ph ph-magnifying-glass" aria-hidden="true"></i> Paieška</button>
+        <div class="lang" aria-label="Kalba"><span aria-current="true">LT</span><a href="#" data-lang="en" hreflang="en">EN</a></div>
+      </div>
+    </div>
+  </div>
+  <main id="turinys">
+<!-- Salient: Page Header su video fonu -->
+    <section class="page-header page-header--short">
+      <div class="video-bg video-bg--soft"><img src="https://images.pexels.com/videos/5724717/air-autumn-copter-drone-5724717.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=630&w=1200" alt=""><video data-src="https://videos.pexels.com/video-files/5724717/5724717-hd_1920_1080_30fps.mp4" data-src-sd="https://videos.pexels.com/video-files/5724717/5724717-sd_960_540_30fps.mp4" muted loop playsinline poster="https://images.pexels.com/videos/5724717/air-autumn-copter-drone-5724717.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=630&w=1200"></video></div>
+      <span class="video-caption">Nendrynai ir upė rudenį <span>· iš drono</span></span>
+      <div class="container">
+        <ol class="breadcrumb"><li><a href="index.html">Pradinis</a></li><li>Naujienos</li></ol>
+        <p class="kicker">Naujienos</p>
+        <h1 data-split>Kas naujo <em>pelkėse</em> ir fonde</h1>
+        <p class="lead" data-reveal>Projektų eiga, renginiai, leidiniai, mokymai ir mūsų pozicija pelkių apsaugos klausimais. 21 įrašai, naujausi – viršuje.</p>
+      </div>
+      <span class="video-credit">Video: Pexels / Pavel Danilyuk</span>
+    </section>
+
+    <!-- Salient: Global Section „Blog Archive Loop“ su Post Loop Builder: Enable Sortable (kategorijų filtrai), paieška, Load More -->
+    <section class="section" id="sarasas">
+      <div class="container" data-filter-group>
+        <div class="section-head section-head--row new-fn"><div><p class="kicker">Archyvas</p><h2>Visos naujienos</h2></div>
+          <span class="new-fn__badge" data-tip="Nauja: kategorijos, filtrai, paieška ir pilnos datos su metais; WordPress’e – įrašų kategorijos + Post Loop Builder su „Enable Sortable“ ir paieška." tabindex="0">Nauja</span>
+        </div>
+        <div class="cluster" style="justify-content:space-between;margin-bottom:28px" data-reveal="fade">
+          <div class="pill-group">
+            <button class="pill" type="button" data-filter="all" aria-pressed="true">Visos <span class="pill__count"></span></button>
+            <button class="pill" type="button" data-filter="c-projektai">Projektai <span class="pill__count"></span></button>
+            <button class="pill" type="button" data-filter="c-renginiai">Renginiai <span class="pill__count"></span></button>
+            <button class="pill" type="button" data-filter="c-leidiniai">Leidiniai <span class="pill__count"></span></button>
+            <button class="pill" type="button" data-filter="c-mokymai">Mokymai <span class="pill__count"></span></button>
+            <button class="pill" type="button" data-filter="c-pozicija">Pozicija <span class="pill__count"></span></button>
+            <button class="pill" type="button" data-filter="c-ataskaitos">Ataskaitos <span class="pill__count"></span></button>
+            <button class="pill" type="button" data-filter="lang-en">EN</button>
+          </div>
+          <div class="field" style="min-width:260px"><label class="visually-hidden" for="n-q">Paieška naujienose</label><input id="n-q" type="search" data-filter-search placeholder="Ieškoti naujienose…"></div>
+        </div>
+        <p class="muted small" style="margin-bottom:18px"><span data-filter-count data-forms="įrašas|įrašai|įrašų">21 įrašų</span></p>
+        <!-- Išskirta naujausia naujiena (Post Loop Builder: pirmas įrašas „featured“ stiliumi) -->
+        <article class="card card--h" data-tags="c-projektai lang-lt" data-keywords="Guodžiai Biržų r. atkūrimas tarptautinis" data-reveal style="margin-bottom:28px">
+          <div class="card__media"><img src="https://images.pexels.com/photos/36553239/pexels-photo-36553239.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Atkuriama šlapynė su ekskavatoriumi tolumoje"><span class="tag tag--sun">Projektai</span></div>
+          <div class="card__body"><div class="card__meta"><span><i class="ph ph-calendar-blank"></i>2026-09-23</span><span><i class="ph ph-clock"></i>2 min.</span><span class="tag tag--live">Naujausia</span></div><h3 style="font-size:clamp(24px,2.4vw,32px)"><a href="naujiena.html">Guodžių durpyną prikelsime naujam gyvenimui</a></h3><p>Džiaugiamės, kad tarptautinį Guodžių durpyno (Biržų r.) atkūrimo projektą „Guodžių durpyno atkūrimas ir apsauga“ vykdome bendradarbiaudami su Michaelio Zukovo fondu – Greifsvaldo pelkių centro partneriu (Vokietija). Kartu sieksime atkurti apie 100 ha apleisto durpių karjero teritorijos, taip…</p><div class="card__foot"><span class="link-arrow">Skaityti <i class="ph ph-arrow-right"></i></span></div></div>
+        </article>
+        <div class="grid grid--3" data-reveal-group>
+          <article class="card" data-tags="c-projektai lang-en" data-keywords="Guodžiai Biržų r. atkūrimas tarptautinis">
+            <div class="card__media"><img src="https://images.pexels.com/photos/24426627/pexels-photo-24426627.jpeg?auto=compress&cs=tinysrgb&w=900" alt="" loading="lazy"><span class="tag tag--sun">Projektai</span><span class="card__date">23<small>rgs 2026</small></span></div>
+            <div class="card__body"><div class="card__meta"><span><i class="ph ph-calendar-blank"></i>2026-09-23</span><span><i class="ph ph-clock"></i>2 min.</span><span class="tag tag--outline">EN</span></div><h3><a href="naujiena.html">Restoring the Guodžiai Peatland for a New Beginning</a></h3><p>We are delighted to be implementing the international Guodžiai Peatland (Biržai District) restoration project together with the Michael Succow Foundation, a partner of…</p><span class="card__go"><i class="ph ph-arrow-up-right"></i></span></div>
+          </article>
+          <article class="card" data-tags="c-projektai lang-lt" data-keywords="LIFE ForestHabitatLT gyvosios laboratorijos Airija mokomasis vizitas">
+            <div class="card__media"><img src="https://images.pexels.com/photos/22944077/pexels-photo-22944077.jpeg?auto=compress&cs=tinysrgb&w=900" alt="" loading="lazy"><span class="tag tag--sun">Projektai</span><span class="card__date">14<small>bir 2026</small></span></div>
+            <div class="card__body"><div class="card__meta"><span><i class="ph ph-calendar-blank"></i>2026-06-14</span><span><i class="ph ph-clock"></i>6 min.</span></div><h3><a href="naujiena.html">Airijos pelkynai iš arti: pirmųjų Lietuvoje pelkių ir miškų atkūrimo gyvųjų laboratorijų pamokos (2 dalis)</a></h3><p>Tęsiame pasakojimą apie projekto LIFE ForestHabitatLT įkurtų gyvųjų laboratorijų (Praviršulio tyrelio, Žaliojo raisto durpyno, Buktos miško ir Šimonių girios) atstovų…</p><span class="card__go"><i class="ph ph-arrow-up-right"></i></span></div>
+          </article>
+          <article class="card" data-tags="c-projektai lang-lt" data-keywords="LIFE ForestHabitatLT gyvosios laboratorijos Airija Praviršulio tyrelis">
+            <div class="card__media"><img src="https://images.pexels.com/photos/28277048/pexels-photo-28277048.jpeg?auto=compress&cs=tinysrgb&w=900" alt="" loading="lazy"><span class="tag tag--sun">Projektai</span><span class="card__date">8<small>bir 2026</small></span></div>
+            <div class="card__body"><div class="card__meta"><span><i class="ph ph-calendar-blank"></i>2026-06-08</span><span><i class="ph ph-clock"></i>3 min.</span></div><h3><a href="naujiena.html">Airijos pelkynai iš arti: pirmųjų Lietuvoje pelkių ir miškų atkūrimo gyvųjų laboratorijų pamokos (1 dalis)</a></h3><p>Gegužės mėnuo ir birželio pradžia Pelkių fondui buvo ypač turtingi veiklų. Lankėme Fondo iniciatyva atkuriamas teritorijas Lietuvoje, suorganizavome mokomąjį vizitą į…</p><span class="card__go"><i class="ph ph-arrow-up-right"></i></span></div>
+          </article>
+          <article class="card" data-tags="c-pozicija lang-lt" data-keywords="advokacija pasienis Gamtos atkūrimo reglamentas saugumas">
+            <div class="card__media"><img src="https://images.pexels.com/photos/28277048/pexels-photo-28277048.jpeg?auto=compress&cs=tinysrgb&w=900" alt="" loading="lazy"><span class="tag tag--sun">Pozicija</span><span class="card__date">2<small>bir 2026</small></span></div>
+            <div class="card__body"><div class="card__meta"><span><i class="ph ph-calendar-blank"></i>2026-06-02</span><span><i class="ph ph-clock"></i>2 min.</span></div><h3><a href="naujiena.html">Pelkių fondas ragina ieškoti finansinių paskatų pelkių atkūrimui Lietuvos–Baltarusijos pasienyje</a></h3><p>Pelkių fondas ragina LR aplinkos ministeriją ir LR krašto apsaugos ministeriją ieškoti finansinių paskatų sprendimų, siekiant atkurti pelkes Lietuvos–Baltarusijos…</p><span class="card__go"><i class="ph ph-arrow-up-right"></i></span></div>
+          </article>
+          <article class="card" data-tags="c-ataskaitos lang-en" data-keywords="ataskaita 2025 edukacija">
+            <div class="card__media"><img src="https://images.pexels.com/photos/3321793/pexels-photo-3321793.jpeg?auto=compress&cs=tinysrgb&w=900" alt="" loading="lazy"><span class="tag tag--sun">Ataskaitos</span><span class="card__date">25<small>geg 2026</small></span></div>
+            <div class="card__body"><div class="card__meta"><span><i class="ph ph-calendar-blank"></i>2026-05-25</span><span><i class="ph ph-clock"></i>1 min.</span><span class="tag tag--outline">EN</span></div><h3><a href="naujiena.html">100 hours of education on peatlands and other work in 2025: Peatland Foundation report</a></h3><p>We invite you to take a look at our brief report on the results achieved in 2025 in peatland restoration, science and research, education, and advocacy: 10 publications…</p><span class="card__go"><i class="ph ph-arrow-up-right"></i></span></div>
+          </article>
+          <article class="card" data-tags="c-leidiniai lang-lt" data-keywords="studija hidrologinis režimas LIFE ForestHabitatLT mokslas">
+            <div class="card__media"><img src="https://images.pexels.com/photos/35598624/pexels-photo-35598624.jpeg?auto=compress&cs=tinysrgb&w=900" alt="" loading="lazy"><span class="tag tag--sun">Leidiniai</span><span class="card__date">23<small>bal 2026</small></span></div>
+            <div class="card__body"><div class="card__meta"><span><i class="ph ph-calendar-blank"></i>2026-04-23</span><span><i class="ph ph-clock"></i>3 min.</span></div><h3><a href="naujiena.html">Atliktas pelkių atkūrimo veiklų Lietuvoje vertinimas</a></h3><p>Pelkių fondas parengė studiją „Hidrologinio režimo atkūrimas pažeistose Lietuvos pelkėse“. Tai pirmoji išsami analizė apie pelkių hidrologinio režimo atkūrimą Lietuvoje,…</p><span class="card__go"><i class="ph ph-arrow-up-right"></i></span></div>
+          </article>
+          <article class="card" data-tags="c-ataskaitos lang-lt" data-keywords="ataskaita 2025 edukacija leidiniai">
+            <div class="card__media"><img src="https://images.pexels.com/photos/3321793/pexels-photo-3321793.jpeg?auto=compress&cs=tinysrgb&w=900" alt="" loading="lazy"><span class="tag tag--sun">Ataskaitos</span><span class="card__date">8<small>bal 2026</small></span></div>
+            <div class="card__body"><div class="card__meta"><span><i class="ph ph-calendar-blank"></i>2026-04-08</span></div><h3><a href="naujiena.html">100 edukacijos valandų ir kiti darbai 2025 m.: Pelkių fondo ataskaita</a></h3><p>Kviečiame užmesti akį į mūsų trumpąją ataskaitą, kurioje rasite 2025 m. pasiektus rezultatus pelkių atkūrimo, mokslo ir tyrimų, švietimo ir advokacijos srityse. Taip pat…</p><span class="card__go"><i class="ph ph-arrow-up-right"></i></span></div>
+          </article>
+          <article class="card" data-tags="c-darbas lang-lt" data-keywords="karjera darbo skelbimas Vilnius">
+            <div class="card__media"><img src="https://images.pexels.com/photos/36713476/pexels-photo-36713476.jpeg?auto=compress&cs=tinysrgb&w=900" alt="" loading="lazy"><span class="tag tag--sun">Darbas</span><span class="card__date">18<small>kov 2026</small></span></div>
+            <div class="card__body"><div class="card__meta"><span><i class="ph ph-calendar-blank"></i>2026-03-18</span></div><h3><a href="naujiena.html">Pelkių fondas ieško aplinkosaugos specialistės (-o)</a></h3><p>Mūsų organizacija kviečia prisijungti prie komandos! Pozicija: aplinkosaugos specialistas (-ė). Darbo vieta: Vilnius (objektai visoje Lietuvoje). Atlyginimas: 2500–3000…</p><span class="card__go"><i class="ph ph-arrow-up-right"></i></span></div>
+          </article>
+          <article class="card" data-tags="c-projektai lang-lt" data-keywords="PELKĖS KLIMATUI advokacija Seimas apklausa">
+            <div class="card__media"><img src="https://images.pexels.com/photos/3321793/pexels-photo-3321793.jpeg?auto=compress&cs=tinysrgb&w=900" alt="" loading="lazy"><span class="tag tag--sun">Projektai</span><span class="card__date">12<small>kov 2026</small></span></div>
+            <div class="card__body"><div class="card__meta"><span><i class="ph ph-calendar-blank"></i>2026-03-12</span></div><h3><a href="naujiena.html">PELKĖS KLIMATUI projekto rezultatai: daugiau supratimo reiškia daugiau veiksmų pelkių apsaugai</a></h3><p>Kokią žalą sukelia pelkių naikinimas? Prieš dvejus metus vykdyta apklausa parodė, kad net kas antras apklausoje dalyvavęs žmogus negalėjo įvardinti jokios žalos. Ši…</p><span class="card__go"><i class="ph ph-arrow-up-right"></i></span></div>
+          </article>
+          <article class="card" data-tags="c-mokymai lang-lt" data-keywords="verslas CO₂ MoorFutures seminaras">
+            <div class="card__media"><img src="https://images.pexels.com/photos/15141493/pexels-photo-15141493.jpeg?auto=compress&cs=tinysrgb&w=900" alt="" loading="lazy"><span class="tag tag--sun">Mokymai</span><span class="card__date">25<small>vas 2026</small></span></div>
+            <div class="card__body"><div class="card__meta"><span><i class="ph ph-calendar-blank"></i>2026-02-25</span></div><h3><a href="naujiena.html">Nuotolinis seminaras „Pelkių atkūrimas – anglies pėdsakui mažinti“</a></h3><p>Pelkių fondas vasario mėnesį surengė seminarą įmonėms apie anglies pėdsako mažinimą investuojant į pelkių atkūrimą. Seminare dalyvavo apie 30 verslų, įmonių,…</p><span class="card__go"><i class="ph ph-arrow-up-right"></i></span></div>
+          </article>
+          <article class="card" data-tags="c-renginiai lang-lt" data-keywords="Pasaulinė pelkių diena Valdovų rūmai pašto ženklai Ramsaro konvencija">
+            <div class="card__media"><img src="https://images.pexels.com/photos/3321793/pexels-photo-3321793.jpeg?auto=compress&cs=tinysrgb&w=900" alt="" loading="lazy"><span class="tag tag--sun">Renginiai</span><span class="card__date">20<small>vas 2026</small></span></div>
+            <div class="card__body"><div class="card__meta"><span><i class="ph ph-calendar-blank"></i>2026-02-20</span></div><h3><a href="naujiena.html">„Kai gamta susitinka istoriją“: Pasaulinės pelkių dienos Valdovų rūmuose atgarsiai</a></h3><p>Vasario 3 d. į Lietuvos Didžiosios Kunigaikštystės valdovų rūmus sugužėjo gausus būrys svečių, atvykusių į renginį „Kai gamta susitinka istoriją: Pasaulinės pelkių ir…</p><span class="card__go"><i class="ph ph-arrow-up-right"></i></span></div>
+          </article>
+          <article class="card" data-tags="c-projektai lang-lt" data-keywords="Žaliasis raistas Kaišiadorių r. atkūrimas LIFE ForestHabitatLT">
+            <div class="card__media"><img src="https://images.pexels.com/photos/36553240/pexels-photo-36553240.jpeg?auto=compress&cs=tinysrgb&w=900" alt="" loading="lazy"><span class="tag tag--sun">Projektai</span><span class="card__date">5<small>vas 2026</small></span></div>
+            <div class="card__body"><div class="card__meta"><span><i class="ph ph-calendar-blank"></i>2026-02-05</span></div><h3><a href="naujiena.html">Atkuriamas Žaliasis raistas – sovietmečiu sunaikinta pelkė Kaišiadorių rajone</a></h3><p>Žiemai atnešus tinkamus orus, Kaišiadorių r. prasidėjo Žaliojo raisto atkūrimo darbai. Bus šalinama sumedėjusi augalija, o ją išgabenus bus vykdomi tvenkimo darbai –…</p><span class="card__go"><i class="ph ph-arrow-up-right"></i></span></div>
+          </article>
+          <article class="card" data-tags="c-renginiai lang-lt" data-keywords="Pasaulinė pelkių diena paroda pelkininkystė">
+            <div class="card__media"><img src="https://images.pexels.com/photos/3321793/pexels-photo-3321793.jpeg?auto=compress&cs=tinysrgb&w=900" alt="" loading="lazy"><span class="tag tag--sun">Renginiai</span><span class="card__date">3<small>vas 2026</small></span></div>
+            <div class="card__body"><div class="card__meta"><span><i class="ph ph-calendar-blank"></i>2026-02-03</span></div><h3><a href="naujiena.html">Pelkių dienos renginiai: paroda lankytojų centre</a></h3><p>Vasario 2 d. minima Pasaulinė pelkių diena. Jos minėjimą šiemet lydi Pelkių fondo organizuojami renginiai: dienos minėjimas Valdovų rūmuose ir pelkininkystės produktų…</p><span class="card__go"><i class="ph ph-arrow-up-right"></i></span></div>
+          </article>
+          <article class="card" data-tags="c-renginiai lang-lt" data-keywords="Pasaulinė pelkių diena Valdovų rūmai kvietimas">
+            <div class="card__media"><img src="https://images.pexels.com/photos/3321793/pexels-photo-3321793.jpeg?auto=compress&cs=tinysrgb&w=900" alt="" loading="lazy"><span class="tag tag--sun">Renginiai</span><span class="card__date">19<small>sau 2026</small></span></div>
+            <div class="card__body"><div class="card__meta"><span><i class="ph ph-calendar-blank"></i>2026-01-19</span></div><h3><a href="naujiena.html">Kviečiame į Pasaulinės pelkių dienos renginį Lietuvos Didžiosios Kunigaikštystės valdovų rūmuose</a></h3><p>Vasario 3 d. (antradienį) kviečiame į Pasaulinės pelkių ir kitų šlapynių dienos pavakarę Valdovų rūmuose, iškilusiuose kadaise pelkėtoje Neries ir Vilnios upių…</p><span class="card__go"><i class="ph ph-arrow-up-right"></i></span></div>
+          </article>
+          <article class="card" data-tags="c-projektai lang-lt" data-keywords="SavePeatLands PaluWise biomasė Lenkija">
+            <div class="card__media"><img src="https://images.pexels.com/photos/35842025/pexels-photo-35842025.jpeg?auto=compress&cs=tinysrgb&w=900" alt="" loading="lazy"><span class="tag tag--sun">Projektai</span><span class="card__date">21<small>lap 2025</small></span></div>
+            <div class="card__body"><div class="card__meta"><span><i class="ph ph-calendar-blank"></i>2025-11-21</span></div><h3><a href="naujiena.html">Sukurtas reikšmingas indėlis į gamtos atkūrimo įgyvendinimą Lietuvoje ir Lenkijoje</a></h3><p>Lenkijos paukščių apsaugos draugija iš pelkių biomasės gamina kompostą, Lietuvos ūkininkai daugiausia naudoja pakratams, o Pelkių fondas PaluWise projekte pilotuoja…</p><span class="card__go"><i class="ph ph-arrow-up-right"></i></span></div>
+          </article>
+          <article class="card" data-tags="c-mokymai lang-lt" data-keywords="savivaldybės mokymai Gamtos atkūrimo reglamentas SavePeatLands">
+            <div class="card__media"><img src="https://images.pexels.com/photos/15141493/pexels-photo-15141493.jpeg?auto=compress&cs=tinysrgb&w=900" alt="" loading="lazy"><span class="tag tag--sun">Mokymai</span><span class="card__date">7<small>lap 2025</small></span></div>
+            <div class="card__body"><div class="card__meta"><span><i class="ph ph-calendar-blank"></i>2025-11-07</span></div><h3><a href="naujiena.html">Mokymuose savivaldybėms – pasirengimas konsultuoti dėl pelkių atkūrimo privačiose valdose</a></h3><p>Pelkių fondas surengė nuotolinius mokymus savivaldybių atstovams, saugomų teritorijų ir kitiems specialistams „Įgyvendinant ES Gamtos atkūrimo reglamentą Lietuvoje: kaip…</p><span class="card__go"><i class="ph ph-arrow-up-right"></i></span></div>
+          </article>
+          <article class="card" data-tags="c-renginiai lang-lt" data-keywords="SavePeatLands konferencija Lenkija mokslo studijos">
+            <div class="card__media"><img src="https://images.pexels.com/photos/3321793/pexels-photo-3321793.jpeg?auto=compress&cs=tinysrgb&w=900" alt="" loading="lazy"><span class="tag tag--sun">Renginiai</span><span class="card__date">6<small>lap 2025</small></span></div>
+            <div class="card__body"><div class="card__meta"><span><i class="ph ph-calendar-blank"></i>2025-11-06</span></div><h3><a href="naujiena.html">Konferencija „SavePeatLands: pelkių atkūrimas, pasitelkiant žinias, praktiką ir bendradarbiavimą“</a></h3><p>Lapkričio 18 d. vyks nuotolinė projekto konferencija „SavePeatLands: pelkių atkūrimas, pasitelkiant žinias, praktiką ir bendradarbiavimą“, kurioje bus aptarti projekto…</p><span class="card__go"><i class="ph ph-arrow-up-right"></i></span></div>
+          </article>
+          <article class="card" data-tags="c-leidiniai lang-lt" data-keywords="gairės ūkininkai Gamtos atkūrimo reglamentas SavePeatLands">
+            <div class="card__media"><img src="https://images.pexels.com/photos/36553239/pexels-photo-36553239.jpeg?auto=compress&cs=tinysrgb&w=900" alt="" loading="lazy"><span class="tag tag--sun">Leidiniai</span><span class="card__date">4<small>lap 2025</small></span></div>
+            <div class="card__body"><div class="card__meta"><span><i class="ph ph-calendar-blank"></i>2025-11-04</span></div><h3><a href="naujiena.html">Pelkės atkūrimas jūsų sklype – siūlo ruoštis tam dabar, parengė gaires</a></h3><p>Europos Sąjungai priėmus Gamtos atkūrimo reglamentą, numatomas platus šlapynių atkūrimas įvairiose žemės naudmenose, neaplenkiant ir žemės ūkio paskirties plotų. Kol…</p><span class="card__go"><i class="ph ph-arrow-up-right"></i></span></div>
+          </article>
+          <article class="card" data-tags="c-mokymai lang-lt" data-keywords="savivaldybės mokymai kvietimas SavePeatLands">
+            <div class="card__media"><img src="https://images.pexels.com/photos/15141493/pexels-photo-15141493.jpeg?auto=compress&cs=tinysrgb&w=900" alt="" loading="lazy"><span class="tag tag--sun">Mokymai</span><span class="card__date">27<small>spa 2025</small></span></div>
+            <div class="card__body"><div class="card__meta"><span><i class="ph ph-calendar-blank"></i>2025-10-27</span></div><h3><a href="naujiena.html">Mokymai savivaldybių, saugomų teritorijų ir kitiems specialistams</a></h3><p>Kaip sklypą melioruoti – žino ir savivaldybių specialistai, ir žemės savininkai. Tačiau ką daryti, jei norima atkurti buvusią pelkę? Šis reiškinys naujas tiek Lietuvoje,…</p><span class="card__go"><i class="ph ph-arrow-up-right"></i></span></div>
+          </article>
+          <article class="card" data-tags="c-pozicija lang-en" data-keywords="advokacija pasienis saugumas">
+            <div class="card__media"><img src="https://images.pexels.com/photos/32320416/pexels-photo-32320416.png?auto=compress&cs=tinysrgb&w=900" alt="" loading="lazy"><span class="tag tag--sun">Pozicija</span><span class="card__date">10<small>rgs 2025</small></span></div>
+            <div class="card__body"><div class="card__meta"><span><i class="ph ph-calendar-blank"></i>2025-09-10</span><span><i class="ph ph-clock"></i>3 min.</span><span class="tag tag--outline">EN</span></div><h3><a href="naujiena.html">N. Zableckis: “Borderland peatlands must be bogging down enemy tanks”</a></h3><p>Opinion piece by the Foundation's director on restoring borderland peatlands as both a nature restoration and a national security…</p><span class="card__go"><i class="ph ph-arrow-up-right"></i></span></div>
+          </article>
+        </div>
+        <div class="empty-card" data-filter-empty hidden><p class="muted">Pagal paiešką naujienų nerasta. <button class="linklike" type="button" data-filter-clear>Išvalyti filtrus</button></p></div>
+        <!-- Salient: Pagination (default) arba Load More -->
+        <nav class="cluster mt-40" aria-label="Puslapiavimas" style="justify-content:center">
+          <span class="pill is-active">1</span><a class="pill" href="#sarasas">2</a><a class="pill" href="#sarasas">3</a><a class="pill" href="#sarasas">4</a><a class="pill" href="#sarasas">5</a><a class="pill" href="#sarasas">Kitas <i class="ph ph-arrow-right"></i></a>
+        </nav>
+        <p class="src text-center mt-24">Makete rodomi 21 naujausi įrašai iš dabartinės svetainės (~100 įrašų archyvas perkeliamas per WordPress importą).</p>
+      </div>
+    </section>
+    <!-- Naujienlaiškis (esama funkcija; WP: MailerLite / Mailchimp forma per Salient „Nectar Form“ arba įskiepio shortcode) -->
+    <section class="section section--s" id="naujienlaiskis" aria-labelledby="naujienlaiskis-h">
+      <div class="container">
+        <div class="newsletter" data-reveal>
+          <div>
+            <p class="kicker">Naujienlaiškis</p>
+            <h3 id="naujienlaiskis-h">Prisijunk prie pelkių atkūrimo bendruomenės</h3>
+            <p>Kiekvieną mėnesį dalinamės renginių, aplinkosaugos ir mūsų veiklos naujienomis. Jokio šlamšto, atsisakyti galima vienu paspaudimu.</p>
+          </div>
+          <form class="form" data-demo="Ačiū! Patikrinkite el. paštą ir patvirtinkite prenumeratą." novalidate>
+            <div class="input-group">
+              <label class="visually-hidden" for="nl-email">El. paštas</label>
+              <input id="nl-email" type="email" name="email" placeholder="jusu@pastas.lt" autocomplete="email" required>
+              <button class="btn" type="submit">Prenumeruoti</button>
+            </div>
+            <label class="check"><input type="checkbox" name="sutikimas" required> <span>Sutinku gauti Pelkių fondo naujienlaiškį ir susipažinau su <a class="link-u" href="kontaktai.html#privatumas">privatumo politika</a>.</span></label>
+            <p class="form__msg" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- Poraštė (Salient: Footer – 4 kolonos, tamsus fonas, Copyright juosta) -->
+  <footer class="footer" id="poraste">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a class="logo" href="index.html" aria-label="Pelkių fondas, pradžia"><img class="logo__mark" src="assets/img/logo-240.png" alt="" width="52" height="52"><span class="logo__word">Pelkių fondas<small>Pelkių atkūrimas ir apsauga</small></span></a>
+          <p>VšĮ „Pelkių fondas“ – ne pelno siekianti nevyriausybinė gamtosauginė organizacija, kuri rūpinasi pelkių ir kitų ekosistemų apsauga, atkūrimu, tvariu naudojimu ir visuomenės švietimu.</p>
+          <div class="footer__social">
+            <a href="https://www.facebook.com/pelkiufondas" aria-label="Facebook"><i class="ph ph-facebook-logo" aria-hidden="true"></i></a>
+            <a href="#" aria-label="YouTube"><i class="ph ph-youtube-logo" aria-hidden="true"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="ph ph-linkedin-logo" aria-hidden="true"></i></a>
+            <a href="#" aria-label="Instagram"><i class="ph ph-instagram-logo" aria-hidden="true"></i></a>
+          </div>
+        </div>
+        <div>
+          <h4>Svetainė</h4>
+          <ul>
+            <li><a href="pelkes.html">Pelkės</a></li>
+            <li><a href="terminu-zodynas.html">Terminų žodynas</a></li>
+            <li><a href="apie-mus.html">Apie mus</a></li>
+            <li><a href="veikla.html">Veikla</a></li>
+            <li><a href="projektai.html">Projektai</a></li>
+            <li><a href="publikacijos.html">Publikacijos</a></li>
+            <li><a href="naujienos.html">Naujienos</a></li>
+            <li><a href="kontaktai.html">Kontaktai</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Prisidėk</h4>
+          <ul>
+            <li><a href="prisidek.html#paremk">Paremk pelkes</a></li>
+            <li><a href="prisidek.html#gpm">Skirk 1,2 % GPM</a></li>
+            <li><a href="prisidek.html#savanoriauk">Savanoriauk</a></li>
+            <li><a href="prisidek.html#renginiai">Talkos ir renginiai</a></li>
+            <li><a href="prisidek.html#naujienlaiskis">Naujienlaiškis</a></li>
+            <li><a href="co2.html">Verslui: CO₂ kompensavimas</a></li>
+            <li><a href="veiklos-ataskaitos.html">Veiklos ataskaitos</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Kontaktai</h4>
+          <div class="footer__contact">
+            <div><i class="ph ph-map-pin" aria-hidden="true"></i><span>Gedimino pr. 1, 4 a. (NVO Avilys)<br>LT-01103 Vilnius, Lietuva</span></div>
+            <div><i class="ph ph-phone" aria-hidden="true"></i><a href="tel:+37065620426">+370 656 20426</a></div>
+            <div><i class="ph ph-envelope" aria-hidden="true"></i><a href="mailto:info@pelkiufondas.lt">info@pelkiufondas.lt</a></div>
+            <div><i class="ph ph-identification-card" aria-hidden="true"></i><span>Įmonės kodas 302822289<br>PVM kodas LT100017689218</span></div>
+            <div><i class="ph ph-bank" aria-hidden="true"></i><span>LT24 7044 0600 0784 1146<br>AB SEB bankas</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span><span class="footer__sun" aria-hidden="true"></span>© <span data-year>2026</span> VšĮ „Pelkių fondas“. Nuotraukos ir video makete – Pexels (nemokama licencija).</span>
+        <div class="footer__legal">
+          <a href="kontaktai.html#privatumas">Privatumo politika</a>
+          <a href="apie-mus.html#dokumentai">Įstatai</a>
+          <a href="galerija.html">Galerija</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="lt">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Galerija | Pelkių fondas</title>
+  <meta name="description" content="Pelkių fondo nuotraukų galerija: aukštapelkės ir žemapelkės visais metų laikais, atkūrimo darbai, talkos ir renginiai, pelkių augalai ir gyvūnai – su aprašais ir filtrais pagal temas.">
+  <!-- Bendra <head> dalis: įklijuoti į kiekvieną puslapį po <title> ir <meta name="description"> -->
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/Fraunces.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/Manrope.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>document.documentElement.classList.add('js');</script>
+  <link rel="stylesheet" href="assets/css/pages/galerija.css">
+</head>
+<body class="has-transparent-header" data-nav="pelkes">
+  <a class="skip-link" href="#turinys">Pereiti prie turinio</a>
+
+  <!-- Maketo juosta: į WordPress nekeliama -->
+  <div class="mockbar" role="region" aria-label="Maketo juosta">
+    <div class="container">
+      <strong>Dizaino maketas <span>·</span> Pelkių fondas</strong>
+      <span>WordPress + Salient</span>
+      <label class="mockbar__toggle" title="Žymekliai rodo, kas makete yra nauja, palyginti su dabartine svetaine"><input type="checkbox" id="toggle-newfn" checked> <span class="new-fn__badge">Nauja</span> rodyti naujas funkcijas</label>
+      <nav class="mockbar__pages" aria-label="Maketo puslapiai">
+        <a href="index.html">Pradinis</a><a href="pelkes.html">Pelkės</a><a href="apie-mus.html">Apie mus</a><a href="veikla.html">Veikla</a><a href="naujienos.html">Naujienos</a><a href="kontaktai.html">Kontaktai</a><a href="prisidek.html">Prisidėk</a>
+      </nav>
+    </div>
+  </div>
+
+  <!-- Antraštė (Salient: Header layout „Standard“, logotipas kairėje, meniu dešinėje, „Prisidėk“ mygtukas, paieška, kalbos) -->
+  <header class="site-header">
+    <div class="container container--wide site-header__inner">
+      <a class="logo" href="index.html" aria-label="Pelkių fondas, pradžia">
+        <img class="logo__mark" src="assets/img/logo-240.png" alt="" width="52" height="52">
+        <span class="logo__word">Pelkių fondas<small>Pelkių atkūrimas ir apsauga</small></span>
+      </a>
+      <nav class="nav" aria-label="Pagrindinis meniu">
+        <a class="nav__link" href="index.html" data-nav-key="pradinis">Pradinis</a>
+        <div class="nav__item" data-drop data-nav-key="pelkes">
+          <button class="nav__link" type="button" aria-expanded="false" aria-haspopup="true">Pelkės <i class="ph ph-caret-down" aria-hidden="true"></i></button>
+          <div class="nav__drop">
+            <a class="drop-link" href="pelkes.html"><span class="drop-link__icon"><i class="ph ph-leaf"></i></span><span class="drop-link__text"><strong>Kas yra pelkės</strong><span>Apibrėžimai, reikšmė, būklė Lietuvoje</span></span></a>
+            <a class="drop-link" href="pelkes.html#tipai"><span class="drop-link__icon"><i class="ph ph-tree-evergreen"></i></span><span class="drop-link__text"><strong>Pelkių tipai ir buveinės</strong><span>Žemapelkės, tarpinės, aukštapelkės, EB buveinės</span></span></a>
+            <a class="drop-link" href="pelkes.html#gresmes"><span class="drop-link__icon"><i class="ph ph-warning"></i></span><span class="drop-link__text"><strong>Grėsmės ir atkūrimas</strong><span>Kodėl pelkės nyksta ir kaip jas atkuriame</span></span></a>
+            <a class="drop-link" href="terminu-zodynas.html"><span class="drop-link__icon"><i class="ph ph-book-open"></i></span><span class="drop-link__text"><strong>Terminų žodynas</strong><span>Pelkių ir durpynų sąvokos su paieška</span></span></a>
+            <a class="drop-link" href="galerija.html"><span class="drop-link__icon"><i class="ph ph-images"></i></span><span class="drop-link__text"><strong>Galerija</strong><span>Pelkių ir mūsų darbų nuotraukos</span></span></a>
+          </div>
+        </div>
+        <a class="nav__link" href="apie-mus.html" data-nav-key="apie-mus">Apie mus</a>
+        <div class="nav__item" data-drop data-nav-key="veikla">
+          <button class="nav__link" type="button" aria-expanded="false" aria-haspopup="true">Veikla <i class="ph ph-caret-down" aria-hidden="true"></i></button>
+          <div class="nav__drop nav__drop--wide">
+            <a class="drop-link" href="veikla.html"><span class="drop-link__icon"><i class="ph ph-compass"></i></span><span class="drop-link__text"><strong>Veiklos kryptys</strong><span>Biologinė įvairovė, atkūrimas, klimatas, pelkininkystė</span></span></a>
+            <a class="drop-link" href="co2.html"><span class="drop-link__icon"><i class="ph ph-cloud"></i></span><span class="drop-link__text"><strong>CO₂ emisijų mažinimas</strong><span>Verslui: atkurkite pelkes, mažinkite anglies pėdsaką</span></span></a>
+            <a class="drop-link" href="projektai.html"><span class="drop-link__icon"><i class="ph ph-map-pin"></i></span><span class="drop-link__text"><strong>Projektai</strong><span>Vykdomi ir įgyvendinti projektai žemėlapyje</span></span></a>
+            <a class="drop-link" href="paslaugos.html"><span class="drop-link__icon"><i class="ph ph-briefcase"></i></span><span class="drop-link__text"><strong>Paslaugos</strong><span>Konsultacijos, tyrimai, švietimas</span></span></a>
+            <a class="drop-link" href="publikacijos.html"><span class="drop-link__icon"><i class="ph ph-books"></i></span><span class="drop-link__text"><strong>Publikacijos</strong><span>Straipsniai, knygos, lankstinukai</span></span></a>
+            <a class="drop-link" href="videoteka.html"><span class="drop-link__icon"><i class="ph ph-play-circle"></i></span><span class="drop-link__text"><strong>Videoteka</strong><span>Filmai apie pelkes ir mūsų darbus</span></span></a>
+            <a class="drop-link" href="veiklos-ataskaitos.html"><span class="drop-link__icon"><i class="ph ph-file-text"></i></span><span class="drop-link__text"><strong>Veiklos ataskaitos</strong><span>Metinės veiklos ir finansinės ataskaitos</span></span></a>
+            <div class="nav__drop-foot"><span class="muted">Norite prisidėti prie veiklų?</span><a class="link-u" href="prisidek.html#savanoriauk">Savanoriauk</a></div>
+          </div>
+        </div>
+        <a class="nav__link" href="naujienos.html" data-nav-key="naujienos">Naujienos</a>
+        <a class="nav__link" href="kontaktai.html" data-nav-key="kontaktai">Kontaktai</a>
+      </nav>
+      <div class="header-actions">
+        <div class="lang" aria-label="Kalba"><span aria-current="true" lang="lt">LT</span><a href="#" data-lang="en" hreflang="en">EN</a></div>
+        <button class="icon-btn icon-btn--search" type="button" data-search-open aria-label="Paieška svetainėje"><i class="ph ph-magnifying-glass" aria-hidden="true"></i></button>
+        <a class="btn btn--sun btn--sm" href="prisidek.html">Prisidėk</a>
+        <button class="burger icon-btn" type="button" aria-label="Atidaryti meniu" aria-expanded="false" aria-controls="mobile-menu"><i class="ph ph-list" aria-hidden="true"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobilus meniu (Salient: Off Canvas Menu) -->
+  <div class="mobile-menu" id="mobile-menu" role="dialog" aria-modal="true" aria-label="Meniu" tabindex="-1">
+    <div class="container">
+      <div class="mobile-menu__top">
+        <a class="logo" href="index.html" aria-label="Pelkių fondas, pradžia"><img class="logo__mark" src="assets/img/logo-240.png" alt="" width="52" height="52"><span class="logo__word">Pelkių fondas<small>Pelkių atkūrimas ir apsauga</small></span></a>
+        <button class="mobile-menu__close" type="button" aria-label="Uždaryti meniu"><i class="ph ph-x" aria-hidden="true"></i></button>
+      </div>
+      <nav class="mobile-menu__links" aria-label="Meniu mobiliesiems">
+        <a href="index.html">Pradinis <i class="ph ph-arrow-right" aria-hidden="true"></i></a>
+        <details><summary>Pelkės <i class="ph ph-caret-down" aria-hidden="true"></i></summary><div><a href="pelkes.html">Kas yra pelkės</a><a href="pelkes.html#tipai">Pelkių tipai ir buveinės</a><a href="pelkes.html#gresmes">Grėsmės ir atkūrimas</a><a href="terminu-zodynas.html">Terminų žodynas</a><a href="galerija.html">Galerija</a></div></details>
+        <a href="apie-mus.html">Apie mus <i class="ph ph-arrow-right" aria-hidden="true"></i></a>
+        <details><summary>Veikla <i class="ph ph-caret-down" aria-hidden="true"></i></summary><div><a href="veikla.html">Veiklos kryptys</a><a href="co2.html">CO₂ emisijų mažinimas</a><a href="projektai.html">Projektai</a><a href="paslaugos.html">Paslaugos</a><a href="publikacijos.html">Publikacijos</a><a href="videoteka.html">Videoteka</a><a href="veiklos-ataskaitos.html">Veiklos ataskaitos</a></div></details>
+        <a href="naujienos.html">Naujienos <i class="ph ph-arrow-right" aria-hidden="true"></i></a>
+        <a href="kontaktai.html">Kontaktai <i class="ph ph-arrow-right" aria-hidden="true"></i></a>
+        <a href="prisidek.html">Prisidėk <i class="ph ph-arrow-right" aria-hidden="true"></i></a>
+      </nav>
+      <div class="mobile-menu__foot">
+        <a class="btn btn--sun" href="prisidek.html">Paremk pelkes</a>
+        <button class="btn btn--ghost-light" type="button" data-search-open><i class="ph ph-magnifying-glass" aria-hidden="true"></i> Paieška</button>
+        <div class="lang" aria-label="Kalba"><span aria-current="true">LT</span><a href="#" data-lang="en" hreflang="en">EN</a></div>
+      </div>
+    </div>
+  </div>
+
+  <main id="turinys">
+
+    <!-- Salient: Row (Full Width, Nectar Video Background – įkeltas mp4 + poster, overlay), Page Header su breadcrumb (Breadcrumb NavXT), Split Line Heading, Button -->
+    <section class="page-header page-header--short" id="antraste">
+      <div class="video-bg video-bg--soft">
+        <img src="https://images.pexels.com/videos/29067817/bog-29067817.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=630&w=1200" alt="">
+        <video data-src="https://videos.pexels.com/video-files/29067817/12563753_1920_1080_30fps.mp4" data-src-sd="https://videos.pexels.com/video-files/29067817/12563751_960_540_30fps.mp4" muted loop playsinline poster="https://images.pexels.com/videos/29067817/bog-29067817.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=630&w=1200"></video>
+      </div>
+      <div class="container">
+        <ol class="breadcrumb" aria-label="Naršymo kelias">
+          <li><a href="index.html">Pradinis</a></li>
+          <li><a href="pelkes.html">Pelkės</a></li>
+          <li aria-current="page">Galerija</li>
+        </ol>
+        <p class="kicker" data-reveal>Pelkės</p>
+        <h1 data-split>Pelkių <em>galerija</em></h1>
+        <p class="lead" data-reveal style="--d:160ms">Aukštapelkės ir žemapelkės visais metų laikais, atkūrimo darbai, talkos ir pelkių gyventojai. Spustelėkite nuotrauką – atsidarys didelė peržiūra su aprašu, vieta ir autoriumi.</p>
+        <div class="page-header__actions" data-reveal style="--d:280ms">
+          <a class="btn btn--ghost-light" href="videoteka.html"><i class="ph ph-play-circle" aria-hidden="true"></i> Videoteka</a>
+          <a class="btn btn--ghost-light" href="pelkes.html#tipai">Pelkių tipai</a>
+        </div>
+      </div>
+      <button class="video-toggle" type="button" aria-label="Sustabdyti arba paleisti fono video"></button>
+      <span class="video-credit">Video: Pexels / Raul Oja</span>
+    </section>
+
+    <!-- Salient: Portfolio elementas (Masonry išdėstymas, „Enable Sortable“ kategorijų filtrai, Lightbox su antraštėmis) arba Image Gallery (Masonry) + žymų filtras; Column animation (fade-up); Highlighted Text antraštėje -->
+    <section class="section section--s" id="galerija" aria-labelledby="galerija-h">
+      <div class="container container--wide" data-filter-group>
+
+        <div class="section-head section-head--row">
+          <div>
+            <p class="kicker">Nuotraukos</p>
+            <h2 id="galerija-h" data-split>Rinkitės <em>temą</em> arba naršykite visas</h2>
+            <p class="lead">Užvedus pelę matysite nuotraukos pavadinimą ir vietą, paspaudus – didelę peržiūrą. Peržiūroje rodykle arba klavišais ← → pereisite tik per pasirinktos temos nuotraukas.</p>
+          </div>
+        </div>
+
+        <div class="galerija-toolbar new-fn">
+          <span class="new-fn__badge" data-tip="Nauja: galerijos filtrai pagal temas su nuotraukų skaitikliu ir nuoroda su pasirinktu filtru (?f=tema). WordPress'e – Salient „Portfolio“ elementas su kategorijų filtrais (masonry + lightbox) arba Image Gallery su žymų filtru; kategorijos priskiriamos Media bibliotekoje." tabindex="0">Nauja</span>
+          <div class="pill-group" role="group" aria-label="Nuotraukų temos">
+            <button class="pill" type="button" data-filter="all" aria-pressed="true">Visos <span class="pill__count">30</span></button>
+            <button class="pill" type="button" data-filter="pelkes" aria-pressed="false">Pelkės <span class="pill__count">11</span></button>
+            <button class="pill" type="button" data-filter="darbai" aria-pressed="false">Darbai <span class="pill__count">5</span></button>
+            <button class="pill" type="button" data-filter="renginiai" aria-pressed="false">Renginiai <span class="pill__count">6</span></button>
+            <button class="pill" type="button" data-filter="augalai-gyvunai" aria-pressed="false">Augalai ir gyvūnai <span class="pill__count">6</span></button>
+            <button class="pill" type="button" data-filter="ziema" aria-pressed="false">Žiema <span class="pill__count">4</span></button>
+          </div>
+          <p class="galerija-toolbar__meta">
+            <span data-filter-count data-forms="nuotrauka|nuotraukos|nuotraukų" role="status" aria-live="polite">30 nuotraukų</span>
+            <span class="tag tag--outline">Vietos – pavyzdinės</span>
+          </p>
+        </div>
+
+        <div class="callout callout--green new-fn new-fn--inline" data-reveal>
+          <i class="ph ph-info" aria-hidden="true"></i>
+          <p><strong>Makete</strong> rodomos „Pexels“ nuotraukos, o vietos prie jų – pavyzdinės. Svetainėje čia bus Pelkių fondo archyvo nuotraukos iš Aukštumalos, Guodžių, Tartoko, Ežerėlio ir kitų projektų teritorijų, kiekviena su pavadinimu, vieta, data ir autoriumi. <span class="new-fn__badge" data-tip="Nauja: kiekviena nuotrauka turi pavadinimą, vietą ir autorių – jie rodomi užvedus ir didelėje peržiūroje (dabartinėje svetainėje nuotraukos be aprašų). WordPress'e – Media bibliotekos „Caption“ ir „Alt“ laukai; Salient Lightbox rodo antraštes." tabindex="0">Nauja</span></p>
+        </div>
+
+        <div class="gallery" data-reveal-group>
+        <button class="gallery__item gallery__item--wide" type="button" data-lightbox="galerija" data-tags="pelkes" data-src="https://images.pexels.com/photos/24426627/pexels-photo-24426627.jpeg?auto=compress&cs=tinysrgb&w=1600" data-cap="Aukštapelkės ežeras vasarą. Vieta pavyzdinė: Aukštumalos aukštapelkė, Šilutės r. · Foto: Pexels / Lauri Poldre">
+          <img src="https://images.pexels.com/photos/24426627/pexels-photo-24426627.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Aukštapelkės ežeras su pušimis pakrantėje ir dangaus atspindžiu vandenyje" loading="lazy" decoding="async">
+          <span class="gallery__cap">Aukštapelkės ežeras vasarą<small>Vieta pavyzdinė: Aukštumalos aukštapelkė, Šilutės r. · Pexels / Lauri Poldre</small></span>
+        </button>
+        <button class="gallery__item" type="button" data-lightbox="galerija" data-tags="augalai-gyvunai" data-src="https://images.pexels.com/photos/38448147/pexels-photo-38448147.jpeg?auto=compress&cs=tinysrgb&w=1600" data-cap="Apskritalapė saulašarė. Vieta pavyzdinė: Aukštumalos aukštapelkė, Šilutės r. · Foto: Pexels / Wojciech Wyszkowski">
+          <img src="https://images.pexels.com/photos/38448147/pexels-photo-38448147.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Apskritalapės saulašarės lapelis su lipniais lašeliais, makro nuotrauka" loading="lazy" decoding="async">
+          <span class="gallery__cap">Apskritalapė saulašarė<small>Vieta pavyzdinė: Aukštumalos aukštapelkė, Šilutės r. · Pexels / Wojciech Wyszkowski</small></span>
+        </button>
+        <button class="gallery__item gallery__item--tall" type="button" data-lightbox="galerija" data-tags="pelkes" data-src="https://images.pexels.com/photos/28277048/pexels-photo-28277048.jpeg?auto=compress&cs=tinysrgb&w=1600" data-cap="Pažintinis takas per aukštapelkę ryte. Vieta pavyzdinė: Aukštumalos pažintinis takas, Šilutės r. · Foto: Pexels / Lauri Poldre">
+          <img src="https://images.pexels.com/photos/28277048/pexels-photo-28277048.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Medinis lentų takas per aukštapelkę ryto šviesoje, viksvų kupstai ir pušys" loading="lazy" decoding="async">
+          <span class="gallery__cap">Pažintinis takas per aukštapelkę ryte<small>Vieta pavyzdinė: Aukštumalos pažintinis takas, Šilutės r. · Pexels / Lauri Poldre</small></span>
+        </button>
+        <button class="gallery__item gallery__item--wide" type="button" data-lightbox="galerija" data-tags="renginiai" data-src="https://images.pexels.com/photos/36713476/pexels-photo-36713476.jpeg?auto=compress&cs=tinysrgb&w=1600" data-cap="Savanorių talka pelkės pakraštyje. Vieta pavyzdinė: Šilėnų pelkė, Vilniaus r. · Foto: Pexels / Vitaly Gariev">
+          <img src="https://images.pexels.com/photos/36713476/pexels-photo-36713476.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Savanorių grupė su maišais renka šiukšles pušyne" loading="lazy" decoding="async">
+          <span class="gallery__cap">Savanorių talka pelkės pakraštyje<small>Vieta pavyzdinė: Šilėnų pelkė, Vilniaus r. · Pexels / Vitaly Gariev</small></span>
+        </button>
+        <button class="gallery__item" type="button" data-lightbox="galerija" data-tags="pelkes" data-src="https://images.pexels.com/photos/31396932/pexels-photo-31396932.jpeg?auto=compress&cs=tinysrgb&w=1600" data-cap="Saulėtekis su šalna virš ežerėlių. Vieta pavyzdinė: Praviršulio tyrelis, Radviliškio r. · Foto: Pexels / Raul Ling">
+          <img src="https://images.pexels.com/photos/31396932/pexels-photo-31396932.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Aukštapelkės saulėtekis: šalna ant kupstų ir rūkas virš ežerėlių" loading="lazy" decoding="async">
+          <span class="gallery__cap">Saulėtekis su šalna virš ežerėlių<small>Vieta pavyzdinė: Praviršulio tyrelis, Radviliškio r. · Pexels / Raul Ling</small></span>
+        </button>
+        <button class="gallery__item" type="button" data-lightbox="galerija" data-tags="darbai" data-src="https://images.pexels.com/photos/36553240/pexels-photo-36553240.jpeg?auto=compress&cs=tinysrgb&w=1600" data-cap="Hidrologinio režimo atkūrimo darbai. Vieta pavyzdinė: Paąžuolynės durpynas, Jonavos r. · Foto: Pexels / Theo Felten">
+          <img src="https://images.pexels.com/photos/36553240/pexels-photo-36553240.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Ekskavatorius dirba užlietoje pievoje, atsispindi balose" loading="lazy" decoding="async">
+          <span class="gallery__cap">Hidrologinio režimo atkūrimo darbai<small>Vieta pavyzdinė: Paąžuolynės durpynas, Jonavos r. · Pexels / Theo Felten</small></span>
+        </button>
+        <button class="gallery__item" type="button" data-lightbox="galerija" data-tags="augalai-gyvunai" data-src="https://images.pexels.com/photos/32045524/pexels-photo-32045524.jpeg?auto=compress&cs=tinysrgb&w=1600" data-cap="Plačialapės klumpaitės žiedas. Vieta pavyzdinė: Pelkėtas miškas, Nemuno deltos regioninis parkas · Foto: Pexels / Siegfried Poepperl">
+          <img src="https://images.pexels.com/photos/32045524/pexels-photo-32045524.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Geltonas plačialapės klumpaitės žiedas saulės šviesoje tarp žalių lapų" loading="lazy" decoding="async">
+          <span class="gallery__cap">Plačialapės klumpaitės žiedas<small>Vieta pavyzdinė: Pelkėtas miškas, Nemuno deltos regioninis parkas · Pexels / Siegfried Poepperl</small></span>
+        </button>
+        <button class="gallery__item" type="button" data-lightbox="galerija" data-tags="ziema" data-src="https://images.pexels.com/photos/961728/pexels-photo-961728.jpeg?auto=compress&cs=tinysrgb&w=1600" data-cap="Takas per pelkę tirpstant sniegui. Vieta pavyzdinė: Aukštumalos aukštapelkė, Šilutės r. · Foto: Pexels / Pille Kirsi">
+          <img src="https://images.pexels.com/photos/961728/pexels-photo-961728.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Lentų takas per rusvą pelkę su sniego lopais ankstyvą pavasarį" loading="lazy" decoding="async">
+          <span class="gallery__cap">Takas per pelkę tirpstant sniegui<small>Vieta pavyzdinė: Aukštumalos aukštapelkė, Šilutės r. · Pexels / Pille Kirsi</small></span>
+        </button>
+        <button class="gallery__item" type="button" data-lightbox="galerija" data-tags="pelkes" data-src="https://images.pexels.com/photos/22944077/pexels-photo-22944077.jpeg?auto=compress&cs=tinysrgb&w=1600" data-cap="Užlieta pelkė pavasarį. Vieta pavyzdinė: Tartoko pelkė, Prienų r. · Foto: Pexels / Philipp Deus">
+          <img src="https://images.pexels.com/photos/22944077/pexels-photo-22944077.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Beržai ir švyliai užlietoje pelkėje pavasarį" loading="lazy" decoding="async">
+          <span class="gallery__cap">Užlieta pelkė pavasarį<small>Vieta pavyzdinė: Tartoko pelkė, Prienų r. · Pexels / Philipp Deus</small></span>
+        </button>
+        <button class="gallery__item gallery__item--wide" type="button" data-lightbox="galerija" data-tags="augalai-gyvunai" data-src="https://images.pexels.com/photos/35842027/pexels-photo-35842027.jpeg?auto=compress&cs=tinysrgb&w=1600" data-cap="Pilkųjų gervių būrys rūke. Vieta pavyzdinė: Nemuno deltos regioninis parkas · Foto: Pexels / dalia nava">
+          <img src="https://images.pexels.com/photos/35842027/pexels-photo-35842027.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Pilkųjų gervių būrys rūkanotame lauke, viena gervė leidžiasi" loading="lazy" decoding="async">
+          <span class="gallery__cap">Pilkųjų gervių būrys rūke<small>Vieta pavyzdinė: Nemuno deltos regioninis parkas · Pexels / dalia nava</small></span>
+        </button>
+        <button class="gallery__item gallery__item--wide" type="button" data-lightbox="galerija" data-tags="darbai" data-src="https://images.pexels.com/photos/36553239/pexels-photo-36553239.jpeg?auto=compress&cs=tinysrgb&w=1600" data-cap="Atkuriama šlapynė: vandens vagos pievoje. Vieta pavyzdinė: Guodžių durpynas, Biržų r. · Foto: Pexels / Theo Felten">
+          <img src="https://images.pexels.com/photos/36553239/pexels-photo-36553239.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Atkuriama šlapynė: naujos vandens vagos pievoje, ekskavatorius tolumoje" loading="lazy" decoding="async">
+          <span class="gallery__cap">Atkuriama šlapynė: vandens vagos pievoje<small>Vieta pavyzdinė: Guodžių durpynas, Biržų r. · Pexels / Theo Felten</small></span>
+        </button>
+        <button class="gallery__item" type="button" data-lightbox="galerija" data-tags="augalai-gyvunai" data-src="https://images.pexels.com/photos/26873596/pexels-photo-26873596.jpeg?auto=compress&cs=tinysrgb&w=1600" data-cap="Saulašarių kilimas tarp kiminų. Vieta pavyzdinė: Aukštumalos aukštapelkė, Šilutės r. · Foto: Pexels / Cornelis Johannes (Kees) van Leeuwen">
+          <img src="https://images.pexels.com/photos/26873596/pexels-photo-26873596.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Saulašarių kilimas tarp kiminų, makro vaizdas iš viršaus" loading="lazy" decoding="async">
+          <span class="gallery__cap">Saulašarių kilimas tarp kiminų<small>Vieta pavyzdinė: Aukštumalos aukštapelkė, Šilutės r. · Pexels / Cornelis Johannes (Kees) van Leeuwen</small></span>
+        </button>
+        <button class="gallery__item" type="button" data-lightbox="galerija" data-tags="renginiai" data-src="https://images.pexels.com/photos/7656992/pexels-photo-7656992.jpeg?auto=compress&cs=tinysrgb&w=1600" data-cap="Talkos pabaiga saulėlydyje. Vieta pavyzdinė: Žaliasis raistas, Kaišiadorių r. · Foto: Pexels / Thirdman">
+          <img src="https://images.pexels.com/photos/7656992/pexels-photo-7656992.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Du savanoriai su maišais šlapioje pievoje saulėlydžio šviesoje" loading="lazy" decoding="async">
+          <span class="gallery__cap">Talkos pabaiga saulėlydyje<small>Vieta pavyzdinė: Žaliasis raistas, Kaišiadorių r. · Pexels / Thirdman</small></span>
+        </button>
+        <button class="gallery__item" type="button" data-lightbox="galerija" data-tags="pelkes" data-src="https://images.pexels.com/photos/11519304/pexels-photo-11519304.jpeg?auto=compress&cs=tinysrgb&w=1600" data-cap="Rudeninė aukštapelkė iš paukščio skrydžio. Vieta pavyzdinė: Aukštumalos aukštapelkė, Šilutės r. · Foto: Pexels / Katrīne Skrebele">
+          <img src="https://images.pexels.com/photos/11519304/pexels-photo-11519304.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Rudeninė aukštapelkė su ežerėliais, drono nuotrauka" loading="lazy" decoding="async">
+          <span class="gallery__cap">Rudeninė aukštapelkė iš paukščio skrydžio<small>Vieta pavyzdinė: Aukštumalos aukštapelkė, Šilutės r. · Pexels / Katrīne Skrebele</small></span>
+        </button>
+        <button class="gallery__item gallery__item--wide" type="button" data-lightbox="galerija" data-tags="ziema" data-src="https://images.pexels.com/photos/17661614/pexels-photo-17661614.jpeg?auto=compress&cs=tinysrgb&w=1600" data-cap="Apšarmojusi pelkė su upeliu. Vieta pavyzdinė: Nemuno deltos regioninis parkas · Foto: Pexels / Peter Holmboe">
+          <img src="https://images.pexels.com/photos/17661614/pexels-photo-17661614.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Vingiuotas upelis per apšarmojusią pelkę, vaizdas iš viršaus" loading="lazy" decoding="async">
+          <span class="gallery__cap">Apšarmojusi pelkė su upeliu<small>Vieta pavyzdinė: Nemuno deltos regioninis parkas · Pexels / Peter Holmboe</small></span>
+        </button>
+        <button class="gallery__item" type="button" data-lightbox="galerija" data-tags="darbai" data-src="https://images.pexels.com/photos/35598624/pexels-photo-35598624.jpeg?auto=compress&cs=tinysrgb&w=1600" data-cap="Griovio užtvenkimo darbai. Vieta pavyzdinė: Tartoko pelkė, Prienų r. · Foto: Pexels / Serhii Barkanov">
+          <img src="https://images.pexels.com/photos/35598624/pexels-photo-35598624.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Ekskavatorius dirba prie kanalo pelkėje tarp beržų ir nendrių" loading="lazy" decoding="async">
+          <span class="gallery__cap">Griovio užtvenkimo darbai<small>Vieta pavyzdinė: Tartoko pelkė, Prienų r. · Pexels / Serhii Barkanov</small></span>
+        </button>
+        <button class="gallery__item gallery__item--tall" type="button" data-lightbox="galerija" data-tags="renginiai pelkes" data-src="https://images.pexels.com/photos/18020724/pexels-photo-18020724.jpeg?auto=compress&cs=tinysrgb&w=1600" data-cap="Ekskursija pažintiniu taku. Vieta pavyzdinė: Aukštumalos pažintinis takas, Šilutės r. · Foto: Pexels / Gabriele Niek">
+          <img src="https://images.pexels.com/photos/18020724/pexels-photo-18020724.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Lentinis pažintinis takas per aukštapelkę su beržais" loading="lazy" decoding="async">
+          <span class="gallery__cap">Ekskursija pažintiniu taku<small>Vieta pavyzdinė: Aukštumalos pažintinis takas, Šilutės r. · Pexels / Gabriele Niek</small></span>
+        </button>
+        <button class="gallery__item gallery__item--tall" type="button" data-lightbox="galerija" data-tags="augalai-gyvunai" data-src="https://images.pexels.com/photos/33316312/pexels-photo-33316312.jpeg?auto=compress&cs=tinysrgb&w=1600" data-cap="Kupstiniai švyliai prieš saulę. Vieta pavyzdinė: Praviršulio tyrelis, Radviliškio r. · Foto: Pexels / Toni Seyfert">
+          <img src="https://images.pexels.com/photos/33316312/pexels-photo-33316312.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Švylių pūkai švyti prieš saulę" loading="lazy" decoding="async">
+          <span class="gallery__cap">Kupstiniai švyliai prieš saulę<small>Vieta pavyzdinė: Praviršulio tyrelis, Radviliškio r. · Pexels / Toni Seyfert</small></span>
+        </button>
+        <button class="gallery__item" type="button" data-lightbox="galerija" data-tags="pelkes" data-src="https://images.pexels.com/photos/23708711/pexels-photo-23708711.jpeg?auto=compress&cs=tinysrgb&w=1600" data-cap="Užlietas beržynas rudenį. Vieta pavyzdinė: Paąžuolynės durpynas, Jonavos r. · Foto: Pexels / Susanne Jutzeler, suju-foto">
+          <img src="https://images.pexels.com/photos/23708711/pexels-photo-23708711.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Rudeninis užlietas beržų ir pušų miškas su atspindžiais vandenyje" loading="lazy" decoding="async">
+          <span class="gallery__cap">Užlietas beržynas rudenį<small>Vieta pavyzdinė: Paąžuolynės durpynas, Jonavos r. · Pexels / Susanne Jutzeler, suju-foto</small></span>
+        </button>
+        <button class="gallery__item" type="button" data-lightbox="galerija" data-tags="renginiai" data-src="https://images.pexels.com/photos/3321793/pexels-photo-3321793.jpeg?auto=compress&cs=tinysrgb&w=1600" data-cap="Mokymai savivaldybėms. Vieta pavyzdinė: Vilnius · Foto: Pexels / Matheus Bertelli">
+          <img src="https://images.pexels.com/photos/3321793/pexels-photo-3321793.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Pranešėjas su mikrofonu kalba klausytojams salėje" loading="lazy" decoding="async">
+          <span class="gallery__cap">Mokymai savivaldybėms<small>Vieta pavyzdinė: Vilnius · Pexels / Matheus Bertelli</small></span>
+        </button>
+        <button class="gallery__item gallery__item--wide" type="button" data-lightbox="galerija" data-tags="pelkes" data-src="https://images.pexels.com/photos/35386554/pexels-photo-35386554.jpeg?auto=compress&cs=tinysrgb&w=1600" data-cap="Aukštapelkė iš oro saulėlydyje. Vieta pavyzdinė: Praviršulio tyrelis, Radviliškio r. · Foto: Pexels / Raul Ling">
+          <img src="https://images.pexels.com/photos/35386554/pexels-photo-35386554.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Aukštapelkė su ežerokšniais iš oro saulėlydžio metu" loading="lazy" decoding="async">
+          <span class="gallery__cap">Aukštapelkė iš oro saulėlydyje<small>Vieta pavyzdinė: Praviršulio tyrelis, Radviliškio r. · Pexels / Raul Ling</small></span>
+        </button>
+        <button class="gallery__item" type="button" data-lightbox="galerija" data-tags="ziema" data-src="https://images.pexels.com/photos/19773989/pexels-photo-19773989.jpeg?auto=compress&cs=tinysrgb&w=1600" data-cap="Užšalęs upelis sniege. Vieta pavyzdinė: Žaliasis raistas, Kaišiadorių r. · Foto: Pexels / Alfo Medeiros">
+          <img src="https://images.pexels.com/photos/19773989/pexels-photo-19773989.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Užšalęs upelis sniege, vaizdas iš viršaus" loading="lazy" decoding="async">
+          <span class="gallery__cap">Užšalęs upelis sniege<small>Vieta pavyzdinė: Žaliasis raistas, Kaišiadorių r. · Pexels / Alfo Medeiros</small></span>
+        </button>
+        <button class="gallery__item" type="button" data-lightbox="galerija" data-tags="augalai-gyvunai" data-src="https://images.pexels.com/photos/12393834/pexels-photo-12393834.jpeg?auto=compress&cs=tinysrgb&w=1600" data-cap="Kūdrinė varlė ant lelijų lapų. Vieta pavyzdinė: Ežerėlio durpynas, Kauno r. · Foto: Pexels / Susanne Jutzeler, suju-foto">
+          <img src="https://images.pexels.com/photos/12393834/pexels-photo-12393834.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Kūdrinė varlė sėdi ant vandens lelijų lapų" loading="lazy" decoding="async">
+          <span class="gallery__cap">Kūdrinė varlė ant lelijų lapų<small>Vieta pavyzdinė: Ežerėlio durpynas, Kauno r. · Pexels / Susanne Jutzeler, suju-foto</small></span>
+        </button>
+        <button class="gallery__item" type="button" data-lightbox="galerija" data-tags="renginiai" data-src="https://images.pexels.com/photos/36713468/pexels-photo-36713468.jpeg?auto=compress&cs=tinysrgb&w=1600" data-cap="Talkos dalyvių registracija. Vieta pavyzdinė: Šilėnų pelkė, Vilniaus r. · Foto: Pexels / Vitaly Gariev">
+          <img src="https://images.pexels.com/photos/36713468/pexels-photo-36713468.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Savanoris pildo lentelę pušyne, kiti savanoriai renka šiukšles" loading="lazy" decoding="async">
+          <span class="gallery__cap">Talkos dalyvių registracija<small>Vieta pavyzdinė: Šilėnų pelkė, Vilniaus r. · Pexels / Vitaly Gariev</small></span>
+        </button>
+        <button class="gallery__item" type="button" data-lightbox="galerija" data-tags="pelkes" data-src="https://images.pexels.com/photos/32432600/pexels-photo-32432600.jpeg?auto=compress&cs=tinysrgb&w=1600" data-cap="Upės vingis per šlapynę. Vieta pavyzdinė: Nemuno deltos regioninis parkas · Foto: Pexels / Tom Fisk">
+          <img src="https://images.pexels.com/photos/32432600/pexels-photo-32432600.jpeg?auto=compress&cs=tinysrgb&w=900" alt="S formos upės vingis per šlapynę, drono nuotrauka" loading="lazy" decoding="async">
+          <span class="gallery__cap">Upės vingis per šlapynę<small>Vieta pavyzdinė: Nemuno deltos regioninis parkas · Pexels / Tom Fisk</small></span>
+        </button>
+        <button class="gallery__item" type="button" data-lightbox="galerija" data-tags="darbai" data-src="https://images.pexels.com/photos/27130444/pexels-photo-27130444.jpeg?auto=compress&cs=tinysrgb&w=1600" data-cap="Technika prie sausinimo kanalo. Vieta pavyzdinė: Ežerėlio durpynas, Kauno r. · Foto: Pexels / Jan van der Wolf">
+          <img src="https://images.pexels.com/photos/27130444/pexels-photo-27130444.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Geltonas ekskavatorius prie kanalo, atspindys vandenyje" loading="lazy" decoding="async">
+          <span class="gallery__cap">Technika prie sausinimo kanalo<small>Vieta pavyzdinė: Ežerėlio durpynas, Kauno r. · Pexels / Jan van der Wolf</small></span>
+        </button>
+        <button class="gallery__item" type="button" data-lightbox="galerija" data-tags="renginiai" data-src="https://images.pexels.com/photos/15141493/pexels-photo-15141493.jpeg?auto=compress&cs=tinysrgb&w=1600" data-cap="Seminaras ūkininkams. Vieta pavyzdinė: Kemerų k., Radviliškio r. · Foto: Pexels / Matheus Bertelli">
+          <img src="https://images.pexels.com/photos/15141493/pexels-photo-15141493.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Seminaras šviesioje salėje, pranešėjas iš nugaros, klausytojai" loading="lazy" decoding="async">
+          <span class="gallery__cap">Seminaras ūkininkams<small>Vieta pavyzdinė: Kemerų k., Radviliškio r. · Pexels / Matheus Bertelli</small></span>
+        </button>
+        <button class="gallery__item" type="button" data-lightbox="galerija" data-tags="ziema" data-src="https://images.pexels.com/photos/9457154/pexels-photo-9457154.jpeg?auto=compress&cs=tinysrgb&w=1600" data-cap="Šerkšnota žolė rūke. Vieta pavyzdinė: Praviršulio tyrelis, Radviliškio r. · Foto: Pexels / Saara Lindberg">
+          <img src="https://images.pexels.com/photos/9457154/pexels-photo-9457154.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Šerkšnota, rasota žolė rūke, monochrominis kadras" loading="lazy" decoding="async">
+          <span class="gallery__cap">Šerkšnota žolė rūke<small>Vieta pavyzdinė: Praviršulio tyrelis, Radviliškio r. · Pexels / Saara Lindberg</small></span>
+        </button>
+        <button class="gallery__item" type="button" data-lightbox="galerija" data-tags="pelkes" data-src="https://images.pexels.com/photos/15112967/pexels-photo-15112967.jpeg?auto=compress&cs=tinysrgb&w=1600" data-cap="Nusausinta pieva su grioviu. Vieta pavyzdinė: Kemerų k., Baisogalos apylinkės, Radviliškio r. · Foto: Pexels / Maciej Cisowski">
+          <img src="https://images.pexels.com/photos/15112967/pexels-photo-15112967.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Nusausinta šlapia pieva su sausinimo grioviu ir beržais ankstyvą pavasarį" loading="lazy" decoding="async">
+          <span class="gallery__cap">Nusausinta pieva su grioviu<small>Vieta pavyzdinė: Kemerų k., Baisogalos apylinkės, Radviliškio r. · Pexels / Maciej Cisowski</small></span>
+        </button>
+        <button class="gallery__item gallery__item--wide" type="button" data-lightbox="galerija" data-tags="pelkes darbai" data-src="https://images.pexels.com/photos/36553238/pexels-photo-36553238.jpeg?auto=compress&cs=tinysrgb&w=1600" data-cap="Atkurta šlapia pieva su vingiuojančiu kanalu. Vieta pavyzdinė: Kemerų k., Baisogalos apylinkės, Radviliškio r. · Foto: Pexels / Theo Felten">
+          <img src="https://images.pexels.com/photos/36553238/pexels-photo-36553238.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Atkurta šlapia pieva su vingiuojančiu kanalu po giedru dangumi" loading="lazy" decoding="async">
+          <span class="gallery__cap">Atkurta šlapia pieva su vingiuojančiu kanalu<small>Vieta pavyzdinė: Kemerų k., Baisogalos apylinkės, Radviliškio r. · Pexels / Theo Felten</small></span>
+        </button>
+        </div>
+
+        <div data-filter-empty hidden>
+          <div class="callout mt-24">
+            <i class="ph ph-image-square" aria-hidden="true"></i>
+            <p>Pagal pasirinktą temą nuotraukų nėra. <button class="link-u" type="button" data-filter-clear>Rodyti visas nuotraukas</button></p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Salient: Call to Action elementas (tamsus fonas, mygtukai), po juo – Icon List / nuorodų eilutė; mailto nuoroda į komunikacijos specialistę -->
+    <section class="section section--green" id="spaudai" aria-labelledby="spaudai-h">
+      <div class="container">
+        <div class="cta" data-reveal>
+          <span class="cta__shape" aria-hidden="true"></span>
+          <div class="cta__grid">
+            <div>
+              <p class="kicker">Spaudai ir partneriams</p>
+              <h2 id="spaudai-h">Reikia nuotraukų publikacijai?</h2>
+              <p class="lead">Fondo archyvo nuotraukas žiniasklaidai, partneriams ir mokymų medžiagai galime pateikti paprašius. Parašykite komunikacijos specialistei Morganai Danielei ir nurodykite, kur nuotraukos bus naudojamos.</p>
+            </div>
+            <div class="cta__actions">
+              <a class="btn btn--white" href="mailto:morgana@pelkiufondas.lt"><i class="ph ph-envelope" aria-hidden="true"></i> morgana@pelkiufondas.lt</a>
+              <a class="btn btn--ghost-light" href="kontaktai.html">Visi kontaktai</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="galerija-more mt-40" data-reveal>
+          <span class="muted">Daugiau vaizdų ir konteksto:</span>
+          <a class="link-arrow" href="videoteka.html">Videoteka <i class="ph ph-arrow-right" aria-hidden="true"></i></a>
+          <a class="link-arrow" href="pelkes.html">Kas yra pelkės <i class="ph ph-arrow-right" aria-hidden="true"></i></a>
+          <a class="link-arrow" href="projektai.html">Projektai žemėlapyje <i class="ph ph-arrow-right" aria-hidden="true"></i></a>
+          <a class="link-arrow" href="prisidek.html#renginiai">Talkos ir renginiai <i class="ph ph-arrow-right" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Poraštė (Salient: Footer – 4 kolonos, tamsus fonas, Copyright juosta) -->
+  <footer class="footer" id="poraste">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a class="logo" href="index.html" aria-label="Pelkių fondas, pradžia"><img class="logo__mark" src="assets/img/logo-240.png" alt="" width="52" height="52"><span class="logo__word">Pelkių fondas<small>Pelkių atkūrimas ir apsauga</small></span></a>
+          <p>VšĮ „Pelkių fondas“ – ne pelno siekianti nevyriausybinė gamtosauginė organizacija, kuri rūpinasi pelkių ir kitų ekosistemų apsauga, atkūrimu, tvariu naudojimu ir visuomenės švietimu.</p>
+          <div class="footer__social">
+            <a href="https://www.facebook.com/pelkiufondas" aria-label="Facebook"><i class="ph ph-facebook-logo" aria-hidden="true"></i></a>
+            <a href="#" aria-label="YouTube"><i class="ph ph-youtube-logo" aria-hidden="true"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="ph ph-linkedin-logo" aria-hidden="true"></i></a>
+            <a href="#" aria-label="Instagram"><i class="ph ph-instagram-logo" aria-hidden="true"></i></a>
+          </div>
+        </div>
+        <div>
+          <h4>Svetainė</h4>
+          <ul>
+            <li><a href="pelkes.html">Pelkės</a></li>
+            <li><a href="terminu-zodynas.html">Terminų žodynas</a></li>
+            <li><a href="apie-mus.html">Apie mus</a></li>
+            <li><a href="veikla.html">Veikla</a></li>
+            <li><a href="projektai.html">Projektai</a></li>
+            <li><a href="publikacijos.html">Publikacijos</a></li>
+            <li><a href="naujienos.html">Naujienos</a></li>
+            <li><a href="kontaktai.html">Kontaktai</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Prisidėk</h4>
+          <ul>
+            <li><a href="prisidek.html#paremk">Paremk pelkes</a></li>
+            <li><a href="prisidek.html#gpm">Skirk 1,2 % GPM</a></li>
+            <li><a href="prisidek.html#savanoriauk">Savanoriauk</a></li>
+            <li><a href="prisidek.html#renginiai">Talkos ir renginiai</a></li>
+            <li><a href="prisidek.html#naujienlaiskis">Naujienlaiškis</a></li>
+            <li><a href="co2.html">Verslui: CO₂ kompensavimas</a></li>
+            <li><a href="veiklos-ataskaitos.html">Veiklos ataskaitos</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Kontaktai</h4>
+          <div class="footer__contact">
+            <div><i class="ph ph-map-pin" aria-hidden="true"></i><span>Gedimino pr. 1, 4 a. (NVO Avilys)<br>LT-01103 Vilnius, Lietuva</span></div>
+            <div><i class="ph ph-phone" aria-hidden="true"></i><a href="tel:+37065620426">+370 656 20426</a></div>
+            <div><i class="ph ph-envelope" aria-hidden="true"></i><a href="mailto:info@pelkiufondas.lt">info@pelkiufondas.lt</a></div>
+            <div><i class="ph ph-identification-card" aria-hidden="true"></i><span>Įmonės kodas 302822289<br>PVM kodas LT100017689218</span></div>
+            <div><i class="ph ph-bank" aria-hidden="true"></i><span>LT24 7044 0600 0784 1146<br>AB SEB bankas</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span><span class="footer__sun" aria-hidden="true"></span>© <span data-year>2026</span> VšĮ „Pelkių fondas“. Nuotraukos ir video makete – Pexels (nemokama licencija).</span>
+        <div class="footer__legal">
+          <a href="kontaktai.html#privatumas">Privatumo politika</a>
+          <a href="apie-mus.html#dokumentai">Įstatai</a>
+          <a href="galerija.html">Galerija</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/pages/galerija.js" defer></script>
+</body>
+</html>

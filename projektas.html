@@ -1,0 +1,554 @@
+<!doctype html>
+<html lang="lt">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Guodžių durpyno atkūrimas ir apsauga | Pelkių fondas</title>
+  <meta name="description" content="Tarptautinis projektas „Guodžių durpyno atkūrimas ir apsauga“: Biržų rajone kartu su Michaelio Zukovo fondu atkuriame apie 100 ha apleisto durpių karjero hidrologinį režimą – klimatui, biologinei įvairovei ir švariam vandeniui.">
+  <!-- Bendra <head> dalis: įklijuoti į kiekvieną puslapį po <title> ir <meta name="description"> -->
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/Fraunces.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/Manrope.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>document.documentElement.classList.add('js');</script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="stylesheet" href="assets/css/pages/projektas.css">
+</head>
+<body class="has-transparent-header" data-nav="veikla">
+  <a class="skip-link" href="#turinys">Pereiti prie turinio</a>
+
+  <!-- Maketo juosta: į WordPress nekeliama -->
+  <div class="mockbar" role="region" aria-label="Maketo juosta">
+    <div class="container">
+      <strong>Dizaino maketas <span>·</span> Pelkių fondas</strong>
+      <span>WordPress + Salient</span>
+      <label class="mockbar__toggle" title="Žymekliai rodo, kas makete yra nauja, palyginti su dabartine svetaine"><input type="checkbox" id="toggle-newfn" checked> <span class="new-fn__badge">Nauja</span> rodyti naujas funkcijas</label>
+      <nav class="mockbar__pages" aria-label="Maketo puslapiai">
+        <a href="index.html">Pradinis</a><a href="pelkes.html">Pelkės</a><a href="apie-mus.html">Apie mus</a><a href="veikla.html">Veikla</a><a href="naujienos.html">Naujienos</a><a href="kontaktai.html">Kontaktai</a><a href="prisidek.html">Prisidėk</a>
+      </nav>
+    </div>
+  </div>
+
+  <!-- Antraštė (Salient: Header layout „Standard“, logotipas kairėje, meniu dešinėje, „Prisidėk“ mygtukas, paieška, kalbos) -->
+  <header class="site-header">
+    <div class="container container--wide site-header__inner">
+      <a class="logo" href="index.html" aria-label="Pelkių fondas, pradžia">
+        <img class="logo__mark" src="assets/img/logo-240.png" alt="" width="52" height="52">
+        <span class="logo__word">Pelkių fondas<small>Pelkių atkūrimas ir apsauga</small></span>
+      </a>
+      <nav class="nav" aria-label="Pagrindinis meniu">
+        <a class="nav__link" href="index.html" data-nav-key="pradinis">Pradinis</a>
+        <div class="nav__item" data-drop data-nav-key="pelkes">
+          <button class="nav__link" type="button" aria-expanded="false" aria-haspopup="true">Pelkės <i class="ph ph-caret-down" aria-hidden="true"></i></button>
+          <div class="nav__drop">
+            <a class="drop-link" href="pelkes.html"><span class="drop-link__icon"><i class="ph ph-leaf"></i></span><span class="drop-link__text"><strong>Kas yra pelkės</strong><span>Apibrėžimai, reikšmė, būklė Lietuvoje</span></span></a>
+            <a class="drop-link" href="pelkes.html#tipai"><span class="drop-link__icon"><i class="ph ph-tree-evergreen"></i></span><span class="drop-link__text"><strong>Pelkių tipai ir buveinės</strong><span>Žemapelkės, tarpinės, aukštapelkės, EB buveinės</span></span></a>
+            <a class="drop-link" href="pelkes.html#gresmes"><span class="drop-link__icon"><i class="ph ph-warning"></i></span><span class="drop-link__text"><strong>Grėsmės ir atkūrimas</strong><span>Kodėl pelkės nyksta ir kaip jas atkuriame</span></span></a>
+            <a class="drop-link" href="terminu-zodynas.html"><span class="drop-link__icon"><i class="ph ph-book-open"></i></span><span class="drop-link__text"><strong>Terminų žodynas</strong><span>Pelkių ir durpynų sąvokos su paieška</span></span></a>
+            <a class="drop-link" href="galerija.html"><span class="drop-link__icon"><i class="ph ph-images"></i></span><span class="drop-link__text"><strong>Galerija</strong><span>Pelkių ir mūsų darbų nuotraukos</span></span></a>
+          </div>
+        </div>
+        <a class="nav__link" href="apie-mus.html" data-nav-key="apie-mus">Apie mus</a>
+        <div class="nav__item" data-drop data-nav-key="veikla">
+          <button class="nav__link" type="button" aria-expanded="false" aria-haspopup="true">Veikla <i class="ph ph-caret-down" aria-hidden="true"></i></button>
+          <div class="nav__drop nav__drop--wide">
+            <a class="drop-link" href="veikla.html"><span class="drop-link__icon"><i class="ph ph-compass"></i></span><span class="drop-link__text"><strong>Veiklos kryptys</strong><span>Biologinė įvairovė, atkūrimas, klimatas, pelkininkystė</span></span></a>
+            <a class="drop-link" href="co2.html"><span class="drop-link__icon"><i class="ph ph-cloud"></i></span><span class="drop-link__text"><strong>CO₂ emisijų mažinimas</strong><span>Verslui: atkurkite pelkes, mažinkite anglies pėdsaką</span></span></a>
+            <a class="drop-link" href="projektai.html"><span class="drop-link__icon"><i class="ph ph-map-pin"></i></span><span class="drop-link__text"><strong>Projektai</strong><span>Vykdomi ir įgyvendinti projektai žemėlapyje</span></span></a>
+            <a class="drop-link" href="paslaugos.html"><span class="drop-link__icon"><i class="ph ph-briefcase"></i></span><span class="drop-link__text"><strong>Paslaugos</strong><span>Konsultacijos, tyrimai, švietimas</span></span></a>
+            <a class="drop-link" href="publikacijos.html"><span class="drop-link__icon"><i class="ph ph-books"></i></span><span class="drop-link__text"><strong>Publikacijos</strong><span>Straipsniai, knygos, lankstinukai</span></span></a>
+            <a class="drop-link" href="videoteka.html"><span class="drop-link__icon"><i class="ph ph-play-circle"></i></span><span class="drop-link__text"><strong>Videoteka</strong><span>Filmai apie pelkes ir mūsų darbus</span></span></a>
+            <a class="drop-link" href="veiklos-ataskaitos.html"><span class="drop-link__icon"><i class="ph ph-file-text"></i></span><span class="drop-link__text"><strong>Veiklos ataskaitos</strong><span>Metinės veiklos ir finansinės ataskaitos</span></span></a>
+            <div class="nav__drop-foot"><span class="muted">Norite prisidėti prie veiklų?</span><a class="link-u" href="prisidek.html#savanoriauk">Savanoriauk</a></div>
+          </div>
+        </div>
+        <a class="nav__link" href="naujienos.html" data-nav-key="naujienos">Naujienos</a>
+        <a class="nav__link" href="kontaktai.html" data-nav-key="kontaktai">Kontaktai</a>
+      </nav>
+      <div class="header-actions">
+        <div class="lang" aria-label="Kalba"><span aria-current="true" lang="lt">LT</span><a href="#" data-lang="en" hreflang="en">EN</a></div>
+        <button class="icon-btn icon-btn--search" type="button" data-search-open aria-label="Paieška svetainėje"><i class="ph ph-magnifying-glass" aria-hidden="true"></i></button>
+        <a class="btn btn--sun btn--sm" href="prisidek.html">Prisidėk</a>
+        <button class="burger icon-btn" type="button" aria-label="Atidaryti meniu" aria-expanded="false" aria-controls="mobile-menu"><i class="ph ph-list" aria-hidden="true"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobilus meniu (Salient: Off Canvas Menu) -->
+  <div class="mobile-menu" id="mobile-menu" role="dialog" aria-modal="true" aria-label="Meniu" tabindex="-1">
+    <div class="container">
+      <div class="mobile-menu__top">
+        <a class="logo" href="index.html" aria-label="Pelkių fondas, pradžia"><img class="logo__mark" src="assets/img/logo-240.png" alt="" width="52" height="52"><span class="logo__word">Pelkių fondas<small>Pelkių atkūrimas ir apsauga</small></span></a>
+        <button class="mobile-menu__close" type="button" aria-label="Uždaryti meniu"><i class="ph ph-x" aria-hidden="true"></i></button>
+      </div>
+      <nav class="mobile-menu__links" aria-label="Meniu mobiliesiems">
+        <a href="index.html">Pradinis <i class="ph ph-arrow-right" aria-hidden="true"></i></a>
+        <details><summary>Pelkės <i class="ph ph-caret-down" aria-hidden="true"></i></summary><div><a href="pelkes.html">Kas yra pelkės</a><a href="pelkes.html#tipai">Pelkių tipai ir buveinės</a><a href="pelkes.html#gresmes">Grėsmės ir atkūrimas</a><a href="terminu-zodynas.html">Terminų žodynas</a><a href="galerija.html">Galerija</a></div></details>
+        <a href="apie-mus.html">Apie mus <i class="ph ph-arrow-right" aria-hidden="true"></i></a>
+        <details><summary>Veikla <i class="ph ph-caret-down" aria-hidden="true"></i></summary><div><a href="veikla.html">Veiklos kryptys</a><a href="co2.html">CO₂ emisijų mažinimas</a><a href="projektai.html">Projektai</a><a href="paslaugos.html">Paslaugos</a><a href="publikacijos.html">Publikacijos</a><a href="videoteka.html">Videoteka</a><a href="veiklos-ataskaitos.html">Veiklos ataskaitos</a></div></details>
+        <a href="naujienos.html">Naujienos <i class="ph ph-arrow-right" aria-hidden="true"></i></a>
+        <a href="kontaktai.html">Kontaktai <i class="ph ph-arrow-right" aria-hidden="true"></i></a>
+        <a href="prisidek.html">Prisidėk <i class="ph ph-arrow-right" aria-hidden="true"></i></a>
+      </nav>
+      <div class="mobile-menu__foot">
+        <a class="btn btn--sun" href="prisidek.html">Paremk pelkes</a>
+        <button class="btn btn--ghost-light" type="button" data-search-open><i class="ph ph-magnifying-glass" aria-hidden="true"></i> Paieška</button>
+        <div class="lang" aria-label="Kalba"><span aria-current="true">LT</span><a href="#" data-lang="en" hreflang="en">EN</a></div>
+      </div>
+    </div>
+  </div>
+  <main id="turinys">
+
+    <!-- Salient: Page Header – Row su „Row BG video“ (Pexels, overlay), Breadcrumb (Yoast breadcrumbs / Salient Page Header), žymos – Nectar Badge, Split Line Heading antraštei, Nectar Button × 2. Projektas – CPT „Projektai“ įrašas (Single Project šablonas, laukai per ACF) -->
+    <section class="page-header page-header--tall">
+      <div class="video-bg video-bg--soft">
+        <img src="https://images.pexels.com/videos/13277327/4k-aerial-afternoon-clouds-13277327.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=630&w=1200" alt="">
+        <video data-src="https://videos.pexels.com/video-files/13277327/13277327-hd_1920_1080_30fps.mp4" data-src-sd="https://videos.pexels.com/video-files/13277327/13277327-sd_960_540_30fps.mp4" muted loop playsinline poster="https://images.pexels.com/videos/13277327/4k-aerial-afternoon-clouds-13277327.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=630&w=1200"></video>
+      </div>
+      <div class="container">
+        <ol class="breadcrumb"><li><a href="index.html">Pradinis</a></li><li><a href="veikla.html">Veikla</a></li><li><a href="projektai.html">Projektai</a></li><li>Guodžių durpynas</li></ol>
+        <div class="cluster project-tags" data-reveal>
+          <span class="tag tag--live">Vykdomas</span>
+          <span class="tag tag--water"><i class="ph ph-map-pin" aria-hidden="true"></i> Biržų r.</span>
+          <span class="tag tag--water"><i class="ph ph-calendar-blank" aria-hidden="true"></i> nuo 2026 m.</span>
+          <span class="tag tag--sun">Pelkių atkūrimas</span>
+          <span class="tag tag--outline">Tarptautinis</span>
+        </div>
+        <h1 data-split>Guodžių durpyno atkūrimas <em>ir apsauga</em></h1>
+        <p class="lead" data-reveal style="--d:200ms">Apleistame Guodžių durpių gavybos karjere Biržų rajone kartu su Michaelio Zukovo fondu atkuriame apie 100 ha pelkės hidrologinį režimą, kad durpynas vėl kauptų anglį, valytų vandenį ir taptų namais pelkių rūšims.</p>
+        <div class="page-header__actions" data-reveal style="--d:320ms">
+          <a class="btn btn--sun" href="prisidek.html#paremk">Paremk projektą <span class="btn__icon"><i class="ph ph-arrow-right" aria-hidden="true"></i><i class="ph ph-arrow-right" aria-hidden="true"></i></span></a>
+          <a class="btn btn--ghost-light" href="projektai.html"><i class="ph ph-map-trifold" aria-hidden="true"></i> Visi projektai</a>
+        </div>
+      </div>
+      <span class="video-caption">Šlapynė su vandens telkiniais saulėlydyje <span>· iliustracija, Pexels</span></span>
+      <button class="video-toggle" type="button"></button>
+      <span class="video-credit">Video: Pexels / Matthias Groeneveld</span>
+    </section>
+
+    <!-- Salient: Page Submenu (prilipęs vidinis meniu su aktyvia sekcija) + Nectar Button „Paremk“ -->
+    <nav class="subnav" aria-label="Puslapio skyriai">
+      <div class="container">
+        <span class="subnav__label">Šiame puslapyje</span>
+        <a href="#tikslas">Tikslas</a>
+        <a href="#teritorija">Teritorija</a>
+        <a href="#ka-darome">Ką darome</a>
+        <a href="#rezultatai">Rezultatai</a>
+        <a href="#naujienos">Naujienos</a>
+        <a href="#galerija">Galerija</a>
+        <a href="#pries-po">Prieš / po</a>
+        <a href="#partneriai">Partneriai</a>
+        <a href="#susije">Susiję projektai</a>
+        <a class="btn btn--sun btn--sm subnav__cta" href="prisidek.html#paremk">Paremk</a>
+      </div>
+    </nav>
+
+    <!-- Salient: Row su 2 kolonomis (8/12 turinys + 4/12 „Sticky column“ faktų kortelė); kairėje – Heading, Text block, Icon List, Nectar Fancy Box, Steps (Icon with Text), Milestone, Progress bar, Post Loop Builder, Image Gallery (lightbox), Image Comparison; dešinėje – faktų kortelė iš ACF laukų + Salient Social sharing -->
+    <section class="section" id="projektas" aria-label="Projekto aprašymas">
+      <div class="container">
+        <div class="project-layout">
+
+          <div class="project-main">
+
+            <!-- Salient: Heading + Text block + „Trumpai“ (Nectar Fancy Box arba Highlighted Text) + Icon List (3 punktai) + Callout (Nectar Alert) -->
+            <section class="project-section" id="tikslas" aria-labelledby="tikslas-h">
+              <div class="section-head">
+                <p class="kicker" data-nr="01">Projekto tikslas</p>
+                <h2 id="tikslas-h" data-split>Grąžinti vandenį <em>į apleistą durpyną</em></h2>
+                <p class="lead">Projekto tikslas – atkurti degradavusio Guodžių durpyno hidrologinį režimą, sudarant palankias sąlygas atsikurti pelkių ekosistemai, taip prisidedant prie klimato kaitos švelninimo, biologinės įvairovės bei sveikos švaraus vandens apykaitos atkūrimo.</p>
+              </div>
+              <div class="brief-box" data-reveal>
+                <span class="brief-box__label"><i class="ph ph-list-checks" aria-hidden="true"></i> Trumpai</span>
+                <ul>
+                  <li>Teritorija – apleistas Guodžių durpių gavybos karjeras (~100 ha) Biržų rajone.</li>
+                  <li>Tarptautinis projektas kartu su Michaelio Zukovo fondu, Greifsvaldo pelkių centro partneriu (Vokietija).</li>
+                  <li>Darbai: hidrologinio režimo atkūrimas – vanduo sulaikomas sausinimo grioviuose, kad vėl laikytųsi ties durpių paviršiumi.</li>
+                  <li>Nauda: mažiau ŠESD emisijų, atsikurianti pelkių augalija ir gyvūnija, švaresnis vanduo.</li>
+                </ul>
+              </div>
+              <p>Guodžių durpynas dešimtmečius buvo naudojamas durpių gavybai, o baigus kasybą liko nusausintas ir apleistas. Sausinimo grioviai iš durpių klodo toliau traukia vandenį, todėl durpės skaidosi ir į atmosferą išsiskiria šiltnamio efektą sukeliančios dujos (ŠESD), o pelkėms būdingos rūšys neturi kur įsikurti. Atkūrę hidrologinį režimą sudarysime sąlygas durpynui vėl tapti gyva, anglį kaupiančia pelke.</p>
+              <ul class="icon-list mt-24" data-reveal-group>
+                <li><i class="ph ph-cloud" aria-hidden="true"></i><div><strong>Klimatui</strong><p>Užliejus apleistą karjerą durpių skaidymasis sustoja – durpynas nustoja būti ŠESD šaltiniu ir vėl pradeda kaupti anglį.</p></div></li>
+                <li><i class="ph ph-butterfly" aria-hidden="true"></i><div><strong>Biologinei įvairovei</strong><p>Grįžus vandeniui atsikuria pelkių augalija – kiminai, švyliai, viksvos – ir nuo jų priklausomos gyvūnų rūšys.</p></div></li>
+                <li><i class="ph ph-drop" aria-hidden="true"></i><div><strong>Švariam vandeniui</strong><p>Pelkė sulaiko ir filtruoja vandenį, išlygina potvynius bei sausras ir palaiko sveiką vandens apykaitą apylinkėse.</p></div></li>
+              </ul>
+              <div class="callout callout--peat mt-24" data-reveal>
+                <i class="ph ph-info" aria-hidden="true"></i>
+                <p>Lietuvoje durpių karjerai užima apie 20 tūkst. ha, iš kurių daugiau nei pusė yra apleisti, tačiau jų rekultivacija atkuriant pelkių ekosistemas vis dar nepopuliari. Guodžiai – vienas didžiausių tokių atkūrimo pavyzdžių šalyje. <a class="link-u" href="pelkes.html#atkurimas">Kaip atkuriame pelkes</a></p>
+              </div>
+            </section>
+
+            <!-- Salient: Heading + Row 2 kolonos: Interactive Map (Leaflet / Salient „Google Map“ elementas su vienu žymekliu) + 3 Nectar Fancy Box faktai; Image (Mask reveal) su užrašu. „Nauja“ – projekto žemėlapis -->
+            <section class="project-section new-fn" id="teritorija" aria-labelledby="teritorija-h">
+              <span class="new-fn__badge" data-tip="Nauja: kiekvieno projekto puslapyje – žemėlapis su teritorijos žymekliu. WordPress'e: Leaflet Map įskiepis arba Salient Google Map elementas; koordinatės – ACF laukas projekto įraše." tabindex="0">Nauja</span>
+              <div class="section-head">
+                <p class="kicker" data-nr="02">Teritorija</p>
+                <h2 id="teritorija-h" data-split>Apleistas Guodžių durpių <em>gavybos karjeras</em></h2>
+                <p class="lead">Projekto teritorija – apie 100 ha apleisto durpių karjero Biržų rajone, Šiaurės Lietuvoje, netoli Latvijos sienos.</p>
+              </div>
+              <div class="territory" data-reveal>
+                <div class="map map--small" id="map" data-lat="56.12" data-lng="24.95" data-title="Guodžių durpyno atkūrimas ir apsauga" data-place="Guodžių durpių gavybos karjeras, Biržų r. · ~100 ha" role="region" aria-label="Žemėlapis: projekto teritorija Biržų rajone" tabindex="0">
+                  <p class="map__fallback">Žemėlapis kraunasi (OpenStreetMap)…</p>
+                </div>
+                <div class="territory__facts">
+                  <div class="icon-card icon-card--row"><span class="icon-card__icon"><i class="ph ph-map-pin" aria-hidden="true"></i></span><div><h3>Biržų rajonas</h3><p>Guodžių durpių gavybos karjeras, Šiaurės Lietuva. Žemėlapyje – apytikslė vietovė.</p></div></div>
+                  <div class="icon-card icon-card--row"><span class="icon-card__icon"><i class="ph ph-ruler" aria-hidden="true"></i></span><div><h3>Apie 100 ha</h3><p>Plotas, kuriame atkursime hidrologinį režimą – vienas didžiausių fondo atkūrimo projektų.</p></div></div>
+                  <div class="icon-card icon-card--row"><span class="icon-card__icon"><i class="ph ph-shovel" aria-hidden="true"></i></span><div><h3>Išeksploatuotas durpynas</h3><p>Baigus durpių gavybą karjeras liko nusausintas ir apleistas – be rekultivacijos.</p></div></div>
+                </div>
+              </div>
+              <figure class="figure figure--wide mt-24" data-mask>
+                <img src="https://images.pexels.com/photos/36553239/pexels-photo-36553239.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Atkuriama šlapynė: vandens vagos pievoje, ekskavatorius tolumoje">
+                <figcaption class="figure__cap">Atkuriama šlapynė – iliustracija (Pexels / Theo Felten)</figcaption>
+              </figure>
+              <p class="sr-note mt-24">Makete rodomos Pexels iliustracijos; svetainėje čia bus Guodžių durpyno nuotraukos iš fondo archyvo. <a class="link-arrow" href="projektai.html">Visi projektai žemėlapyje <i class="ph ph-arrow-right" aria-hidden="true"></i></a></p>
+            </section>
+
+            <!-- Salient: Heading + 4 × Icon with Text „Steps“ (numeruoti žingsniai, Column animation) + Icon List dokumentams (Document Library Lite / Button su failo nuoroda) -->
+            <section class="project-section" id="ka-darome" aria-labelledby="ka-darome-h">
+              <div class="section-head">
+                <p class="kicker" data-nr="03">Ką darome</p>
+                <h2 id="ka-darome-h" data-split>Keturi žingsniai <em>nuo griovio iki pelkės</em></h2>
+                <p class="lead">Pelkės atkūrimas – tai pirmiausia vandens sugrąžinimas. Dirbame pagal fondo ir Greifsvaldo pelkių centro metodiką, kurią išbandėme Aukštumaloje, Tartoke ir kituose durpynuose.</p>
+              </div>
+              <div class="steps" data-reveal-group>
+                <div class="step"><h3>Vertinimas</h3><p>Įvertiname karjero durpių klodą, vandens lygį, buveines ir ŠESD emisijas – taip žinome, nuo ko pradedame ir ką turime pasiekti.</p></div>
+                <div class="step"><h3>Hidrologijos sprendiniai</h3><p>Parengiame hidrologinio režimo atkūrimo projektą: kuriuose grioviuose ir kokiu aukščiu sulaikyti vandenį, kad jis vėl laikytųsi ties durpių paviršiumi.</p></div>
+                <div class="step"><h3>Užtūros ir pylimai</h3><p>Užtvenkiame sausinimo griovius durpių, medžio ar OSB plokščių užtūromis ir pylimais su geomembrana – patikrintais Aukštumalos atkūrime sprendimais.</p></div>
+                <div class="step"><h3>Stebėsena ir apsauga</h3><p>Stebime vandens lygį ir augaliją: grįžtantys kiminai ir švyliai rodo, kad pelkė atsikuria. Rūpinamės, kad teritorija išliktų apsaugota ir ateityje.</p></div>
+              </div>
+              <p class="steps-note">Etapai apibendrinti pagal fondo atkūrimo projektų metodiką – konkretūs Guodžių durpyno sprendiniai rengiami projekto metu.</p>
+              <h3 class="mt-40">Metodika ir skaitiniai</h3>
+              <a class="doc" href="#" title="PDF (makete neįkeltas)"><span class="doc__icon"><i class="ph ph-file-pdf" aria-hidden="true"></i></span><span class="doc__text"><strong>Hidrologinio režimo atkūrimas pelkėse ir kituose durpynuose. Metodinė priemonė</strong><span>Pawlaczyk P., Áskelsdóttir S., Jarašius L., Sendžikaitė J. ir kt. · PDF · 2025</span></span><span class="doc__meta"><span class="tag">LT</span></span><span class="doc__dl"><i class="ph ph-download-simple" aria-hidden="true"></i></span></a>
+              <a class="doc" href="#" title="PDF (makete neįkeltas)"><span class="doc__icon"><i class="ph ph-file-pdf" aria-hidden="true"></i></span><span class="doc__text"><strong>Išankstinė durpių karjerų rekultivacija</strong><span>Informacinis biuletenis, projektas PELKĖS KLIMATUI · PDF · 2025</span></span><span class="doc__meta"><span class="tag">LT</span></span><span class="doc__dl"><i class="ph ph-download-simple" aria-hidden="true"></i></span></a>
+              <a class="doc" href="https://doi.org/10.22630/srees.10809"><span class="doc__icon doc__icon--green"><i class="ph ph-article" aria-hidden="true"></i></span><span class="doc__text"><strong>Drained and forgotten peat extraction sites: economic and carbon impacts of peat and water loss in spontaneously forested Lithuanian peatlands</strong><span>Manton M., Grigaliūnas V., Jarašius L., Sendžikaitė J. ir kt. · SREES, 34(4) · 2025</span></span><span class="doc__meta"><span class="tag">EN</span><span>DOI</span></span><span class="doc__dl"><i class="ph ph-arrow-square-out" aria-hidden="true"></i></span></a>
+            </section>
+
+            <!-- Salient: Heading + 3 × Milestone (skaičiai su animacija) + Progress bar (Nectar Progress Bar, žyma „Pavyzdys“) + Icon List „Laukiami rezultatai“ + Nectar Alert -->
+            <section class="project-section" id="rezultatai" aria-labelledby="rezultatai-h">
+              <div class="section-head">
+                <p class="kicker" data-nr="04">Rezultatai</p>
+                <h2 id="rezultatai-h" data-split>Ko siekiame <em>iki projekto pabaigos</em></h2>
+                <p class="lead">Projektas prasidėjo 2026 m. rudenį, todėl rezultatus pildysime čia ir projekto naujienose. Žemiau – planuojami rodikliai ir eigos pavyzdys.</p>
+              </div>
+              <div class="stats stats--3" data-reveal-group>
+                <div class="stat"><span class="stat__num"><span data-count-to="100" data-prefix="~"></span><small>ha</small></span><span class="stat__label">planuojama atkurti hidrologinį režimą</span><span class="stat__src">Šaltinis: projekto aprašymas</span></div>
+                <div class="stat"><span class="stat__num"><span data-count-to="2"></span><small>partneriai</small></span><span class="stat__label">iš Vokietijos – Zukovo fondas ir Greifsvaldo pelkių centras</span><span class="stat__src">Šaltinis: naujiena 2026-09-23</span></div>
+                <div class="stat"><span class="stat__num"><span data-count-to="110" data-prefix="~"></span><small>ha</small></span><span class="stat__label">pelkių fondas su partneriais jau atkūrė Lietuvoje</span><span class="stat__src">Šaltinis: CO₂ puslapis</span></div>
+              </div>
+              <div class="progress-box mt-40" data-reveal>
+                <div class="progress-head"><strong>Projekto eiga</strong><span class="cluster"><span class="tag tag--outline">Pavyzdys</span><span class="tag tag--live">2026–2029</span></span></div>
+                <div class="progress progress--water" data-progress="12" role="img" aria-label="Projekto eiga: apie 12 procentų, parengiamasis etapas">
+                  <div class="progress__bar"><div class="progress__fill"></div></div>
+                  <div class="progress__meta"><span><strong>Parengiamasis etapas</strong> · teritorijos vertinimas</span><span>12 %</span></div>
+                </div>
+                <p class="sr-note mt-24">Eigos juosta ir laikotarpis makete yra pavyzdiniai – WordPress'e procentą ir etapą redaguos fondo komanda projekto įraše.</p>
+              </div>
+              <h3 class="mt-40">Laukiami rezultatai</h3>
+              <ul class="check-list" data-reveal-group>
+                <li><strong>Atkurtas hidrologinis režimas</strong> apie 100 ha apleisto durpių karjero – vanduo vėl laikosi ties durpių paviršiumi.</li>
+                <li><strong>Sustabdytas durpių skaidymasis</strong> ir sumažintos ŠESD emisijos iš nusausinto durpyno.</li>
+                <li><strong>Atsikurianti pelkių ekosistema</strong> – palankios sąlygos kiminams, švyliams ir pelkių gyvūnijai.</li>
+                <li><strong>Sveika švaraus vandens apykaita</strong> teritorijoje ir jos apylinkėse.</li>
+                <li><strong>Ilgalaikė teritorijos apsauga</strong> ir patirtis, pritaikoma kitiems apleistiems Lietuvos karjerams.</li>
+              </ul>
+            </section>
+
+            <!-- Salient: Heading + Post Loop Builder (Posts, filtras pagal susietą projektą – ACF relationship; 2 įrašai: foto, data, kategorija, skaitymo laikas) + Nectar Button „Visos naujienos“ -->
+            <section class="project-section" id="naujienos" aria-labelledby="naujienos-h">
+              <div class="section-head section-head--row">
+                <div>
+                  <p class="kicker" data-nr="05">Projekto naujienos</p>
+                  <h2 id="naujienos-h" data-split>Kas vyksta <em>Guodžiuose</em></h2>
+                </div>
+                <a class="link-arrow" href="naujienos.html?f=projektai">Visos naujienos <i class="ph ph-arrow-right" aria-hidden="true"></i></a>
+              </div>
+              <div class="grid grid--2" data-reveal-group>
+                <article class="card">
+                  <div class="card__media"><img src="https://images.pexels.com/photos/15112967/pexels-photo-15112967.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Nusausinta šlapia pieva su grioviu ir beržais ankstyvą pavasarį"><span class="tag tag--sun">Projektai</span><span class="card__date">23<small>rugs.</small></span></div>
+                  <div class="card__body">
+                    <div class="card__meta"><span><i class="ph ph-calendar-blank" aria-hidden="true"></i><time datetime="2026-09-23">2026-09-23</time></span><span><i class="ph ph-clock" aria-hidden="true"></i>2 min. skaitymo</span><span class="tag tag--outline">LT</span></div>
+                    <h3><a href="naujiena.html">Guodžių durpyną prikelsime naujam gyvenimui</a></h3>
+                    <p>Džiaugiamės, kad tarptautinį Guodžių durpyno (Biržų r.) atkūrimo projektą vykdome bendradarbiaudami su Michaelio Zukovo fondu – Greifsvaldo pelkių centro partneriu. Kartu sieksime atkurti apie 100 ha apleisto durpių karjero teritorijos.</p>
+                    <div class="card__foot"><span class="small muted"><i class="ph ph-user" aria-hidden="true"></i> Jūratė Sendžikaitė</span></div>
+                    <span class="card__go"><i class="ph ph-arrow-up-right" aria-hidden="true"></i></span>
+                  </div>
+                </article>
+                <article class="card">
+                  <div class="card__media"><img src="https://images.pexels.com/photos/36553240/pexels-photo-36553240.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Ekskavatorius dirba užlietoje pievoje, atspindys balose"><span class="tag tag--sun">Projektai</span><span class="card__date">23<small>rugs.</small></span></div>
+                  <div class="card__body">
+                    <div class="card__meta"><span><i class="ph ph-calendar-blank" aria-hidden="true"></i><time datetime="2026-09-23">2026-09-23</time></span><span><i class="ph ph-clock" aria-hidden="true"></i>2 min. skaitymo</span><span class="tag tag--outline">EN</span></div>
+                    <h3><a href="naujiena.html" lang="en">Restoring the Guodžiai Peatland for a New Beginning</a></h3>
+                    <p>Naujienos versija anglų kalba partneriams ir tarptautinei bendruomenei: kartu su Michaelio Zukovo fondu atkursime apie 100 ha apleistos durpių gavybos teritorijos.</p>
+                    <div class="card__foot"><span class="small muted"><i class="ph ph-user" aria-hidden="true"></i> Jūratė Sendžikaitė</span></div>
+                    <span class="card__go"><i class="ph ph-arrow-up-right" aria-hidden="true"></i></span>
+                  </div>
+                </article>
+              </div>
+            </section>
+
+            <!-- Salient: Heading + Image Gallery (Nectar Gallery / Masonry, lightbox – „Salient Lightbox“); nuotraukos – projekto įrašo galerijos laukas -->
+            <section class="project-section" id="galerija" aria-labelledby="galerija-h">
+              <div class="section-head section-head--row">
+                <div>
+                  <p class="kicker" data-nr="06">Galerija</p>
+                  <h2 id="galerija-h" data-split>Teritorija <em>ir darbai</em></h2>
+                </div>
+                <a class="link-arrow" href="galerija.html?f=darbai">Visa galerija <i class="ph ph-arrow-right" aria-hidden="true"></i></a>
+              </div>
+              <div class="gallery" data-reveal-group>
+                <button class="gallery__item gallery__item--wide" type="button" data-lightbox="projektas" data-src="https://images.pexels.com/photos/36553239/pexels-photo-36553239.jpeg?auto=compress&cs=tinysrgb&w=1600" data-cap="Atkuriama šlapynė: vandens vagos pievoje – iliustracija (Pexels / Theo Felten)"><img src="https://images.pexels.com/photos/36553239/pexels-photo-36553239.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Atkuriama šlapynė: vandens vagos pievoje, ekskavatorius tolumoje" loading="lazy"><span class="gallery__cap">Vandens vagos atkuriamoje teritorijoje</span></button>
+                <button class="gallery__item" type="button" data-lightbox="projektas" data-src="https://images.pexels.com/photos/36553240/pexels-photo-36553240.jpeg?auto=compress&cs=tinysrgb&w=1600" data-cap="Ekskavatorius užlietoje pievoje – iliustracija (Pexels / Theo Felten)"><img src="https://images.pexels.com/photos/36553240/pexels-photo-36553240.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Ekskavatorius dirba užlietoje pievoje, atspindys balose" loading="lazy"><span class="gallery__cap">Užtūrų įrengimo darbai</span></button>
+                <button class="gallery__item" type="button" data-lightbox="projektas" data-src="https://images.pexels.com/photos/35598624/pexels-photo-35598624.jpeg?auto=compress&cs=tinysrgb&w=1600" data-cap="Ekskavatorius valo kanalą pelkėje – iliustracija (Pexels / Serhii Barkanov)"><img src="https://images.pexels.com/photos/35598624/pexels-photo-35598624.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Ekskavatorius valo kanalą pelkėje tarp beržų ir nendrių" loading="lazy"><span class="gallery__cap">Darbai sausinimo griovyje</span></button>
+                <button class="gallery__item" type="button" data-lightbox="projektas" data-src="https://images.pexels.com/photos/27130444/pexels-photo-27130444.jpeg?auto=compress&cs=tinysrgb&w=1600" data-cap="Ekskavatorius prie kanalo su atspindžiu vandenyje – iliustracija (Pexels / Jan van der Wolf)"><img src="https://images.pexels.com/photos/27130444/pexels-photo-27130444.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Geltonas ekskavatorius prie kanalo su atspindžiu vandenyje" loading="lazy"><span class="gallery__cap">Technika prie užtvenkto griovio</span></button>
+                <button class="gallery__item" type="button" data-lightbox="projektas" data-src="https://images.pexels.com/photos/37438736/pexels-photo-37438736.jpeg?auto=compress&cs=tinysrgb&w=1600" data-cap="Kupstuota žemapelkė su plikais beržais – iliustracija (Pexels / Maksim Zaviktorin)"><img src="https://images.pexels.com/photos/37438736/pexels-photo-37438736.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Kupstuota žemapelkė su plikais beržais, niūrus dangus" loading="lazy"><span class="gallery__cap">Apleisto durpyno pakraštys rudenį</span></button>
+                <button class="gallery__item" type="button" data-lightbox="projektas" data-src="https://images.pexels.com/photos/36553238/pexels-photo-36553238.jpeg?auto=compress&cs=tinysrgb&w=1600" data-cap="Atkurta šlapia pieva su vingiuojančiu kanalu – iliustracija (Pexels / Theo Felten)"><img src="https://images.pexels.com/photos/36553238/pexels-photo-36553238.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Atkurta šlapia pieva su vingiuojančiu kanalu, giedras dangus" loading="lazy"><span class="gallery__cap">Taip atrodys atkurta teritorija</span></button>
+              </div>
+              <p class="sr-note mt-24">Nuotraukos makete – Pexels iliustracijos; svetainėje galerija pildoma projekto eigos nuotraukomis iš fondo archyvo.</p>
+            </section>
+
+            <!-- Salient: Heading + Image Comparison (WPBakery „Image Comparison“ / Nectar „Before &amp; After“ elementas) – „Nauja“; makete – du <img> + range slankiklis su clip-path (assets/js/pages/projektas.js) -->
+            <section class="project-section new-fn" id="pries-po" aria-labelledby="pries-po-h">
+              <span class="new-fn__badge" data-tip="Nauja: „prieš / po“ palyginimas su slankikliu. WordPress'e – Salient Image Comparison elementas (dvi nuotraukos iš projekto archyvo), jokių papildomų įskiepių." tabindex="0">Nauja</span>
+              <div class="section-head">
+                <p class="kicker" data-nr="07">Prieš / po</p>
+                <h2 id="pries-po-h" data-split>Nuo nusausinto durpyno <em>iki gyvos pelkės</em></h2>
+                <p class="lead">Traukite slankiklį ir palyginkite, kaip keičiasi teritorija sugrąžinus vandenį. Makete – iliustracijos; svetainėje – Guodžių durpyno nuotraukos prieš darbus ir po jų.</p>
+              </div>
+              <div class="compare" data-compare data-reveal>
+                <img src="https://images.pexels.com/photos/15112967/pexels-photo-15112967.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Prieš: nusausinta šlapia pieva su sausinimo grioviu ir beržais ankstyvą pavasarį">
+                <div class="compare__after"><img src="https://images.pexels.com/photos/36553238/pexels-photo-36553238.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Po: atkurta šlapia pieva su vingiuojančiu vandens kanalu"></div>
+                <span class="compare__label compare__label--before"><i class="ph ph-arrow-left" aria-hidden="true"></i> Prieš</span>
+                <span class="compare__label compare__label--after">Po <i class="ph ph-arrow-right" aria-hidden="true"></i></span>
+                <span class="compare__line" aria-hidden="true"></span>
+                <span class="compare__handle" aria-hidden="true"><i class="ph ph-arrows-out-line-horizontal"></i></span>
+                <label class="visually-hidden" for="compare-range">Palyginimo slankiklis: kairėje – prieš atkūrimą, dešinėje – po atkūrimo</label>
+                <input class="compare__range" id="compare-range" type="range" min="0" max="100" value="50" step="1" aria-valuetext="Rodoma „po“ 50 % kadro">
+              </div>
+              <div class="compare__caps">
+                <span><strong>Prieš:</strong> nusausintas durpynas su sausinimo grioviu (iliustracija, Pexels / Maciej Cisowski)</span>
+                <span><strong>Po:</strong> užtvenkti grioviai, vanduo ties paviršiumi (iliustracija, Pexels / Theo Felten)</span>
+              </div>
+            </section>
+
+          </div>
+
+          <!-- Salient: Sticky column (Row nustatymas „Sticky“) su Nectar Fancy Box / Text block iš ACF laukų (statusas, laikotarpis, vieta, plotas, programa, partneriai, kontaktas), Nectar Button × 2, Salient Social sharing (+ kopijuoti nuorodą) – „Nauja“ -->
+          <aside class="project-aside" aria-labelledby="faktai-h">
+            <div class="sticky-col">
+              <div class="fact-card new-fn" id="faktai" data-reveal="fade">
+                <span class="new-fn__badge" data-tip="Nauja: dalinimosi mygtukai ir nuorodos kopijavimas prie kiekvieno projekto. WordPress'e – Salient Social sharing (Facebook, LinkedIn, el. paštas) + nedidelis JS kopijavimui." tabindex="0">Nauja</span>
+                <div class="fact-card__head">
+                  <h2 id="faktai-h">Projektas trumpai</h2>
+                  <span class="tag tag--live">Vykdomas</span>
+                </div>
+                <dl class="fact-card__list">
+                  <div class="fact-card__row"><dt>Statusas</dt><dd>Vykdomas – projektas pradėtas 2026 m. rugsėjį</dd></div>
+                  <div class="fact-card__row"><dt>Laikotarpis</dt><dd>2026–2029 <span class="tag tag--outline">Pavyzdys</span><small>Tiksli pabaigos data bus nurodyta svetainėje</small></dd></div>
+                  <div class="fact-card__row"><dt>Vieta</dt><dd>Guodžių durpių gavybos karjeras, Biržų r.</dd></div>
+                  <div class="fact-card__row"><dt>Plotas</dt><dd>Apie 100 ha</dd></div>
+                  <div class="fact-card__row"><dt>Tema</dt><dd><span class="tag">Pelkių atkūrimas</span> <span class="tag tag--water">Klimatas</span></dd></div>
+                  <div class="fact-card__row"><dt>Programa</dt><dd>Tarptautinis projektas<small>Finansavimo programa bus nurodyta svetainėje</small></dd></div>
+                  <div class="fact-card__row"><dt>Partneriai</dt><dd><ul><li><a href="https://www.succow-stiftung.de">Michaelio Zukovo fondas</a> (Michael Succow Foundation, Vokietija)</li><li><a href="https://greifswaldmoor.de">Greifsvaldo pelkių centras</a> (Greifswald Moor Centrum)</li></ul></dd></div>
+                  <div class="fact-card__row"><dt>Vykdytojas</dt><dd>VšĮ „Pelkių fondas“</dd></div>
+                  <div class="fact-card__row"><dt>Kontaktas</dt><dd>Dr. Jūratė Sendžikaitė<small>Pelkių ekologinio atkūrimo specialistė</small><a href="mailto:jurate@pelkiufondas.lt">jurate@pelkiufondas.lt</a></dd></div>
+                </dl>
+                <div class="fact-card__actions">
+                  <a class="btn btn--sun btn--block" href="prisidek.html#paremk">Paremk projektą <span class="btn__icon"><i class="ph ph-arrow-right" aria-hidden="true"></i><i class="ph ph-arrow-right" aria-hidden="true"></i></span></a>
+                  <a class="btn btn--ghost btn--block" href="kontaktai.html"><i class="ph ph-chat-circle-text" aria-hidden="true"></i> Susisiekti dėl projekto</a>
+                </div>
+                <div class="fact-card__share" data-share>
+                  <span class="fact-card__share-label">Dalintis projektu</span>
+                  <div class="share">
+                    <a class="share__btn" href="https://www.facebook.com/sharer/sharer.php" data-share-fb aria-label="Dalintis Facebook"><i class="ph ph-facebook-logo" aria-hidden="true"></i> Facebook</a>
+                    <a class="share__btn" href="https://www.linkedin.com/sharing/share-offsite/" data-share-li aria-label="Dalintis LinkedIn"><i class="ph ph-linkedin-logo" aria-hidden="true"></i> LinkedIn</a>
+                    <a class="share__btn" href="mailto:?subject=Guodžių durpyno atkūrimas ir apsauga" data-share-mail aria-label="Siųsti nuorodą el. paštu"><i class="ph ph-envelope-simple" aria-hidden="true"></i> El. paštu</a>
+                    <button class="share__btn" type="button" data-copy="projektas.html" aria-label="Kopijuoti puslapio nuorodą"><i class="ph ph-link-simple" aria-hidden="true"></i> Kopijuoti nuorodą</button>
+                    <button class="share__btn" type="button" data-share-native hidden aria-label="Dalintis per įrenginio programėles"><i class="ph ph-share-network" aria-hidden="true"></i> Dalintis</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </aside>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Salient: Row (šviesiai žalias fonas) + Heading + 2 × Nectar Fancy Box (partnerio pavadinimas, vaidmuo, nuoroda) + Clients (logotipai) – WordPress'e Clients elementas su tikrais logotipais -->
+    <section class="section section--green" id="partneriai" aria-labelledby="partneriai-h">
+      <div class="container">
+        <div class="section-head section-head--row">
+          <div>
+            <p class="kicker" data-nr="08">Partneriai</p>
+            <h2 id="partneriai-h" data-split>Kartu su Vokietijos <em>pelkių ekspertais</em></h2>
+            <p class="lead">Guodžių projektą vykdome su Michaelio Zukovo fondu – Greifsvaldo pelkių centro, vieno svarbiausių pelkių mokslo centrų Europoje, partneriu.</p>
+          </div>
+          <a class="link-arrow" href="apie-mus.html#partneriai">Visi fondo partneriai <i class="ph ph-arrow-right" aria-hidden="true"></i></a>
+        </div>
+        <div class="grid grid--2 partner-cards" data-reveal-group>
+          <div class="icon-card icon-card--row">
+            <span class="icon-card__icon"><i class="ph ph-hand-heart" aria-hidden="true"></i></span>
+            <div>
+              <h3>Michaelio Zukovo fondas</h3>
+              <p>Michael Succow Foundation (Vokietija) – gamtos apsaugos fondas, Greifsvaldo pelkių centro partneris. Guodžių projekte – tarptautinis partneris, prisidedantis pelkių atkūrimo patirtimi ir bendradarbiavimu. <small>Partneris nuo 2026 m.</small></p>
+              <a class="link-arrow" href="https://www.succow-stiftung.de">succow-stiftung.de <i class="ph ph-arrow-up-right" aria-hidden="true"></i></a>
+            </div>
+          </div>
+          <div class="icon-card icon-card--row">
+            <span class="icon-card__icon"><i class="ph ph-globe-hemisphere-east" aria-hidden="true"></i></span>
+            <div>
+              <h3>Greifsvaldo pelkių centras</h3>
+              <p>Greifswald Moor Centrum (Vokietija) – ilgametis fondo partneris: kartu kūrėme filmą „Durpynai, klimatas ir pelkininkystė“ (2023) ir plėtojome pelkininkystę Baltijos šalyse (EUKI projektas). <small>Partneris nuo 2021 m.</small></p>
+              <a class="link-arrow" href="https://greifswaldmoor.de">greifswaldmoor.de <i class="ph ph-arrow-up-right" aria-hidden="true"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="logos mt-40" data-reveal>
+          <a class="logos__item" href="https://www.succow-stiftung.de"><i class="ph ph-hand-heart" aria-hidden="true"></i>Michael Succow Foundation</a>
+          <a class="logos__item" href="https://greifswaldmoor.de"><i class="ph ph-globe-hemisphere-east" aria-hidden="true"></i>Greifswald Moor Centrum</a>
+          <span class="logos__item"><i class="ph ph-leaf" aria-hidden="true"></i>Pelkių fondas</span>
+        </div>
+        <p class="sr-note text-center mt-24">Makete logotipai pakeisti pavadinimais – WordPress'e Clients elementas rodys tikrus partnerių ir finansuotojų logotipus.</p>
+      </div>
+    </section>
+
+    <!-- Salient: Heading + Post Loop Builder (CPT „Projektai“, 3 susiję įrašai pagal temą „atkūrimas“ – taksonomija; foto, statuso žyma, vieta, metai, santrauka) + Nectar Button „Visi projektai“ -->
+    <section class="section" id="susije" aria-labelledby="susije-h">
+      <div class="container">
+        <div class="section-head section-head--row">
+          <div>
+            <p class="kicker" data-nr="09">Susiję projektai</p>
+            <h2 id="susije-h" data-split>Kiti pelkių <em>atkūrimo projektai</em></h2>
+          </div>
+          <a class="link-arrow" href="projektai.html?f=atkurimas">Visi projektai <i class="ph ph-arrow-right" aria-hidden="true"></i></a>
+        </div>
+        <div class="grid grid--3" data-reveal-group>
+          <article class="card">
+            <div class="card__media"><img src="https://images.pexels.com/photos/11519304/pexels-photo-11519304.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Rudeninė aukštapelkė su ežerėliais iš drono"><span class="tag tag--done">Įgyvendintas</span></div>
+            <div class="card__body">
+              <div class="card__meta"><span><i class="ph ph-map-pin" aria-hidden="true"></i>Šilutės r.</span><span><i class="ph ph-calendar-blank" aria-hidden="true"></i>2021</span></div>
+              <h3><a href="projektas.html">Aukštumalos aukštapelkės pietvakarinės dalies atkūrimas</a></h3>
+              <p>Pagerinta EB svarbos buveinių būklė ir sumažintos ŠESD emisijos: įrengtos 197 durpių ir 45 OSB plokščių užtūros bei 3 pylimai su geomembrana (130 m).</p>
+              <div class="card__foot"><span class="tag">Atkūrimas</span></div>
+              <span class="card__go"><i class="ph ph-arrow-up-right" aria-hidden="true"></i></span>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card__media"><img src="https://images.pexels.com/photos/34155549/pexels-photo-34155549.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Vasariška aukštapelkė su ežerėliais po kamuoliniais debesimis"><span class="tag tag--live">Vykdomas</span></div>
+            <div class="card__body">
+              <div class="card__meta"><span><i class="ph ph-map-pin" aria-hidden="true"></i>Jonavos r.</span><span><i class="ph ph-calendar-blank" aria-hidden="true"></i>2024–2026</span></div>
+              <h3><a href="projektas.html">Paąžuolynės durpyno hidrologinio režimo atkūrimas</a></h3>
+              <p>Sudarome sąlygas Paąžuolynės durpyno hidrologinio režimo atsikūrimui, mažiname ŠESD emisijas ir palaikome saugomų rūšių bei EB svarbos buveinių būklę.</p>
+              <div class="card__foot"><span class="tag">Atkūrimas</span><span class="tag tag--outline" title="Metai ir statusas makete įvertinti pagal kontekstą">Pavyzdys</span></div>
+              <span class="card__go"><i class="ph ph-arrow-up-right" aria-hidden="true"></i></span>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card__media"><img src="https://images.pexels.com/photos/5328419/pexels-photo-5328419.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Ekskavatorius ir sunkvežimis šlapynėje tarp nendrynų"><span class="tag tag--soon">Tęstinis</span></div>
+            <div class="card__body">
+              <div class="card__meta"><span><i class="ph ph-map-pin" aria-hidden="true"></i>Kauno r.</span><span><i class="ph ph-calendar-blank" aria-hidden="true"></i>nuo 2020 m.</span></div>
+              <h3><a href="projektas.html">Išeksploatuotų durpynų atkūrimas derinant pelkininkystę</a></h3>
+              <p>Ežerėlio durpyne įrengti eksperimentiniai laukai su kiminų, spanguolių, nendrių ir švendrų pradmenimis – alternatyva tradiciniam karjerų užliejimui.</p>
+              <div class="card__foot"><span class="tag">Pelkininkystė</span></div>
+              <span class="card__go"><i class="ph ph-arrow-up-right" aria-hidden="true"></i></span>
+            </div>
+          </article>
+        </div>
+        <p class="sr-note mt-24">Makete visos projektų nuorodos veda į šį vieno projekto šabloną – WordPress'e kiekvienas projektas turės savo puslapį.</p>
+      </div>
+    </section>
+
+    <!-- Salient: Call to Action – Row su „Row BG video“ (Pexels), Heading, Nectar Button × 2 (Paremk → GiveWP forma, Savanoriauk → anketa) -->
+    <section class="section section--s" id="prisidek" aria-labelledby="prisidek-h">
+      <div class="container">
+        <div class="cta cta--video" data-reveal>
+          <div class="video-bg video-bg--flat">
+            <img src="https://images.pexels.com/videos/31807858/drenthe-netherlands-31807858.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=630&w=1200" alt="">
+            <video data-src="https://videos.pexels.com/video-files/31807858/13551782_1920_1080_60fps.mp4" data-src-sd="https://videos.pexels.com/video-files/31807858/13551774_960_540_60fps.mp4" muted loop playsinline poster="https://images.pexels.com/videos/31807858/drenthe-netherlands-31807858.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=630&w=1200"></video>
+          </div>
+          <div class="cta__grid">
+            <div>
+              <p class="kicker">Prisidėk</p>
+              <h2 id="prisidek-h">Padėkite Guodžių durpynui <em>atgyti</em></h2>
+              <p class="lead">Kiekviena parama ir talkos valanda priartina dieną, kai 100 ha apleisto karjero vėl taps gyva pelke. Prisidėkite finansiškai arba ateikite į talką.</p>
+            </div>
+            <div class="cta__actions">
+              <a class="btn btn--sun btn--lg" href="prisidek.html#paremk">Paremk <span class="btn__icon"><i class="ph ph-arrow-right" aria-hidden="true"></i><i class="ph ph-arrow-right" aria-hidden="true"></i></span></a>
+              <a class="btn btn--ghost-light btn--lg" href="prisidek.html#savanoriauk">Savanoriauk</a>
+            </div>
+          </div>
+          <span class="video-credit">Video: Pexels / Matthias Groeneveld</span>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <!-- Poraštė (Salient: Footer – 4 kolonos, tamsus fonas, Copyright juosta) -->
+  <footer class="footer" id="poraste">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a class="logo" href="index.html" aria-label="Pelkių fondas, pradžia"><img class="logo__mark" src="assets/img/logo-240.png" alt="" width="52" height="52"><span class="logo__word">Pelkių fondas<small>Pelkių atkūrimas ir apsauga</small></span></a>
+          <p>VšĮ „Pelkių fondas“ – ne pelno siekianti nevyriausybinė gamtosauginė organizacija, kuri rūpinasi pelkių ir kitų ekosistemų apsauga, atkūrimu, tvariu naudojimu ir visuomenės švietimu.</p>
+          <div class="footer__social">
+            <a href="https://www.facebook.com/pelkiufondas" aria-label="Facebook"><i class="ph ph-facebook-logo" aria-hidden="true"></i></a>
+            <a href="#" aria-label="YouTube"><i class="ph ph-youtube-logo" aria-hidden="true"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="ph ph-linkedin-logo" aria-hidden="true"></i></a>
+            <a href="#" aria-label="Instagram"><i class="ph ph-instagram-logo" aria-hidden="true"></i></a>
+          </div>
+        </div>
+        <div>
+          <h4>Svetainė</h4>
+          <ul>
+            <li><a href="pelkes.html">Pelkės</a></li>
+            <li><a href="terminu-zodynas.html">Terminų žodynas</a></li>
+            <li><a href="apie-mus.html">Apie mus</a></li>
+            <li><a href="veikla.html">Veikla</a></li>
+            <li><a href="projektai.html">Projektai</a></li>
+            <li><a href="publikacijos.html">Publikacijos</a></li>
+            <li><a href="naujienos.html">Naujienos</a></li>
+            <li><a href="kontaktai.html">Kontaktai</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Prisidėk</h4>
+          <ul>
+            <li><a href="prisidek.html#paremk">Paremk pelkes</a></li>
+            <li><a href="prisidek.html#gpm">Skirk 1,2 % GPM</a></li>
+            <li><a href="prisidek.html#savanoriauk">Savanoriauk</a></li>
+            <li><a href="prisidek.html#renginiai">Talkos ir renginiai</a></li>
+            <li><a href="prisidek.html#naujienlaiskis">Naujienlaiškis</a></li>
+            <li><a href="co2.html">Verslui: CO₂ kompensavimas</a></li>
+            <li><a href="veiklos-ataskaitos.html">Veiklos ataskaitos</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Kontaktai</h4>
+          <div class="footer__contact">
+            <div><i class="ph ph-map-pin" aria-hidden="true"></i><span>Gedimino pr. 1, 4 a. (NVO Avilys)<br>LT-01103 Vilnius, Lietuva</span></div>
+            <div><i class="ph ph-phone" aria-hidden="true"></i><a href="tel:+37065620426">+370 656 20426</a></div>
+            <div><i class="ph ph-envelope" aria-hidden="true"></i><a href="mailto:info@pelkiufondas.lt">info@pelkiufondas.lt</a></div>
+            <div><i class="ph ph-identification-card" aria-hidden="true"></i><span>Įmonės kodas 302822289<br>PVM kodas LT100017689218</span></div>
+            <div><i class="ph ph-bank" aria-hidden="true"></i><span>LT24 7044 0600 0784 1146<br>AB SEB bankas</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span><span class="footer__sun" aria-hidden="true"></span>© <span data-year>2026</span> VšĮ „Pelkių fondas“. Nuotraukos ir video makete – Pexels (nemokama licencija).</span>
+        <div class="footer__legal">
+          <a href="kontaktai.html#privatumas">Privatumo politika</a>
+          <a href="apie-mus.html#dokumentai">Įstatai</a>
+          <a href="galerija.html">Galerija</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js" defer></script>
+  <script src="assets/js/pages/projektas.js" defer></script>
+</body>
+</html>

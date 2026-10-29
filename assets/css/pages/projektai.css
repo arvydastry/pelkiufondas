@@ -1,0 +1,108 @@
+/* Projektai – puslapio stiliai: filtrų skydelis, Leaflet žemėlapis, projektų kortelės, logotipų grupės.
+   Bendri komponentai – assets/css/style.css (.map, .map-marker, .pill, .card, .logos, .cta). Prefiksas pj-. */
+
+/* Antraštė: trumpoje antraštėje bendras .video-caption (viršuje kairėje) lipo ant breadcrumb, o .video-toggle (apačioje kairėje) – ant mygtukų,
+   todėl šiame puslapyje antraštės vidiniai tarpai didesni */
+.page-header--short { padding-top: calc(var(--header-h) + 72px); padding-bottom: 68px; }
+.page-header--short .lead { max-width: 66ch; }
+
+/* Žemėlapio ir filtrų blokas (Salient: Interactive Map + Post Loop Builder filtrai) */
+.pj-explorer { display: grid; grid-template-columns: minmax(0, 372px) minmax(0, 1fr); gap: clamp(20px, 2.5vw, 32px); align-items: start; }
+
+.pj-panel { display: grid; gap: 20px; padding: clamp(20px, 2.5vw, 28px); border-radius: var(--r); background: var(--surface); border: 1px solid var(--line-2); box-shadow: var(--shadow-sm); }
+.pj-panel__row { display: grid; gap: 10px; }
+.pj-panel__label { display: block; font: 700 12.5px/1.2 var(--f-body); letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
+.pj-panel .pill { height: 36px; padding: 0 13px; font-size: 13.5px; }
+.pj-panel .pill__count { min-width: 18px; height: 18px; font-size: 11px; }
+
+.pj-search__field { position: relative; }
+.pj-search__field input { width: 100%; height: 48px; padding: 0 16px 0 46px; border: 1.5px solid var(--line); border-radius: var(--pill); background: var(--paper); color: var(--ink); font: 500 15.5px/1 var(--f-body); transition: border-color .2s, box-shadow .2s, background .2s; }
+.pj-search__field input:focus { outline: none; border-color: var(--green); background: var(--surface); box-shadow: 0 0 0 4px rgba(4, 121, 89, .14); }
+.pj-search__field input::placeholder { color: #9AA8A2; }
+.pj-search__field input::-webkit-search-cancel-button { cursor: pointer; }
+.pj-search__field > i { position: absolute; left: 16px; top: 50%; transform: translateY(-50%); font-size: 20px; color: var(--green); pointer-events: none; }
+.pj-search__hint { margin: -2px 0 0 4px; font-size: 13px; color: var(--muted); }
+
+.pj-panel__foot { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding-top: 18px; border-top: 1px solid var(--line-2); }
+.pj-count { margin: 0; font: 600 15px/1.35 var(--f-body); color: var(--text); }
+.pj-count [data-filter-count] { color: var(--ink); font-weight: 800; }
+.pj-panel__foot .btn { flex-shrink: 0; height: 36px; padding: 0 12px; font-size: 13px; gap: 6px; }
+.pj-panel__foot .btn i { font-size: 15px; }
+
+.pj-legend { display: flex; flex-wrap: wrap; gap: 10px 20px; margin: 0; padding: 0; list-style: none; font-size: 13.5px; font-weight: 600; color: var(--text); }
+.pj-legend li { display: inline-flex; align-items: center; gap: 8px; }
+.pj-legend__dot { display: inline-grid; place-items: center; width: 22px; height: 22px; }
+.pj-legend__dot .map-marker { width: 16px; height: 16px; border-width: 2px; box-shadow: 0 2px 6px -2px rgba(0, 0, 0, .4); }
+
+/* Žemėlapis */
+.pj-map-wrap { display: grid; gap: 12px; }
+.pj-map { height: clamp(440px, 62vh, 640px); z-index: 0; box-shadow: var(--shadow-sm); }
+.pj-map .leaflet-container { background: var(--water); }
+.pj-map .leaflet-container a { color: var(--green-700); }
+.pj-map .leaflet-control-attribution { font: 500 11px/1.4 var(--f-body); color: var(--muted); background: rgba(255, 255, 255, .86); }
+.pj-map .leaflet-bar { border: 0; border-radius: 12px; overflow: hidden; box-shadow: var(--shadow); }
+.pj-map .leaflet-bar a { width: 34px; height: 34px; line-height: 34px; color: var(--ink); font-family: var(--f-body); border-bottom-color: var(--line-2); }
+.pj-map .leaflet-bar a:hover { background: var(--green-50); color: var(--green-700); }
+.pj-map .leaflet-marker-icon { background: transparent; border: 0; }
+.pj-map .leaflet-marker-icon:focus-visible { outline: 3px solid var(--sun); outline-offset: 2px; border-radius: 50%; }
+.pj-map .map-marker { display: block; transition: transform .25s var(--ease), box-shadow .25s; cursor: pointer; }
+.pj-map .leaflet-marker-icon:hover .map-marker, .pj-map .leaflet-marker-icon:focus-visible .map-marker, .pj-map .map-marker.is-hot { transform: rotate(-45deg) scale(1.22); box-shadow: 0 10px 22px -6px rgba(0, 0, 0, .55); }
+.pj-map .leaflet-popup-content { margin: 16px 18px; }
+.pj-map .leaflet-popup-close-button { top: 8px; right: 8px; width: 26px; height: 26px; font: 20px/26px var(--f-body); color: var(--muted); }
+.pj-map .leaflet-popup-tip { box-shadow: none; }
+
+.pj-map__bar { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 16px; }
+.pj-map__count { margin: 0; font: 600 14px/1.3 var(--f-body); color: var(--text); }
+.pj-map__count i { color: var(--green); vertical-align: -2px; margin-right: 5px; font-size: 16px; }
+.pj-map__note { display: flex; gap: 8px; margin: 0; font-size: 13.5px; line-height: 1.5; color: var(--muted); }
+.pj-map__note i { flex-shrink: 0; margin-top: 1px; font-size: 18px; color: var(--green); }
+
+/* Žymeklio popup (Salient: Interactive Map popup → projekto įrašo nuoroda) */
+.pj-popup { display: grid; gap: 8px; min-width: 230px; max-width: 280px; }
+.pj-popup .tag { justify-self: start; height: 24px; font-size: 11.5px; }
+.pj-popup strong { margin: 0; line-height: 1.3; }
+.pj-popup__meta { display: grid; gap: 4px; font-size: 13px; color: var(--muted); }
+.pj-popup__meta span { display: flex; gap: 6px; align-items: flex-start; }
+.pj-popup__meta i { flex-shrink: 0; margin-top: 2px; color: var(--green); font-size: 14px; }
+.pj-popup__links { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; padding-top: 4px; }
+.pj-popup .link-arrow { font-size: 14px; }
+.pj-popup .link-u { font-size: 13px; color: var(--muted); }
+
+/* Projektų kortelės (Salient: Post Loop Builder) */
+.pj-list [hidden] { display: none !important; }
+.pj-card .card__body h3 { font-size: 19.5px; line-height: 1.28; }
+.pj-card .card__body .pj-card__full { margin: -4px 0 0; font-size: 13px; line-height: 1.45; color: var(--muted); }
+.pj-card .card__meta > span { display: inline-flex; align-items: center; flex-wrap: wrap; gap: 4px; }
+.pj-eg { height: 20px; padding: 0 7px; font-size: 10.5px; letter-spacing: .04em; cursor: help; }
+.pj-card.pj-card--hot { outline: 3px solid var(--sun); outline-offset: 4px; }
+.pj-card:target { outline: 3px solid var(--sun); outline-offset: 4px; }
+
+/* Tuščias rezultatas */
+.pj-empty { display: grid; justify-items: center; gap: 10px; padding: 48px 24px; border: 1.5px dashed var(--line); border-radius: var(--r); text-align: center; color: var(--muted); }
+.pj-empty i { font-size: 46px; color: var(--green-200); }
+.pj-empty h3 { margin: 0; font-size: 22px; }
+.pj-empty p { margin: 0 0 6px; max-width: 48ch; }
+
+/* Programos ir partneriai (Salient: Clients) */
+.pj-logos { display: grid; gap: clamp(28px, 3vw, 40px); }
+.pj-logos__group { display: grid; gap: 16px; }
+.pj-logos__title { margin: 0; font: 700 12.5px/1.2 var(--f-body); letter-spacing: .12em; text-transform: uppercase; color: var(--muted); text-align: center; }
+.pj-logos .logos__item { height: 50px; }
+.pj-logos__note { margin: 0; text-align: center; font-size: 13.5px; color: var(--muted); }
+
+/* CTA ant video: kicker ir antraštės akcentas geltoni (globalus h2 em – žalias, ant tamsaus fono per mažas kontrastas) */
+.cta .kicker { color: var(--sun); }
+.cta h2 em { color: var(--sun); }
+.cta--video .video-credit { z-index: 3; }
+
+@media (max-width: 1000px) {
+  .pj-explorer { grid-template-columns: 1fr; }
+  .pj-map { height: clamp(360px, 56vh, 540px); }
+}
+@media (max-width: 640px) {
+  .pj-panel__foot { flex-direction: column; align-items: flex-start; }
+  .pj-map { height: clamp(320px, 52vh, 440px); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .pj-map .map-marker { transition: none; }
+}

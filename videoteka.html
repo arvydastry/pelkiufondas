@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="lt">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Videoteka | Pelkių fondas</title>
+  <meta name="description" content="Pelkių fondo filmai ir reportažai: „Atkurdami pelkes saugokime klimatą“, „Pelkininkystė“, talkos su Luminor ir Drogas, nuotolinės pamokos.">
+  <!-- Bendra <head> dalis: įklijuoti į kiekvieną puslapį po <title> ir <meta name="description"> -->
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/Fraunces.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/Manrope.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body class="has-transparent-header" data-nav="veikla">
+  <a class="skip-link" href="#turinys">Pereiti prie turinio</a>
+
+  <!-- Maketo juosta: į WordPress nekeliama -->
+  <div class="mockbar" role="region" aria-label="Maketo juosta">
+    <div class="container">
+      <strong>Dizaino maketas <span>·</span> Pelkių fondas</strong>
+      <span>WordPress + Salient</span>
+      <label class="mockbar__toggle" title="Žymekliai rodo, kas makete yra nauja, palyginti su dabartine svetaine"><input type="checkbox" id="toggle-newfn" checked> <span class="new-fn__badge">Nauja</span> rodyti naujas funkcijas</label>
+      <nav class="mockbar__pages" aria-label="Maketo puslapiai">
+        <a href="index.html">Pradinis</a><a href="pelkes.html">Pelkės</a><a href="apie-mus.html">Apie mus</a><a href="veikla.html">Veikla</a><a href="naujienos.html">Naujienos</a><a href="kontaktai.html">Kontaktai</a><a href="prisidek.html">Prisidėk</a>
+      </nav>
+    </div>
+  </div>
+
+  <!-- Antraštė (Salient: Header layout „Standard“, logotipas kairėje, meniu dešinėje, „Prisidėk“ mygtukas, paieška, kalbos) -->
+  <header class="site-header">
+    <div class="container container--wide site-header__inner">
+      <a class="logo" href="index.html" aria-label="Pelkių fondas, pradžia">
+        <img class="logo__mark" src="assets/img/logo-240.png" alt="" width="52" height="52">
+        <span class="logo__word">Pelkių fondas<small>Pelkių atkūrimas ir apsauga</small></span>
+      </a>
+      <nav class="nav" aria-label="Pagrindinis meniu">
+        <a class="nav__link" href="index.html" data-nav-key="pradinis">Pradinis</a>
+        <div class="nav__item" data-drop data-nav-key="pelkes">
+          <button class="nav__link" type="button" aria-expanded="false" aria-haspopup="true">Pelkės <i class="ph ph-caret-down" aria-hidden="true"></i></button>
+          <div class="nav__drop">
+            <a class="drop-link" href="pelkes.html"><span class="drop-link__icon"><i class="ph ph-leaf"></i></span><span class="drop-link__text"><strong>Kas yra pelkės</strong><span>Apibrėžimai, reikšmė, būklė Lietuvoje</span></span></a>
+            <a class="drop-link" href="pelkes.html#tipai"><span class="drop-link__icon"><i class="ph ph-tree-evergreen"></i></span><span class="drop-link__text"><strong>Pelkių tipai ir buveinės</strong><span>Žemapelkės, tarpinės, aukštapelkės, EB buveinės</span></span></a>
+            <a class="drop-link" href="pelkes.html#gresmes"><span class="drop-link__icon"><i class="ph ph-warning"></i></span><span class="drop-link__text"><strong>Grėsmės ir atkūrimas</strong><span>Kodėl pelkės nyksta ir kaip jas atkuriame</span></span></a>
+            <a class="drop-link" href="terminu-zodynas.html"><span class="drop-link__icon"><i class="ph ph-book-open"></i></span><span class="drop-link__text"><strong>Terminų žodynas</strong><span>Pelkių ir durpynų sąvokos su paieška</span></span></a>
+            <a class="drop-link" href="galerija.html"><span class="drop-link__icon"><i class="ph ph-images"></i></span><span class="drop-link__text"><strong>Galerija</strong><span>Pelkių ir mūsų darbų nuotraukos</span></span></a>
+          </div>
+        </div>
+        <a class="nav__link" href="apie-mus.html" data-nav-key="apie-mus">Apie mus</a>
+        <div class="nav__item" data-drop data-nav-key="veikla">
+          <button class="nav__link" type="button" aria-expanded="false" aria-haspopup="true">Veikla <i class="ph ph-caret-down" aria-hidden="true"></i></button>
+          <div class="nav__drop nav__drop--wide">
+            <a class="drop-link" href="veikla.html"><span class="drop-link__icon"><i class="ph ph-compass"></i></span><span class="drop-link__text"><strong>Veiklos kryptys</strong><span>Biologinė įvairovė, atkūrimas, klimatas, pelkininkystė</span></span></a>
+            <a class="drop-link" href="co2.html"><span class="drop-link__icon"><i class="ph ph-cloud"></i></span><span class="drop-link__text"><strong>CO₂ emisijų mažinimas</strong><span>Verslui: atkurkite pelkes, mažinkite anglies pėdsaką</span></span></a>
+            <a class="drop-link" href="projektai.html"><span class="drop-link__icon"><i class="ph ph-map-pin"></i></span><span class="drop-link__text"><strong>Projektai</strong><span>Vykdomi ir įgyvendinti projektai žemėlapyje</span></span></a>
+            <a class="drop-link" href="paslaugos.html"><span class="drop-link__icon"><i class="ph ph-briefcase"></i></span><span class="drop-link__text"><strong>Paslaugos</strong><span>Konsultacijos, tyrimai, švietimas</span></span></a>
+            <a class="drop-link" href="publikacijos.html"><span class="drop-link__icon"><i class="ph ph-books"></i></span><span class="drop-link__text"><strong>Publikacijos</strong><span>Straipsniai, knygos, lankstinukai</span></span></a>
+            <a class="drop-link" href="videoteka.html"><span class="drop-link__icon"><i class="ph ph-play-circle"></i></span><span class="drop-link__text"><strong>Videoteka</strong><span>Filmai apie pelkes ir mūsų darbus</span></span></a>
+            <a class="drop-link" href="veiklos-ataskaitos.html"><span class="drop-link__icon"><i class="ph ph-file-text"></i></span><span class="drop-link__text"><strong>Veiklos ataskaitos</strong><span>Metinės veiklos ir finansinės ataskaitos</span></span></a>
+            <div class="nav__drop-foot"><span class="muted">Norite prisidėti prie veiklų?</span><a class="link-u" href="prisidek.html#savanoriauk">Savanoriauk</a></div>
+          </div>
+        </div>
+        <a class="nav__link" href="naujienos.html" data-nav-key="naujienos">Naujienos</a>
+        <a class="nav__link" href="kontaktai.html" data-nav-key="kontaktai">Kontaktai</a>
+      </nav>
+      <div class="header-actions">
+        <div class="lang" aria-label="Kalba"><span aria-current="true" lang="lt">LT</span><a href="#" data-lang="en" hreflang="en">EN</a></div>
+        <button class="icon-btn icon-btn--search" type="button" data-search-open aria-label="Paieška svetainėje"><i class="ph ph-magnifying-glass" aria-hidden="true"></i></button>
+        <a class="btn btn--sun btn--sm" href="prisidek.html">Prisidėk</a>
+        <button class="burger icon-btn" type="button" aria-label="Atidaryti meniu" aria-expanded="false" aria-controls="mobile-menu"><i class="ph ph-list" aria-hidden="true"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobilus meniu (Salient: Off Canvas Menu) -->
+  <div class="mobile-menu" id="mobile-menu" role="dialog" aria-modal="true" aria-label="Meniu" tabindex="-1">
+    <div class="container">
+      <div class="mobile-menu__top">
+        <a class="logo" href="index.html" aria-label="Pelkių fondas, pradžia"><img class="logo__mark" src="assets/img/logo-240.png" alt="" width="52" height="52"><span class="logo__word">Pelkių fondas<small>Pelkių atkūrimas ir apsauga</small></span></a>
+        <button class="mobile-menu__close" type="button" aria-label="Uždaryti meniu"><i class="ph ph-x" aria-hidden="true"></i></button>
+      </div>
+      <nav class="mobile-menu__links" aria-label="Meniu mobiliesiems">
+        <a href="index.html">Pradinis <i class="ph ph-arrow-right" aria-hidden="true"></i></a>
+        <details><summary>Pelkės <i class="ph ph-caret-down" aria-hidden="true"></i></summary><div><a href="pelkes.html">Kas yra pelkės</a><a href="pelkes.html#tipai">Pelkių tipai ir buveinės</a><a href="pelkes.html#gresmes">Grėsmės ir atkūrimas</a><a href="terminu-zodynas.html">Terminų žodynas</a><a href="galerija.html">Galerija</a></div></details>
+        <a href="apie-mus.html">Apie mus <i class="ph ph-arrow-right" aria-hidden="true"></i></a>
+        <details><summary>Veikla <i class="ph ph-caret-down" aria-hidden="true"></i></summary><div><a href="veikla.html">Veiklos kryptys</a><a href="co2.html">CO₂ emisijų mažinimas</a><a href="projektai.html">Projektai</a><a href="paslaugos.html">Paslaugos</a><a href="publikacijos.html">Publikacijos</a><a href="videoteka.html">Videoteka</a><a href="veiklos-ataskaitos.html">Veiklos ataskaitos</a></div></details>
+        <a href="naujienos.html">Naujienos <i class="ph ph-arrow-right" aria-hidden="true"></i></a>
+        <a href="kontaktai.html">Kontaktai <i class="ph ph-arrow-right" aria-hidden="true"></i></a>
+        <a href="prisidek.html">Prisidėk <i class="ph ph-arrow-right" aria-hidden="true"></i></a>
+      </nav>
+      <div class="mobile-menu__foot">
+        <a class="btn btn--sun" href="prisidek.html">Paremk pelkes</a>
+        <button class="btn btn--ghost-light" type="button" data-search-open><i class="ph ph-magnifying-glass" aria-hidden="true"></i> Paieška</button>
+        <div class="lang" aria-label="Kalba"><span aria-current="true">LT</span><a href="#" data-lang="en" hreflang="en">EN</a></div>
+      </div>
+    </div>
+  </div>
+  <main id="turinys">
+<!-- Salient: Page Header su video fonu (self-hosted MP4 + Preview Image) -->
+    <section class="page-header">
+      <div class="video-bg"><img src="https://images.pexels.com/videos/12193253/pexels-photo-12193253.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=630&w=1200" alt=""><video data-src="https://videos.pexels.com/video-files/12193253/12193253-hd_1920_1080_24fps.mp4" data-src-sd="https://videos.pexels.com/video-files/12193253/12193253-sd_960_540_24fps.mp4" muted loop playsinline poster="https://images.pexels.com/videos/12193253/pexels-photo-12193253.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=630&w=1200"></video></div>
+      <span class="video-caption">Švyliai vėjyje prieš saulėlydį <span>· aukštapelkė</span></span>
+      <div class="container">
+        <ol class="breadcrumb"><li><a href="index.html">Pradinis</a></li><li><a href="veikla.html">Veikla</a></li><li>Videoteka</li></ol>
+        <p class="kicker">Videoteka</p>
+        <h1 data-split>Pelkės <em>judančiais vaizdais</em></h1>
+        <p class="lead" data-reveal>Fondo filmai, partnerių reportažai ir nuotolinės pamokos apie pelkių atkūrimą, pelkininkystę ir talkas. Visi įrašai – nemokamai, dalis su angliškais subtitrais.</p>
+      </div>
+      <span class="video-credit">Video: Pexels / Matthias Groeneveld</span>
+    </section>
+
+    <!-- Salient: Row – Self Hosted Video / Video Lightbox (YouTube, įkeliamas tik paspaudus) + Text -->
+    <section class="section" id="filmas">
+      <div class="container">
+        <div class="split split--media-first">
+          <div class="video-embed" data-title="Atkurdami pelkes saugokime klimatą (2022)" data-reveal="fade"><img class="video-embed__poster" src="https://images.pexels.com/videos/29498734/4k-nature-video-aerial-bog-ecosystem-29498734.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=630&w=1200" alt="Aukštapelkės ežerokšniai iš viršaus"><button class="video-embed__play" type="button" aria-label="Paleisti filmą „Atkurdami pelkes saugokime klimatą“"><span><i class="ph-fill ph-play"></i></span></button></div>
+          <div class="split__text" data-reveal>
+            <p class="kicker">Fondo filmas · 2022</p>
+            <h2>Atkurdami pelkes saugokime klimatą</h2>
+            <p class="lead">Informacinis filmas apie pelkių atkūrimo reikšmę klimatui ir biologinei įvairovei. Lietuvių kalba, yra versija su angliškais subtitrais.</p>
+            <div class="cluster"><span class="tag">LT</span><span class="tag tag--outline">EN subtitrai</span><span class="tag tag--peat">© Pelkių fondas</span></div>
+            <p class="src mt-24">WordPress’e įrašai bus įkelti į fondo YouTube kanalą ir rodomi per Salient „Video Lightbox“ (nekrauna YouTube skriptų, kol neperžiūrima – greitesnis puslapis, mažiau slapukų).</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Salient: Post Loop Builder (CPT „Video“ su kategorijomis) + Enable Sortable filtrai -->
+    <section class="section section--white" id="irasai">
+      <div class="container" data-filter-group>
+        <div class="section-head section-head--row"><div><p class="kicker">Visi įrašai</p><h2>Filmai, reportažai, pamokos</h2></div><span class="muted" data-filter-count data-forms="įrašas|įrašai|įrašų">9 įrašai</span></div>
+        <div class="pill-group new-fn" style="margin-bottom:28px">
+          <span class="new-fn__badge new-fn__badge--improved" data-tip="Videotekoje atsiranda filtrai pagal kalbą ir temą bei skaitiklis; WordPress’e – video kaip įrašų tipas su kategorijomis." tabindex="0">Patobulinta</span>
+          <button class="pill" type="button" data-filter="all" aria-pressed="true">Visi</button>
+          <button class="pill" type="button" data-filter="fondo">Fondo filmai</button>
+          <button class="pill" type="button" data-filter="talkos">Talkos ir partneriai</button>
+          <button class="pill" type="button" data-filter="mokslas">Mokslas ir pamokos</button>
+          <button class="pill" type="button" data-filter="en">Anglų kalba</button>
+        </div>
+        <div class="grid grid--3" data-reveal-group>
+          <article class="card card--flat" data-tags="fondo"><div class="card__media"><img src="https://images.pexels.com/videos/29498734/4k-nature-video-aerial-bog-ecosystem-29498734.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=630&w=1200" alt="Aukštapelkės ežerokšniai"><span class="tag">LT</span></div><div class="card__body"><div class="card__meta"><span>2022</span><span>© Pelkių fondas</span></div><h3><a href="#filmas">Atkurdami pelkes saugokime klimatą</a></h3><p>Fondo informacinis filmas apie pelkių atkūrimo reikšmę klimatui ir biologinei įvairovei.</p></div></article>
+          <article class="card card--flat" data-tags="fondo en"><div class="card__media"><img src="https://images.pexels.com/photos/24426627/pexels-photo-24426627.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Aukštapelkės ežeras su pušimis"><span class="tag tag--outline">LT · EN subtitrai</span></div><div class="card__body"><div class="card__meta"><span>2022</span><span>© Pelkių fondas</span></div><h3><a href="#filmas">Let’s protect the climate by restoring peatlands</a></h3><p>Ta pati filmo versija su angliškais subtitrais – partneriams ir tarptautinei auditorijai.</p></div></article>
+          <article class="card card--flat" data-tags="fondo"><div class="card__media"><img src="https://images.pexels.com/photos/22944077/pexels-photo-22944077.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Beržai ir švyliai užlietoje pelkėje"><span class="tag">LT</span></div><div class="card__body"><div class="card__meta"><span>2023</span><span>© Pelkių fondas</span></div><h3><a href="#filmas">Pelkininkystė. Ūkininkavimas šlapiuose durpiniuose dirvožemiuose</a></h3><p>Klimatui palankus ūkininkavimas šlapiuose durpynuose: Lietuvos ir Vokietijos ūkininkų bei verslo patirtis.</p></div></article>
+          <article class="card card--flat" data-tags="talkos en"><div class="card__media"><img src="https://images.pexels.com/photos/36713476/pexels-photo-36713476.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Savanorių grupė dirba pušyne"><span class="tag tag--outline">EN</span></div><div class="card__body"><div class="card__meta"><span>2023</span><span>© Luminor Lietuva</span></div><h3><a href="#filmas">Bankininkai persikėlė dirbti į pelkes</a></h3><p>Daugiau kaip 120 „Luminor“ darbuotojų talkino Svirplinės draustinyje ir Šilėnų pelkėje atkuriant nykstančius durpynus.</p></div></article>
+          <article class="card card--flat" data-tags="talkos"><div class="card__media"><img src="https://images.pexels.com/photos/7656992/pexels-photo-7656992.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Savanoriai šlapioje pievoje saulėlydyje"><span class="tag">LT</span></div><div class="card__body"><div class="card__meta"><span>2023</span><span>© Drogas Lietuva</span></div><h3><a href="#filmas">Švarus grožis – švarus vanduo</a></h3><p>„Drogas Lietuva“ ir „Garnier“ talkininkų kampanija Šilėnų pelkėje: darbščios rankos ir nuveikti darbai.</p></div></article>
+          <article class="card card--flat" data-tags="mokslas en"><div class="card__media"><img src="https://images.pexels.com/photos/26873596/pexels-photo-26873596.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Saulašarių kilimas tarp kiminų"><span class="tag tag--outline">EN · LT subtitrai</span></div><div class="card__body"><div class="card__meta"><span>2023</span><span>© Greifswald Moor Centrum</span></div><h3><a href="#filmas">Durpynai, klimatas ir pelkininkystė</a></h3><p>Greifsvaldo pelkių centro filmas apie durpynų reikšmę klimatui ir pelkininkystę kaip klimatui palankų naudojimą.</p></div></article>
+          <article class="card card--flat" data-tags="fondo mokslas"><div class="card__media"><img src="https://images.pexels.com/photos/23708711/pexels-photo-23708711.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Rudeninis užlietas beržų miškas"><span class="tag">LT</span></div><div class="card__body"><div class="card__meta"><span>2022</span><span>© Pelkių fondas</span></div><h3><a href="#filmas">Istorinių parkų reikšmė saugant biologinę įvairovę</a></h3><p>Projekto LLI-476 „Išsaugok praeitį ateičiai“ filmas apie istorinių dvarų parkų reikšmę biologinei įvairovei.</p></div></article>
+          <article class="card card--flat" data-tags="mokslas"><div class="card__media"><img src="https://images.pexels.com/photos/38448147/pexels-photo-38448147.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Apskritalapė saulašarė, makro"><span class="tag">LT</span></div><div class="card__body"><div class="card__meta"><span>2021</span><span>© LMNŠC „Gamtos mitų griovėjai“</span></div><h3><a href="#filmas">Nuotolinė pamoka „Pelkė ir žmogus“</a></h3><p>Pamoka mokiniams, kurią veda fondo ekspertė dr. Jūratė Sendžikaitė.</p></div></article>
+          <article class="card card--flat" data-tags="talkos mokslas"><div class="card__media"><img src="https://images.pexels.com/photos/35842025/pexels-photo-35842025.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Gervė skrenda virš būrio rūke"><span class="tag">LT</span></div><div class="card__body"><div class="card__meta"><span>Reportažas</span><span>© Atviros širdies fondas</span></div><h3><a href="#filmas">Pelkių ekosisteminės paslaugos ir grėsmės jų išlikimui</a></h3><p>Fondo ekspertai apie pelkių teikiamas paslaugas – reportažas iš talkos Šilėnų pelkėje.</p></div></article>
+        </div>
+        <div class="empty-card" data-filter-empty hidden><p class="muted">Pagal pasirinktą filtrą įrašų nėra.</p></div>
+        <p class="src mt-24">Nuotraukos kortelėse – iliustracinės (Pexels); svetainėje bus kiekvieno įrašo kadrai iš YouTube.</p>
+      </div>
+    </section>
+
+    <!-- Salient: Call to Action -->
+    <section class="section section--s">
+      <div class="container">
+        <div class="cta cta--sun" data-reveal="fade"><span class="cta__shape"></span><div class="cta__grid"><div><h2>Norite nufilmuoti pelkę kartu?</h2><p class="lead">Kviečiame žurnalistus, dokumentininkus ir mokyklas – padėsime surasti vietą, ekspertą ir tinkamą metų laiką.</p></div><div class="cta__actions"><a class="btn btn--ink" href="kontaktai.html#forma">Susisiekti</a><a class="btn btn--ghost" href="galerija.html">Galerija</a></div></div></div>
+      </div>
+    </section>
+  </main>
+  <!-- Poraštė (Salient: Footer – 4 kolonos, tamsus fonas, Copyright juosta) -->
+  <footer class="footer" id="poraste">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a class="logo" href="index.html" aria-label="Pelkių fondas, pradžia"><img class="logo__mark" src="assets/img/logo-240.png" alt="" width="52" height="52"><span class="logo__word">Pelkių fondas<small>Pelkių atkūrimas ir apsauga</small></span></a>
+          <p>VšĮ „Pelkių fondas“ – ne pelno siekianti nevyriausybinė gamtosauginė organizacija, kuri rūpinasi pelkių ir kitų ekosistemų apsauga, atkūrimu, tvariu naudojimu ir visuomenės švietimu.</p>
+          <div class="footer__social">
+            <a href="https://www.facebook.com/pelkiufondas" aria-label="Facebook"><i class="ph ph-facebook-logo" aria-hidden="true"></i></a>
+            <a href="#" aria-label="YouTube"><i class="ph ph-youtube-logo" aria-hidden="true"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="ph ph-linkedin-logo" aria-hidden="true"></i></a>
+            <a href="#" aria-label="Instagram"><i class="ph ph-instagram-logo" aria-hidden="true"></i></a>
+          </div>
+        </div>
+        <div>
+          <h4>Svetainė</h4>
+          <ul>
+            <li><a href="pelkes.html">Pelkės</a></li>
+            <li><a href="terminu-zodynas.html">Terminų žodynas</a></li>
+            <li><a href="apie-mus.html">Apie mus</a></li>
+            <li><a href="veikla.html">Veikla</a></li>
+            <li><a href="projektai.html">Projektai</a></li>
+            <li><a href="publikacijos.html">Publikacijos</a></li>
+            <li><a href="naujienos.html">Naujienos</a></li>
+            <li><a href="kontaktai.html">Kontaktai</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Prisidėk</h4>
+          <ul>
+            <li><a href="prisidek.html#paremk">Paremk pelkes</a></li>
+            <li><a href="prisidek.html#gpm">Skirk 1,2 % GPM</a></li>
+            <li><a href="prisidek.html#savanoriauk">Savanoriauk</a></li>
+            <li><a href="prisidek.html#renginiai">Talkos ir renginiai</a></li>
+            <li><a href="prisidek.html#naujienlaiskis">Naujienlaiškis</a></li>
+            <li><a href="co2.html">Verslui: CO₂ kompensavimas</a></li>
+            <li><a href="veiklos-ataskaitos.html">Veiklos ataskaitos</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Kontaktai</h4>
+          <div class="footer__contact">
+            <div><i class="ph ph-map-pin" aria-hidden="true"></i><span>Gedimino pr. 1, 4 a. (NVO Avilys)<br>LT-01103 Vilnius, Lietuva</span></div>
+            <div><i class="ph ph-phone" aria-hidden="true"></i><a href="tel:+37065620426">+370 656 20426</a></div>
+            <div><i class="ph ph-envelope" aria-hidden="true"></i><a href="mailto:info@pelkiufondas.lt">info@pelkiufondas.lt</a></div>
+            <div><i class="ph ph-identification-card" aria-hidden="true"></i><span>Įmonės kodas 302822289<br>PVM kodas LT100017689218</span></div>
+            <div><i class="ph ph-bank" aria-hidden="true"></i><span>LT24 7044 0600 0784 1146<br>AB SEB bankas</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span><span class="footer__sun" aria-hidden="true"></span>© <span data-year>2026</span> VšĮ „Pelkių fondas“. Nuotraukos ir video makete – Pexels (nemokama licencija).</span>
+        <div class="footer__legal">
+          <a href="kontaktai.html#privatumas">Privatumo politika</a>
+          <a href="apie-mus.html#dokumentai">Įstatai</a>
+          <a href="galerija.html">Galerija</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

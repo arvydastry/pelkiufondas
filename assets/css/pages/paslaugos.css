@@ -1,0 +1,63 @@
+/* Paslaugos – puslapio stiliai. Bendri komponentai – assets/css/style.css.
+   Prefiksas sv- (services). */
+
+/* Antraštė: auditorijų žymos ant video (nuorodos į korteles) */
+.sv-facts { list-style: none; margin: 26px 0 0; padding: 0; }
+.sv-facts .tag { height: 32px; color: #fff; border-color: rgba(255, 255, 255, .45); background: rgba(16, 33, 27, .28); backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); text-decoration: none; transition: background .2s, border-color .2s, color .2s; }
+.sv-facts .tag i { font-size: 16px; color: var(--sun); }
+.sv-facts .tag:hover, .sv-facts .tag:focus-visible { background: var(--sun); border-color: var(--sun); color: var(--ink); }
+.sv-facts .tag:hover i, .sv-facts .tag:focus-visible i { color: var(--ink); }
+
+/* Auditorijų kortelės: įrodymų sąrašas (maži faktai) */
+.sv-audiences .icon-card { scroll-margin-top: calc(var(--header-h) + 24px); }
+.sv-audiences .icon-card h3 { font-size: 20px; }
+.sv-proof { list-style: none; margin: 0; padding: 14px 0 0; border-top: 1px dashed var(--line); display: grid; gap: 8px; font-size: 13.5px; color: var(--muted); }
+.sv-proof li { display: flex; gap: 8px; align-items: flex-start; line-height: 1.4; }
+.sv-proof i { flex-shrink: 0; margin-top: 1px; font-size: 17px; color: var(--green); }
+
+/* Paslaugų grupių kortelės su check-list */
+.sv-groups .card { scroll-margin-top: calc(var(--header-h) + 24px); }
+.sv-group .card__body > p { font-size: 15px; }
+.sv-group .check-list { margin-top: 6px; font-size: 15px; gap: 10px; }
+.sv-group .check-list li { padding-left: 32px; }
+.sv-group .check-list li::before { width: 22px; height: 22px; background-size: 13px; }
+.sv-group .card__foot { margin-top: auto; padding-top: 18px; border-top: 1px solid var(--line-2); }
+
+/* Skaičių juosta ant video (tik šio puslapio #patirtis) */
+#patirtis .section-head { margin-bottom: clamp(28px, 3.5vw, 44px); }
+#patirtis .section-head .lead { max-width: 64ch; }
+
+/* Proceso žingsniai (ol be numerių – numeruoja .step::before) */
+.sv-steps { list-style: none; margin: 0; padding: 0; }
+.sv-steps .step { box-shadow: var(--shadow-sm); }
+.sv-steps .step:not(:last-child)::after { content: ""; position: absolute; right: -16px; top: 42px; width: 12px; height: 12px; border-top: 2px solid var(--green-200); border-right: 2px solid var(--green-200); transform: rotate(45deg); }
+
+/* Pavyzdžio sekcija */
+.sv-more-h { margin: 36px 0 16px; font-size: 20px; }
+.sv-examples { gap: 14px; }
+.sv-examples li p { font-size: 14.5px; }
+.sv-figure { align-self: center; width: 100%; }
+.sv-figure .figure__cap { position: absolute; left: 0; right: 0; bottom: 0; padding: 14px 18px; background: linear-gradient(transparent, rgba(8, 43, 34, .72)); color: #fff; font-size: 13px; }
+
+/* Forma „Susisiekime“ */
+.sv-contact { align-items: start; }
+.sv-contact__list { margin-top: 28px; }
+.sv-contact__list li p { font-size: 15px; }
+.sv-form { padding: clamp(22px, 3vw, 36px); border-radius: var(--r-lg); background: var(--surface); border: 1px solid var(--line-2); box-shadow: var(--shadow); }
+.sv-form .field__hint { display: none; font-size: 13px; color: var(--green-700); }
+.sv-form .field__hint:not(:empty) { display: block; }
+.sv-form__actions { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 18px; }
+.check-field .field__error { margin-left: 32px; }
+
+@media (max-width: 1100px) {
+  .sv-steps .step:not(:last-child)::after { display: none; }
+}
+@media (max-width: 900px) {
+  .sv-figure { aspect-ratio: 16 / 10; }
+}
+@media (max-width: 640px) {
+  .sv-facts .tag { height: 30px; font-size: 12px; }
+}
+
+/* Sutikimo langelis formoje: .field label taisyklė neturi paversti .check pusjuodžiu */
+.check-field .check { font-weight: 500; font-size: 14.5px; color: var(--text); }

@@ -1,0 +1,601 @@
+<!doctype html>
+<html lang="lt">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Publikacijos | Pelkių fondas</title>
+  <meta name="description" content="Pelkių fondo ir partnerių publikacijos: recenzuojami moksliniai straipsniai su DOI nuorodomis, knygos ir metodinės priemonės, brošiūros, lankstinukai, informaciniai biuleteniai, studijos ir analizės apie pelkes, jų atkūrimą ir pelkininkystę – 44 leidiniai su filtrais ir paieška.">
+  <!-- Bendra <head> dalis: įklijuoti į kiekvieną puslapį po <title> ir <meta name="description"> -->
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/Fraunces.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/Manrope.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>document.documentElement.classList.add('js');</script>
+  <link rel="stylesheet" href="assets/css/pages/publikacijos.css">
+</head>
+<body data-nav="veikla">
+  <a class="skip-link" href="#turinys">Pereiti prie turinio</a>
+
+  <!-- Maketo juosta: į WordPress nekeliama -->
+  <div class="mockbar" role="region" aria-label="Maketo juosta">
+    <div class="container">
+      <strong>Dizaino maketas <span>·</span> Pelkių fondas</strong>
+      <span>WordPress + Salient</span>
+      <label class="mockbar__toggle" title="Žymekliai rodo, kas makete yra nauja, palyginti su dabartine svetaine"><input type="checkbox" id="toggle-newfn" checked> <span class="new-fn__badge">Nauja</span> rodyti naujas funkcijas</label>
+      <nav class="mockbar__pages" aria-label="Maketo puslapiai">
+        <a href="index.html">Pradinis</a><a href="pelkes.html">Pelkės</a><a href="apie-mus.html">Apie mus</a><a href="veikla.html">Veikla</a><a href="naujienos.html">Naujienos</a><a href="kontaktai.html">Kontaktai</a><a href="prisidek.html">Prisidėk</a>
+      </nav>
+    </div>
+  </div>
+
+  <!-- Antraštė (Salient: Header layout „Standard“, logotipas kairėje, meniu dešinėje, „Prisidėk“ mygtukas, paieška, kalbos) -->
+  <header class="site-header">
+    <div class="container container--wide site-header__inner">
+      <a class="logo" href="index.html" aria-label="Pelkių fondas, pradžia">
+        <img class="logo__mark" src="assets/img/logo-240.png" alt="" width="52" height="52">
+        <span class="logo__word">Pelkių fondas<small>Pelkių atkūrimas ir apsauga</small></span>
+      </a>
+      <nav class="nav" aria-label="Pagrindinis meniu">
+        <a class="nav__link" href="index.html" data-nav-key="pradinis">Pradinis</a>
+        <div class="nav__item" data-drop data-nav-key="pelkes">
+          <button class="nav__link" type="button" aria-expanded="false" aria-haspopup="true">Pelkės <i class="ph ph-caret-down" aria-hidden="true"></i></button>
+          <div class="nav__drop">
+            <a class="drop-link" href="pelkes.html"><span class="drop-link__icon"><i class="ph ph-leaf"></i></span><span class="drop-link__text"><strong>Kas yra pelkės</strong><span>Apibrėžimai, reikšmė, būklė Lietuvoje</span></span></a>
+            <a class="drop-link" href="pelkes.html#tipai"><span class="drop-link__icon"><i class="ph ph-tree-evergreen"></i></span><span class="drop-link__text"><strong>Pelkių tipai ir buveinės</strong><span>Žemapelkės, tarpinės, aukštapelkės, EB buveinės</span></span></a>
+            <a class="drop-link" href="pelkes.html#gresmes"><span class="drop-link__icon"><i class="ph ph-warning"></i></span><span class="drop-link__text"><strong>Grėsmės ir atkūrimas</strong><span>Kodėl pelkės nyksta ir kaip jas atkuriame</span></span></a>
+            <a class="drop-link" href="terminu-zodynas.html"><span class="drop-link__icon"><i class="ph ph-book-open"></i></span><span class="drop-link__text"><strong>Terminų žodynas</strong><span>Pelkių ir durpynų sąvokos su paieška</span></span></a>
+            <a class="drop-link" href="galerija.html"><span class="drop-link__icon"><i class="ph ph-images"></i></span><span class="drop-link__text"><strong>Galerija</strong><span>Pelkių ir mūsų darbų nuotraukos</span></span></a>
+          </div>
+        </div>
+        <a class="nav__link" href="apie-mus.html" data-nav-key="apie-mus">Apie mus</a>
+        <div class="nav__item" data-drop data-nav-key="veikla">
+          <button class="nav__link" type="button" aria-expanded="false" aria-haspopup="true">Veikla <i class="ph ph-caret-down" aria-hidden="true"></i></button>
+          <div class="nav__drop nav__drop--wide">
+            <a class="drop-link" href="veikla.html"><span class="drop-link__icon"><i class="ph ph-compass"></i></span><span class="drop-link__text"><strong>Veiklos kryptys</strong><span>Biologinė įvairovė, atkūrimas, klimatas, pelkininkystė</span></span></a>
+            <a class="drop-link" href="co2.html"><span class="drop-link__icon"><i class="ph ph-cloud"></i></span><span class="drop-link__text"><strong>CO₂ emisijų mažinimas</strong><span>Verslui: atkurkite pelkes, mažinkite anglies pėdsaką</span></span></a>
+            <a class="drop-link" href="projektai.html"><span class="drop-link__icon"><i class="ph ph-map-pin"></i></span><span class="drop-link__text"><strong>Projektai</strong><span>Vykdomi ir įgyvendinti projektai žemėlapyje</span></span></a>
+            <a class="drop-link" href="paslaugos.html"><span class="drop-link__icon"><i class="ph ph-briefcase"></i></span><span class="drop-link__text"><strong>Paslaugos</strong><span>Konsultacijos, tyrimai, švietimas</span></span></a>
+            <a class="drop-link" href="publikacijos.html"><span class="drop-link__icon"><i class="ph ph-books"></i></span><span class="drop-link__text"><strong>Publikacijos</strong><span>Straipsniai, knygos, lankstinukai</span></span></a>
+            <a class="drop-link" href="videoteka.html"><span class="drop-link__icon"><i class="ph ph-play-circle"></i></span><span class="drop-link__text"><strong>Videoteka</strong><span>Filmai apie pelkes ir mūsų darbus</span></span></a>
+            <a class="drop-link" href="veiklos-ataskaitos.html"><span class="drop-link__icon"><i class="ph ph-file-text"></i></span><span class="drop-link__text"><strong>Veiklos ataskaitos</strong><span>Metinės veiklos ir finansinės ataskaitos</span></span></a>
+            <div class="nav__drop-foot"><span class="muted">Norite prisidėti prie veiklų?</span><a class="link-u" href="prisidek.html#savanoriauk">Savanoriauk</a></div>
+          </div>
+        </div>
+        <a class="nav__link" href="naujienos.html" data-nav-key="naujienos">Naujienos</a>
+        <a class="nav__link" href="kontaktai.html" data-nav-key="kontaktai">Kontaktai</a>
+      </nav>
+      <div class="header-actions">
+        <div class="lang" aria-label="Kalba"><span aria-current="true" lang="lt">LT</span><a href="#" data-lang="en" hreflang="en">EN</a></div>
+        <button class="icon-btn icon-btn--search" type="button" data-search-open aria-label="Paieška svetainėje"><i class="ph ph-magnifying-glass" aria-hidden="true"></i></button>
+        <a class="btn btn--sun btn--sm" href="prisidek.html">Prisidėk</a>
+        <button class="burger icon-btn" type="button" aria-label="Atidaryti meniu" aria-expanded="false" aria-controls="mobile-menu"><i class="ph ph-list" aria-hidden="true"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobilus meniu (Salient: Off Canvas Menu) -->
+  <div class="mobile-menu" id="mobile-menu" role="dialog" aria-modal="true" aria-label="Meniu" tabindex="-1">
+    <div class="container">
+      <div class="mobile-menu__top">
+        <a class="logo" href="index.html" aria-label="Pelkių fondas, pradžia"><img class="logo__mark" src="assets/img/logo-240.png" alt="" width="52" height="52"><span class="logo__word">Pelkių fondas<small>Pelkių atkūrimas ir apsauga</small></span></a>
+        <button class="mobile-menu__close" type="button" aria-label="Uždaryti meniu"><i class="ph ph-x" aria-hidden="true"></i></button>
+      </div>
+      <nav class="mobile-menu__links" aria-label="Meniu mobiliesiems">
+        <a href="index.html">Pradinis <i class="ph ph-arrow-right" aria-hidden="true"></i></a>
+        <details><summary>Pelkės <i class="ph ph-caret-down" aria-hidden="true"></i></summary><div><a href="pelkes.html">Kas yra pelkės</a><a href="pelkes.html#tipai">Pelkių tipai ir buveinės</a><a href="pelkes.html#gresmes">Grėsmės ir atkūrimas</a><a href="terminu-zodynas.html">Terminų žodynas</a><a href="galerija.html">Galerija</a></div></details>
+        <a href="apie-mus.html">Apie mus <i class="ph ph-arrow-right" aria-hidden="true"></i></a>
+        <details><summary>Veikla <i class="ph ph-caret-down" aria-hidden="true"></i></summary><div><a href="veikla.html">Veiklos kryptys</a><a href="co2.html">CO₂ emisijų mažinimas</a><a href="projektai.html">Projektai</a><a href="paslaugos.html">Paslaugos</a><a href="publikacijos.html">Publikacijos</a><a href="videoteka.html">Videoteka</a><a href="veiklos-ataskaitos.html">Veiklos ataskaitos</a></div></details>
+        <a href="naujienos.html">Naujienos <i class="ph ph-arrow-right" aria-hidden="true"></i></a>
+        <a href="kontaktai.html">Kontaktai <i class="ph ph-arrow-right" aria-hidden="true"></i></a>
+        <a href="prisidek.html">Prisidėk <i class="ph ph-arrow-right" aria-hidden="true"></i></a>
+      </nav>
+      <div class="mobile-menu__foot">
+        <a class="btn btn--sun" href="prisidek.html">Paremk pelkes</a>
+        <button class="btn btn--ghost-light" type="button" data-search-open><i class="ph ph-magnifying-glass" aria-hidden="true"></i> Paieška</button>
+        <div class="lang" aria-label="Kalba"><span aria-current="true">LT</span><a href="#" data-lang="en" hreflang="en">EN</a></div>
+      </div>
+    </div>
+  </div>
+
+  <main id="turinys">
+
+    <!-- Salient: Page Header (Nectar „Page Header“ be fono; breadcrumb – Yoast / Rank Math shortcode), Split Line Heading, Button, Icon With Text (žymos) -->
+    <section class="page-header page-header--plain" id="antraste">
+      <div class="container">
+        <ol class="breadcrumb" aria-label="Naršymo kelias">
+          <li><a href="index.html">Pradinis</a></li>
+          <li><a href="veikla.html">Veikla</a></li>
+          <li aria-current="page">Publikacijos</li>
+        </ol>
+        <p class="kicker" data-reveal>Veikla</p>
+        <h1 data-split>Publikacijos ir <em>leidiniai</em></h1>
+        <p class="lead" data-reveal style="--d:160ms">Čia rasite visus mūsų ir partnerių leidinius: recenzuojamus mokslinius straipsnius, knygas ir metodines priemones, brošiūras, lankstinukus, informacinius biuletenius, studijas ir analizes. Leidiniai atsisiunčiami PDF formatu, moksliniai straipsniai atveriami žurnalų svetainėse pagal DOI.</p>
+        <div class="page-header__actions" data-reveal style="--d:280ms">
+          <a class="btn" href="#katalogas"><i class="ph ph-magnifying-glass" aria-hidden="true"></i> Ieškoti kataloge</a>
+          <a class="link-arrow" href="veiklos-ataskaitos.html">Metinės veiklos ataskaitos <i class="ph ph-arrow-right" aria-hidden="true"></i></a>
+        </div>
+        <ul class="cluster pb-facts" aria-label="Katalogo apžvalga" data-reveal style="--d:380ms">
+          <li><span class="tag tag--outline"><i class="ph ph-books" aria-hidden="true"></i> 44 publikacijos</span></li>
+          <li><span class="tag tag--outline"><i class="ph ph-squares-four" aria-hidden="true"></i> 6 leidinių tipai</span></li>
+          <li><span class="tag tag--outline"><i class="ph ph-file-pdf" aria-hidden="true"></i> 38 PDF failai</span></li>
+          <li><span class="tag tag--outline"><i class="ph ph-graduation-cap" aria-hidden="true"></i> 6 straipsniai su DOI</span></li>
+          <li><span class="tag tag--outline"><i class="ph ph-translate" aria-hidden="true"></i> LT · EN · PL · LV</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Salient: Page Submenu (prilipęs vidinis meniu su inkarais į skyrius) -->
+    <nav class="subnav" aria-label="Puslapio skyriai">
+      <div class="container">
+        <span class="subnav__label">Šiame puslapyje</span>
+        <a href="#isskirtos">Rekomenduojame</a>
+        <a href="#katalogas">Katalogas</a>
+        <a href="#straipsniai">Straipsniai</a>
+        <a href="#knygos">Knygos</a>
+        <a href="#brosiuros">Brošiūros</a>
+        <a href="#lankstinukai">Lankstinukai</a>
+        <a href="#biuleteniai">Biuleteniai</a>
+        <a href="#kita">Kita</a>
+        <a href="#naujienlaiskis">Naujienlaiškis</a>
+        <a class="btn btn--sun btn--sm subnav__cta" href="prisidek.html">Paremk</a>
+      </div>
+    </nav>
+
+    <!-- Salient: Split Line Heading, Post Loop Builder (3 išskirtos publikacijos, „Featured“ žyma) arba 3 × Fancy Box / Image With Hover + Button; Column animation -->
+    <section class="section" id="isskirtos" aria-labelledby="isskirtos-h">
+      <div class="container">
+        <div class="section-head section-head--row">
+          <div>
+            <p class="kicker" data-reveal>Rekomenduojame</p>
+            <h2 id="isskirtos-h" data-split>Trys knygos, <em>nuo kurių verta pradėti</em></h2>
+            <p class="lead" data-reveal style="--d:160ms">Jei pelkių tema jums nauja – pradėkite nuo šių leidinių: metodinė priemonė praktikams, knyga apie pelkininkystę ūkininkams ir įvadas į pelkių bei klimato ryšį.</p>
+          </div>
+          <a class="link-arrow" href="#knygos" data-reveal>Visos knygos <i class="ph ph-arrow-right" aria-hidden="true"></i></a>
+        </div>
+        <div class="grid grid--3" data-reveal-group>
+          <article class="card pb-book">
+            <div class="card__media">
+              <img src="https://images.pexels.com/photos/11264997/pexels-photo-11264997.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Vingiuojanti upės kilpa per šlapią pievą iš oro" loading="lazy">
+              <span class="tag tag--sun">Knyga · 2025</span>
+            </div>
+            <div class="card__body">
+              <div class="card__meta"><span><i class="ph ph-users" aria-hidden="true"></i>Pawlaczyk P., Áskelsdóttir S., Jarašius L. ir kt.</span></div>
+              <h3><a href="#" title="PDF (makete neįkeltas)">Hidrologinio režimo atkūrimas pelkėse ir kituose durpynuose. Metodinė priemonė</a></h3>
+              <p>Praktinė metodinė priemonė, kaip atkurti hidrologinį režimą nusausintose pelkėse ir kituose durpynuose. Parengta projekte SavePeatLands; yra ir versija lenkų kalba.</p>
+              <div class="card__foot">
+                <span class="cluster" style="--cluster:6px"><span class="tag">LT</span><span class="tag tag--moss">PL</span></span>
+                <span class="pb-book__fmt"><i class="ph ph-file-pdf" aria-hidden="true"></i> PDF</span>
+              </div>
+              <span class="card__go" aria-hidden="true"><i class="ph ph-download-simple"></i></span>
+            </div>
+          </article>
+          <article class="card pb-book">
+            <div class="card__media">
+              <img src="https://images.pexels.com/photos/38831467/pexels-photo-38831467.png?auto=compress&cs=tinysrgb&w=900" alt="Rūkas virš šlapios pievos su vingiuojančiu upeliu" loading="lazy">
+              <span class="tag tag--sun">Knyga · 2024</span>
+            </div>
+            <div class="card__body">
+              <div class="card__meta"><span><i class="ph ph-users" aria-hidden="true"></i>Sendžikaitė J., Jarašius L., Zableckis N.</span></div>
+              <h3><a href="#" title="PDF (makete neįkeltas)">Pelkininkystė. Klimatui palankus ūkininkavimas šlapiuose durpiniuose dirvožemiuose</a></h3>
+              <p>Knyga apie klimatui palankų šlapių durpynų ūkinį naudojimą – pelkininkystę: kokie augalai auginami, kam tinka jų biomasė ir kaip pradėti. Išleido Pelkių atkūrimo ir apsaugos fondas.</p>
+              <div class="card__foot">
+                <span class="cluster" style="--cluster:6px"><span class="tag">LT</span></span>
+                <span class="pb-book__fmt"><i class="ph ph-file-pdf" aria-hidden="true"></i> PDF</span>
+              </div>
+              <span class="card__go" aria-hidden="true"><i class="ph ph-download-simple"></i></span>
+            </div>
+          </article>
+          <article class="card pb-book">
+            <div class="card__media">
+              <img src="https://images.pexels.com/photos/20617862/pexels-photo-20617862.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Aukštapelkės ežerėlių mozaika su pušimis, platus vaizdas" loading="lazy">
+              <span class="tag tag--sun">Knyga · 2021</span>
+            </div>
+            <div class="card__body">
+              <div class="card__meta"><span><i class="ph ph-users" aria-hidden="true"></i>Jarašius L., Sendžikaitė J., Zableckis N., Sinkevičius Ž.</span></div>
+              <h3><a href="#" title="PDF (makete neįkeltas)">Durpynai ir klimato kaita. Atkuriame pelkes siekdami švelninti klimato kaitą</a></h3>
+              <p>Įvadas į pelkių, durpynų ir klimato kaitos ryšį: kodėl nusausinti durpynai išskiria CO₂ ir kaip atkūrimas padeda švelninti klimato kaitą. Išleido Lietuvos gamtos fondas.</p>
+              <div class="card__foot">
+                <span class="cluster" style="--cluster:6px"><span class="tag">LT</span></span>
+                <span class="pb-book__fmt"><i class="ph ph-file-pdf" aria-hidden="true"></i> PDF</span>
+              </div>
+              <span class="card__go" aria-hidden="true"><i class="ph ph-download-simple"></i></span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Salient: Document Library Lite (įrašų tipas „Publikacija“ + taksonomijos tipas / kalba / projektas; filtrų juosta ir paieška – įskiepio shortcode) ARBA Post Loop Builder su filtrų juosta; grupių antraštės – Heading; kortelės – Icon With Text / Fancy Box su Media Library PDF ir DOI nuorodomis -->
+    <section class="section section--white" id="katalogas" aria-labelledby="katalogas-h">
+      <div class="container">
+        <div class="section-head section-head--row">
+          <div>
+            <p class="kicker" data-reveal>Katalogas</p>
+            <h2 id="katalogas-h" data-split>Visos publikacijos <em>vienoje vietoje</em></h2>
+            <p class="lead" data-reveal style="--d:160ms">Pasirinkite leidinio tipą ar kalbą arba įveskite paieškos žodį – pavadinimą, autorių, projektą ar temą. Moksliniai straipsniai atsidaro žurnalų svetainėse (DOI), visi kiti leidiniai – PDF formatu.</p>
+          </div>
+          <p class="sr-note" data-reveal>Leidiniai sugrupuoti pagal tipą, kiekvienoje grupėje – naujausi viršuje.</p>
+        </div>
+
+        <div class="pb-list" data-pb>
+          <div class="pb-panel new-fn" data-reveal>
+            <span class="new-fn__badge" data-tip="Nauja: publikacijų katalogas su filtrais pagal tipą ir kalbą, paieška ir rezultatų skaitikliu. WordPress’e – Document Library Lite (įrašų tipas „Publikacija“ su taksonomijomis tipas / kalba / projektas) arba Salient Post Loop Builder su filtrų juosta; dabartinėje svetainėje – ilgas sąrašas be filtrų ir paieškos." tabindex="0">Nauja</span>
+
+            <div class="pb-row">
+              <span class="pb-row__label" id="pb-t-label">Tipas</span>
+              <div class="pill-group" role="group" aria-labelledby="pb-t-label">
+                <button class="pill" type="button" data-pb-group="t" data-pb="all" aria-pressed="true">Visi tipai <span class="pill__count">44</span></button>
+                <button class="pill" type="button" data-pb-group="t" data-pb="straipsnis" aria-pressed="false">Straipsniai <span class="pill__count">9</span></button>
+                <button class="pill" type="button" data-pb-group="t" data-pb="knyga" aria-pressed="false">Knygos <span class="pill__count">11</span></button>
+                <button class="pill" type="button" data-pb-group="t" data-pb="brosiura" aria-pressed="false">Brošiūros <span class="pill__count">3</span></button>
+                <button class="pill" type="button" data-pb-group="t" data-pb="lankstinukas" aria-pressed="false">Lankstinukai <span class="pill__count">3</span></button>
+                <button class="pill" type="button" data-pb-group="t" data-pb="biuletenis" aria-pressed="false">Biuleteniai <span class="pill__count">11</span></button>
+                <button class="pill" type="button" data-pb-group="t" data-pb="kita" aria-pressed="false">Kita <span class="pill__count">7</span></button>
+              </div>
+            </div>
+
+            <div class="pb-row">
+              <span class="pb-row__label" id="pb-l-label">Kalba</span>
+              <div class="pill-group" role="group" aria-labelledby="pb-l-label">
+                <button class="pill" type="button" data-pb-group="l" data-pb="all" aria-pressed="true">Visos kalbos <span class="pill__count">44</span></button>
+                <button class="pill" type="button" data-pb-group="l" data-pb="lt" aria-pressed="false">Lietuvių (LT) <span class="pill__count">33</span></button>
+                <button class="pill" type="button" data-pb-group="l" data-pb="en" aria-pressed="false">Anglų (EN) <span class="pill__count">11</span></button>
+                <button class="pill" type="button" data-pb-group="l" data-pb="pl" aria-pressed="false">Lenkų (PL) <span class="pill__count">1</span></button>
+                <button class="pill" type="button" data-pb-group="l" data-pb="lv" aria-pressed="false">Latvių (LV) <span class="pill__count">2</span></button>
+              </div>
+            </div>
+
+            <div class="pb-row pb-row--top">
+              <label class="pb-row__label" for="pb-search">Paieška</label>
+              <form class="pb-search" role="search" aria-label="Paieška publikacijose">
+                <div class="pb-search__field">
+                  <i class="ph ph-magnifying-glass" aria-hidden="true"></i>
+                  <input id="pb-search" type="search" name="q" data-pb-search placeholder="pvz., pelkininkystė, Aukštumala, SavePeatLands, metanas" autocomplete="off">
+                </div>
+                <p class="pb-search__hint">Ieškoma pavadinimuose, autoriuose, šaltiniuose ir temose; lietuviškos raidės nebūtinos.</p>
+              </form>
+            </div>
+          </div>
+
+          <div class="pb-bar">
+            <p class="pb-bar__count" data-pb-count aria-live="polite"><b>44</b> publikacijų iš viso</p>
+            <div class="pb-tools">
+              <button class="btn btn--ghost btn--sm" type="button" data-pb-clear hidden><i class="ph ph-x" aria-hidden="true"></i> Išvalyti filtrus</button>
+            </div>
+          </div>
+
+          <!-- Straipsniai: Salient Heading + Post Loop Builder (Custom Post Type „Publikacija“, taksonomija „tipas“ = straipsnis), kortelės – Icon With Text / Fancy Box -->
+          <div class="pb-group new-fn" id="straipsniai" data-pb-type="straipsnis">
+            <span class="new-fn__badge new-fn__badge--improved" data-tip="Patobulinta: vienodas bibliografinis formatas (autoriai · metai · šaltinis), aiškios DOI / PDF ir kalbos žymos. WordPress’e – publikacijos įrašo laukai (autoriai, metai, šaltinis, DOI, kalba) ir vienas kortelės šablonas." tabindex="0">Patobulinta</span>
+            <div class="pb-group__head">
+              <div>
+                <p class="kicker" data-nr="01">Straipsniai</p>
+                <h2 id="straipsniai-h">Moksliniai straipsniai ir <em>spauda</em></h2>
+                <p>Šeši recenzuojami moksliniai straipsniai tarptautiniuose žurnaluose (anglų k., su DOI nuorodomis) ir trys straipsniai Lietuvos spaudoje (PDF). Dalies straipsnių bendraautoriai – fondo ekspertai.</p>
+              </div>
+              <span class="tag tag--outline pb-group__count" data-pb-type-count>9 publikacijos</span>
+            </div>
+            <div class="pb-block" data-pb-block>
+              <h3 class="pb-sub">Recenzuojami moksliniai straipsniai</h3>
+              <div class="pb-docs">
+                <a class="doc pb-doc" href="https://iopscience.iop.org/article/10.1088/1748-9326/ade901" data-tags="t-straipsnis lang-en" data-keywords="straipsnis mokslinis straipsnis anglų doi 2025 palydoviniai duomenys albedas temperatūra atkūrimo poveikis mokslinis straipsnis žurnalas"><span class="doc__icon doc__icon--green"><i class="ph ph-graduation-cap" aria-hidden="true"></i></span><span class="doc__text"><strong><span lang="en">Satellite data archives reveal positive effects of peatland restoration: albedo and temperature begin to resemble those of intact peatlands</span></strong><span class="pb-doc__authors">Burdun I., Myllymäki M., Artz R. R. E. et al. · 2025</span><span class="pb-doc__src">DOI · Environmental Research Letters, 20, 084037</span></span><span class="doc__meta"><span class="tag tag--water">EN</span><span class="tag tag--outline">DOI</span></span><span class="doc__dl" aria-hidden="true"><i class="ph ph-arrow-square-out"></i></span></a>
+                <a class="doc pb-doc" href="https://doi.org/10.22630/srees.10809" data-tags="t-straipsnis lang-en" data-keywords="straipsnis mokslinis straipsnis anglų doi 2025 durpių kasybos vietos anglies nuostoliai ekonomika Jarašius Sendžikaitė mokslinis straipsnis"><span class="doc__icon doc__icon--green"><i class="ph ph-graduation-cap" aria-hidden="true"></i></span><span class="doc__text"><strong><span lang="en">Drained and forgotten peat extraction sites: economic and carbon impacts of peat and water loss in spontaneously forested Lithuanian peatlands</span></strong><span class="pb-doc__authors">Manton M., Grigaliūnas V., Jarašius L., Sendžikaitė J., Tamulaitytė G., Grodzka-Lukaszewska M. · 2025</span><span class="pb-doc__src">DOI · Scientific Review Engineering and Environmental Sciences (SREES), 34(4), 376–397</span><span class="pb-doc__note">Bendraautoriai – fondo ekspertai L. Jarašius ir J. Sendžikaitė.</span></span><span class="doc__meta"><span class="tag tag--water">EN</span><span class="tag tag--outline">DOI</span></span><span class="doc__dl" aria-hidden="true"><i class="ph ph-arrow-square-out"></i></span></a>
+                <a class="doc pb-doc" href="https://doi.org/10.1007/s13280-024-02016-5" data-tags="t-straipsnis lang-en" data-keywords="straipsnis mokslinis straipsnis anglų doi 2024 miško įveisimas nusausinti durpynai gamtos atkūrimo reglamentas ES mokslinis straipsnis"><span class="doc__icon doc__icon--green"><i class="ph ph-graduation-cap" aria-hidden="true"></i></span><span class="doc__text"><strong><span lang="en">Active afforestation of drained peatlands is not a viable option under the EU Nature Restoration Law</span></strong><span class="pb-doc__authors">Jurasinski G., Barthelmes A., Byrne K. A. et al. · 2024</span><span class="pb-doc__src">DOI · Ambio, 53: 970–983</span></span><span class="doc__meta"><span class="tag tag--water">EN</span><span class="tag tag--outline">DOI</span></span><span class="doc__dl" aria-hidden="true"><i class="ph ph-arrow-square-out"></i></span></a>
+                <a class="doc pb-doc" href="https://doi.org/10.1016/j.scitotenv.2023.161979" data-tags="t-straipsnis lang-en" data-keywords="straipsnis mokslinis straipsnis anglų doi 2023 vandens tarša smilkstantys gaisrai pažeisti durpynai Zableckis mokslinis straipsnis"><span class="doc__icon doc__icon--green"><i class="ph ph-graduation-cap" aria-hidden="true"></i></span><span class="doc__text"><strong><span lang="en">Water pollution risks by smoldering fires in degraded peatlands</span></strong><span class="pb-doc__authors">Liu H., Zak D., Zableckis N., Cossmer A., Langhammer N., Meermann B., Lennartz B. · 2023</span><span class="pb-doc__src">DOI · Science of The Total Environment, 871, 161979</span><span class="pb-doc__note">Bendraautoris – fondo direktorius N. Zableckis.</span></span><span class="doc__meta"><span class="tag tag--water">EN</span><span class="tag tag--outline">DOI</span></span><span class="doc__dl" aria-hidden="true"><i class="ph ph-arrow-square-out"></i></span></a>
+                <a class="doc pb-doc" href="https://doi.org/10.1016/j.scitotenv.2022.154560" data-tags="t-straipsnis lang-en" data-keywords="straipsnis mokslinis straipsnis anglų doi 2022 vandens sulaikymas Nemuno baseinas pakartotinis užpelkinimas mokslinis straipsnis"><span class="doc__icon doc__icon--green"><i class="ph ph-graduation-cap" aria-hidden="true"></i></span><span class="doc__text"><strong><span lang="en">To store or to drain – To lose or to gain? Rewetting drained peatlands as a measure for increasing water storage in the transboundary Neman River Basin</span></strong><span class="pb-doc__authors">Stachowicz M., Manton M., Abramchuk M. et al. · 2022</span><span class="pb-doc__src">DOI · Science of The Total Environment, 154560</span></span><span class="doc__meta"><span class="tag tag--water">EN</span><span class="tag tag--outline">DOI</span></span><span class="doc__dl" aria-hidden="true"><i class="ph ph-arrow-square-out"></i></span></a>
+                <a class="doc pb-doc" href="https://doi.org/10.3390/land10020174" data-tags="t-straipsnis lang-en" data-keywords="straipsnis mokslinis straipsnis anglų doi 2021 Nemuno baseinas erdvinis planavimas pelkių apsauga atkūrimas mokslinis straipsnis"><span class="doc__icon doc__icon--green"><i class="ph ph-graduation-cap" aria-hidden="true"></i></span><span class="doc__text"><strong><span lang="en">Assessment and spatial planning for peatland conservation and restoration: Europe's trans-border Neman River Basin as a case study</span></strong><span class="pb-doc__authors">Manton M., Makrickas E., Banaszuk P. et al. · 2021</span><span class="pb-doc__src">DOI · Land, 10(2), Art. no. 174</span></span><span class="doc__meta"><span class="tag tag--water">EN</span><span class="tag tag--outline">DOI</span></span><span class="doc__dl" aria-hidden="true"><i class="ph ph-arrow-square-out"></i></span></a>
+              </div>
+            </div>
+            <div class="pb-block" data-pb-block>
+              <h3 class="pb-sub">Straipsniai spaudoje</h3>
+              <div class="pb-docs">
+                <a class="doc pb-doc" href="#" title="PDF (makete neįkeltas)" data-tags="t-straipsnis lang-lt" data-keywords="straipsnis straipsnis spaudoje lietuvių pdf 2022 Aukštumala aukštapelkė atkūrimas spauda žurnalas"><span class="doc__icon"><i class="ph ph-newspaper" aria-hidden="true"></i></span><span class="doc__text"><strong>Aukštumalos aukštapelkės atkūrimas: saugodami praeitį rūpinamės ateitimi</strong><span class="pb-doc__authors">2022</span><span class="pb-doc__src">PDF · Geologijos akiračiai, 2022 Nr. 1–2</span></span><span class="doc__meta"><span class="tag">LT</span><span class="tag tag--outline">PDF</span></span><span class="doc__dl" aria-hidden="true"><i class="ph ph-download-simple"></i></span></a>
+                <a class="doc pb-doc" href="#" title="PDF (makete neįkeltas)" data-tags="t-straipsnis lang-lt" data-keywords="straipsnis straipsnis spaudoje lietuvių pdf 2022 ūkininkavimas durpiniai dirvožemiai spauda laikraštis"><span class="doc__icon"><i class="ph ph-newspaper" aria-hidden="true"></i></span><span class="doc__text"><strong>Kodėl reikia keisti požiūrį į ūkininkavimą durpiniuose dirvožemiuose?</strong><span class="pb-doc__authors">2022</span><span class="pb-doc__src">PDF · Valstiečių laikraštis, 2022 Nr. 96 (10240)</span></span><span class="doc__meta"><span class="tag">LT</span><span class="tag tag--outline">PDF</span></span><span class="doc__dl" aria-hidden="true"><i class="ph ph-download-simple"></i></span></a>
+                <a class="doc pb-doc" href="#" title="PDF (makete neįkeltas)" data-tags="t-straipsnis lang-lt" data-keywords="straipsnis straipsnis spaudoje lietuvių pdf 2021 kiminų auginimas aukštapelkinės buveinės klimatui palankus ūkininkavimas spauda"><span class="doc__icon"><i class="ph ph-newspaper" aria-hidden="true"></i></span><span class="doc__text"><strong>Būtina atkurti pelkes. Kiminų auginimas aukštapelkinių buveinių atkūrimui ir (ar) galimybė ūkininkauti pažeistose pelkėse klimatui palankiu būdu</strong><span class="pb-doc__authors">2021</span><span class="pb-doc__src">PDF · Miškai, 2021 Nr. 4</span></span><span class="doc__meta"><span class="tag">LT</span><span class="tag tag--outline">PDF</span></span><span class="doc__dl" aria-hidden="true"><i class="ph ph-download-simple"></i></span></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Knygos: Salient Heading + Post Loop Builder (Custom Post Type „Publikacija“, taksonomija „tipas“ = knyga), kortelės – Icon With Text / Fancy Box -->
+          <div class="pb-group" id="knygos" data-pb-type="knyga">
+            <div class="pb-group__head">
+              <div>
+                <p class="kicker" data-nr="02">Knygos</p>
+                <h2 id="knygos-h">Knygos ir <em>metodinės priemonės</em></h2>
+                <p>Metodinės priemonės, vadovai ir knygos apie pelkių atkūrimą, pelkininkystę ir klimatą – mūsų ir partnerių. Du leidiniai pateikiami dviem PDF variantais: atvartais ir atskirais puslapiais.</p>
+              </div>
+              <span class="tag tag--outline pb-group__count" data-pb-type-count>11 publikacijų</span>
+            </div>
+            <div class="pb-block" data-pb-block>
+              <div class="pb-docs">
+                <a class="doc pb-doc" href="#" title="PDF (makete neįkeltas)" data-tags="t-knyga lang-lt" data-keywords="knyga lietuvių pdf 2025 metodinė priemonė hidrologinis režimas užtūros pylimai SavePeatLands vadovas"><span class="doc__icon doc__icon--green"><i class="ph ph-book-open" aria-hidden="true"></i></span><span class="doc__text"><strong>Hidrologinio režimo atkūrimas pelkėse ir kituose durpynuose. Metodinė priemonė</strong><span class="pb-doc__authors">Pawlaczyk P., Áskelsdóttir S., Jarašius L., Sendžikaitė J., Dapkūnienė K., Šadzevičius R. · 2025</span><span class="pb-doc__src">PDF · Pelkių atkūrimo ir apsaugos fondas (projektas SavePeatLands)</span></span><span class="doc__meta"><span class="tag">LT</span><span class="tag tag--outline">PDF</span></span><span class="doc__dl" aria-hidden="true"><i class="ph ph-download-simple"></i></span></a>
+                <a class="doc pb-doc" href="#" title="PDF (makete neįkeltas)" data-tags="t-knyga lang-pl" data-keywords="knyga lenkų pdf 2025 metodinė priemonė hidrologinis režimas atkūrimas lenkų kalba SavePeatLands vadovas"><span class="doc__icon doc__icon--green"><i class="ph ph-book-open" aria-hidden="true"></i></span><span class="doc__text"><strong><span lang="pl">Praktyczny podręcznik ponownego nawadniania osuszonych torfowisk</span></strong><span class="pb-doc__authors">Pawlaczyk P., Áskelsdóttir S., Jarašius L., Sendžikaitė J., Dapkūnienė K., Šadzevičius R. · 2025</span><span class="pb-doc__src">PDF · Pelkių atkūrimo ir apsaugos fondas (projektas SavePeatLands)</span><span class="pb-doc__note">Lenkiška metodinės priemonės versija.</span></span><span class="doc__meta"><span class="tag tag--moss">PL</span><span class="tag tag--outline">PDF</span></span><span class="doc__dl" aria-hidden="true"><i class="ph ph-download-simple"></i></span></a>
+                <a class="doc pb-doc" href="#" title="PDF (makete neįkeltas)" data-tags="t-knyga lang-lt" data-keywords="knyga lietuvių pdf 2024 pelkininkystė ūkininkavimas šlapios žemės durpiniai dirvožemiai knyga"><span class="doc__icon doc__icon--green"><i class="ph ph-book-open" aria-hidden="true"></i></span><span class="doc__text"><strong>Pelkininkystė. Klimatui palankus ūkininkavimas šlapiuose durpiniuose dirvožemiuose</strong><span class="pb-doc__authors">Sendžikaitė J., Jarašius L., Zableckis N. · 2024</span><span class="pb-doc__src">PDF · Pelkių atkūrimo ir apsaugos fondas</span></span><span class="doc__meta"><span class="tag">LT</span><span class="tag tag--outline">PDF</span></span><span class="doc__dl" aria-hidden="true"><i class="ph ph-download-simple"></i></span></a>
+                <a class="doc pb-doc" href="#" title="PDF (makete neįkeltas)" data-tags="t-knyga lang-en" data-keywords="knyga anglų pdf 2022 pasaulio pelkių būklės vertinimas UNEP ataskaita partneriai"><span class="doc__icon doc__icon--green"><i class="ph ph-book-open" aria-hidden="true"></i></span><span class="doc__text"><strong><span lang="en">Global Peatlands Assessment – The State of the World's Peatlands: Evidence for action toward the conservation, restoration, and sustainable management of peatlands. Main Report</span></strong><span class="pb-doc__authors">Global Peatlands Initiative · 2022</span><span class="pb-doc__src">PDF · United Nations Environment Programme (UNEP), Nairobi</span><span class="pb-doc__note">Partnerių leidinys (Global Peatlands Initiative / UNEP).</span></span><span class="doc__meta"><span class="tag tag--water">EN</span><span class="tag tag--outline">PDF</span></span><span class="doc__dl" aria-hidden="true"><i class="ph ph-download-simple"></i></span></a>
+                <a class="doc pb-doc" href="#" title="PDF (makete neįkeltas)" data-tags="t-knyga lang-en" data-keywords="knyga anglų pdf 2022 šiltnamio dujų emisijų vertinimas ŠESD vadovas LIFE Peat Restore"><span class="doc__icon doc__icon--green"><i class="ph ph-book-open" aria-hidden="true"></i></span><span class="doc__text"><strong><span lang="en">Handbook for assessment of greenhouse gas emissions from peatlands. Applications of direct and indirect methods by LIFE Peat Restore</span></strong><span class="pb-doc__authors">2022</span><span class="pb-doc__src">PDF atvartais (double pages) · Projektas LIFE Peat Restore</span></span><span class="doc__meta"><span class="tag tag--water">EN</span><span class="tag tag--outline">PDF</span></span><span class="doc__dl" aria-hidden="true"><i class="ph ph-download-simple"></i></span></a>
+                <a class="doc pb-doc" href="#" title="PDF (makete neįkeltas)" data-tags="t-knyga lang-en" data-keywords="knyga anglų pdf 2022 šiltnamio dujų emisijų vertinimas ŠESD vadovas LIFE Peat Restore"><span class="doc__icon doc__icon--green"><i class="ph ph-book-open" aria-hidden="true"></i></span><span class="doc__text"><strong><span lang="en">Handbook for assessment of greenhouse gas emissions from peatlands. Applications of direct and indirect methods by LIFE Peat Restore</span></strong><span class="pb-doc__authors">2022</span><span class="pb-doc__src">PDF atskirais puslapiais (single pages) · Projektas LIFE Peat Restore</span></span><span class="doc__meta"><span class="tag tag--water">EN</span><span class="tag tag--outline">PDF</span></span><span class="doc__dl" aria-hidden="true"><i class="ph ph-download-simple"></i></span></a>
+                <a class="doc pb-doc" href="#" title="PDF (makete neįkeltas)" data-tags="t-knyga lang-lt lang-lv" data-keywords="knyga lietuvių latvių pdf 2022 istoriniai parkai biologinė įvairovė Interreg Latvija vadovas dvikalbis"><span class="doc__icon doc__icon--green"><i class="ph ph-book-open" aria-hidden="true"></i></span><span class="doc__text"><strong>Istorinių parkų priežiūros vadovas biologinei įvairovei išsaugoti / <span lang="lv">Vēsturisko parku apsaimniekošanas rokasgrāmata bioloģiskās daudzveidības saglabāšanai</span></strong><span class="pb-doc__authors">2022</span><span class="pb-doc__src">PDF atvartais · Projektas LLI-476 „Išsaugok praeitį ateičiai“ (Interreg Latvija–Lietuva)</span></span><span class="doc__meta"><span class="tag">LT</span><span class="tag tag--peat">LV</span><span class="tag tag--outline">PDF</span></span><span class="doc__dl" aria-hidden="true"><i class="ph ph-download-simple"></i></span></a>
+                <a class="doc pb-doc" href="#" title="PDF (makete neįkeltas)" data-tags="t-knyga lang-lt lang-lv" data-keywords="knyga lietuvių latvių pdf 2022 istoriniai parkai biologinė įvairovė Interreg Latvija vadovas dvikalbis"><span class="doc__icon doc__icon--green"><i class="ph ph-book-open" aria-hidden="true"></i></span><span class="doc__text"><strong>Istorinių parkų priežiūros vadovas biologinei įvairovei išsaugoti / <span lang="lv">Vēsturisko parku apsaimniekošanas rokasgrāmata bioloģiskās daudzveidības saglabāšanai</span></strong><span class="pb-doc__authors">2022</span><span class="pb-doc__src">PDF atskirais puslapiais · Projektas LLI-476 „Išsaugok praeitį ateičiai“ (Interreg Latvija–Lietuva)</span></span><span class="doc__meta"><span class="tag">LT</span><span class="tag tag--peat">LV</span><span class="tag tag--outline">PDF</span></span><span class="doc__dl" aria-hidden="true"><i class="ph ph-download-simple"></i></span></a>
+                <a class="doc pb-doc" href="#" title="PDF (makete neįkeltas)" data-tags="t-knyga lang-en" data-keywords="knyga anglų pdf 2021 gerosios praktikos knyga pelkių atkūrimas klimato kaitos švelninimas LIFE Peat Restore"><span class="doc__icon doc__icon--green"><i class="ph ph-book-open" aria-hidden="true"></i></span><span class="doc__text"><strong><span lang="en">Best Practice Book for Peatland Restoration and Climate Change Mitigation. Experiences from LIFE PEAT RESTORE Project</span></strong><span class="pb-doc__authors">2021</span><span class="pb-doc__src">PDF · Projektas LIFE Peat Restore</span></span><span class="doc__meta"><span class="tag tag--water">EN</span><span class="tag tag--outline">PDF</span></span><span class="doc__dl" aria-hidden="true"><i class="ph ph-download-simple"></i></span></a>
+                <a class="doc pb-doc" href="#" title="PDF (makete neįkeltas)" data-tags="t-knyga lang-lt" data-keywords="knyga lietuvių pdf 2021 durpynai klimato kaita knyga Lietuvos gamtos fondas"><span class="doc__icon doc__icon--green"><i class="ph ph-book-open" aria-hidden="true"></i></span><span class="doc__text"><strong>Durpynai ir klimato kaita. Atkuriame pelkes siekdami švelninti klimato kaitą</strong><span class="pb-doc__authors">Jarašius L., Sendžikaitė J., Zableckis N., Sinkevičius Ž. · 2021</span><span class="pb-doc__src">PDF · Lietuvos gamtos fondas</span></span><span class="doc__meta"><span class="tag">LT</span><span class="tag tag--outline">PDF</span></span><span class="doc__dl" aria-hidden="true"><i class="ph ph-download-simple"></i></span></a>
+                <a class="doc pb-doc" href="#" title="PDF (makete neįkeltas)" data-tags="t-knyga lang-lt lang-en" data-keywords="knyga lietuvių anglų pdf 2017 Aukštumala aukštapelkė istorija knyga Pakalnis dvikalbė"><span class="doc__icon doc__icon--green"><i class="ph ph-book-open" aria-hidden="true"></i></span><span class="doc__text"><strong>Aukštumala: praeitis, dabartis, svajonės / <span lang="en">Aukštumala raised bog: Past, Present, Dreams</span></strong><span class="pb-doc__authors">Sendžikaitė J., Pakalnis R., Jarašius L. · 2017</span><span class="pb-doc__src">PDF · Lietuvos gamtos fondas</span></span><span class="doc__meta"><span class="tag">LT</span><span class="tag tag--water">EN</span><span class="tag tag--outline">PDF</span></span><span class="doc__dl" aria-hidden="true"><i class="ph ph-download-simple"></i></span></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Brošiūros: Salient Heading + Post Loop Builder (Custom Post Type „Publikacija“, taksonomija „tipas“ = brošiūra), kortelės – Icon With Text / Fancy Box -->
+          <div class="pb-group" id="brosiuros" data-pb-type="brosiura">
+            <div class="pb-group__head">
+              <div>
+                <p class="kicker" data-nr="03">Brošiūros</p>
+                <h2 id="brosiuros-h">Brošiūros <em>konkrečioms auditorijoms</em></h2>
+                <p>Trumpi leidiniai ūkininkams ir žemės savininkams, verslui ir vietos bendruomenėms.</p>
+              </div>
+              <span class="tag tag--outline pb-group__count" data-pb-type-count>3 publikacijos</span>
+            </div>
+            <div class="pb-block" data-pb-block>
+              <div class="pb-docs">
+                <a class="doc pb-doc" href="#" title="PDF (makete neįkeltas)" data-tags="t-brosiura lang-lt" data-keywords="brošiūra lietuvių pdf 2025 gairės ūkininkams sklypas atkūrimas žemės savininkai SavePeatLands"><span class="doc__icon"><i class="ph ph-book-bookmark" aria-hidden="true"></i></span><span class="doc__text"><strong>Kaip atkurti pelkę savo sklype? Pelkių atkūrimo gairės ūkininkams</strong><span class="pb-doc__authors">2025</span><span class="pb-doc__src">PDF · Projektas SavePeatLands – Pelkių atkūrimo ir apsaugos fondas</span></span><span class="doc__meta"><span class="tag">LT</span><span class="tag tag--outline">PDF</span></span><span class="doc__dl" aria-hidden="true"><i class="ph ph-download-simple"></i></span></a>
+                <a class="doc pb-doc" href="#" title="PDF (makete neįkeltas)" data-tags="t-brosiura lang-lt" data-keywords="brošiūra lietuvių pdf 2024 Paąžuolynė pelkė Jonavos rajonas atkūrimas"><span class="doc__icon"><i class="ph ph-book-bookmark" aria-hidden="true"></i></span><span class="doc__text"><strong>Pelkių fondas siekia atkurti Paąžuolynės pelkę</strong><span class="pb-doc__authors">2024</span><span class="pb-doc__src">PDF · Pelkių atkūrimo ir apsaugos fondas</span></span><span class="doc__meta"><span class="tag">LT</span><span class="tag tag--outline">PDF</span></span><span class="doc__dl" aria-hidden="true"><i class="ph ph-download-simple"></i></span></a>
+                <a class="doc pb-doc" href="#" title="PDF (makete neįkeltas)" data-tags="t-brosiura lang-lt" data-keywords="brošiūra lietuvių pdf 2022 verslas partnerystė CO2 kompensavimas anglies pėdsakas"><span class="doc__icon"><i class="ph ph-book-bookmark" aria-hidden="true"></i></span><span class="doc__text"><strong>Pelkių fondo ir verslo partnerystė: atkurdami pelkes saugokime klimatą</strong><span class="pb-doc__authors">2022</span><span class="pb-doc__src">PDF · Pelkių atkūrimo ir apsaugos fondas</span><span class="pb-doc__note">Brošiūra verslui (CO₂ kompensavimas).</span></span><span class="doc__meta"><span class="tag">LT</span><span class="tag tag--outline">PDF</span></span><span class="doc__dl" aria-hidden="true"><i class="ph ph-download-simple"></i></span></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Lankstinukai: Salient Heading + Post Loop Builder (Custom Post Type „Publikacija“, taksonomija „tipas“ = lankstinukas), kortelės – Icon With Text / Fancy Box -->
+          <div class="pb-group" id="lankstinukai" data-pb-type="lankstinukas">
+            <div class="pb-group__head">
+              <div>
+                <p class="kicker" data-nr="04">Lankstinukai</p>
+                <h2 id="lankstinukai-h">Lankstinukai <em>apie pelkes</em></h2>
+                <p>Glausta informacija apie pelkių atkūrimą, klimatą ir pelkininkystę.</p>
+              </div>
+              <span class="tag tag--outline pb-group__count" data-pb-type-count>3 publikacijos</span>
+            </div>
+            <div class="pb-block" data-pb-block>
+              <div class="pb-docs">
+                <a class="doc pb-doc" href="#" title="PDF (makete neįkeltas)" data-tags="t-lankstinukas lang-lt" data-keywords="lankstinukas lietuvių pdf 2022 klimatas biologinė įvairovė lankstinukas"><span class="doc__icon"><i class="ph ph-file-text" aria-hidden="true"></i></span><span class="doc__text"><strong>Atkurdami pelkes saugokime klimatą ir biologinę įvairovę</strong><span class="pb-doc__authors">2022</span><span class="pb-doc__src">PDF · Pelkių atkūrimo ir apsaugos fondas</span></span><span class="doc__meta"><span class="tag">LT</span><span class="tag tag--outline">PDF</span></span><span class="doc__dl" aria-hidden="true"><i class="ph ph-download-simple"></i></span></a>
+                <a class="doc pb-doc" href="#" title="PDF (makete neįkeltas)" data-tags="t-lankstinukas lang-lt" data-keywords="lankstinukas lietuvių pdf 2020 pelkininkystė ūkininkavimas šlapios žemės DESIRE"><span class="doc__icon"><i class="ph ph-file-text" aria-hidden="true"></i></span><span class="doc__text"><strong>Pelkininkystė, arba ūkininkavimas šlapiose žemėse</strong><span class="pb-doc__authors">2020</span><span class="pb-doc__src">PDF · Projektas DESIRE – Lietuvos gamtos fondas ir kt.</span></span><span class="doc__meta"><span class="tag">LT</span><span class="tag tag--outline">PDF</span></span><span class="doc__dl" aria-hidden="true"><i class="ph ph-download-simple"></i></span></a>
+                <a class="doc pb-doc" href="#" title="PDF (makete neįkeltas)" data-tags="t-lankstinukas lang-lt" data-keywords="lankstinukas lietuvių pdf 2018 pelkininkystė EUKI Baltijos šalys"><span class="doc__icon"><i class="ph ph-file-text" aria-hidden="true"></i></span><span class="doc__text"><strong>Pelkininkystė</strong><span class="pb-doc__authors">2018</span><span class="pb-doc__src">PDF · Projektas EUKI – Pelkininkystė Baltijos šalyse – Lietuvos gamtos fondas ir kt.</span></span><span class="doc__meta"><span class="tag">LT</span><span class="tag tag--outline">PDF</span></span><span class="doc__dl" aria-hidden="true"><i class="ph ph-download-simple"></i></span></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Informaciniai biuleteniai: Salient Heading + Post Loop Builder (Custom Post Type „Publikacija“, taksonomija „tipas“ = informacinis biuletenis), kortelės – Icon With Text / Fancy Box -->
+          <div class="pb-group" id="biuleteniai" data-pb-type="biuletenis">
+            <div class="pb-group__head">
+              <div>
+                <p class="kicker" data-nr="05">Informaciniai biuleteniai</p>
+                <h2 id="biuleteniai-h">Teminiai <em>biuleteniai</em></h2>
+                <p>Biuleteniai parengti projektuose <a class="link-u" href="projektai.html">„PELKĖS KLIMATUI“</a>, <a class="link-u" href="projektai.html">SavePeatLands</a> ir <a class="link-u" href="projektai.html">DESIRE</a> – nuo durpių pakaitalų iki ganyklinės gyvulininkystės šlapiose pievose. <span class="new-fn new-fn--inline"><span class="new-fn__badge" data-tip="Nauja: kryžminės nuorodos tarp leidinių ir projektų. WordPress’e – ACF ryšio laukas „Susijęs projektas“ publikacijos įraše; projekto puslapyje automatiškai rodomi jo leidiniai, o čia – nuorodos į projektus." tabindex="0">Nauja</span></span></p>
+              </div>
+              <span class="tag tag--outline pb-group__count" data-pb-type-count>11 publikacijų</span>
+            </div>
+            <div class="pb-block" data-pb-block>
+              <h3 class="pb-sub">2025 m. · Projektas „PELKĖS KLIMATUI“</h3>
+              <div class="pb-docs">
+                <a class="doc pb-doc" href="#" title="PDF (makete neįkeltas)" data-tags="t-biuletenis lang-lt" data-keywords="informacinis biuletenis lietuvių pdf 2025 durpių pakaitalai substratas PELKĖS KLIMATUI biuletenis"><span class="doc__icon doc__icon--green"><i class="ph ph-newspaper-clipping" aria-hidden="true"></i></span><span class="doc__text"><strong>Durpių pakaitalai</strong><span class="pb-doc__authors">2025</span><span class="pb-doc__src">PDF · Projektas PELKĖS KLIMATUI – Pelkių atkūrimo ir apsaugos fondas</span></span><span class="doc__meta"><span class="tag">LT</span><span class="tag tag--outline">PDF</span></span><span class="doc__dl" aria-hidden="true"><i class="ph ph-download-simple"></i></span></a>
+                <a class="doc pb-doc" href="#" title="PDF (makete neįkeltas)" data-tags="t-biuletenis lang-lt" data-keywords="informacinis biuletenis lietuvių pdf 2025 durpių karjerai rekultivacija PELKĖS KLIMATUI biuletenis"><span class="doc__icon doc__icon--green"><i class="ph ph-newspaper-clipping" aria-hidden="true"></i></span><span class="doc__text"><strong>Išankstinė durpių karjerų rekultivacija</strong><span class="pb-doc__authors">2025</span><span class="pb-doc__src">PDF · Projektas PELKĖS KLIMATUI – Pelkių atkūrimo ir apsaugos fondas</span></span><span class="doc__meta"><span class="tag">LT</span><span class="tag tag--outline">PDF</span></span><span class="doc__dl" aria-hidden="true"><i class="ph ph-download-simple"></i></span></a>
+                <a class="doc pb-doc" href="#" title="PDF (makete neįkeltas)" data-tags="t-biuletenis lang-lt" data-keywords="informacinis biuletenis lietuvių pdf 2025 klimatas natūralios pažeistos atkurtos ekosistemos PELKĖS KLIMATUI biuletenis"><span class="doc__icon doc__icon--green"><i class="ph ph-newspaper-clipping" aria-hidden="true"></i></span><span class="doc__text"><strong>Pelkės ir klimatas. Natūralios, pažeistos ir atkurtos ekosistemos</strong><span class="pb-doc__authors">2025</span><span class="pb-doc__src">PDF · Projektas PELKĖS KLIMATUI – Pelkių atkūrimo ir apsaugos fondas</span></span><span class="doc__meta"><span class="tag">LT</span><span class="tag tag--outline">PDF</span></span><span class="doc__dl" aria-hidden="true"><i class="ph ph-download-simple"></i></span></a>
+                <a class="doc pb-doc" href="#" title="PDF (makete neįkeltas)" data-tags="t-biuletenis lang-lt" data-keywords="informacinis biuletenis lietuvių pdf 2025 ganyklinė gyvulininkystė šlapios pievos žemapelkės PELKĖS KLIMATUI biuletenis"><span class="doc__icon doc__icon--green"><i class="ph ph-newspaper-clipping" aria-hidden="true"></i></span><span class="doc__text"><strong>Pelkininkystė. Ganyklinė gyvulininkystė šlapiose pievose ir žemapelkėse</strong><span class="pb-doc__authors">2025</span><span class="pb-doc__src">PDF · Projektas PELKĖS KLIMATUI – Pelkių atkūrimo ir apsaugos fondas</span></span><span class="doc__meta"><span class="tag">LT</span><span class="tag tag--outline">PDF</span></span><span class="doc__dl" aria-hidden="true"><i class="ph ph-download-simple"></i></span></a>
+                <a class="doc pb-doc" href="#" title="PDF (makete neįkeltas)" data-tags="t-biuletenis lang-lt" data-keywords="informacinis biuletenis lietuvių pdf 2025 pelkininkystė ūkininkavimas PELKĖS KLIMATUI biuletenis"><span class="doc__icon doc__icon--green"><i class="ph ph-newspaper-clipping" aria-hidden="true"></i></span><span class="doc__text"><strong>Pelkininkystė. Klimatui palankus ūkininkavimas šlapiuose durpiniuose dirvožemiuose</strong><span class="pb-doc__authors">2025</span><span class="pb-doc__src">PDF · Projektas PELKĖS KLIMATUI – Pelkių atkūrimo ir apsaugos fondas</span></span><span class="doc__meta"><span class="tag">LT</span><span class="tag tag--outline">PDF</span></span><span class="doc__dl" aria-hidden="true"><i class="ph ph-download-simple"></i></span></a>
+              </div>
+            </div>
+            <div class="pb-block" data-pb-block>
+              <h3 class="pb-sub">2025 m. · Projektas SavePeatLands</h3>
+              <div class="pb-docs">
+                <a class="doc pb-doc" href="#" title="PDF (makete neįkeltas)" data-tags="t-biuletenis lang-lt" data-keywords="informacinis biuletenis lietuvių pdf 2025 metanas emisijos SavePeatLands biuletenis"><span class="doc__icon doc__icon--green"><i class="ph ph-newspaper-clipping" aria-hidden="true"></i></span><span class="doc__text"><strong>Durpynai ir metano emisijos. Natūralios, pažeistos ir atkurtos pelkės</strong><span class="pb-doc__authors">2025</span><span class="pb-doc__src">PDF · Projektas SavePeatLands – Pelkių atkūrimo ir apsaugos fondas</span></span><span class="doc__meta"><span class="tag">LT</span><span class="tag tag--outline">PDF</span></span><span class="doc__dl" aria-hidden="true"><i class="ph ph-download-simple"></i></span></a>
+                <a class="doc pb-doc" href="#" title="PDF (makete neįkeltas)" data-tags="t-biuletenis lang-lt" data-keywords="informacinis biuletenis lietuvių pdf 2025 ŠESD šiltnamio efektą sukeliančios dujos emisijos SavePeatLands biuletenis"><span class="doc__icon doc__icon--green"><i class="ph ph-newspaper-clipping" aria-hidden="true"></i></span><span class="doc__text"><strong>Šiltnamio efektą sukeliančių dujų emisijos iš pažeistų pelkių</strong><span class="pb-doc__authors">2025</span><span class="pb-doc__src">PDF · Projektas SavePeatLands – Pelkių atkūrimo ir apsaugos fondas</span></span><span class="doc__meta"><span class="tag">LT</span><span class="tag tag--outline">PDF</span></span><span class="doc__dl" aria-hidden="true"><i class="ph ph-download-simple"></i></span></a>
+                <a class="doc pb-doc" href="#" title="PDF (makete neįkeltas)" data-tags="t-biuletenis lang-lt" data-keywords="informacinis biuletenis lietuvių pdf 2025 biomasė žemapelkės šlapios pievos SavePeatLands biuletenis"><span class="doc__icon doc__icon--green"><i class="ph ph-newspaper-clipping" aria-hidden="true"></i></span><span class="doc__text"><strong>Žemapelkių ir šlapių pievų biomasė. Problema ar galimybė?</strong><span class="pb-doc__authors">2025</span><span class="pb-doc__src">PDF · Projektas SavePeatLands – Pelkių atkūrimo ir apsaugos fondas</span></span><span class="doc__meta"><span class="tag">LT</span><span class="tag tag--outline">PDF</span></span><span class="doc__dl" aria-hidden="true"><i class="ph ph-download-simple"></i></span></a>
+              </div>
+            </div>
+            <div class="pb-block" data-pb-block>
+              <h3 class="pb-sub">2021 m. · Projektas DESIRE</h3>
+              <div class="pb-docs">
+                <a class="doc pb-doc" href="#" title="PDF (makete neįkeltas)" data-tags="t-biuletenis lang-lt" data-keywords="informacinis biuletenis lietuvių pdf 2021 pelkininkystė DESIRE biuletenis"><span class="doc__icon doc__icon--green"><i class="ph ph-newspaper-clipping" aria-hidden="true"></i></span><span class="doc__text"><strong>Pelkininkystė</strong><span class="pb-doc__authors">2021</span><span class="pb-doc__src">PDF · Projektas DESIRE – Lietuvos gamtos fondas ir kt.</span></span><span class="doc__meta"><span class="tag">LT</span><span class="tag tag--outline">PDF</span></span><span class="doc__dl" aria-hidden="true"><i class="ph ph-download-simple"></i></span></a>
+                <a class="doc pb-doc" href="#" title="PDF (makete neįkeltas)" data-tags="t-biuletenis lang-lt" data-keywords="informacinis biuletenis lietuvių pdf 2021 biomasė panaudojimas DESIRE biuletenis"><span class="doc__icon doc__icon--green"><i class="ph ph-newspaper-clipping" aria-hidden="true"></i></span><span class="doc__text"><strong>Pelkininkystės biomasės panaudojimo galimybės</strong><span class="pb-doc__authors">2021</span><span class="pb-doc__src">PDF · Projektas DESIRE – Lietuvos gamtos fondas ir kt.</span></span><span class="doc__meta"><span class="tag">LT</span><span class="tag tag--outline">PDF</span></span><span class="doc__dl" aria-hidden="true"><i class="ph ph-download-simple"></i></span></a>
+                <a class="doc pb-doc" href="#" title="PDF (makete neįkeltas)" data-tags="t-biuletenis lang-lt" data-keywords="informacinis biuletenis lietuvių pdf 2021 šlapynės buferinės zonos vandens valymas DESIRE biuletenis"><span class="doc__icon doc__icon--green"><i class="ph ph-newspaper-clipping" aria-hidden="true"></i></span><span class="doc__text"><strong>Šlapynių buferinės zonos – natūralios vandens valymo sistemos</strong><span class="pb-doc__authors">2021</span><span class="pb-doc__src">PDF · Projektas DESIRE – Lietuvos gamtos fondas ir kt.</span></span><span class="doc__meta"><span class="tag">LT</span><span class="tag tag--outline">PDF</span></span><span class="doc__dl" aria-hidden="true"><i class="ph ph-download-simple"></i></span></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Kita: Salient Heading + Post Loop Builder (Custom Post Type „Publikacija“, taksonomija „tipas“ = kita), kortelės – Icon With Text / Fancy Box -->
+          <div class="pb-group" id="kita" data-pb-type="kita">
+            <div class="pb-group__head">
+              <div>
+                <p class="kicker" data-nr="06">Kita</p>
+                <h2 id="kita-h">Studijos, analizės ir <em>pozicijos</em></h2>
+                <p>Mokslinės studijos, teisinio reguliavimo analizė, galimybių vertinimo ataskaitos ir fondo aplinkosauginė pozicija dėl pelkių atkūrimo, apsaugos ir tausaus naudojimo.</p>
+              </div>
+              <span class="tag tag--outline pb-group__count" data-pb-type-count>7 publikacijos</span>
+            </div>
+            <div class="pb-block" data-pb-block>
+              <div class="pb-docs">
+                <a class="doc pb-doc" href="#" title="PDF (makete neįkeltas)" data-tags="t-kita lang-lt" data-keywords="kita studija lietuvių pdf 2026 hidrologinis režimas atkūrimas studija LIFE ForestHabitatLT vertinimas"><span class="doc__icon"><i class="ph ph-flask" aria-hidden="true"></i></span><span class="doc__text"><strong>Hidrologinio režimo atkūrimas pažeistose Lietuvos pelkėse. Studija</strong><span class="pb-doc__authors">2026</span><span class="pb-doc__src">PDF · Studija · Projektas LIFE23-NAT-LT-LIFE ForestHabitatLT – Pelkių atkūrimo ir apsaugos fondas</span><span class="pb-doc__note">Pirmoji išsami analizė apie pelkių hidrologinio režimo atkūrimą Lietuvoje (žr. naujieną 2026-04-23).</span></span><span class="doc__meta"><span class="tag">LT</span><span class="tag tag--outline">PDF</span></span><span class="doc__dl" aria-hidden="true"><i class="ph ph-download-simple"></i></span></a>
+                <a class="doc pb-doc" href="#" title="PDF (makete neįkeltas)" data-tags="t-kita lang-lt" data-keywords="kita pozicija lietuvių pdf 2025 pozicija apsauga tausus naudojimas PELKĖS KLIMATUI"><span class="doc__icon"><i class="ph ph-megaphone" aria-hidden="true"></i></span><span class="doc__text"><strong>Aplinkosauginė pozicija dėl pelkių atkūrimo, apsaugos ir tausaus naudojimo</strong><span class="pb-doc__authors">2025</span><span class="pb-doc__src">PDF · Pozicija · Projektas PELKĖS KLIMATUI – Pelkių atkūrimo ir apsaugos fondas</span></span><span class="doc__meta"><span class="tag">LT</span><span class="tag tag--outline">PDF</span></span><span class="doc__dl" aria-hidden="true"><i class="ph ph-download-simple"></i></span></a>
+                <a class="doc pb-doc" href="#" title="PDF (makete neįkeltas)" data-tags="t-kita lang-lt" data-keywords="kita analizė lietuvių pdf 2025 eksploatuojami durpynai leidimai teisinis reguliavimas analizė PELKĖS KLIMATUI"><span class="doc__icon"><i class="ph ph-scales" aria-hidden="true"></i></span><span class="doc__text"><strong>Analizė „Eksploatuojamų durpynų, kuriems išduoti leidimai naudoti žemės gelmių išteklius ir ertmes, faktinės būklės ir teisinio reguliavimo analizė, siekiant įvertinti spartesnio ir efektyvesnio atkūrimo poreikį bei galimybes“</strong><span class="pb-doc__authors">2025</span><span class="pb-doc__src">PDF · Analizė · Projektas PELKĖS KLIMATUI – Pelkių atkūrimo ir apsaugos fondas</span></span><span class="doc__meta"><span class="tag">LT</span><span class="tag tag--outline">PDF</span></span><span class="doc__dl" aria-hidden="true"><i class="ph ph-download-simple"></i></span></a>
+                <a class="doc pb-doc" href="#" title="PDF (makete neįkeltas)" data-tags="t-kita lang-lt" data-keywords="kita ataskaita lietuvių pdf 2025 Margių durpynas hidrologinis režimas galimybių vertinimas SavePeatLands"><span class="doc__icon"><i class="ph ph-clipboard-text" aria-hidden="true"></i></span><span class="doc__text"><strong>Galimybių vertinimo ataskaita „Margių durpyno hidrologinio režimo atkūrimo galimybių vertinimas“</strong><span class="pb-doc__authors">2025</span><span class="pb-doc__src">PDF · Ataskaita · Projektas SavePeatLands – Pelkių atkūrimo ir apsaugos fondas</span></span><span class="doc__meta"><span class="tag">LT</span><span class="tag tag--outline">PDF</span></span><span class="doc__dl" aria-hidden="true"><i class="ph ph-download-simple"></i></span></a>
+                <a class="doc pb-doc" href="#" title="PDF (makete neįkeltas)" data-tags="t-kita lang-lt" data-keywords="kita studija lietuvių pdf 2025 šlapynės biomasė tvarkymas žemės ūkis studija SavePeatLands"><span class="doc__icon"><i class="ph ph-flask" aria-hidden="true"></i></span><span class="doc__text"><strong>Mokslinė studija „Žemės ūkyje naudojamų šlapynių biomasės tvarkymas“</strong><span class="pb-doc__authors">2025</span><span class="pb-doc__src">PDF · Studija · Projektas SavePeatLands – Pelkių atkūrimo ir apsaugos fondas</span></span><span class="doc__meta"><span class="tag">LT</span><span class="tag tag--outline">PDF</span></span><span class="doc__dl" aria-hidden="true"><i class="ph ph-download-simple"></i></span></a>
+                <a class="doc pb-doc" href="#" title="PDF (makete neįkeltas)" data-tags="t-kita lang-lt" data-keywords="kita studija lietuvių pdf 2023 miškai pažeisti durpynai sutvarkymas studija"><span class="doc__icon"><i class="ph ph-flask" aria-hidden="true"></i></span><span class="doc__text"><strong>Mokslinis darbas „Miškuose esančių pažeistų durpynų sutvarkymo galimybių studija“</strong><span class="pb-doc__authors">2023</span><span class="pb-doc__src">PDF · Studija</span></span><span class="doc__meta"><span class="tag">LT</span><span class="tag tag--outline">PDF</span></span><span class="doc__dl" aria-hidden="true"><i class="ph ph-download-simple"></i></span></a>
+                <a class="doc pb-doc" href="#" title="PDF (makete neįkeltas)" data-tags="t-kita lang-lt" data-keywords="kita ataskaita lietuvių pdf 2021 žemės ūkis maisto ūkis atsparumas krizės ekstremalios situacijos ataskaita"><span class="doc__icon"><i class="ph ph-clipboard-text" aria-hidden="true"></i></span><span class="doc__text"><strong>Mokslinio tyrimo „Žemės ir maisto ūkio sektoriaus atsparumo įvertinimas ir didinimas ekstremaliųjų situacijų ir krizių atvejais“ galutinė ataskaita</strong><span class="pb-doc__authors">2021</span><span class="pb-doc__src">PDF · Ataskaita</span></span><span class="doc__meta"><span class="tag">LT</span><span class="tag tag--outline">PDF</span></span><span class="doc__dl" aria-hidden="true"><i class="ph ph-download-simple"></i></span></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="pb-empty" data-pb-empty hidden>
+            <i class="ph ph-books" aria-hidden="true"></i>
+            <h3>Pagal pasirinktus filtrus publikacijų nėra</h3>
+            <p>Pabandykite kitą paieškos žodį, pavyzdžiui, „klimatas“, „pelkininkystė“ arba „Aukštumala“, arba išvalykite filtrus.</p>
+            <button class="btn btn--sm" type="button" data-pb-clear>Išvalyti filtrus</button>
+          </div>
+        </div>
+
+        <p class="sr-note pb-note" data-reveal>Makete PDF failai neįkelti. Naujoje svetainėje kiekviena PDF nuoroda ves į WordPress medijos biblioteką (visi 38 failai perkeliami iš Wix saugyklos), o DOI nuorodos – į žurnalų svetaines naujame lange.</p>
+      </div>
+    </section>
+
+    <!-- Salient: Row su video fonu (self-hosted mp4 + poster, tamsus overlay), Split Line Heading, Milestone ×4 (Column animation), Button ×2 -->
+    <section class="band" id="skaiciai" aria-labelledby="skaiciai-h">
+      <div class="video-bg video-bg--flat">
+        <img src="https://images.pexels.com/videos/35895839/pexels-photo-35895839.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=630&w=1200" alt="">
+        <video data-src="https://videos.pexels.com/video-files/35895839/15225419_1920_1080_24fps.mp4" data-src-sd="https://videos.pexels.com/video-files/35895839/15225415_960_540_24fps.mp4" muted loop playsinline poster="https://images.pexels.com/videos/35895839/pexels-photo-35895839.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=630&w=1200"></video>
+      </div>
+      <div class="container">
+        <div class="section-head">
+          <p class="kicker" data-reveal>Žinios – atvirai</p>
+          <h2 id="skaiciai-h" data-split>Mokslas, kuris <em>virsta darbais</em></h2>
+          <p class="lead" data-reveal style="--d:160ms">Visus leidinius galima atsisiųsti nemokamai. Dalijamės metodikomis, tyrimų rezultatais ir patirtimi, kad pelkes atkurti galėtų kuo daugiau žmonių – ūkininkai, savivaldybės, verslas ir mokslininkai.</p>
+        </div>
+        <div class="stats" data-reveal-group>
+          <div class="stat">
+            <span class="stat__num"><span data-count-to="44">44</span><small>publikacijos</small></span>
+            <span class="stat__label">kataloge – nuo lankstinukų iki mokslinių straipsnių</span>
+          </div>
+          <div class="stat">
+            <span class="stat__num"><span data-count-to="6">6</span><small>straipsniai</small></span>
+            <span class="stat__label">recenzuojamuose tarptautiniuose žurnaluose su DOI</span>
+          </div>
+          <div class="stat">
+            <span class="stat__num"><span data-count-to="10">10</span><small>leidinių</small></span>
+            <span class="stat__label">parengta 2025 m.</span>
+          </div>
+          <div class="stat">
+            <span class="stat__num"><span data-count-to="4">4</span><small>kalbos</small></span>
+            <span class="stat__label">lietuvių, anglų, lenkų ir latvių</span>
+          </div>
+        </div>
+        <div class="pb-band__actions" data-reveal>
+          <a class="btn btn--sun" href="prisidek.html#paremk">Paremk naujus leidinius <span class="btn__icon"><i class="ph ph-arrow-right"></i><i class="ph ph-arrow-right"></i></span></a>
+          <a class="btn btn--ghost-light" href="videoteka.html"><i class="ph ph-play" aria-hidden="true"></i> Filmai videotekoje</a>
+        </div>
+        <p class="pb-band__src">Šaltiniai: publikacijų katalogas (44 įrašai) ir 2025 m. metinė veiklos ataskaita (10 leidinių).</p>
+      </div>
+      <span class="video-credit">Video: Pexels / Mario Spencer</span>
+    </section>
+
+    <!-- Salient: Icon With Text ×3 (Column animation), Alert / Highlighted Text (callout), Button -->
+    <section class="section" id="pastabos" aria-labelledby="pastabos-h">
+      <div class="container">
+        <div class="section-head">
+          <p class="kicker" data-reveal>Gera žinoti</p>
+          <h2 id="pastabos-h" data-split>Kaip naudotis <em>leidiniais</em></h2>
+        </div>
+        <div class="grid grid--3" data-reveal-group>
+          <div class="icon-card">
+            <span class="icon-card__icon"><i class="ph ph-quotes" aria-hidden="true"></i></span>
+            <h3>Leidėjo pavadinimas citatose</h3>
+            <p>Iki 2026 m. organizacija vadinosi VšĮ „Pelkių atkūrimo ir apsaugos fondas“, todėl bibliografinėse citatose paliekame leidimo metu galiojusį leidėjo pavadinimą.</p>
+            <a class="link-arrow" href="apie-mus.html">Apie organizaciją <i class="ph ph-arrow-right" aria-hidden="true"></i></a>
+          </div>
+          <div class="icon-card">
+            <span class="icon-card__icon"><i class="ph ph-copy" aria-hidden="true"></i></span>
+            <h3>Du PDF variantai</h3>
+            <p>„Istorinių parkų priežiūros vadovas“ ir „Handbook for assessment of greenhouse gas emissions“ pateikiami dviem variantais – atvartais ir atskirais puslapiais. Pasirinkite patogesnį.</p>
+            <a class="link-arrow" href="#knygos">Į knygų sąrašą <i class="ph ph-arrow-right" aria-hidden="true"></i></a>
+          </div>
+          <div class="icon-card">
+            <span class="icon-card__icon"><i class="ph ph-newspaper" aria-hidden="true"></i></span>
+            <h3>Nauji leidiniai – naujienose</h3>
+            <p>Apie kiekvieną naują leidinį pranešame naujienų skiltyje (kategorija „Leidiniai“) ir mėnesiniame naujienlaiškyje.</p>
+            <a class="link-arrow" href="naujienos.html?f=leidiniai">Naujienos apie leidinius <i class="ph ph-arrow-right" aria-hidden="true"></i></a>
+          </div>
+        </div>
+        <div class="callout callout--green mt-40" data-reveal>
+          <i class="ph ph-info" aria-hidden="true"></i>
+          <p><strong>Nerandate leidinio arba reikia prieinamesnio formato?</strong> Parašykite <a class="link-u" href="mailto:info@pelkiufondas.lt">info@pelkiufondas.lt</a> – atsiųsime kitu būdu. Žiniasklaidai skirtą informaciją rasite <a class="link-u" href="kontaktai.html">kontaktų puslapyje</a>.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Naujienlaiškis (esama funkcija; WP: MailerLite / Mailchimp forma per Salient „Nectar Form“ arba įskiepio shortcode) -->
+    <section class="section section--s" id="naujienlaiskis" aria-labelledby="naujienlaiskis-h">
+      <div class="container">
+        <div class="newsletter" data-reveal>
+          <div>
+            <p class="kicker">Naujienlaiškis</p>
+            <h3 id="naujienlaiskis-h">Prisijunk prie pelkių atkūrimo bendruomenės</h3>
+            <p>Kiekvieną mėnesį dalinamės renginių, aplinkosaugos ir mūsų veiklos naujienomis. Jokio šlamšto, atsisakyti galima vienu paspaudimu.</p>
+          </div>
+          <form class="form" data-demo="Ačiū! Patikrinkite el. paštą ir patvirtinkite prenumeratą." novalidate>
+            <div class="input-group">
+              <label class="visually-hidden" for="nl-email">El. paštas</label>
+              <input id="nl-email" type="email" name="email" placeholder="jusu@pastas.lt" autocomplete="email" required>
+              <button class="btn" type="submit">Prenumeruoti</button>
+            </div>
+            <label class="check"><input type="checkbox" name="sutikimas" required> <span>Sutinku gauti Pelkių fondo naujienlaiškį ir susipažinau su <a class="link-u" href="kontaktai.html#privatumas">privatumo politika</a>.</span></label>
+            <p class="form__msg" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Poraštė (Salient: Footer – 4 kolonos, tamsus fonas, Copyright juosta) -->
+  <footer class="footer" id="poraste">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a class="logo" href="index.html" aria-label="Pelkių fondas, pradžia"><img class="logo__mark" src="assets/img/logo-240.png" alt="" width="52" height="52"><span class="logo__word">Pelkių fondas<small>Pelkių atkūrimas ir apsauga</small></span></a>
+          <p>VšĮ „Pelkių fondas“ – ne pelno siekianti nevyriausybinė gamtosauginė organizacija, kuri rūpinasi pelkių ir kitų ekosistemų apsauga, atkūrimu, tvariu naudojimu ir visuomenės švietimu.</p>
+          <div class="footer__social">
+            <a href="https://www.facebook.com/pelkiufondas" aria-label="Facebook"><i class="ph ph-facebook-logo" aria-hidden="true"></i></a>
+            <a href="#" aria-label="YouTube"><i class="ph ph-youtube-logo" aria-hidden="true"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="ph ph-linkedin-logo" aria-hidden="true"></i></a>
+            <a href="#" aria-label="Instagram"><i class="ph ph-instagram-logo" aria-hidden="true"></i></a>
+          </div>
+        </div>
+        <div>
+          <h4>Svetainė</h4>
+          <ul>
+            <li><a href="pelkes.html">Pelkės</a></li>
+            <li><a href="terminu-zodynas.html">Terminų žodynas</a></li>
+            <li><a href="apie-mus.html">Apie mus</a></li>
+            <li><a href="veikla.html">Veikla</a></li>
+            <li><a href="projektai.html">Projektai</a></li>
+            <li><a href="publikacijos.html">Publikacijos</a></li>
+            <li><a href="naujienos.html">Naujienos</a></li>
+            <li><a href="kontaktai.html">Kontaktai</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Prisidėk</h4>
+          <ul>
+            <li><a href="prisidek.html#paremk">Paremk pelkes</a></li>
+            <li><a href="prisidek.html#gpm">Skirk 1,2 % GPM</a></li>
+            <li><a href="prisidek.html#savanoriauk">Savanoriauk</a></li>
+            <li><a href="prisidek.html#renginiai">Talkos ir renginiai</a></li>
+            <li><a href="prisidek.html#naujienlaiskis">Naujienlaiškis</a></li>
+            <li><a href="co2.html">Verslui: CO₂ kompensavimas</a></li>
+            <li><a href="veiklos-ataskaitos.html">Veiklos ataskaitos</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Kontaktai</h4>
+          <div class="footer__contact">
+            <div><i class="ph ph-map-pin" aria-hidden="true"></i><span>Gedimino pr. 1, 4 a. (NVO Avilys)<br>LT-01103 Vilnius, Lietuva</span></div>
+            <div><i class="ph ph-phone" aria-hidden="true"></i><a href="tel:+37065620426">+370 656 20426</a></div>
+            <div><i class="ph ph-envelope" aria-hidden="true"></i><a href="mailto:info@pelkiufondas.lt">info@pelkiufondas.lt</a></div>
+            <div><i class="ph ph-identification-card" aria-hidden="true"></i><span>Įmonės kodas 302822289<br>PVM kodas LT100017689218</span></div>
+            <div><i class="ph ph-bank" aria-hidden="true"></i><span>LT24 7044 0600 0784 1146<br>AB SEB bankas</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span><span class="footer__sun" aria-hidden="true"></span>© <span data-year>2026</span> VšĮ „Pelkių fondas“. Nuotraukos ir video makete – Pexels (nemokama licencija).</span>
+        <div class="footer__legal">
+          <a href="kontaktai.html#privatumas">Privatumo politika</a>
+          <a href="apie-mus.html#dokumentai">Įstatai</a>
+          <a href="galerija.html">Galerija</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/pages/publikacijos.js" defer></script>
+</body>
+</html>
