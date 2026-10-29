@@ -545,7 +545,8 @@ html.hide-new-fn .new-fn__badge { display: none; }
 .icon-list li p { margin: 0; font-size: 15px; color: var(--text); }
 .numbered { counter-reset: n; list-style: none; margin: 0; padding: 0; display: grid; gap: 0; }
 .numbered li { counter-increment: n; position: relative; display: grid; grid-template-columns: 56px 1fr; gap: 18px; padding: 22px 0; border-top: 1px solid var(--line); }
-.numbered li::before { content: counter(n, decimal-leading-zero); font: 500 30px/1 var(--f-display); color: var(--green); letter-spacing: -.02em; padding-top: 2px; }
+.numbered li::before { content: counter(n, decimal-leading-zero); grid-column: 1; grid-row: 1 / span 3; font: 500 30px/1 var(--f-display); color: var(--green); letter-spacing: -.02em; padding-top: 2px; }
+.numbered li > * { grid-column: 2; }
 .numbered li strong { display: block; font-size: 18px; color: var(--ink); margin-bottom: 4px; }
 .numbered li p { margin: 0; font-size: 15.5px; }
 .numbered li:last-child { border-bottom: 1px solid var(--line); }
