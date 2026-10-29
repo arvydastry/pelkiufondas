@@ -51,8 +51,6 @@ ir eikite į http://localhost:8791. Video ir nuotraukos kraunamos iš Pexels, ž
 
 ## Ką verta žinoti peržiūrint
 
-- **Tamsi juosta viršuje** skirta tik maketui, į WordPress nekeliama. Joje – nuorodos į skiltis, jungiklis
-  „rodyti naujas funkcijas“.
 - **Žymekliai „Nauja“** rodo, ko dabartinė svetainė neturi (apie 10 % funkcijų): parama internetu, 1,2 % GPM vedlys,
   projektų žemėlapis su filtrais, interaktyvus terminų žodynas, renginių kalendorius su registracija, publikacijų ir
   ataskaitų filtrai, naujienų kategorijos ir susiję įrašai, svetainės paieška. Užvedus pelę ant žymeklio matosi,

@@ -46,7 +46,7 @@
   /* ---------- Maketo juosta: naujų funkcijų žymekliai ---------- */
   const initMockbar = () => {
     const bar = $('.mockbar');
-    const setH = () => { if (bar) root.style.setProperty('--mockbar-h', bar.offsetHeight + 'px'); };
+    const setH = () => { root.style.setProperty('--mockbar-h', (bar ? bar.offsetHeight : 0) + 'px'); };
     setH(); window.addEventListener('resize', debounce(setH, 100));
     const t = $('#toggle-newfn');
     const hidden = store.get('pf.hideNewFn', false);
